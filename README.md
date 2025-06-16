@@ -1,0 +1,1 @@
+Gajadi make vulkan

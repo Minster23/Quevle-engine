@@ -1,5 +1,6 @@
-CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: \
- D:\QuavleEngine\core\window\window.cpp \
+CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
+ D:\QuavleEngine\core\renderer\renderer.cpp \
+ D:/QuavleEngine/core/renderer/renderer.hpp \
  D:/QuavleEngine/core/window/window.hpp \
  D:/QuavleEngine/vendor/glad/glad.h \
  D:/QuavleEngine/vendor/glad/khrplatform.h \
@@ -123,7 +124,6 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_map.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/erase_if.h \
- D:/QuavleEngine/core/renderer/renderer.hpp \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ostream \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
@@ -162,11 +162,4 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
- F:/Devtool/mysys2/ucrt64/include/string.h \
- F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/optional \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/enable_special_members.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/set \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_set.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multiset.h
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc

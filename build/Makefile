@@ -152,6 +152,30 @@ application/application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/application/application.cpp.s
 .PHONY : application/application.cpp.s
 
+core/renderer/renderer.obj: core/renderer/renderer.cpp.obj
+.PHONY : core/renderer/renderer.obj
+
+# target to build an object file
+core/renderer/renderer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj
+.PHONY : core/renderer/renderer.cpp.obj
+
+core/renderer/renderer.i: core/renderer/renderer.cpp.i
+.PHONY : core/renderer/renderer.i
+
+# target to preprocess a source file
+core/renderer/renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.i
+.PHONY : core/renderer/renderer.cpp.i
+
+core/renderer/renderer.s: core/renderer/renderer.cpp.s
+.PHONY : core/renderer/renderer.s
+
+# target to generate assembly for a file
+core/renderer/renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.s
+.PHONY : core/renderer/renderer.cpp.s
+
 core/window/window.obj: core/window/window.cpp.obj
 .PHONY : core/window/window.obj
 
@@ -356,6 +380,9 @@ help:
 	@echo ... application/application.obj
 	@echo ... application/application.i
 	@echo ... application/application.s
+	@echo ... core/renderer/renderer.obj
+	@echo ... core/renderer/renderer.i
+	@echo ... core/renderer/renderer.s
 	@echo ... core/window/window.obj
 	@echo ... core/window/window.i
 	@echo ... core/window/window.s

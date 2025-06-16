@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/QuavleEngine/vendor/glad/glad.c" "CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj" "gcc" "CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj.d"
   "D:/QuavleEngine/application/application.cpp" "CMakeFiles/QuavleEngine.dir/application/application.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/application/application.cpp.obj.d"
+  "D:/QuavleEngine/core/renderer/renderer.cpp" "CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj.d"
   "D:/QuavleEngine/core/window/window.cpp" "CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj.d"
   "D:/QuavleEngine/src/main.cpp" "CMakeFiles/QuavleEngine.dir/src/main.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/src/main.cpp.obj.d"
   "D:/QuavleEngine/vendor/imgui/imgui.cpp" "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj.d"

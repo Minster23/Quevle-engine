@@ -1,9 +1,14 @@
 #include <core/window/window.hpp>
+#include <core/renderer/renderer.hpp>
 #include <string.h>
+#include <iostream> // Include iostream here if needed
 #include <optional>
 #include <set>
 
 using namespace QuavleEngine;
+Renderer renderer;
+
+
 
 bool WindowManager::initWindow()
 {
@@ -14,15 +19,22 @@ bool WindowManager::initWindow()
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 
-    window = glfwCreateWindow(WIDTH, HEIGHT, "Quevle Engine", nullptr, nullptr);
+    window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Quevle Engine", nullptr, nullptr);
 
     // glad: load all OpenGL function pointers
-    // ---------------------------------------
-    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+    // Note: GLAD initialization should happen *after* creating the window and making the context current.
+    // This function should probably just create the window. GLAD init belongs in openGL().
+    if (window == nullptr)
     {
-        std::cout << "Failed to initialize GLAD" << std::endl;
-        return -1;
+        std::cerr << "Failed to create GLFW window" << std::endl;
+        glfwTerminate();
+        return false; // Return false on failure
     }
+
+    // Set the framebuffer size callback
+    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+
+    return true; // Return true on success
 }
 
 bool WindowManager::openGL()
@@ -34,11 +46,14 @@ bool WindowManager::openGL()
         return false;
     }
     std::cout << "OpenGL version: " << glGetString(GL_VERSION) << std::endl;
+
+    renderer.shaderLoader();
     return true;
 }
 
 void WindowManager::mainLoop()
 {
+    renderer.shaderLink();
     while (!glfwWindowShouldClose(window))
     {
         // input
@@ -47,8 +62,10 @@ void WindowManager::mainLoop()
 
         // Render
         // ------
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClearColor(1.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
+
+        renderer.drawCallback();
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
@@ -59,6 +76,7 @@ void WindowManager::mainLoop()
 
 void WindowManager::cleanup()
 {
+    renderer.drawCleanup();
     glfwTerminate();
 }
 

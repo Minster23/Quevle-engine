@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/QuavleEngine.dir/application/application.cpp.obj"
   "CMakeFiles/QuavleEngine.dir/application/application.cpp.obj.d"
+  "CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj"
+  "CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj.d"
   "CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj"
   "CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj.d"
   "CMakeFiles/QuavleEngine.dir/src/main.cpp.obj"

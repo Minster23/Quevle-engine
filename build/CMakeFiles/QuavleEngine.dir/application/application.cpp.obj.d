@@ -15,27 +15,12 @@ CMakeFiles/QuavleEngine.dir/application/application.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
  F:/Devtool/mysys2/ucrt64/include/stddef.h \
  D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/include/GLFW/glfw3.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/exception \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ostream \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
- F:/Devtool/mysys2/ucrt64/include/wchar.h \
- F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
- F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h \
- F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
- F:/Devtool/mysys2/ucrt64/include/_mingw_stat64.h \
- F:/Devtool/mysys2/ucrt64/include/swprintf.inl \
- F:/Devtool/mysys2/ucrt64/include/sec_api/wchar_s.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/exception \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
@@ -47,44 +32,34 @@ CMakeFiles/QuavleEngine.dir/application/application.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/move.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/type_traits \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/nested_exception.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
+ F:/Devtool/mysys2/ucrt64/include/wchar.h \
+ F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
+ F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h \
+ F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
+ F:/Devtool/mysys2/ucrt64/include/_mingw_stat64.h \
+ F:/Devtool/mysys2/ucrt64/include/swprintf.inl \
+ F:/Devtool/mysys2/ucrt64/include/sec_api/wchar_s.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocator.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/new_allocator.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
  F:/Devtool/mysys2/ucrt64/include/locale.h \
  F:/Devtool/mysys2/ucrt64/include/stdio.h \
  F:/Devtool/mysys2/ucrt64/include/sec_api/stdio_s.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cctype \
  F:/Devtool/mysys2/ucrt64/include/ctype.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ios_base.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/atomicity.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
- F:/Devtool/mysys2/ucrt64/include/pthread.h \
- F:/Devtool/mysys2/ucrt64/include/errno.h \
- F:/Devtool/mysys2/ucrt64/include/sys/types.h \
- F:/Devtool/mysys2/ucrt64/include/process.h \
- F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
- F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
- F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
- F:/Devtool/mysys2/ucrt64/include/limits.h \
- F:/Devtool/mysys2/ucrt64/include/signal.h \
- F:/Devtool/mysys2/ucrt64/include/pthread_signal.h \
- F:/Devtool/mysys2/ucrt64/include/time.h \
- F:/Devtool/mysys2/ucrt64/include/sys/timeb.h \
- F:/Devtool/mysys2/ucrt64/include/sec_api/sys/timeb_s.h \
- F:/Devtool/mysys2/ucrt64/include/_timeval.h \
- F:/Devtool/mysys2/ucrt64/include/pthread_time.h \
- F:/Devtool/mysys2/ucrt64/include/pthread_compat.h \
- F:/Devtool/mysys2/ucrt64/include/pthread_unistd.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocator.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/new_allocator.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
@@ -118,10 +93,14 @@ CMakeFiles/QuavleEngine.dir/application/application.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
  F:/Devtool/mysys2/ucrt64/include/stdlib.h \
+ F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+ F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+ F:/Devtool/mysys2/ucrt64/include/limits.h \
  F:/Devtool/mysys2/ucrt64/include/sec_api/stdlib_s.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
  F:/Devtool/mysys2/ucrt64/include/malloc.h \
  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+ F:/Devtool/mysys2/ucrt64/include/errno.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cerrno \
@@ -132,24 +111,6 @@ CMakeFiles/QuavleEngine.dir/application/application.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tuple \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/system_error \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/streambuf \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf.tcc \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
- F:/Devtool/mysys2/ucrt64/include/wctype.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf_iterator.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/vector \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_vector.h \

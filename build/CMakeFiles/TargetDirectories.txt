@@ -1,0 +1,3 @@
+D:/QuavleEngine/build/CMakeFiles/QuavleEngine.dir
+D:/QuavleEngine/build/CMakeFiles/edit_cache.dir
+D:/QuavleEngine/build/CMakeFiles/rebuild_cache.dir

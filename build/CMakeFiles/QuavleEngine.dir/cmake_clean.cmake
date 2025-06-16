@@ -1,0 +1,29 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/QuavleEngine.dir/application/application.cpp.obj"
+  "CMakeFiles/QuavleEngine.dir/application/application.cpp.obj.d"
+  "CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj"
+  "CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj.d"
+  "CMakeFiles/QuavleEngine.dir/src/main.cpp.obj"
+  "CMakeFiles/QuavleEngine.dir/src/main.cpp.obj.d"
+  "CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj"
+  "CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj.d"
+  "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj"
+  "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj.d"
+  "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.obj"
+  "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.obj.d"
+  "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.obj"
+  "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.obj.d"
+  "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_tables.cpp.obj"
+  "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_tables.cpp.obj.d"
+  "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.obj"
+  "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.obj.d"
+  "QuavleEngine.exe"
+  "QuavleEngine.exe.manifest"
+  "QuavleEngine.pdb"
+  "libQuavleEngine.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C CXX)
+  include(CMakeFiles/QuavleEngine.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

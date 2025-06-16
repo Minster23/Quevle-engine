@@ -51,6 +51,7 @@ target_include_directories(QuavleEngine PRIVATE
     ${CMAKE_SOURCE_DIR}/vendor/glm
     ${CMAKE_SOURCE_DIR}/vendor/vk-bootstrap/src
     ${CMAKE_SOURCE_DIR}/vendor/glad
+    ${CMAKE_SOURCE_DIR}/vendor/stb
 )
 
 # GLFW static library (MinGW assumed)

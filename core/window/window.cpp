@@ -30,10 +30,9 @@ bool WindowManager::initWindow()
         glfwTerminate();
         return false; // Return false on failure
     }
-
     // Set the framebuffer size callback
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
-
+    
     return true; // Return true on success
 }
 
@@ -45,6 +44,7 @@ bool WindowManager::openGL()
         std::cerr << "Failed to initialize GLAD" << std::endl;
         return false;
     }
+    glEnable(GL_DEPTH_TEST);
     std::cout << "OpenGL version: " << glGetString(GL_VERSION) << std::endl;
 
     renderer.shaderLoader();
@@ -54,6 +54,8 @@ bool WindowManager::openGL()
 void WindowManager::mainLoop()
 {
     renderer.shaderLink();
+    renderer.loadTexture();
+
     while (!glfwWindowShouldClose(window))
     {
         // input
@@ -62,8 +64,10 @@ void WindowManager::mainLoop()
 
         // Render
         // ------
-        glClearColor(1.2f, 0.3f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
+        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
 
         renderer.drawCallback();
 

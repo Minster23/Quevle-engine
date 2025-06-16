@@ -3,7 +3,7 @@
 #include <glad.h> // Include GLAD first
 
 #define GLFW_INCLUDE_NONE // Tell GLFW not to include the system GL header
-#include <GLFW/glfw3.h> // Include GLFW after GLAD and defining GLFW_INCLUDE_NONE
+#include <GLFW/glfw3.h>   // Include GLFW after GLAD and defining GLFW_INCLUDE_NONE
 
 #include <stdexcept>
 #include <cstdlib>
@@ -15,6 +15,8 @@ namespace QuavleEngine
     class WindowManager
     {
     public:
+        const unsigned int SCR_WIDTH = 800;
+        const unsigned int SCR_HEIGHT = 600;
         // initWindow should return bool, not int
         bool initWindow();
         bool openGL();
@@ -27,9 +29,5 @@ namespace QuavleEngine
 
         static void framebuffer_size_callback(GLFWwindow *window, int width, int height);
         void processInput(GLFWwindow *window);
-
-        // settings
-        const unsigned int SCR_WIDTH = 800;
-        const unsigned int SCR_HEIGHT = 600;
     };
 }

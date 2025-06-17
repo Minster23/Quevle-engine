@@ -6,7 +6,12 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <core/renderer/renderer.hpp>
+#include <fstream>
+#include <sstream>
 
+//! BESOK PISAHKAN RENDERER LIGHT DAN JUGA ENTITY
+
+glm::vec3 lightPos(1.2f, 6.0f, 2.0f);
 
     float vertices[] = {
         -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
@@ -51,25 +56,7 @@
         -0.5f,  0.5f,  0.5f,  0.0f, 0.0f,
         -0.5f,  0.5f, -0.5f,  0.0f, 1.0f
     };
-    // world space positions of our cubes
-    glm::vec3 cubePositions[] = {
-        glm::vec3( 0.0f,  0.0f,  0.0f),
-        glm::vec3( 2.0f,  5.0f, -15.0f),
-        glm::vec3(-1.5f, -2.2f, -2.5f),
-        glm::vec3(-3.8f, -2.0f, -12.3f),
-        glm::vec3( 2.4f, -0.4f, -3.5f),
-        glm::vec3(-1.7f,  3.0f, -7.5f),
-        glm::vec3( 1.3f, -2.0f, -2.5f),
-        glm::vec3( 1.5f,  2.0f, -2.5f),
-        glm::vec3( 1.5f,  0.2f, -1.5f),
-        glm::vec3(-1.3f,  1.0f, -1.5f)
-    };
-
-
-unsigned int indices[] = {
-    0, 1, 3, // first triangle
-    1, 2, 3  // second triangle
-};
+// world space positions of our cubes
 
 using namespace QuavleEngine;
 
@@ -79,56 +66,65 @@ WindowManager windowManager;
 void Renderer::init()
 {
     shaderLoader(); //* Memuat Shader
-    shaderLink();  //* Menghubungkan Shader
+    shaderLink();   //* Menghubungkan Shader
+    LightShader();
+    shaderLoaderLight(); //* Memuat Shader untuk Lampu
     loadTexture(); //* Memuat Texture
-    cam.init(); //* Memuat/Menyiapkan camera
+    cam.init();    //* Memuat/Menyiapkan camera
+}
+
+std::string Renderer::readFile(const std::string &path)
+{
+    std::ifstream file(path);
+    std::stringstream buffer;
+    buffer << file.rdbuf();
+    return buffer.str();
 }
 
 void Renderer::shaderLoader()
 {
-    // build and compile our shader program
-    // ------------------------------------
-    // vertex shader
+    std::string vertSource = readFile("D:/QuavleEngine/utils/shader/vertex.glsl");
+    std::string fragSource = readFile("D:/QuavleEngine/utils/shader/fragment.glsl");
+
+    const char *vertexShaderSource = vertSource.c_str();
+    const char *fragmentShaderSource = fragSource.c_str();
+
     vertexShader = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
     glCompileShader(vertexShader);
-    // check for shader compile errors
     glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
     if (!success)
     {
         glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n"
+        std::cout << "ERROR::VERTEX::COMPILATION_FAILED\n"
                   << infoLog << std::endl;
     }
-    // fragment shader
+
     fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
     glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
     glCompileShader(fragmentShader);
-    // check for shader compile errors
     glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
     if (!success)
     {
         glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n"
+        std::cout << "ERROR::FRAGMENT::COMPILATION_FAILED\n"
                   << infoLog << std::endl;
     }
-    // link shaders
+
     shaderProgram = glCreateProgram();
     glAttachShader(shaderProgram, vertexShader);
     glAttachShader(shaderProgram, fragmentShader);
     glLinkProgram(shaderProgram);
-    // check for linking errors
     glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
     if (!success)
     {
         glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n"
+        std::cout << "ERROR::SHADER::LINKING_FAILED\n"
                   << infoLog << std::endl;
     }
+
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
-
-    mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
 }
 
 void Renderer::shaderLink()
@@ -142,13 +138,13 @@ void Renderer::shaderLink()
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
     // position attribute
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *)0);
     glEnableVertexAttribArray(0);
     // texture coord attribute
-    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *)(3 * sizeof(float)));
     glEnableVertexAttribArray(2);
 }
 
@@ -159,16 +155,16 @@ void Renderer::loadTexture()
     glBindTexture(GL_TEXTURE_2D, texture1);
 
     // Texture wrapping/filtering options
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);	
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR); 
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
     // Load image using stb_image
     int width, height, nrChannels;
-    stbi_set_flip_vertically_on_load(true);
+    stbi_set_flip_vertically_on_load(false);
     std::string texturePath = "D:/ReaperMedia/Compositing/Media/tex.png";
-    unsigned char* data = stbi_load(texturePath.c_str(), &width, &height, &nrChannels, 0);
+    unsigned char *data = stbi_load(texturePath.c_str(), &width, &height, &nrChannels, 0);
 
     if (data)
     {
@@ -179,7 +175,8 @@ void Renderer::loadTexture()
             format = GL_RGB;
         else if (nrChannels == 4)
             format = GL_RGBA;
-        else {
+        else
+        {
             std::cout << "Unsupported texture format: " << nrChannels << " channels\n";
             stbi_image_free(data);
             return;
@@ -196,18 +193,78 @@ void Renderer::loadTexture()
     stbi_image_free(data);
 }
 
+void Renderer::shaderLoaderLight()
+{
+    std::string vertSource = readFile("D:/QuavleEngine/utils/shader/lightVert.glsl");
+    std::string fragSource = readFile("D:/QuavleEngine/utils/shader/lightFrag.glsl");
+
+    const char *vertexShaderSource = vertSource.c_str();
+    const char *fragmentShaderSource = fragSource.c_str();
+
+    vertexShaderLight = glCreateShader(GL_VERTEX_SHADER);
+    glShaderSource(vertexShaderLight, 1, &vertexShaderSource, NULL);
+    glCompileShader(vertexShaderLight);
+    glGetShaderiv(vertexShaderLight, GL_COMPILE_STATUS, &success);
+    if (!success)
+    {
+        glGetShaderInfoLog(vertexShaderLight, 512, NULL, infoLog);
+        std::cout << "ERROR::VERTEX::COMPILATION_FAILED\n"
+                  << infoLog << std::endl;
+    }
+
+    fragmentShaderLight = glCreateShader(GL_FRAGMENT_SHADER);
+    glShaderSource(fragmentShaderLight, 1, &fragmentShaderSource, NULL);
+    glCompileShader(fragmentShaderLight);
+    glGetShaderiv(fragmentShaderLight, GL_COMPILE_STATUS, &success);
+    if (!success)
+    {
+        glGetShaderInfoLog(fragmentShaderLight, 512, NULL, infoLog);
+        std::cout << "ERROR::FRAGMENT::COMPILATION_FAILED\n"
+                  << infoLog << std::endl;
+    }
+
+    shaderProgramLight = glCreateProgram();
+    glAttachShader(shaderProgramLight, vertexShaderLight);
+    glAttachShader(shaderProgramLight, fragmentShaderLight);
+    glLinkProgram(shaderProgramLight);
+    glGetProgramiv(shaderProgramLight, GL_LINK_STATUS, &success);
+    if (!success)
+    {
+        glGetProgramInfoLog(shaderProgramLight, 512, NULL, infoLog);
+        std::cout << "ERROR::SHADER::LINKING_FAILED\n"
+                  << infoLog << std::endl;
+    }
+
+    glDeleteShader(vertexShaderLight);
+    glDeleteShader(fragmentShaderLight);
+}
+
+void Renderer::LightShader()
+{
+    glGenVertexArrays(1, &lightCubeVAO);
+    glBindVertexArray(lightCubeVAO);
+
+    glBindBuffer(GL_ARRAY_BUFFER, lightCubeVBO);
+    // note that we update the lamp's position attribute's stride to reflect the updated buffer data
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *)0);
+    glEnableVertexAttribArray(0);
+}
 
 void Renderer::drawCallback()
 {
+    mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
     cam.update(); //* Update camera position and view matrix
 
-    glUseProgram(shaderProgram); 
-
-    // Set the texture
+    glUseProgram(shaderProgram);
+    // Set the texture for shaderProgram
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, texture1);
     glUniform1i(glGetUniformLocation(shaderProgram, "texture1"), 0); // texture unit 0
 
+    glUniform3fv(glGetUniformLocation(shaderProgram, "objectColor"), 1, glm::value_ptr(glm::vec3(1.0f, 0.5f, 0.31f)));
+    glUniform3fv(glGetUniformLocation(shaderProgram, "lightColor"), 1, glm::value_ptr(glm::vec3(1.0f, 1.0f, 1.0f)));
+    glUniform3fv(glGetUniformLocation(shaderProgram, "lightPos"), 1, glm::value_ptr(lightPos));
+    glUniform3fv(glGetUniformLocation(shaderProgram, "viewPos"), 1, glm::value_ptr(cam.cameraPos));
 
     float aspectRatio = static_cast<float>(mode->width) / static_cast<float>(mode->height);
     // Set the projection matrix
@@ -217,18 +274,29 @@ void Renderer::drawCallback()
     glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
     // Draw 10 cubes
     glBindVertexArray(VAO);
-    for (unsigned int i = 0; i < 10; i++)
-    {
-        glm::mat4 model = glm::mat4(1.0f);
-        model = glm::translate(model, cubePositions[i]);
-        float angle = 20.0f * i;
-        model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
 
-        glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        glDrawArrays(GL_TRIANGLES, 0, 36);
-    }
+    glm::mat4 model = glm::mat4(1.0f);
+    model = glm::translate(model, glm::vec3(0.0f, 0.0f, -3.0f)); // Move the cube back
+
+    glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
+    glDrawArrays(GL_TRIANGLES, 0, 36);
+
+    // Render with shaderProgramLight
+    glUseProgram(shaderProgramLight);
+    glm::mat4 modelLight = glm::mat4(1.0f);
+    modelLight = glm::translate(modelLight, lightPos);
+    modelLight = glm::scale(modelLight, glm::vec3(0.2f)); // Scale down the light cube
+    glUniformMatrix4fv(glGetUniformLocation(shaderProgramLight, "model"), 1, GL_FALSE, glm::value_ptr(modelLight));
+    glUniformMatrix4fv(glGetUniformLocation(shaderProgramLight, "view"), 1, GL_FALSE, glm::value_ptr(cam.getViewMatrix()));
+    glUniformMatrix4fv(glGetUniformLocation(shaderProgramLight, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
+
+    glBindVertexArray(lightCubeVAO);
+    glDrawArrays(GL_TRIANGLES, 0, 36);
+
+    float time = glfwGetTime();
+    lightPos.x = 5.0f * cos(time);
+    lightPos.z = 5.0f * sin(time);
 }
-
 
 void Renderer::drawCleanup()
 {

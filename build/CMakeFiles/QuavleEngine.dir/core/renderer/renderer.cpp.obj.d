@@ -416,4 +416,5 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tree.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_map.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
+ D:/QuavleEngine/utils/camera/camera.hpp

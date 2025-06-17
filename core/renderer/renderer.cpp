@@ -7,6 +7,7 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <core/renderer/renderer.hpp>
 
+
     float vertices[] = {
         -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
          0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
@@ -72,6 +73,17 @@ unsigned int indices[] = {
 
 using namespace QuavleEngine;
 
+WindowManager windowManager;
+// camera camR; // Remove global camera instance, it's now a member of Renderer
+
+void Renderer::init()
+{
+    shaderLoader(); //* Memuat Shader
+    shaderLink();  //* Menghubungkan Shader
+    loadTexture(); //* Memuat Texture
+    cam.init(); //* Memuat/Menyiapkan camera
+}
+
 void Renderer::shaderLoader()
 {
     // build and compile our shader program
@@ -115,6 +127,8 @@ void Renderer::shaderLoader()
     }
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
+
+    mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
 }
 
 void Renderer::shaderLink()
@@ -185,22 +199,22 @@ void Renderer::loadTexture()
 
 void Renderer::drawCallback()
 {
-    glUseProgram(shaderProgram); // Ensure the shader is being used before setting uniforms
+    cam.update(); //* Update camera position and view matrix
+
+    glUseProgram(shaderProgram); 
 
     // Set the texture
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, texture1);
     glUniform1i(glGetUniformLocation(shaderProgram, "texture1"), 0); // texture unit 0
 
-    // Create transformation matrices
-    glm::mat4 view = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -3.0f));
-    float aspectRatio = static_cast<float>(SCR_WIDTH) / static_cast<float>(SCR_HEIGHT);
-    glm::mat4 projection = glm::perspective(glm::radians(45.0f), aspectRatio, 0.1f, 100.0f);
 
-    // Send matrices to the shader
-    glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "view"), 1, GL_FALSE, glm::value_ptr(view));
+    float aspectRatio = static_cast<float>(mode->width) / static_cast<float>(mode->height);
+    // Set the projection matrix
+    glm::mat4 projection = glm::perspective(glm::radians(cam.fov), aspectRatio, 0.1f, 100.0f);
+    // Use the view matrix from the camera object
+    glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "view"), 1, GL_FALSE, glm::value_ptr(cam.getViewMatrix()));
     glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
-
     // Draw 10 cubes
     glBindVertexArray(VAO);
     for (unsigned int i = 0; i < 10; i++)
@@ -213,7 +227,6 @@ void Renderer::drawCallback()
         glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
         glDrawArrays(GL_TRIANGLES, 0, 36);
     }
-
 }
 
 

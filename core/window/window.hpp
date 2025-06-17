@@ -15,8 +15,7 @@ namespace QuavleEngine
     class WindowManager
     {
     public:
-        const unsigned int SCR_WIDTH = 800;
-        const unsigned int SCR_HEIGHT = 600;
+        const GLFWvidmode* mode;
         // initWindow should return bool, not int
         bool initWindow();
         bool openGL();
@@ -28,6 +27,8 @@ namespace QuavleEngine
         GLFWwindow *window;
 
         static void framebuffer_size_callback(GLFWwindow *window, int width, int height);
+        static void mouse_callback(GLFWwindow* window, double xpos, double ypos);
+        static void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
         void processInput(GLFWwindow *window);
     };
 }

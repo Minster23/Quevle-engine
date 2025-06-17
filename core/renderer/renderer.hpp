@@ -3,6 +3,7 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <string>
+#include <utils/camera/camera.hpp> // Include camera definition
 
 namespace QuavleEngine
 {
@@ -10,6 +11,9 @@ namespace QuavleEngine
     class Renderer
     {
     public:
+        camera cam; // Camera as a member of Renderer
+
+        void init();
         void shaderLoader();
         void shaderLink();
         void drawCallback();
@@ -24,12 +28,12 @@ namespace QuavleEngine
         unsigned int shaderProgram;
         unsigned int VBO, VAO, EBO;
 
-        const unsigned int SCR_WIDTH = 800;
-        const unsigned int SCR_HEIGHT = 600;
-
+        //* Vertex data for a simple quad
         int width, height, nrChannels;
         unsigned int texture1, texture2;
 
+        //* Window and OpenGL context
+        const GLFWvidmode* mode;
         const char *vertexShaderSource = "#version 330 core\n"
                                          "layout (location = 0) in vec3 aPos;\n"
                                          "layout (location = 1) in vec3 aColor;\n"

@@ -206,11 +206,41 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/window/window.cpp.s"
 	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\window\window.cpp -o CMakeFiles\QuavleEngine.dir\core\window\window.cpp.s
 
+CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
+CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
+CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj: D:/QuavleEngine/utils/camera/camera.cpp
+CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj -MF CMakeFiles\QuavleEngine.dir\utils\camera\camera.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\utils\camera\camera.cpp.obj -c D:\QuavleEngine\utils\camera\camera.cpp
+
+CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.i"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\utils\camera\camera.cpp > CMakeFiles\QuavleEngine.dir\utils\camera\camera.cpp.i
+
+CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.s"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\utils\camera\camera.cpp -o CMakeFiles\QuavleEngine.dir\utils\camera\camera.cpp.s
+
+CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
+CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
+CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj: D:/QuavleEngine/utils/lightning/lightning.cpp
+CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj -MF CMakeFiles\QuavleEngine.dir\utils\lightning\lightning.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\utils\lightning\lightning.cpp.obj -c D:\QuavleEngine\utils\lightning\lightning.cpp
+
+CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.i"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\utils\lightning\lightning.cpp > CMakeFiles\QuavleEngine.dir\utils\lightning\lightning.cpp.i
+
+CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.s"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\utils\lightning\lightning.cpp -o CMakeFiles\QuavleEngine.dir\utils\lightning\lightning.cpp.s
+
 CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj: CMakeFiles/QuavleEngine.dir/includes_C.rsp
 CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj: D:/QuavleEngine/vendor/glad/glad.c
 CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj"
 	F:\Devtool\mysys2\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj -MF CMakeFiles\QuavleEngine.dir\vendor\glad\glad.c.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\glad\glad.c.obj -c D:\QuavleEngine\vendor\glad\glad.c
 
 CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.i: cmake_force
@@ -232,6 +262,8 @@ QuavleEngine_OBJECTS = \
 "CMakeFiles/QuavleEngine.dir/application/application.cpp.obj" \
 "CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj" \
 "CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj" \
+"CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj" \
+"CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj" \
 "CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj"
 
 # External object files for target QuavleEngine
@@ -246,13 +278,15 @@ QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/application/application.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj
+QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj
+QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/build.make
 QuavleEngine.exe: D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/lib-mingw-w64/libglfw3.a
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/linkLibs.rsp
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/objects1.rsp
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable QuavleEngine.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable QuavleEngine.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\QuavleEngine.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

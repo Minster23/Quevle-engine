@@ -8,8 +8,6 @@
 using namespace QuavleEngine;
 Renderer renderer;
 
-
-
 bool WindowManager::initWindow()
 {
     glfwInit();
@@ -18,8 +16,15 @@ bool WindowManager::initWindow()
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
+    // Initialize mode after glfwInit()
+    mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
+    if (!mode) {
+        std::cerr << "Failed to get video mode for primary monitor" << std::endl;
+        glfwTerminate();
+        return false;
+    }
 
-    window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Quevle Engine", nullptr, nullptr);
+    window = glfwCreateWindow(mode->width, mode->height, "Quevle Engine", nullptr, nullptr);
 
     // glad: load all OpenGL function pointers
     // Note: GLAD initialization should happen *after* creating the window and making the context current.
@@ -30,9 +35,11 @@ bool WindowManager::initWindow()
         glfwTerminate();
         return false; // Return false on failure
     }
-    // Set the framebuffer size callback
+    //* nyeting callbacks
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
-    
+    glfwSetCursorPosCallback(window, mouse_callback);
+    glfwSetScrollCallback(window, scroll_callback);
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     return true; // Return true on success
 }
 
@@ -46,16 +53,15 @@ bool WindowManager::openGL()
     }
     glEnable(GL_DEPTH_TEST);
     std::cout << "OpenGL version: " << glGetString(GL_VERSION) << std::endl;
-
-    renderer.shaderLoader();
+    
+    renderer.init(); // Initialize renderer (includes camera init)
     return true;
 }
 
 void WindowManager::mainLoop()
 {
-    renderer.shaderLink();
-    renderer.loadTexture();
-
+    // Initialization moved to renderer.initialize()
+    
     while (!glfwWindowShouldClose(window))
     {
         // input
@@ -88,6 +94,59 @@ void WindowManager::processInput(GLFWwindow *window)
 {
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
+
+    float cameraSpeed = static_cast<float>(2.5 * renderer.cam.deltaTime); // Use renderer's camera deltaTime
+    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+         renderer.cam.cameraPos += cameraSpeed * renderer.cam.cameraFront; // Update renderer's camera
+    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+         renderer.cam.cameraPos -= cameraSpeed * renderer.cam.cameraFront; // Update renderer's camera
+    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+         renderer.cam.cameraPos -= glm::normalize(glm::cross( renderer.cam.cameraFront,  renderer.cam.cameraUp)) * cameraSpeed; // Update renderer's camera
+    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+         renderer.cam.cameraPos += glm::normalize(glm::cross( renderer.cam.cameraFront,  renderer.cam.cameraUp)) * cameraSpeed; // Update renderer's camera
+}
+
+
+void WindowManager::mouse_callback(GLFWwindow* window, double xpos, double ypos)
+{
+    if (renderer.cam.firstMouse)
+    {
+        renderer.cam.lastX = xpos;
+        renderer.cam.lastY = ypos;
+        renderer.cam.firstMouse = false;
+    }
+  
+    float xoffset = xpos - renderer.cam.lastX;
+    float yoffset = renderer.cam.lastY - ypos; 
+    renderer.cam.lastX = xpos;
+    renderer.cam.lastY = ypos;
+
+    float sensitivity = 0.1f;
+    xoffset *= sensitivity;
+    yoffset *= sensitivity;
+
+    renderer.cam.yaw   += xoffset;
+    renderer.cam.pitch += yoffset;
+
+    if(renderer.cam.pitch > 89.0f)
+        renderer.cam.pitch = 89.0f;
+    if(renderer.cam.pitch < -89.0f)
+        renderer.cam.pitch = -89.0f;
+
+    glm::vec3 direction;
+    direction.x = cos(glm::radians(renderer.cam.yaw)) * cos(glm::radians(renderer.cam.pitch));
+    direction.y = sin(glm::radians(renderer.cam.pitch));
+    direction.z = sin(glm::radians(renderer.cam.yaw)) * cos(glm::radians(renderer.cam.pitch));
+    renderer.cam.cameraFront = glm::normalize(direction);
+}  
+
+void WindowManager::scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
+{
+    renderer.cam.fov -= (float)yoffset;
+    if (renderer.cam.fov < 1.0f)
+        renderer.cam.fov = 1.0f;
+    if (renderer.cam.fov > 45.0f)
+        renderer.cam.fov = 45.0f;
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes

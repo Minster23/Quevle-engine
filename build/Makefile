@@ -224,6 +224,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+utils/camera/camera.obj: utils/camera/camera.cpp.obj
+.PHONY : utils/camera/camera.obj
+
+# target to build an object file
+utils/camera/camera.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj
+.PHONY : utils/camera/camera.cpp.obj
+
+utils/camera/camera.i: utils/camera/camera.cpp.i
+.PHONY : utils/camera/camera.i
+
+# target to preprocess a source file
+utils/camera/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.i
+.PHONY : utils/camera/camera.cpp.i
+
+utils/camera/camera.s: utils/camera/camera.cpp.s
+.PHONY : utils/camera/camera.s
+
+# target to generate assembly for a file
+utils/camera/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.s
+.PHONY : utils/camera/camera.cpp.s
+
+utils/lightning/lightning.obj: utils/lightning/lightning.cpp.obj
+.PHONY : utils/lightning/lightning.obj
+
+# target to build an object file
+utils/lightning/lightning.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj
+.PHONY : utils/lightning/lightning.cpp.obj
+
+utils/lightning/lightning.i: utils/lightning/lightning.cpp.i
+.PHONY : utils/lightning/lightning.i
+
+# target to preprocess a source file
+utils/lightning/lightning.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.i
+.PHONY : utils/lightning/lightning.cpp.i
+
+utils/lightning/lightning.s: utils/lightning/lightning.cpp.s
+.PHONY : utils/lightning/lightning.s
+
+# target to generate assembly for a file
+utils/lightning/lightning.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.s
+.PHONY : utils/lightning/lightning.cpp.s
+
 vendor/glad/glad.obj: vendor/glad/glad.c.obj
 .PHONY : vendor/glad/glad.obj
 
@@ -389,6 +437,12 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... utils/camera/camera.obj
+	@echo ... utils/camera/camera.i
+	@echo ... utils/camera/camera.s
+	@echo ... utils/lightning/lightning.obj
+	@echo ... utils/lightning/lightning.i
+	@echo ... utils/lightning/lightning.s
 	@echo ... vendor/glad/glad.obj
 	@echo ... vendor/glad/glad.i
 	@echo ... vendor/glad/glad.s

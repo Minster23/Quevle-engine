@@ -23,6 +23,10 @@ file(GLOB IMGUI_SOURCES
 file(GLOB_RECURSE ENGINE_SOURCES
     core/*.cpp core/*.hpp
     application/*.cpp application/*.hpp
+    utils/camera/*.cpp utils/camera/*.hpp
+    utils/lightning/*.cpp utils/lightning/*.hpp
+    core/renderer/*.cpp core/renderer/*.hpp
+
 )
 
 # file(GLOB_RECURSE VK_BOOTSTRAP_SOURCES

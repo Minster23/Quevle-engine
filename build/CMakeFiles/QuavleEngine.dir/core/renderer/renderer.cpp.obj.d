@@ -422,4 +422,5 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/fstream \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fstream.tcc
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fstream.tcc \
+ D:/QuavleEngine/utils/Debug.h D:/QuavleEngine/utils/fileReader.hpp

@@ -8,8 +8,9 @@
 #include <core/renderer/renderer.hpp>
 #include <fstream>
 #include <sstream>
+#include <utils/Debug.h>
+#include <utils/fileReader.hpp>
 
-//! TODO: PISAHKAN RENDERER LIGHT DAN JUGA ENTITY
 
 glm::vec3 lightPos(1.2f, 6.0f, 2.0f);
 
@@ -66,6 +67,7 @@ WindowManager windowManager;
 
 void Renderer::init()
 {
+    DEBUG_PRINT("Renderer::init() called");
     shaderLoader(); //* Memuat Shader
     shaderLink();   //* Menghubungkan Shader
     LightShader();
@@ -74,16 +76,10 @@ void Renderer::init()
     cam.init();    //* Memuat/Menyiapkan camera
 }
 
-std::string Renderer::readFile(const std::string &path)
-{
-    std::ifstream file(path);
-    std::stringstream buffer;
-    buffer << file.rdbuf();
-    return buffer.str();
-}
 
 void Renderer::shaderLoader()
 {
+    DEBUG_PRINT("Renderer::shaderLoader() called");
     std::string vertSource = readFile("D:/QuavleEngine/utils/shader/vertex.glsl");
     std::string fragSource = readFile("D:/QuavleEngine/utils/shader/fragment.glsl");
 
@@ -97,8 +93,7 @@ void Renderer::shaderLoader()
     if (!success)
     {
         glGetShaderInfoLog(objData.vertexShader, 512, NULL, infoLog);
-        std::cout << "ERROR::VERTEX::COMPILATION_FAILED\n"
-                  << infoLog << std::endl;
+        DEBUG_PRINT("ERROR::VERTEX::COMPILATION_FAILED\n" + std::string(infoLog));
     }
 
     objData.fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
@@ -108,8 +103,7 @@ void Renderer::shaderLoader()
     if (!success)
     {
         glGetShaderInfoLog(objData.fragmentShader, 512, NULL, infoLog);
-        std::cout << "ERROR::FRAGMENT::COMPILATION_FAILED\n"
-                  << infoLog << std::endl;
+        DEBUG_PRINT("ERROR::FRAGMENT::COMPILATION_FAILED\n" + std::string(infoLog));
     }
 
     objData.shaderProgram = glCreateProgram();
@@ -120,8 +114,7 @@ void Renderer::shaderLoader()
     if (!success)
     {
         glGetProgramInfoLog(objData.shaderProgram, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::LINKING_FAILED\n"
-                  << infoLog << std::endl;
+        DEBUG_PRINT("ERROR::SHADER::LINKING_FAILED\n" + std::string(infoLog));
     }
 
     glDeleteShader(objData.vertexShader);
@@ -166,7 +159,7 @@ void Renderer::loadTexture()
 
     // Load image using stb_image
     int width, height, nrChannels;
-    stbi_set_flip_vertically_on_load(false);
+    stbi_set_flip_vertically_on_load(true);
     std::string texturePath = "D:/ReaperMedia/Compositing/Media/tex.png";
     unsigned char *data = stbi_load(texturePath.c_str(), &width, &height, &nrChannels, 0);
 
@@ -256,6 +249,7 @@ void Renderer::LightShader()
 
 void Renderer::drawCallback()
 {
+    DEBUG_PRINT("Renderer::drawCallback() called");
     mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
     cam.update(); //* Update camera position and view matrix
 
@@ -269,6 +263,18 @@ void Renderer::drawCallback()
     glUniform3fv(glGetUniformLocation(objData.shaderProgram, "lightColor"), 1, glm::value_ptr(glm::vec3(1.0f, 1.0f, 1.0f)));
     glUniform3fv(glGetUniformLocation(objData.shaderProgram, "lightPos"), 1, glm::value_ptr(lightPos));
     glUniform3fv(glGetUniformLocation(objData.shaderProgram, "viewPos"), 1, glm::value_ptr(cam.cameraPos));
+
+    // Set material properties
+    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "material.ambient"), 1, glm::value_ptr(glm::vec3(1.0f, 0.5f, 0.31f)));
+    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "material.diffuse"), 1, glm::value_ptr(glm::vec3(1.0f, 0.5f, 0.31f)));
+    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "material.specular"), 1, glm::value_ptr(glm::vec3(0.5f, 0.5f, 0.5f)));
+    glUniform1f(glGetUniformLocation(objData.shaderProgram, "material.shininess"), 32.0f);
+
+    // Set light properties
+    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "light.position"), 1, glm::value_ptr(lightPos));
+    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "light.ambient"), 1, glm::value_ptr(glm::vec3(0.2f, 0.2f, 0.2f)));
+    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "light.diffuse"), 1, glm::value_ptr(glm::vec3(0.5f, 0.5f, 0.5f)));
+    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "light.specular"), 1, glm::value_ptr(glm::vec3(1.0f, 1.0f, 1.0f)));
 
     float aspectRatio = static_cast<float>(mode->width) / static_cast<float>(mode->height);
     // Set the projection matrix

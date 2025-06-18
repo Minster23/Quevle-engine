@@ -35,7 +35,6 @@ namespace QuavleEngine
 
         const GLFWvidmode* mode;
 
-        std::string readFile(const std::string& path);
         ObjectEntity::ObjectData objData;
     };
 }

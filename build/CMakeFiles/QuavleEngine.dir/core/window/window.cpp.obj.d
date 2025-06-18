@@ -384,6 +384,7 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/string.h \
  F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
+ D:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/optional \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/set \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_set.h \

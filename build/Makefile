@@ -152,6 +152,30 @@ application/application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/application/application.cpp.s
 .PHONY : application/application.cpp.s
 
+core/renderer/entity/objectEntity.obj: core/renderer/entity/objectEntity.cpp.obj
+.PHONY : core/renderer/entity/objectEntity.obj
+
+# target to build an object file
+core/renderer/entity/objectEntity.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj
+.PHONY : core/renderer/entity/objectEntity.cpp.obj
+
+core/renderer/entity/objectEntity.i: core/renderer/entity/objectEntity.cpp.i
+.PHONY : core/renderer/entity/objectEntity.i
+
+# target to preprocess a source file
+core/renderer/entity/objectEntity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.i
+.PHONY : core/renderer/entity/objectEntity.cpp.i
+
+core/renderer/entity/objectEntity.s: core/renderer/entity/objectEntity.cpp.s
+.PHONY : core/renderer/entity/objectEntity.s
+
+# target to generate assembly for a file
+core/renderer/entity/objectEntity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.s
+.PHONY : core/renderer/entity/objectEntity.cpp.s
+
 core/renderer/renderer.obj: core/renderer/renderer.cpp.obj
 .PHONY : core/renderer/renderer.obj
 
@@ -428,6 +452,9 @@ help:
 	@echo ... application/application.obj
 	@echo ... application/application.i
 	@echo ... application/application.s
+	@echo ... core/renderer/entity/objectEntity.obj
+	@echo ... core/renderer/entity/objectEntity.i
+	@echo ... core/renderer/entity/objectEntity.s
 	@echo ... core/renderer/renderer.obj
 	@echo ... core/renderer/renderer.i
 	@echo ... core/renderer/renderer.s

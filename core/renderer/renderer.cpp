@@ -9,9 +9,11 @@
 #include <fstream>
 #include <sstream>
 
-//! BESOK PISAHKAN RENDERER LIGHT DAN JUGA ENTITY
+//! TODO: PISAHKAN RENDERER LIGHT DAN JUGA ENTITY
 
 glm::vec3 lightPos(1.2f, 6.0f, 2.0f);
+
+
     float vertices[] = {
         -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
          0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
@@ -88,56 +90,56 @@ void Renderer::shaderLoader()
     const char *vertexShaderSource = vertSource.c_str();
     const char *fragmentShaderSource = fragSource.c_str();
 
-    vertexShader = glCreateShader(GL_VERTEX_SHADER);
-    glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
-    glCompileShader(vertexShader);
-    glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
+    objData.vertexShader = glCreateShader(GL_VERTEX_SHADER);
+    glShaderSource(objData.vertexShader, 1, &vertexShaderSource, NULL);
+    glCompileShader(objData.vertexShader);
+    glGetShaderiv(objData.vertexShader, GL_COMPILE_STATUS, &success);
     if (!success)
     {
-        glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
+        glGetShaderInfoLog(objData.vertexShader, 512, NULL, infoLog);
         std::cout << "ERROR::VERTEX::COMPILATION_FAILED\n"
                   << infoLog << std::endl;
     }
 
-    fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-    glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
-    glCompileShader(fragmentShader);
-    glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
+    objData.fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+    glShaderSource(objData.fragmentShader, 1, &fragmentShaderSource, NULL);
+    glCompileShader(objData.fragmentShader);
+    glGetShaderiv(objData.fragmentShader, GL_COMPILE_STATUS, &success);
     if (!success)
     {
-        glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
+        glGetShaderInfoLog(objData.fragmentShader, 512, NULL, infoLog);
         std::cout << "ERROR::FRAGMENT::COMPILATION_FAILED\n"
                   << infoLog << std::endl;
     }
 
-    shaderProgram = glCreateProgram();
-    glAttachShader(shaderProgram, vertexShader);
-    glAttachShader(shaderProgram, fragmentShader);
-    glLinkProgram(shaderProgram);
-    glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
+    objData.shaderProgram = glCreateProgram();
+    glAttachShader(objData.shaderProgram, objData.vertexShader);
+    glAttachShader(objData.shaderProgram, objData.fragmentShader);
+    glLinkProgram(objData.shaderProgram);
+    glGetProgramiv(objData.shaderProgram, GL_LINK_STATUS, &success);
     if (!success)
     {
-        glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
+        glGetProgramInfoLog(objData.shaderProgram, 512, NULL, infoLog);
         std::cout << "ERROR::SHADER::LINKING_FAILED\n"
                   << infoLog << std::endl;
     }
 
-    glDeleteShader(vertexShader);
-    glDeleteShader(fragmentShader);
+    glDeleteShader(objData.vertexShader);
+    glDeleteShader(objData.fragmentShader);
 }
 
 void Renderer::shaderLink()
 {
-    glGenVertexArrays(1, &VAO);
-    glGenBuffers(1, &VBO);
+    glGenVertexArrays(1, &objData.VAO);
+    glGenBuffers(1, &objData.VBO);
 
-    glBindVertexArray(VAO);
+    glBindVertexArray(objData.VAO);
 
 
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBindBuffer(GL_ARRAY_BUFFER, objData.VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
-    glBindVertexArray(VBO);
+    glBindVertexArray(objData.VBO);
 
     // position attribute
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
@@ -153,8 +155,8 @@ void Renderer::shaderLink()
 void Renderer::loadTexture()
 {
     // Generate and bind texture
-    glGenTextures(1, &texture1);
-    glBindTexture(GL_TEXTURE_2D, texture1);
+    glGenTextures(1, &objData.textureID);
+    glBindTexture(GL_TEXTURE_2D, objData.textureID);
 
     // Texture wrapping/filtering options
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
@@ -203,7 +205,7 @@ void Renderer::shaderLoaderLight()
     const char *vertexShaderSource = vertSource.c_str();
     const char *fragmentShaderSource = fragSource.c_str();
 
-    vertexShaderLight = glCreateShader(GL_VERTEX_SHADER);
+    unsigned int vertexShaderLight = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(vertexShaderLight, 1, &vertexShaderSource, NULL);
     glCompileShader(vertexShaderLight);
     glGetShaderiv(vertexShaderLight, GL_COMPILE_STATUS, &success);
@@ -214,7 +216,7 @@ void Renderer::shaderLoaderLight()
                   << infoLog << std::endl;
     }
 
-    fragmentShaderLight = glCreateShader(GL_FRAGMENT_SHADER);
+    unsigned int fragmentShaderLight = glCreateShader(GL_FRAGMENT_SHADER);
     glShaderSource(fragmentShaderLight, 1, &fragmentShaderSource, NULL);
     glCompileShader(fragmentShaderLight);
     glGetShaderiv(fragmentShaderLight, GL_COMPILE_STATUS, &success);
@@ -225,7 +227,7 @@ void Renderer::shaderLoaderLight()
                   << infoLog << std::endl;
     }
 
-    shaderProgramLight = glCreateProgram();
+    unsigned int shaderProgramLight = glCreateProgram();
     glAttachShader(shaderProgramLight, vertexShaderLight);
     glAttachShader(shaderProgramLight, fragmentShaderLight);
     glLinkProgram(shaderProgramLight);
@@ -257,30 +259,30 @@ void Renderer::drawCallback()
     mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
     cam.update(); //* Update camera position and view matrix
 
-    glUseProgram(shaderProgram);
+    glUseProgram(objData.shaderProgram);
     // Set the texture for shaderProgram
     glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, texture1);
-    glUniform1i(glGetUniformLocation(shaderProgram, "texture1"), 0);
+    glBindTexture(GL_TEXTURE_2D, objData.textureID);
+    glUniform1i(glGetUniformLocation(objData.shaderProgram, "texture1"), 0);
 
-    glUniform3fv(glGetUniformLocation(shaderProgram, "objectColor"), 1, glm::value_ptr(glm::vec3(1.0f, 0.5f, 0.31f)));
-    glUniform3fv(glGetUniformLocation(shaderProgram, "lightColor"), 1, glm::value_ptr(glm::vec3(1.0f, 1.0f, 1.0f)));
-    glUniform3fv(glGetUniformLocation(shaderProgram, "lightPos"), 1, glm::value_ptr(lightPos));
-    glUniform3fv(glGetUniformLocation(shaderProgram, "viewPos"), 1, glm::value_ptr(cam.cameraPos));
+    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "objectColor"), 1, glm::value_ptr(glm::vec3(1.0f, 0.5f, 0.31f)));
+    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "lightColor"), 1, glm::value_ptr(glm::vec3(1.0f, 1.0f, 1.0f)));
+    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "lightPos"), 1, glm::value_ptr(lightPos));
+    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "viewPos"), 1, glm::value_ptr(cam.cameraPos));
 
     float aspectRatio = static_cast<float>(mode->width) / static_cast<float>(mode->height);
     // Set the projection matrix
     glm::mat4 projection = glm::perspective(glm::radians(cam.fov), aspectRatio, 0.1f, 100.0f);
     // Use the view matrix from the camera object
-    glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "view"), 1, GL_FALSE, glm::value_ptr(cam.getViewMatrix()));
-    glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
+    glUniformMatrix4fv(glGetUniformLocation(objData.shaderProgram, "view"), 1, GL_FALSE, glm::value_ptr(cam.getViewMatrix()));
+    glUniformMatrix4fv(glGetUniformLocation(objData.shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
     // Draw 10 cubes
-    glBindVertexArray(VAO);
+    glBindVertexArray(objData.VAO);
 
     glm::mat4 model = glm::mat4(1.0f);
     model = glm::translate(model, glm::vec3(0.0f, 0.0f, -3.0f));
 
-    glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
+    glUniformMatrix4fv(glGetUniformLocation(objData.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
     glDrawArrays(GL_TRIANGLES, 0, 36);
 
     // Render with shaderProgramLight
@@ -291,7 +293,7 @@ void Renderer::drawCallback()
     glUniformMatrix4fv(glGetUniformLocation(shaderProgramLight, "model"), 1, GL_FALSE, glm::value_ptr(modelLight));
     glUniformMatrix4fv(glGetUniformLocation(shaderProgramLight, "view"), 1, GL_FALSE, glm::value_ptr(cam.getViewMatrix()));
     glUniformMatrix4fv(glGetUniformLocation(shaderProgramLight, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
-
+    
     glBindVertexArray(lightCubeVAO);
     glDrawArrays(GL_TRIANGLES, 0, 36);
 
@@ -302,6 +304,6 @@ void Renderer::drawCallback()
 
 void Renderer::drawCleanup()
 {
-    glDeleteVertexArrays(1, &VAO);
-    glDeleteBuffers(1, &VBO);
+    glDeleteVertexArrays(1, &objData.VAO);
+    glDeleteBuffers(1, &objData.VBO);
 }

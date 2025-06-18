@@ -456,6 +456,7 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: D:/QuavleEngine/core
   D:/QuavleEngine/core/window/window.hpp \
   D:/QuavleEngine/utils/Debug.h \
   D:/QuavleEngine/utils/camera/camera.hpp \
+  D:/QuavleEngine/utils/fileReader.hpp \
   D:/QuavleEngine/vendor/glad/glad.h \
   D:/QuavleEngine/vendor/glad/khrplatform.h \
   D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/include/GLFW/glfw3.h \
@@ -3823,6 +3824,8 @@ D:/QuavleEngine/vendor/glm/glm/ext/vector_int2_sized.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/ext/vector_int3_sized.hpp:
 
+D:/QuavleEngine/utils/fileReader.hpp:
+
 D:/QuavleEngine/vendor/glm/glm/ext/vector_int4_sized.hpp:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h:
@@ -4051,8 +4054,6 @@ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale:
 
 D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double_precision.hpp:
 
-F:/Devtool/mysys2/ucrt64/include/psdk_inc/_xmitfile.h:
-
 D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float.hpp:
 
 F:/Devtool/mysys2/ucrt64/include/threadpoolapiset.h:
@@ -4258,6 +4259,8 @@ F:/Devtool/mysys2/ucrt64/include/processthreadsapi.h:
 F:/Devtool/mysys2/ucrt64/include/propidl.h:
 
 F:/Devtool/mysys2/ucrt64/include/psdk_inc/_ip_types.h:
+
+F:/Devtool/mysys2/ucrt64/include/psdk_inc/_xmitfile.h:
 
 F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxfp16intrin.h:
 

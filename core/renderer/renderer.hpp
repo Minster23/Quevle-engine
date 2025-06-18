@@ -16,7 +16,7 @@ namespace QuavleEngine
         void init();
         void shaderLoader();
         void shaderLoaderLight();
-        void LightShader();
+        void LightShaderLink();
         void shaderLink();
         void drawCallback();
         void drawCleanup();
@@ -30,7 +30,7 @@ namespace QuavleEngine
         unsigned int vertexShaderLight ,fragmentShaderLight;
         unsigned int shaderProgramLight;
         // unsigned int VBO, VAO;
-        unsigned int lightCubeVAO, lightCubeVBO;
+        unsigned int lightCubeVAO;
         // unsigned int texture1;
 
         const GLFWvidmode* mode;

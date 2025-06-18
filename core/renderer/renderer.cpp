@@ -12,7 +12,7 @@
 #include <utils/fileReader.hpp>
 
 
-glm::vec3 lightPos(1.2f, 6.0f, 2.0f);
+glm::vec3 lightPos(1.0f, 2.0f, 2.0f);
 
 
     float vertices[] = {
@@ -70,8 +70,8 @@ void Renderer::init()
     DEBUG_PRINT("Renderer::init() called");
     shaderLoader(); //* Memuat Shader
     shaderLink();   //* Menghubungkan Shader
-    LightShader();
     shaderLoaderLight(); //* Memuat Shader untuk Lampu
+    LightShaderLink();
     loadTexture(); //* Memuat Texture
     cam.init();    //* Memuat/Menyiapkan camera
 }
@@ -125,8 +125,6 @@ void Renderer::shaderLink()
 {
     glGenVertexArrays(1, &objData.VAO);
     glGenBuffers(1, &objData.VBO);
-
-    glBindVertexArray(objData.VAO);
 
 
     glBindBuffer(GL_ARRAY_BUFFER, objData.VBO);
@@ -192,13 +190,13 @@ void Renderer::loadTexture()
 
 void Renderer::shaderLoaderLight()
 {
-    std::string vertSource = readFile("D:/QuavleEngine/utils/shader/lightVert.glsl");
-    std::string fragSource = readFile("D:/QuavleEngine/utils/shader/lightFrag.glsl");
+    std::string vertSourceLight = readFile("D:/QuavleEngine/utils/shader/lightVert.glsl");
+    std::string fragSourceLight = readFile("D:/QuavleEngine/utils/shader/lightFrag.glsl");
 
-    const char *vertexShaderSource = vertSource.c_str();
-    const char *fragmentShaderSource = fragSource.c_str();
+    const char *vertexShaderSource = vertSourceLight.c_str();
+    const char *fragmentShaderSource = fragSourceLight.c_str();
 
-    unsigned int vertexShaderLight = glCreateShader(GL_VERTEX_SHADER);
+    vertexShaderLight = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(vertexShaderLight, 1, &vertexShaderSource, NULL);
     glCompileShader(vertexShaderLight);
     glGetShaderiv(vertexShaderLight, GL_COMPILE_STATUS, &success);
@@ -209,7 +207,7 @@ void Renderer::shaderLoaderLight()
                   << infoLog << std::endl;
     }
 
-    unsigned int fragmentShaderLight = glCreateShader(GL_FRAGMENT_SHADER);
+    fragmentShaderLight = glCreateShader(GL_FRAGMENT_SHADER);
     glShaderSource(fragmentShaderLight, 1, &fragmentShaderSource, NULL);
     glCompileShader(fragmentShaderLight);
     glGetShaderiv(fragmentShaderLight, GL_COMPILE_STATUS, &success);
@@ -220,7 +218,7 @@ void Renderer::shaderLoaderLight()
                   << infoLog << std::endl;
     }
 
-    unsigned int shaderProgramLight = glCreateProgram();
+    shaderProgramLight = glCreateProgram();
     glAttachShader(shaderProgramLight, vertexShaderLight);
     glAttachShader(shaderProgramLight, fragmentShaderLight);
     glLinkProgram(shaderProgramLight);
@@ -236,14 +234,14 @@ void Renderer::shaderLoaderLight()
     glDeleteShader(fragmentShaderLight);
 }
 
-void Renderer::LightShader()
+void Renderer::LightShaderLink()
 {
     glGenVertexArrays(1, &lightCubeVAO);
     glBindVertexArray(lightCubeVAO);
 
-    glBindBuffer(GL_ARRAY_BUFFER, lightCubeVBO);
+    glBindBuffer(GL_ARRAY_BUFFER, objData.VBO);
     // note that we update the lamp's position attribute's stride to reflect the updated buffer data
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 }
 
@@ -282,30 +280,33 @@ void Renderer::drawCallback()
     // Use the view matrix from the camera object
     glUniformMatrix4fv(glGetUniformLocation(objData.shaderProgram, "view"), 1, GL_FALSE, glm::value_ptr(cam.getViewMatrix()));
     glUniformMatrix4fv(glGetUniformLocation(objData.shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
-    // Draw 10 cubes
-    glBindVertexArray(objData.VAO);
 
     glm::mat4 model = glm::mat4(1.0f);
     model = glm::translate(model, glm::vec3(0.0f, 0.0f, -3.0f));
 
     glUniformMatrix4fv(glGetUniformLocation(objData.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
+    glBindVertexArray(objData.VAO);
     glDrawArrays(GL_TRIANGLES, 0, 36);
 
-    // Render with shaderProgramLight
+
+    // Ensure lightCubeVAO is properly bound and configured
+    glBindVertexArray(lightCubeVAO);
+
+    // Use the shader program for the light object
     glUseProgram(shaderProgramLight);
+
+    // Set transformation matrices for the light object
     glm::mat4 modelLight = glm::mat4(1.0f);
     modelLight = glm::translate(modelLight, lightPos);
-    modelLight = glm::scale(modelLight, glm::vec3(0.2f));
-    glUniformMatrix4fv(glGetUniformLocation(shaderProgramLight, "model"), 1, GL_FALSE, glm::value_ptr(modelLight));
+    modelLight = glm::scale(modelLight, glm::vec3(0.5f)); // Adjusted scale for visibility
+    glUniform3fv(glGetUniformLocation(shaderProgramLight, "objectColor"), 1, glm::value_ptr(glm::vec3(1.0f, 0.5f, 0.31f)));
     glUniformMatrix4fv(glGetUniformLocation(shaderProgramLight, "view"), 1, GL_FALSE, glm::value_ptr(cam.getViewMatrix()));
     glUniformMatrix4fv(glGetUniformLocation(shaderProgramLight, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
-    
-    glBindVertexArray(lightCubeVAO);
+    glUniformMatrix4fv(glGetUniformLocation(shaderProgramLight, "model"), 1, GL_FALSE, glm::value_ptr(modelLight));
+
+    // Render the light object
     glDrawArrays(GL_TRIANGLES, 0, 36);
 
-    float time = glfwGetTime();
-    lightPos.x = 5.0f * cos(time);
-    lightPos.z = 5.0f * sin(time);
 }
 
 void Renderer::drawCleanup()

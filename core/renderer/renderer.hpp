@@ -20,21 +20,16 @@ namespace QuavleEngine
         void shaderLink();
         void drawCallback();
         void drawCleanup();
-        void loadTexture();
+        unsigned int loadTexture(const std::string& texturePath);
         void renderObject(const ObjectEntity::ObjectData& objectData);
 
     private:
         int success;
         char infoLog[512];
-        // unsigned int vertexShader ,fragmentShader;
-        unsigned int vertexShaderLight ,fragmentShaderLight;
-        unsigned int shaderProgramLight;
-        // unsigned int VBO, VAO;
-        unsigned int lightCubeVAO;
-        // unsigned int texture1;
 
         const GLFWvidmode* mode;
 
         ObjectEntity::ObjectData objData;
+        ObjectEntity::LightData lightData;
     };
 }

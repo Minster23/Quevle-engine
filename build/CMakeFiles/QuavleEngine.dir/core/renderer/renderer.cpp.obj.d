@@ -174,6 +174,11 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/aligned_buffer.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_dir.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_ops.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/fstream \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fstream.tcc \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
  D:/QuavleEngine/vendor/stb/stb_image.h \
  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
  F:/Devtool/mysys2/ucrt64/include/stdarg.h \
@@ -416,11 +421,6 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tree.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_map.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
  D:/QuavleEngine/utils/camera/camera.hpp \
  D:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/fstream \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fstream.tcc \
  D:/QuavleEngine/utils/Debug.h D:/QuavleEngine/utils/fileReader.hpp

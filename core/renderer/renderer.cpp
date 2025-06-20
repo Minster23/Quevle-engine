@@ -1,17 +1,34 @@
+// --- Includes ---
 #include <filesystem>
+#include <fstream>
+#include <sstream>
+#include <iostream>
+#include <string>
+
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>
+
 #define GLM_FORCE_RADIANS
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
+
 #include <core/renderer/renderer.hpp>
-#include <fstream>
-#include <sstream>
 #include <utils/Debug.h>
 #include <utils/fileReader.hpp>
 
+// --- Constants ---
+namespace
+{
+    constexpr char VERT_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/vertex.glsl";
+    constexpr char FRAG_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/fragment.glsl";
+    constexpr char LIGHT_VERT_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/lightVert.glsl";
+    constexpr char LIGHT_FRAG_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/lightFrag.glsl";
+    constexpr char DIFFUSE_TEXTURE_PATH[] = "C:/Users/athilah/Downloads/container2.png";
+    constexpr char SPECULAR_TEXTURE_PATH[] = "C:/Users/athilah/Downloads/container2_specular.png";
+}
 
+// --- Cube and Light Data ---
 
 glm::vec3 lightPos(1.0f, 2.0f, 2.0f);
 
@@ -58,30 +75,50 @@ float vertices[] = {
     0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f,
     -0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f,
     -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f};
+// positions all containers
+glm::vec3 cubePositions[] = {
+    glm::vec3(0.0f, 0.0f, 0.0f),
+    glm::vec3(2.0f, 5.0f, -15.0f),
+    glm::vec3(-1.5f, -2.2f, -2.5f),
+    glm::vec3(-3.8f, -2.0f, -12.3f),
+    glm::vec3(2.4f, -0.4f, -3.5f),
+    glm::vec3(-1.7f, 3.0f, -7.5f),
+    glm::vec3(1.3f, -2.0f, -2.5f),
+    glm::vec3(1.5f, 2.0f, -2.5f),
+    glm::vec3(1.5f, 0.2f, -1.5f),
+    glm::vec3(-1.3f, 1.0f, -1.5f)};
 // world space positions of our cubes
+
+glm::vec3 pointLightPositions[] = {
+    glm::vec3(0.7f, 0.2f, 2.0f),
+    glm::vec3(2.3f, -3.3f, -4.0f),
+    glm::vec3(-4.0f, 2.0f, -12.0f),
+    glm::vec3(0.0f, 0.0f, -3.0f)};
+// f
 
 using namespace QuavleEngine;
 
 WindowManager windowManager;
-// camera camR; // Remove global camera instance, it's now a member of Renderer
+
+// --- Renderer Implementation ---
 
 void Renderer::init()
 {
     DEBUG_PRINT("Renderer::init() called");
-    shaderLoader(); //* Memuat Shader
-    shaderLink();   //* Menghubungkan Shader
-    shaderLoaderLight(); //* Memuat Shader untuk Lampu
+    shaderLoader();
+    shaderLink();
+    shaderLoaderLight();
     LightShaderLink();
-    objData.diffuseTextureID = loadTexture("C:/Users/athilah/Downloads/container2.png"); // Initialize diffuse texture
-    objData.specularTextureID = loadTexture("C:/Users/athilah/Downloads/container2_specular.png"); // Initialize specular texture
-    cam.init();    //* Memuat/Menyiapkan camera
+    objData.diffuseTextureID = loadTexture(DIFFUSE_TEXTURE_PATH);
+    objData.specularTextureID = loadTexture(SPECULAR_TEXTURE_PATH);
+    cam.init();
 }
 
 void Renderer::shaderLoader()
 {
     DEBUG_PRINT("Renderer::shaderLoader() called");
-    std::string vertSource = readFile("D:/QuavleEngine/utils/shader/vertex.glsl");
-    std::string fragSource = readFile("D:/QuavleEngine/utils/shader/fragment.glsl");
+    std::string vertSource = readFile(VERT_SHADER_PATH);
+    std::string fragSource = readFile(FRAG_SHADER_PATH);
 
     const char *vertexShaderSource = vertSource.c_str();
     const char *fragmentShaderSource = fragSource.c_str();
@@ -130,15 +167,15 @@ void Renderer::shaderLink()
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
     glBindVertexArray(objData.VAO);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)0);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
 }
 
-unsigned int Renderer::loadTexture(const std::string& texturePath)
+unsigned int Renderer::loadTexture(const std::string &texturePath)
 {
     unsigned int textureID;
     glGenTextures(1, &textureID);
@@ -186,8 +223,8 @@ unsigned int Renderer::loadTexture(const std::string& texturePath)
 
 void Renderer::shaderLoaderLight()
 {
-    std::string vertSourceLight = readFile("D:/QuavleEngine/utils/shader/lightVert.glsl");
-    std::string fragSourceLight = readFile("D:/QuavleEngine/utils/shader/lightFrag.glsl");
+    std::string vertSourceLight = readFile(LIGHT_VERT_SHADER_PATH);
+    std::string fragSourceLight = readFile(LIGHT_FRAG_SHADER_PATH);
 
     const char *vertexShaderSource = vertSourceLight.c_str();
     const char *fragmentShaderSource = fragSourceLight.c_str();
@@ -239,92 +276,96 @@ void Renderer::LightShaderLink()
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
     glBindVertexArray(lightData.lightCubeVAO);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)0);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
 }
 
 void Renderer::drawCallback()
 {
     mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
-    cam.update(); //* Update camera position and view matrix
-
+    cam.update();
     glUseProgram(objData.shaderProgram);
-    // Set the texture for shaderProgram
-    // Bind diffuse texture
+    // Bind textures and set uniforms
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, objData.diffuseTextureID);
     glUniform1i(glGetUniformLocation(objData.shaderProgram, "material.diffuse"), 0);
-
-    // Bind specular texture
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D, objData.specularTextureID);
     glUniform1i(glGetUniformLocation(objData.shaderProgram, "material.specular"), 1);
-
-    // Set material properties
     glUniform1f(glGetUniformLocation(objData.shaderProgram, "material.shininess"), 32.0f);
+
+    float aspectRatio = static_cast<float>(mode->width) / static_cast<float>(mode->height);
+    glm::mat4 projection = glm::perspective(glm::radians(cam.fov), aspectRatio, 0.1f, 100.0f);
+
+    //!==========================================================
+
+    // Directional light
+    glUniform3f(glGetUniformLocation(objData.shaderProgram, "dirLight.direction"), -0.2f, -1.0f, -0.3f);
+    glUniform3f(glGetUniformLocation(objData.shaderProgram, "dirLight.ambient"), 0.05f, 0.05f, 0.05f);
+    glUniform3f(glGetUniformLocation(objData.shaderProgram, "dirLight.diffuse"), 0.4f, 0.4f, 0.4f);
+    glUniform3f(glGetUniformLocation(objData.shaderProgram, "dirLight.specular"), 0.5f, 0.5f, 0.5f);
+
+    // Point lights
+    for (int i = 0; i < 4; ++i) {
+        std::string idx = std::to_string(i);
+        glUniform3fv(glGetUniformLocation(objData.shaderProgram, ("pointLights[" + idx + "].position").c_str()), 1, glm::value_ptr(pointLightPositions[i]));
+        glUniform3f(glGetUniformLocation(objData.shaderProgram, ("pointLights[" + idx + "].ambient").c_str()), 0.05f, 0.05f, 0.05f);
+        glUniform3f(glGetUniformLocation(objData.shaderProgram, ("pointLights[" + idx + "].diffuse").c_str()), 0.8f, 0.8f, 0.8f);
+        glUniform3f(glGetUniformLocation(objData.shaderProgram, ("pointLights[" + idx + "].specular").c_str()), 1.0f, 1.0f, 1.0f);
+        glUniform1f(glGetUniformLocation(objData.shaderProgram, ("pointLights[" + idx + "].constant").c_str()), 1.0f);
+        glUniform1f(glGetUniformLocation(objData.shaderProgram, ("pointLights[" + idx + "].linear").c_str()), 0.09f);
+        glUniform1f(glGetUniformLocation(objData.shaderProgram, ("pointLights[" + idx + "].quadratic").c_str()), 0.032f);
+    }
+
+    // SpotLight
+    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "spotLight.position"), 1, glm::value_ptr(cam.cameraPos)); // Camera position as spot light position
+    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "spotLight.direction"), 1, glm::value_ptr(cam.cameraFront));
+    glUniform3f(glGetUniformLocation(objData.shaderProgram, "spotLight.ambient"), 0.0f, 0.0f, 0.0f);
+    glUniform3f(glGetUniformLocation(objData.shaderProgram, "spotLight.diffuse"), 1.0f, 1.0f, 1.0f);
+    glUniform3f(glGetUniformLocation(objData.shaderProgram, "spotLight.specular"), 1.0f, 1.0f, 1.0f);
+    glUniform1f(glGetUniformLocation(objData.shaderProgram, "spotLight.constant"), 1.0f);
+    glUniform1f(glGetUniformLocation(objData.shaderProgram, "spotLight.linear"), 0.09f);
+    glUniform1f(glGetUniformLocation(objData.shaderProgram, "spotLight.quadratic"), 0.032f);
+    glUniform1f(glGetUniformLocation(objData.shaderProgram, "spotLight.cutOff"), glm::cos(glm::radians(2.5f)));
+    glUniform1f(glGetUniformLocation(objData.shaderProgram, "spotLight.outerCutOff"), glm::cos(glm::radians(17.0f)));
+
+    //!==========================================================
 
     // Set light properties
     glUniform3fv(glGetUniformLocation(objData.shaderProgram, "light.position"), 1, glm::value_ptr(lightData.position));
-    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "light.ambient"), 1, glm::value_ptr(glm::vec3(0.2f, 0.2f, 0.2f)));
-    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "light.diffuse"), 1, glm::value_ptr(glm::vec3(0.5f, 0.5f, 0.5f)));
-    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "light.specular"), 1, glm::value_ptr(glm::vec3(1.0f, 1.0f, 1.0f)));
-
-    float aspectRatio = static_cast<float>(mode->width) / static_cast<float>(mode->height);
-    // Set the projection matrix
-    glm::mat4 projection = glm::perspective(glm::radians(cam.fov), aspectRatio, 0.1f, 100.0f);
-    // Use the view matrix from the camera object
+    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "light.ambient"), 1, glm::value_ptr(glm::vec3(0.2f)));
+    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "light.diffuse"), 1, glm::value_ptr(glm::vec3(0.5f)));
+    glUniform3fv(glGetUniformLocation(objData.shaderProgram, "light.specular"), 1, glm::value_ptr(glm::vec3(1.0f)));
     glUniformMatrix4fv(glGetUniformLocation(objData.shaderProgram, "view"), 1, GL_FALSE, glm::value_ptr(cam.getViewMatrix()));
     glUniformMatrix4fv(glGetUniformLocation(objData.shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
 
-    glm::mat4 model = glm::mat4(1.0f);
-    model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-
-    glUniformMatrix4fv(glGetUniformLocation(objData.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
-    glBindVertexArray(objData.VAO);
-    glDrawArrays(GL_TRIANGLES, 0, 36);
-
-
-    // Ensure lightCubeVAO is properly bound and configured
-    glBindVertexArray(lightData.lightCubeVAO);
-
-    // Animate the light position along the X axis between -5 and 5 using deltaTime
-    static float lightAnimX = -5.0f;
-    static float direction = 1.0f;
-    static float speed = 2.0f; // units per second
-    static float lastTime = glfwGetTime();
-
-    float currentTime = glfwGetTime();
-    float deltaTime = currentTime - lastTime;
-    lastTime = currentTime;
-
-    lightAnimX += direction * speed * deltaTime;
-    if (lightAnimX > 5.0f) {
-        lightAnimX = 5.0f;
-        direction = -1.0f;
-    } else if (lightAnimX < -5.0f) {
-        lightAnimX = -5.0f;
-        direction = 1.0f;
+    for (unsigned int i = 0; i < sizeof(cubePositions) / sizeof(cubePositions[0]); i++)
+    {
+        glm::mat4 model = glm::mat4(1.0f);
+        model = glm::translate(model, cubePositions[i]);
+        glUniformMatrix4fv(glGetUniformLocation(objData.shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        glBindVertexArray(objData.VAO);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
     }
-    lightData.position.x = lightAnimX;
 
-    // Use the shader program for the light object
+    // Animate and draw light
+    glBindVertexArray(lightData.lightCubeVAO);
     glUseProgram(lightData.shaderProgramLight);
-
-    // Set transformation matrices for the light object
-    glm::mat4 modelLight = glm::mat4(1.0f);
-    modelLight = glm::translate(modelLight, lightData.position); // Use animated position
     glUniform3fv(glGetUniformLocation(lightData.shaderProgramLight, "objectColor"), 1, glm::value_ptr(lightData.lightColor));
     glUniformMatrix4fv(glGetUniformLocation(lightData.shaderProgramLight, "view"), 1, GL_FALSE, glm::value_ptr(cam.getViewMatrix()));
     glUniformMatrix4fv(glGetUniformLocation(lightData.shaderProgramLight, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
-    glUniformMatrix4fv(glGetUniformLocation(lightData.shaderProgramLight, "model"), 1, GL_FALSE, glm::value_ptr(modelLight));
+    glm::mat4 modelLight = glm::mat4(1.0f);
 
-    // Render the light object
-    glDrawArrays(GL_TRIANGLES, 0, 36);
-
+    for (unsigned int i; i < sizeof(pointLightPositions) / sizeof(pointLightPositions[0]); i++)
+    {
+        modelLight = glm::translate(modelLight, glm::vec3(pointLightPositions[i].x, pointLightPositions[i].y, pointLightPositions[i].z));
+        glUniformMatrix4fv(glGetUniformLocation(lightData.shaderProgramLight, "model"), 1, GL_FALSE, glm::value_ptr(modelLight));
+        glDrawArrays(GL_TRIANGLES, 0, 36);
+    }
 }
 
 void Renderer::drawCleanup()

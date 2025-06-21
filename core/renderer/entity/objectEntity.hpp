@@ -35,6 +35,9 @@ namespace QuavleEngine
             materialData material;
             unsigned int diffuseTextureID; 
             unsigned int specularTextureID;
+            unsigned int normalTextureID;    // Normal map
+            unsigned int metallicTextureID;  // Metallic map
+            unsigned int roughnessTextureID; // Roughness map
             size_t vertexCount; // Added for vertex count
         };
 

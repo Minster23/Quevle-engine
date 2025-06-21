@@ -24,6 +24,8 @@ namespace
     constexpr char LIGHT_VERT_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/lightVert.glsl";
     constexpr char LIGHT_FRAG_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/lightFrag.glsl";
     constexpr char DIFFUSE_TEXTURE_PATH[] = "F:/Devlopment/LLL/EmguCVApp/hk_usp_9mm_pistol/textures/USP9_baseColor.png";
+    constexpr char NORMAL_TEXTURE_PATH[] = "F:/Devlopment/LLL/EmguCVApp/hk_usp_9mm_pistol/textures/USP9_normal.png";
+    constexpr char METALLIC_TEXTURE_PATH[] = "F:/Devlopment/LLL/EmguCVApp/hk_usp_9mm_pistol/textures/USP9_metallicRoughness.png";
     constexpr char DIFFUSE_TEX_TEST[] = "F:/Devlopment/LLL/EmguCVApp/tex.png";
     constexpr char SPECULAR_TEXTURE_PATH[] = "C:/Users/athilah/Downloads/container2_specular.png";
 }
@@ -73,16 +75,9 @@ float verticesLight[] = {
     -0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f,
     -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f};
 
-glm::vec3 cubePositions[] = {
-    glm::vec3(0.0f, 0.0f, 0.0f),
-    glm::vec3(0.0f, 0.0f, -10.0f),
-    glm::vec3(0.0f, 0.0f, -20.0f),
-    glm::vec3(0.0f, 0.0f, -30.0f)
-};
-// Cubes in a line, spaced 10 units apart
 
 glm::vec3 pointLightPositions[] = {
-    glm::vec3(2.0f, 0.0f, 0.0f),
+    glm::vec3(0.0f, 0.0f, 0.0f),
     glm::vec3(2.0f, 0.0f, -10.0f),
     glm::vec3(2.0f, 0.0f, -20.0f),
     glm::vec3(2.0f, 0.0f, -30.0f)
@@ -107,7 +102,9 @@ void Renderer::init()
         shaderLoader(i);
         shaderLink(i);
         // Load textures for each object (if you have per-object textures, set the path accordingly)
-        loadTexture(DIFFUSE_TEXTURE_PATH, i);
+        loadTexture(DIFFUSE_TEXTURE_PATH, i, TextureType::DIFFUSE);
+        loadTexture(NORMAL_TEXTURE_PATH, i, TextureType::NORMAL);
+        loadTexture(METALLIC_TEXTURE_PATH, i, TextureType::METALLIC);
     }
     if (objectEntity.objects.size() == 0)
     {
@@ -211,16 +208,31 @@ void Renderer::shaderLink(int Index)
     glBindVertexArray(0); // Unbind VAO
 }
 
-void Renderer::loadTexture(const std::string &texturePath, int Index)
+void Renderer::loadTexture(const std::string &texturePath, int Index, TextureType expression)
 {
-    //* Only load texture if diffuseTextureID is not already set (material already fulfilled)
-    // if (objectEntity.objects[Index].diffuseTextureID == 0) {
-    //     // Texture already loaded or set, skip loading
-    //     return;
-    // }
+    unsigned int *texID = nullptr;
+    switch (expression)
+    {
+    case Renderer::TextureType::DIFFUSE:
+        texID = &objectEntity.objects[Index].diffuseTextureID;
+        break;
+    case Renderer::TextureType::SPECULAR:
+        texID = &objectEntity.objects[Index].specularTextureID;
+        break;
+    case Renderer::TextureType::NORMAL:
+        texID = &objectEntity.objects[Index].normalTextureID;
+        break;
+    case Renderer::TextureType::METALLIC:
+        texID = &objectEntity.objects[Index].metallicTextureID;
+        break;
+    default:
+        break;
+    }
 
-    glGenTextures(1, &objectEntity.objects[Index].diffuseTextureID);
-    glBindTexture(GL_TEXTURE_2D, objectEntity.objects[Index].diffuseTextureID);
+    if (!texID) return;
+
+    glGenTextures(1, texID);
+    glBindTexture(GL_TEXTURE_2D, *texID);
 
     // Texture wrapping/filtering options
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
@@ -255,10 +267,50 @@ void Renderer::loadTexture(const std::string &texturePath, int Index)
     else
     {
         std::cout << "Failed to load texture at path: " << texturePath << std::endl;
-        objectEntity.objects[Index].diffuseTextureID = 0;
+        *texID = 0;
     }
 
     stbi_image_free(data);
+
+    // Fill VAO, VBO, EBO if not already filled
+    if (objectEntity.objects[Index].VAO == 0)
+        glGenVertexArrays(1, &objectEntity.objects[Index].VAO);
+    if (objectEntity.objects[Index].VBO == 0)
+        glGenBuffers(1, &objectEntity.objects[Index].VBO);
+    if (objectEntity.objects[Index].EBO == 0)
+        glGenBuffers(1, &objectEntity.objects[Index].EBO);
+
+    glBindVertexArray(objectEntity.objects[Index].VAO);
+
+    // Fill VBO
+    glBindBuffer(GL_ARRAY_BUFFER, objectEntity.objects[Index].VBO);
+    glBufferData(
+        GL_ARRAY_BUFFER,
+        objectEntity.objects[Index].vertexCount * 8 * sizeof(float),
+        objectEntity.objects[Index].vertices,
+        GL_STATIC_DRAW
+    );
+
+    // Fill EBO if indices exist
+    if (objectEntity.objects[Index].indices && objectEntity.objects[Index].indicesCount > 0) {
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, objectEntity.objects[Index].EBO);
+        glBufferData(
+            GL_ELEMENT_ARRAY_BUFFER,
+            objectEntity.objects[Index].indicesCount * sizeof(unsigned int),
+            objectEntity.objects[Index].indices,
+            GL_STATIC_DRAW
+        );
+    }
+
+    // Set up vertex attributes: position, normal, texcoord
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(0));
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(1);
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
+    glEnableVertexAttribArray(2);
+
+    glBindVertexArray(0);
 }
 
 void Renderer::shaderLoaderLight()
@@ -331,23 +383,60 @@ void Renderer::drawCallback()
     float aspectRatio = static_cast<float>(mode->width) / static_cast<float>(mode->height);
     glm::mat4 projection = glm::perspective(glm::radians(cam.fov), aspectRatio, 0.1f, 1000.0f);
 
+    // Animate and draw light
+    // Animate light position in an orbital path around (0, 0, 0)
+    static float angle = 0.0f;
+    angle += 0.001f; // Adjust speed as needed
+    float radius = 2.0f;
+    glm::vec3 lightPos(
+        radius * cos(angle),
+        1.0f, // fixed height
+        radius * sin(angle));
+
     for (size_t i = 0; i < objectEntity.objects.size(); ++i)
     {
         glUseProgram(objectEntity.objects[i].shaderProgram);
         ShaderHelper shader(objectEntity.objects[i].shaderProgram);
 
         // Bind diffuse texture and set uniform (standard, simple)
+        // Bind and set diffuse texture
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].diffuseTextureID);
         shader.setInt("diffuse", 0);
+
+        // Bind and set specular texture
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].specularTextureID);
+        shader.setInt("specular", 1);
+
+        // Bind and set normal map
+        glActiveTexture(GL_TEXTURE2);
+        glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].normalTextureID);
+        shader.setInt("normalMap", 2);
+
+        // Bind and set metallic map
+        glActiveTexture(GL_TEXTURE3);
+        glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].metallicTextureID);
+        shader.setInt("metallicMap", 3);
+
+        // Bind and set roughness map (if you have it)
+        glActiveTexture(GL_TEXTURE4);
+        glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].roughnessTextureID);
+        shader.setInt("roughnessMap", 4);
+
+        shader.setFloat("lightIntensity", 3.0f); // Set light intensity
 
         // Set view and projection matrices
         shader.setMat4("view", cam.getViewMatrix());
         shader.setMat4("projection", projection);
 
         glm::mat4 modelMat = glm::mat4(1.0f);
-        //modelMat = glm::scale(modelMat, glm::vec3(0.1f, 0.1f, 0.1f));
+        modelMat = glm::scale(modelMat, glm::vec3(0.1f, 0.1f, 0.1f));
         shader.setMat4("model", modelMat);
+
+        // Set light and view position
+        shader.setVec3("lightPos", lightPos);
+        shader.setVec3("viewPos", cam.cameraPos);
 
         glBindVertexArray(objectEntity.objects[i].VAO);
         if (objectEntity.objects[i].indices && objectEntity.objects[i].indicesCount > 0) {
@@ -357,16 +446,15 @@ void Renderer::drawCallback()
         }
     }
 
-    // Animate and draw light
     glBindVertexArray(lightData.lightCubeVAO);
     glUseProgram(lightData.shaderProgramLight);
     ShaderHelper lightShader(lightData.shaderProgramLight);
     lightShader.setVec3("objectColor", lightData.lightColor);
     lightShader.setMat4("view", cam.getViewMatrix());
     lightShader.setMat4("projection", projection);
-    glm::mat4 modelLight = glm::mat4(1.0f);
 
-    modelLight = glm::translate(glm::mat4(1.0f), pointLightPositions[1]);
+    glm::mat4 modelLight = glm::mat4(1.0f);
+    modelLight = glm::translate(modelLight, lightPos);
     lightShader.setMat4("model", modelLight);
     glDrawArrays(GL_TRIANGLES, 0, 36);
 }

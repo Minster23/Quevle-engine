@@ -180,12 +180,8 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fstream.tcc \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
  D:/QuavleEngine/vendor/stb/stb_image.h \
- F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
- F:/Devtool/mysys2/ucrt64/include/stdarg.h \
- F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
- F:/Devtool/mysys2/ucrt64/include/string.h \
- F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/math.h \
+ D:/QuavleEngine/vendor/glm/glm/glm.hpp \
+ D:/QuavleEngine/vendor/glm/glm/detail/_fixes.hpp \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
  F:/Devtool/mysys2/ucrt64/include/math.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h \
@@ -201,14 +197,9 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_hermite.tcc \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
- F:/Devtool/mysys2/ucrt64/include/assert.h \
- F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h \
- F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xmmintrin.h \
- F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mmintrin.h \
- D:/QuavleEngine/vendor/glm/glm/glm.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/_fixes.hpp \
  D:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cassert \
+ F:/Devtool/mysys2/ucrt64/include/assert.h \
  D:/QuavleEngine/vendor/glm/glm/simd/platform.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/climits \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cfloat \
@@ -411,6 +402,8 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1.hpp \
  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1_sized.hpp \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
+ F:/Devtool/mysys2/ucrt64/include/string.h \
+ F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
  D:/QuavleEngine/core/renderer/renderer.hpp \
  D:/QuavleEngine/core/window/window.hpp \
@@ -423,4 +416,54 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
  D:/QuavleEngine/utils/camera/camera.hpp \
  D:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
- D:/QuavleEngine/utils/Debug.h D:/QuavleEngine/utils/fileReader.hpp
+ D:/QuavleEngine/core/model/model.hpp \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/memory \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tempbuf.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/align.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_base.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/auto_ptr.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_memory_defs.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/execution_defs.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/scene.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/types.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/defs.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/config.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/vector2.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/vector3.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/color4.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/matrix3x3.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/matrix4x4.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/quaternion.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/vector2.inl \
+ D:/QuavleEngine/vendor/assimp/include/assimp/vector3.inl \
+ D:/QuavleEngine/vendor/assimp/include/assimp/color4.inl \
+ D:/QuavleEngine/vendor/assimp/include/assimp/matrix3x3.inl \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/algorithm \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algo.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/algorithmfwd.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_heap.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uniform_int_dist.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/matrix4x4.inl \
+ D:/QuavleEngine/vendor/assimp/include/assimp/MathFunctions.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/quaternion.inl \
+ D:/QuavleEngine/vendor/assimp/include/assimp/texture.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/pushpack1.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/poppack1.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/mesh.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/aabb.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_set \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_set.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/light.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/camera.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/material.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/material.inl \
+ D:/QuavleEngine/vendor/assimp/include/assimp/anim.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/metadata.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/Importer.hpp \
+ D:/QuavleEngine/vendor/assimp/include/assimp/postprocess.h \
+ D:/QuavleEngine/utils/fileReader.hpp D:/QuavleEngine/utils/Debug.h \
+ D:/QuavleEngine/core/renderer/shader_h.h

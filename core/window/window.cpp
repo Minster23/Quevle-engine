@@ -52,6 +52,9 @@ bool WindowManager::openGL()
         return false;
     }
     glEnable(GL_DEPTH_TEST);
+    glEnable(GL_CULL_FACE);
+    glCullFace(GL_BACK);
+    glFrontFace(GL_CCW);
     std::cout << "OpenGL version: " << glGetString(GL_VERSION) << std::endl;
     
     renderer.init(); // Initialize renderer (includes camera init)

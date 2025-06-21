@@ -385,6 +385,69 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
  D:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
+ D:/QuavleEngine/core/model/model.hpp \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/memory \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tempbuf.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/align.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_ptr.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocated_ptr.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/concurrence.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_base.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/auto_ptr.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_memory_defs.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/execution_defs.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/scene.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/types.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/defs.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/config.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/vector2.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/vector3.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/color4.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/matrix3x3.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/matrix4x4.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/quaternion.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/vector2.inl \
+ D:/QuavleEngine/vendor/assimp/include/assimp/vector3.inl \
+ D:/QuavleEngine/vendor/assimp/include/assimp/color4.inl \
+ D:/QuavleEngine/vendor/assimp/include/assimp/matrix3x3.inl \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/algorithm \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algo.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/algorithmfwd.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_heap.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uniform_int_dist.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/matrix4x4.inl \
+ D:/QuavleEngine/vendor/assimp/include/assimp/MathFunctions.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/quaternion.inl \
+ D:/QuavleEngine/vendor/assimp/include/assimp/texture.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/pushpack1.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/poppack1.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/mesh.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/aabb.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_set \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_set.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/light.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/camera.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/material.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/material.inl \
+ D:/QuavleEngine/vendor/assimp/include/assimp/anim.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/metadata.h \
+ D:/QuavleEngine/vendor/assimp/include/assimp/Importer.hpp \
+ D:/QuavleEngine/vendor/assimp/include/assimp/postprocess.h \
+ D:/QuavleEngine/utils/fileReader.hpp \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/fstream \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fstream.tcc \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
+ D:/QuavleEngine/utils/Debug.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/optional \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/set \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_set.h \

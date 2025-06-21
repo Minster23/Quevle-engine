@@ -1,1 +1,1 @@
--ID:/QuavleEngine -ID:/QuavleEngine/vendor/imgui -ID:/QuavleEngine/vendor/glm -I"D:/QuavleEngine/vendor/vk-bootstrap/src" -ID:/QuavleEngine/vendor/glad -ID:/QuavleEngine/vendor/stb -isystem "D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/include"
+-ID:/QuavleEngine -ID:/QuavleEngine/vendor/imgui -ID:/QuavleEngine/vendor/glm -I"D:/QuavleEngine/vendor/vk-bootstrap/src" -ID:/QuavleEngine/vendor/glad -ID:/QuavleEngine/vendor/stb -ID:/QuavleEngine/vendor/assimp/include -isystem "D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/include"

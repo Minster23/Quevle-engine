@@ -152,6 +152,30 @@ application/application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/application/application.cpp.s
 .PHONY : application/application.cpp.s
 
+core/model/model.obj: core/model/model.cpp.obj
+.PHONY : core/model/model.obj
+
+# target to build an object file
+core/model/model.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj
+.PHONY : core/model/model.cpp.obj
+
+core/model/model.i: core/model/model.cpp.i
+.PHONY : core/model/model.i
+
+# target to preprocess a source file
+core/model/model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/model/model.cpp.i
+.PHONY : core/model/model.cpp.i
+
+core/model/model.s: core/model/model.cpp.s
+.PHONY : core/model/model.s
+
+# target to generate assembly for a file
+core/model/model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/model/model.cpp.s
+.PHONY : core/model/model.cpp.s
+
 core/renderer/entity/objectEntity.obj: core/renderer/entity/objectEntity.cpp.obj
 .PHONY : core/renderer/entity/objectEntity.obj
 
@@ -199,6 +223,30 @@ core/renderer/renderer.s: core/renderer/renderer.cpp.s
 core/renderer/renderer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.s
 .PHONY : core/renderer/renderer.cpp.s
+
+core/renderer/stb_image_impl.obj: core/renderer/stb_image_impl.cpp.obj
+.PHONY : core/renderer/stb_image_impl.obj
+
+# target to build an object file
+core/renderer/stb_image_impl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj
+.PHONY : core/renderer/stb_image_impl.cpp.obj
+
+core/renderer/stb_image_impl.i: core/renderer/stb_image_impl.cpp.i
+.PHONY : core/renderer/stb_image_impl.i
+
+# target to preprocess a source file
+core/renderer/stb_image_impl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.i
+.PHONY : core/renderer/stb_image_impl.cpp.i
+
+core/renderer/stb_image_impl.s: core/renderer/stb_image_impl.cpp.s
+.PHONY : core/renderer/stb_image_impl.s
+
+# target to generate assembly for a file
+core/renderer/stb_image_impl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.s
+.PHONY : core/renderer/stb_image_impl.cpp.s
 
 core/window/window.obj: core/window/window.cpp.obj
 .PHONY : core/window/window.obj
@@ -271,6 +319,30 @@ utils/camera/camera.s: utils/camera/camera.cpp.s
 utils/camera/camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.s
 .PHONY : utils/camera/camera.cpp.s
+
+utils/filereader.obj: utils/filereader.cpp.obj
+.PHONY : utils/filereader.obj
+
+# target to build an object file
+utils/filereader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.obj
+.PHONY : utils/filereader.cpp.obj
+
+utils/filereader.i: utils/filereader.cpp.i
+.PHONY : utils/filereader.i
+
+# target to preprocess a source file
+utils/filereader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.i
+.PHONY : utils/filereader.cpp.i
+
+utils/filereader.s: utils/filereader.cpp.s
+.PHONY : utils/filereader.s
+
+# target to generate assembly for a file
+utils/filereader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.s
+.PHONY : utils/filereader.cpp.s
 
 utils/lightning/lightning.obj: utils/lightning/lightning.cpp.obj
 .PHONY : utils/lightning/lightning.obj
@@ -452,12 +524,18 @@ help:
 	@echo ... application/application.obj
 	@echo ... application/application.i
 	@echo ... application/application.s
+	@echo ... core/model/model.obj
+	@echo ... core/model/model.i
+	@echo ... core/model/model.s
 	@echo ... core/renderer/entity/objectEntity.obj
 	@echo ... core/renderer/entity/objectEntity.i
 	@echo ... core/renderer/entity/objectEntity.s
 	@echo ... core/renderer/renderer.obj
 	@echo ... core/renderer/renderer.i
 	@echo ... core/renderer/renderer.s
+	@echo ... core/renderer/stb_image_impl.obj
+	@echo ... core/renderer/stb_image_impl.i
+	@echo ... core/renderer/stb_image_impl.s
 	@echo ... core/window/window.obj
 	@echo ... core/window/window.i
 	@echo ... core/window/window.s
@@ -467,6 +545,9 @@ help:
 	@echo ... utils/camera/camera.obj
 	@echo ... utils/camera/camera.i
 	@echo ... utils/camera/camera.s
+	@echo ... utils/filereader.obj
+	@echo ... utils/filereader.i
+	@echo ... utils/filereader.s
 	@echo ... utils/lightning/lightning.obj
 	@echo ... utils/lightning/lightning.i
 	@echo ... utils/lightning/lightning.s

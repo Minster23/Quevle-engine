@@ -19,13 +19,19 @@ file(GLOB IMGUI_SOURCES
     vendor/imgui/*.cpp
 )
 
+file(GLOB ASSIMP_SOURCES
+
+)
+
 # Engine sources (recursive in subfolders)
 file(GLOB_RECURSE ENGINE_SOURCES
     core/*.cpp core/*.hpp
     application/*.cpp application/*.hpp
     utils/camera/*.cpp utils/camera/*.hpp
     utils/lightning/*.cpp utils/lightning/*.hpp
+    utils/*.cpp utils/*.hpp utils/*.h
     core/renderer/*.cpp core/renderer/*.hpp
+    core/model/*.cpp core/model/*.hpp
 
 )
 
@@ -56,6 +62,7 @@ target_include_directories(QuavleEngine PRIVATE
     ${CMAKE_SOURCE_DIR}/vendor/vk-bootstrap/src
     ${CMAKE_SOURCE_DIR}/vendor/glad
     ${CMAKE_SOURCE_DIR}/vendor/stb
+    ${CMAKE_SOURCE_DIR}/vendor/assimp/include
 )
 
 # GLFW static library (MinGW assumed)
@@ -73,18 +80,11 @@ set_target_properties(glfw PROPERTIES
 find_package(OpenGL REQUIRED)
 
 
-# # Vulkan libraries
-# target_include_directories(QuavleEngine PRIVATE ${VULKAN_SDK}/Include)
-# target_link_directories(QuavleEngine PRIVATE ${VULKAN_SDK}/Lib)
-
-# add_subdirectory(vendor/vk-bootstrap)
-
-
 # Link all libraries
 target_link_libraries(QuavleEngine
     glfw
+    assimp
     ${OPENGL_gl_LIBRARY}
-    # vk-bootstrap::vk-bootstrap
 )
 
 # Optional: show sources in IDE with folders

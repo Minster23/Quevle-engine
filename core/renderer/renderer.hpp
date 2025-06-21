@@ -5,6 +5,7 @@
 #include <string>
 #include <utils/camera/camera.hpp> // Include camera definition
 #include <core/renderer/entity/objectEntity.hpp>
+#include <core/model/model.hpp>
 
 namespace QuavleEngine
 {
@@ -14,22 +15,21 @@ namespace QuavleEngine
         camera cam;
 
         void init();
-        void shaderLoader();
+        void shaderLoader(int Index);
         void shaderLoaderLight();
         void LightShaderLink();
-        void shaderLink();
+        void shaderLink(int Index);
         void drawCallback();
         void drawCleanup();
-        unsigned int loadTexture(const std::string& texturePath);
-        void renderObject(const ObjectEntity::ObjectData& objectData);
+        void loadTexture(const std::string& texturePath, int Index);
+        void renderObject(const ObjectEntity::ObjectData& objectData, unsigned int shaderProgram);
 
     private:
         int success;
         char infoLog[512];
 
         const GLFWvidmode* mode;
-
-        ObjectEntity::ObjectData objData;
+        ObjectEntity objectEntity;
         ObjectEntity::LightData lightData;
     };
 }

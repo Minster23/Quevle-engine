@@ -28,13 +28,13 @@ namespace QuavleEngine
             unsigned int vertexShader;
             unsigned int fragmentShader;
             float* vertices;
-            unsigned int* indices; // NEW: pointer to indices array
-            size_t indicesCount;   // NEW: number of indices
-            size_t floatsPerVertex; // NEW: number of floats per vertex
+            unsigned int* indices; 
+            size_t indicesCount;
+            size_t floatsPerVertex; 
             std::string name;
             materialData material;
-            unsigned int diffuseTextureID; // Added for diffuse texture
-            unsigned int specularTextureID; // Added for specular texture
+            unsigned int diffuseTextureID; 
+            unsigned int specularTextureID;
             size_t vertexCount; // Added for vertex count
         };
 

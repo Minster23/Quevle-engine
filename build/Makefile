@@ -368,6 +368,30 @@ utils/lightning/lightning.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.s
 .PHONY : utils/lightning/lightning.cpp.s
 
+utils/msgWnd.obj: utils/msgWnd.cpp.obj
+.PHONY : utils/msgWnd.obj
+
+# target to build an object file
+utils/msgWnd.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.obj
+.PHONY : utils/msgWnd.cpp.obj
+
+utils/msgWnd.i: utils/msgWnd.cpp.i
+.PHONY : utils/msgWnd.i
+
+# target to preprocess a source file
+utils/msgWnd.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.i
+.PHONY : utils/msgWnd.cpp.i
+
+utils/msgWnd.s: utils/msgWnd.cpp.s
+.PHONY : utils/msgWnd.s
+
+# target to generate assembly for a file
+utils/msgWnd.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.s
+.PHONY : utils/msgWnd.cpp.s
+
 vendor/glad/glad.obj: vendor/glad/glad.c.obj
 .PHONY : vendor/glad/glad.obj
 
@@ -551,6 +575,9 @@ help:
 	@echo ... utils/lightning/lightning.obj
 	@echo ... utils/lightning/lightning.i
 	@echo ... utils/lightning/lightning.s
+	@echo ... utils/msgWnd.obj
+	@echo ... utils/msgWnd.i
+	@echo ... utils/msgWnd.s
 	@echo ... vendor/glad/glad.obj
 	@echo ... vendor/glad/glad.i
 	@echo ... vendor/glad/glad.s

@@ -68,6 +68,8 @@
         "thread": "cpp",
         "filesystem": "cpp",
         "unordered_set": "cpp",
-        "list": "cpp"
-    }
+        "list": "cpp",
+        "*.rh": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

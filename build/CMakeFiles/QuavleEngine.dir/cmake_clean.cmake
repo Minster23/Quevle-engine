@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.obj.d"
   "CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj"
   "CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj.d"
+  "CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.obj"
+  "CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.obj.d"
   "CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj"
   "CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj.d"
   "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj"

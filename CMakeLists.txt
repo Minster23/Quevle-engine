@@ -85,6 +85,7 @@ target_link_libraries(QuavleEngine
     glfw
     assimp
     ${OPENGL_gl_LIBRARY}
+    comctl32 
 )
 
 # Optional: show sources in IDE with folders

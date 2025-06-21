@@ -23,7 +23,8 @@ namespace
     constexpr char FRAG_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/fragment.glsl";
     constexpr char LIGHT_VERT_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/lightVert.glsl";
     constexpr char LIGHT_FRAG_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/lightFrag.glsl";
-    constexpr char DIFFUSE_TEXTURE_PATH[] = "D:/ReaperMedia/Compositing/Media/CustomUVChecker_byValle_1K.png";
+    constexpr char DIFFUSE_TEXTURE_PATH[] = "F:/Devlopment/LLL/EmguCVApp/hk_usp_9mm_pistol/textures/USP9_baseColor.png";
+    constexpr char DIFFUSE_TEX_TEST[] = "F:/Devlopment/LLL/EmguCVApp/tex.png";
     constexpr char SPECULAR_TEXTURE_PATH[] = "C:/Users/athilah/Downloads/container2_specular.png";
 }
 
@@ -96,7 +97,7 @@ WindowManager windowManager;
 void Renderer::init()
 {
     DEBUG_PRINT("Renderer::init() called");
-    Model model("D:/ReaperMedia/Compositing/Media/genshin_impact_-_furina/scene.gltf", false);
+    Model model("F:/Devlopment/LLL/EmguCVApp/hk_usp_9mm_pistol/scene.gltf", true);
     // Copy static objects to local objectEntity.objects for this renderer
     objectEntity.objects = ObjectEntity::objects;
     shaderLoaderLight();
@@ -107,7 +108,6 @@ void Renderer::init()
         shaderLink(i);
         // Load textures for each object (if you have per-object textures, set the path accordingly)
         loadTexture(DIFFUSE_TEXTURE_PATH, i);
-        // objectEntity.objects[i].specularTextureID = loadTexture(SPECULAR_TEXTURE_PATH);
     }
     if (objectEntity.objects.size() == 0)
     {
@@ -174,7 +174,7 @@ void Renderer::shaderLoader(int Index)
 
 void Renderer::shaderLink(int Index)
 {
-    //* Generate and bind VAO, VBO, and EBO for the object
+    // Generate and bind VAO, VBO, and EBO for the object
     glGenVertexArrays(1, &objectEntity.objects[Index].VAO);
     glGenBuffers(1, &objectEntity.objects[Index].VBO);
     glGenBuffers(1, &objectEntity.objects[Index].EBO);
@@ -184,7 +184,7 @@ void Renderer::shaderLink(int Index)
     glBindBuffer(GL_ARRAY_BUFFER, objectEntity.objects[Index].VBO);
     glBufferData(
         GL_ARRAY_BUFFER,
-        objectEntity.objects[Index].vertexCount * objectEntity.objects[Index].floatsPerVertex * sizeof(float),
+        objectEntity.objects[Index].vertexCount * 8 * sizeof(float), // always 8 floats per vertex
         objectEntity.objects[Index].vertices,
         GL_STATIC_DRAW
     );
@@ -200,46 +200,25 @@ void Renderer::shaderLink(int Index)
         );
     }
 
-    //* Set up vertex attributes: position, normal, tangent/bitangent, texcoord, color
-    size_t offset = 0;
-    int attribIndex = 0;
-    // Position (always present)
-    glVertexAttribPointer(attribIndex, 3, GL_FLOAT, GL_FALSE, objectEntity.objects[Index].floatsPerVertex * sizeof(float), (void*)(offset * sizeof(float)));
-    glEnableVertexAttribArray(attribIndex++);
-    offset += 3;
-    // Normal
-    if (objectEntity.objects[Index].floatsPerVertex >= 6) {
-        glVertexAttribPointer(attribIndex, 3, GL_FLOAT, GL_FALSE, objectEntity.objects[Index].floatsPerVertex * sizeof(float), (void*)(offset * sizeof(float)));
-        glEnableVertexAttribArray(attribIndex++);
-        offset += 3;
-    }
-    // Tangent/Bitangent
-    if (objectEntity.objects[Index].floatsPerVertex >= offset + 6) {
-        glVertexAttribPointer(attribIndex, 3, GL_FLOAT, GL_FALSE, objectEntity.objects[Index].floatsPerVertex * sizeof(float), (void*)(offset * sizeof(float)));
-        glEnableVertexAttribArray(attribIndex++);
-        offset += 3;
-        glVertexAttribPointer(attribIndex, 3, GL_FLOAT, GL_FALSE, objectEntity.objects[Index].floatsPerVertex * sizeof(float), (void*)(offset * sizeof(float)));
-        glEnableVertexAttribArray(attribIndex++);
-        offset += 3;
-    }
-    // TexCoords
-    if (objectEntity.objects[Index].TexCoords) { //* Only set if TexCoords is present
-        glVertexAttribPointer(attribIndex, 2, GL_FLOAT, GL_FALSE, objectEntity.objects[Index].TexCoords * sizeof(float), (void*)(offset * sizeof(float)));
-        glEnableVertexAttribArray(attribIndex++);
-        offset += 2;
-    }
-    // Vertex Color
-    if (objectEntity.objects[Index].floatsPerVertex >= offset + 4) {
-        glVertexAttribPointer(attribIndex, 4, GL_FLOAT, GL_FALSE, objectEntity.objects[Index].floatsPerVertex * sizeof(float), (void*)(offset * sizeof(float)));
-        glEnableVertexAttribArray(attribIndex++);
-        offset += 4;
-    }
+    // Set up vertex attributes: position, normal, texcoord (fixed layout)
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(0));
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(1);
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
+    glEnableVertexAttribArray(2);
 
-    glBindVertexArray(0); //* Unbind VAO
+    glBindVertexArray(0); // Unbind VAO
 }
 
 void Renderer::loadTexture(const std::string &texturePath, int Index)
 {
+    //* Only load texture if diffuseTextureID is not already set (material already fulfilled)
+    // if (objectEntity.objects[Index].diffuseTextureID == 0) {
+    //     // Texture already loaded or set, skip loading
+    //     return;
+    // }
+
     glGenTextures(1, &objectEntity.objects[Index].diffuseTextureID);
     glBindTexture(GL_TEXTURE_2D, objectEntity.objects[Index].diffuseTextureID);
 
@@ -345,71 +324,31 @@ void Renderer::LightShaderLink()
     glEnableVertexAttribArray(2);
 }
 
-
-
 void Renderer::drawCallback()
 {
     mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
     cam.update();
     float aspectRatio = static_cast<float>(mode->width) / static_cast<float>(mode->height);
-    glm::mat4 projection = glm::perspective(glm::radians(cam.fov), aspectRatio, 0.1f, 100.0f);
+    glm::mat4 projection = glm::perspective(glm::radians(cam.fov), aspectRatio, 0.1f, 1000.0f);
 
     for (size_t i = 0; i < objectEntity.objects.size(); ++i)
     {
         glUseProgram(objectEntity.objects[i].shaderProgram);
         ShaderHelper shader(objectEntity.objects[i].shaderProgram);
 
-        // Bind textures and set uniforms
+        // Bind diffuse texture and set uniform (standard, simple)
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].diffuseTextureID);
         shader.setInt("diffuse", 0);
-        // glActiveTexture(GL_TEXTURE1);
-        // glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].specularTextureID);
-        // shader.setInt("material.specular", 1);
-        // shader.setFloat("material.shininess", objectEntity.objects[i].material.shininess);
 
-        // // Directional light
-        // shader.setVec3("dirLight.direction", glm::vec3(-0.2f, -1.0f, -0.3f));
-        // shader.setVec3("dirLight.ambient", glm::vec3(0.2f));
-        // shader.setVec3("dirLight.diffuse", glm::vec3(0.8f));
-        // shader.setVec3("dirLight.specular", glm::vec3(1.0f));
-
-        // // Point lights
-        // for (int j = 0; j < 4; ++j)
-        // {
-        //     std::string idx = std::to_string(j);
-        //     shader.setVec3("pointLights[" + idx + "].position", pointLightPositions[j]);
-        //     shader.setVec3("pointLights[" + idx + "].ambient", glm::vec3(0.05f));
-        //     shader.setVec3("pointLights[" + idx + "].diffuse", glm::vec3(0.8f));
-        //     shader.setVec3("pointLights[" + idx + "].specular", glm::vec3(1.0f));
-        //     shader.setFloat("pointLights[" + idx + "].constant", 1.0f);
-        //     shader.setFloat("pointLights[" + idx + "].linear", 0.09f);
-        //     shader.setFloat("pointLights[" + idx + "].quadratic", 0.032f);
-        // }
-
-        // // SpotLight
-        // shader.setVec3("spotLight.position", cam.cameraPos);
-        // shader.setVec3("spotLight.direction", cam.cameraFront);
-        // shader.setVec3("spotLight.ambient", glm::vec3(0.0f));
-        // shader.setVec3("spotLight.diffuse", glm::vec3(1.0f));
-        // shader.setVec3("spotLight.specular", glm::vec3(1.0f));
-        // shader.setFloat("spotLight.constant", 1.0f);
-        // shader.setFloat("spotLight.linear", 0.09f);
-        // shader.setFloat("spotLight.quadratic", 0.032f);
-        // shader.setFloat("spotLight.cutOff", glm::cos(glm::radians(2.5f)));
-        // shader.setFloat("spotLight.outerCutOff", glm::cos(glm::radians(17.0f)));
-
-        // // Set light properties
-        // shader.setVec3("light.position", lightData.position);
-        // shader.setVec3("light.ambient", glm::vec3(0.2f));
-        // shader.setVec3("light.diffuse", glm::vec3(0.5f));
-        // shader.setVec3("light.specular", glm::vec3(1.0f));
+        // Set view and projection matrices
         shader.setMat4("view", cam.getViewMatrix());
         shader.setMat4("projection", projection);
 
         glm::mat4 modelMat = glm::mat4(1.0f);
-        // You can set model transform per object here if needed
+        //modelMat = glm::scale(modelMat, glm::vec3(0.1f, 0.1f, 0.1f));
         shader.setMat4("model", modelMat);
+
         glBindVertexArray(objectEntity.objects[i].VAO);
         if (objectEntity.objects[i].indices && objectEntity.objects[i].indicesCount > 0) {
             glDrawElements(GL_TRIANGLES, objectEntity.objects[i].indicesCount, GL_UNSIGNED_INT, 0);

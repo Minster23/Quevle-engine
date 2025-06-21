@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/QuavleEngine/utils/camera/camera.cpp" "CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj.d"
   "D:/QuavleEngine/utils/filereader.cpp" "CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.obj.d"
   "D:/QuavleEngine/utils/lightning/lightning.cpp" "CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj.d"
+  "D:/QuavleEngine/utils/msgWnd.cpp" "CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.obj.d"
   "D:/QuavleEngine/vendor/imgui/imgui.cpp" "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj.d"
   "D:/QuavleEngine/vendor/imgui/imgui_demo.cpp" "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.obj.d"
   "D:/QuavleEngine/vendor/imgui/imgui_draw.cpp" "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.obj.d"

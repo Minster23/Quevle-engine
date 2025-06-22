@@ -41,8 +41,6 @@ namespace QuavleEngine
             size_t vertexCount; // Added for vertex count
         };
 
-        static std::vector<ObjectData> objects; // Public vector of ObjectData
-
         struct LightData
         {
             unsigned int lightCubeVAO;
@@ -53,9 +51,22 @@ namespace QuavleEngine
             unsigned int shaderProgramLight;
         };
 
+        struct CubeMap
+        {
+            unsigned int cubemapVAO, cubemapVBO;
+            unsigned int shaderProgramCubemap;
+            unsigned int vertex, fragment;
+            unsigned int textureID;
+        };
+
         static std::vector<LightData> lights;
+        static std::vector<ObjectData> objects;
+        static std::vector<CubeMap> CubeMaps;
+
+
 
         void firstLightObject();
+        void firstCubemap();
 
     private:
     };

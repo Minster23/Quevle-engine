@@ -8,6 +8,11 @@
 using namespace QuavleEngine;
 Renderer renderer;
 
+bool isMouseCaptured = false;
+double lastPosX = 0.0, lastPosY = 0.0;
+float lastYaw = 0.0f, lastPitch = 0.0f;
+bool wasRightMousePressed = false;
+
 bool WindowManager::initWindow()
 {
     glfwInit();
@@ -55,6 +60,8 @@ bool WindowManager::openGL()
     glEnable(GL_CULL_FACE);
     glCullFace(GL_BACK);
     glFrontFace(GL_CCW);
+    glfwWindowHint(GLFW_SAMPLES, 8); // Set before window creation for MSAA x8 (should also be in initWindow)
+    glEnable(GL_MULTISAMPLE); // Enable MSAA in OpenGL
     std::cout << "OpenGL version: " << glGetString(GL_VERSION) << std::endl;
     
     renderer.init(); // Initialize renderer (includes camera init)
@@ -67,9 +74,25 @@ void WindowManager::mainLoop()
     
     while (!glfwWindowShouldClose(window))
     {
-        // input
-        // -----
         processInput(window);
+
+        // --- Mouse capture toggle with right mouse button ---
+        int rightMouseState = glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT);
+        if (rightMouseState == GLFW_PRESS && !isMouseCaptured) {
+            isMouseCaptured = true;
+            // Save last mouse position and camera rotation
+            double xpos, ypos;
+            glfwGetCursorPos(window, &xpos, &ypos);
+            lastPosX = xpos;
+            lastPosY = ypos;
+            lastYaw = renderer.cam.yaw;
+            lastPitch = renderer.cam.pitch;
+            glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+        }
+        if (rightMouseState == GLFW_RELEASE && isMouseCaptured) {
+            isMouseCaptured = false;
+            glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+        }
 
         // Render
         // ------
@@ -95,7 +118,7 @@ void WindowManager::cleanup()
 
 void WindowManager::processInput(GLFWwindow *window)
 {
-    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+    if (glfwGetKey(window, GLFW_KEY_LEFT_CONTROL) == GLFW_PRESS && glfwGetKey(window, GLFW_KEY_F4) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
 
     float cameraSpeed = static_cast<float>(2.5 * renderer.cam.deltaTime); // Use renderer's camera deltaTime
@@ -112,15 +135,23 @@ void WindowManager::processInput(GLFWwindow *window)
 
 void WindowManager::mouse_callback(GLFWwindow* window, double xpos, double ypos)
 {
-    if (renderer.cam.firstMouse)
-    {
-        renderer.cam.lastX = xpos;
-        renderer.cam.lastY = ypos;
-        renderer.cam.firstMouse = false;
+    if (!isMouseCaptured) return; // Do not process mouse movement if not captured
+
+    static bool firstFrame = true;
+    if (firstFrame) {
+        renderer.cam.lastX = lastPosX;
+        renderer.cam.lastY = lastPosY;
+        renderer.cam.yaw = lastYaw;
+        renderer.cam.pitch = lastPitch;
+        firstFrame = false;
     }
-  
+    if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT) == GLFW_RELEASE) {
+        firstFrame = true;
+        return;
+    }
+
     float xoffset = xpos - renderer.cam.lastX;
-    float yoffset = renderer.cam.lastY - ypos; 
+    float yoffset = renderer.cam.lastY - ypos;
     renderer.cam.lastX = xpos;
     renderer.cam.lastY = ypos;
 

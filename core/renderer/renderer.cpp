@@ -75,7 +75,6 @@ float verticesLight[] = {
     -0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f,
     -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f};
 
-
 glm::vec3 pointLightPositions[] = {
     glm::vec3(0.0f, 0.0f, 0.0f),
     glm::vec3(2.0f, 0.0f, -10.0f),
@@ -91,9 +90,12 @@ WindowManager windowManager;
 
 void Renderer::init()
 {
+    //* initialize the object entity
     DEBUG_PRINT("Renderer::init() called");
     Model model("F:/Devlopment/LLL/EmguCVApp/hk_usp_9mm_pistol/scene.gltf", true);
-    // Copy static objects to local objectEntity.objects for this renderer
+    objectEntity.firstLightObject();
+
+    //* do something with the model
     objectEntity.objects = ObjectEntity::objects;
     shaderLoaderLight();
     LightShaderLink();
@@ -110,6 +112,7 @@ void Renderer::init()
     {
         DEBUG_PRINT("No objects to render. Exiting drawCallback.");
     }
+
     for (int j = 0; j < objectEntity.objects.size(); ++j)
     {
         DEBUG_PRINT("IN RENDERER Object " + std::to_string(j) + ": " + objectEntity.objects[j].name +
@@ -321,53 +324,53 @@ void Renderer::shaderLoaderLight()
     const char *vertexShaderSource = vertSourceLight.c_str();
     const char *fragmentShaderSource = fragSourceLight.c_str();
 
-    lightData.vertexShaderLight = glCreateShader(GL_VERTEX_SHADER);
-    glShaderSource(lightData.vertexShaderLight, 1, &vertexShaderSource, NULL);
-    glCompileShader(lightData.vertexShaderLight);
-    glGetShaderiv(lightData.vertexShaderLight, GL_COMPILE_STATUS, &success);
+    objectEntity.lights[0].vertexShaderLight = glCreateShader(GL_VERTEX_SHADER);
+    glShaderSource(objectEntity.lights[0].vertexShaderLight, 1, &vertexShaderSource, NULL);
+    glCompileShader(objectEntity.lights[0].vertexShaderLight);
+    glGetShaderiv(objectEntity.lights[0].vertexShaderLight, GL_COMPILE_STATUS, &success);
     if (!success)
     {
-        glGetShaderInfoLog(lightData.vertexShaderLight, 512, NULL, infoLog);
+        glGetShaderInfoLog(objectEntity.lights[0].vertexShaderLight, 512, NULL, infoLog);
         std::cout << "ERROR::VERTEX::COMPILATION_FAILED\n"
                   << infoLog << std::endl;
     }
 
-    lightData.fragmentShaderLight = glCreateShader(GL_FRAGMENT_SHADER);
-    glShaderSource(lightData.fragmentShaderLight, 1, &fragmentShaderSource, NULL);
-    glCompileShader(lightData.fragmentShaderLight);
-    glGetShaderiv(lightData.fragmentShaderLight, GL_COMPILE_STATUS, &success);
+    objectEntity.lights[0].fragmentShaderLight = glCreateShader(GL_FRAGMENT_SHADER);
+    glShaderSource(objectEntity.lights[0].fragmentShaderLight, 1, &fragmentShaderSource, NULL);
+    glCompileShader(objectEntity.lights[0].fragmentShaderLight);
+    glGetShaderiv(objectEntity.lights[0].fragmentShaderLight, GL_COMPILE_STATUS, &success);
     if (!success)
     {
-        glGetShaderInfoLog(lightData.fragmentShaderLight, 512, NULL, infoLog);
+        glGetShaderInfoLog(objectEntity.lights[0].fragmentShaderLight, 512, NULL, infoLog);
         std::cout << "ERROR::FRAGMENT::COMPILATION_FAILED\n"
                   << infoLog << std::endl;
     }
 
-    lightData.shaderProgramLight = glCreateProgram();
-    glAttachShader(lightData.shaderProgramLight, lightData.vertexShaderLight);
-    glAttachShader(lightData.shaderProgramLight, lightData.fragmentShaderLight);
-    glLinkProgram(lightData.shaderProgramLight);
-    glGetProgramiv(lightData.shaderProgramLight, GL_LINK_STATUS, &success);
+    objectEntity.lights[0].shaderProgramLight = glCreateProgram();
+    glAttachShader(objectEntity.lights[0].shaderProgramLight, objectEntity.lights[0].vertexShaderLight);
+    glAttachShader(objectEntity.lights[0].shaderProgramLight, objectEntity.lights[0].fragmentShaderLight);
+    glLinkProgram(objectEntity.lights[0].shaderProgramLight);
+    glGetProgramiv(objectEntity.lights[0].shaderProgramLight, GL_LINK_STATUS, &success);
     if (!success)
     {
-        glGetProgramInfoLog(lightData.shaderProgramLight, 512, NULL, infoLog);
+        glGetProgramInfoLog(objectEntity.lights[0].shaderProgramLight, 512, NULL, infoLog);
         std::cout << "ERROR::SHADER::LINKING_FAILED\n"
                   << infoLog << std::endl;
     }
 
-    glDeleteShader(lightData.vertexShaderLight);
-    glDeleteShader(lightData.fragmentShaderLight);
+    glDeleteShader(objectEntity.lights[0].vertexShaderLight);
+    glDeleteShader(objectEntity.lights[0].fragmentShaderLight);
 }
 
 void Renderer::LightShaderLink()
 {
-    glGenVertexArrays(1, &lightData.lightCubeVAO);
-    glGenBuffers(1, &lightData.lightCubeVBO);
+    glGenVertexArrays(1, &objectEntity.lights[0].lightCubeVAO);
+    glGenBuffers(1, &objectEntity.lights[0].lightCubeVBO);
 
-    glBindBuffer(GL_ARRAY_BUFFER, lightData.lightCubeVBO);
+    glBindBuffer(GL_ARRAY_BUFFER, objectEntity.lights[0].lightCubeVBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(verticesLight), verticesLight, GL_STATIC_DRAW);
 
-    glBindVertexArray(lightData.lightCubeVAO);
+    glBindVertexArray(objectEntity.lights[0].lightCubeVAO);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)0);
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)(3 * sizeof(float)));
@@ -387,7 +390,7 @@ void Renderer::drawCallback()
     // Animate light position in an orbital path around (0, 0, 0)
     static float angle = 0.0f;
     angle += 0.001f; // Adjust speed as needed
-    float radius = 2.0f;
+    float radius = 5.0f;
     glm::vec3 lightPos(
         radius * cos(angle),
         1.0f, // fixed height
@@ -424,7 +427,7 @@ void Renderer::drawCallback()
         glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].roughnessTextureID);
         shader.setInt("roughnessMap", 4);
 
-        shader.setFloat("lightIntensity", 3.0f); // Set light intensity
+        shader.setFloat("lightIntensity", 20.0f); // Set light intensity
 
         // Set view and projection matrices
         shader.setMat4("view", cam.getViewMatrix());
@@ -446,17 +449,25 @@ void Renderer::drawCallback()
         }
     }
 
-    glBindVertexArray(lightData.lightCubeVAO);
-    glUseProgram(lightData.shaderProgramLight);
-    ShaderHelper lightShader(lightData.shaderProgramLight);
-    lightShader.setVec3("objectColor", lightData.lightColor);
-    lightShader.setMat4("view", cam.getViewMatrix());
-    lightShader.setMat4("projection", projection);
+    for (unsigned int i = 0; i < objectEntity.lights.size(); ++i)
+    {
+        if (objectEntity.lights[i].shaderProgramLight != 0)
+        {
 
-    glm::mat4 modelLight = glm::mat4(1.0f);
-    modelLight = glm::translate(modelLight, lightPos);
-    lightShader.setMat4("model", modelLight);
-    glDrawArrays(GL_TRIANGLES, 0, 36);
+            glBindVertexArray(objectEntity.lights[0].lightCubeVAO);
+            glUseProgram(objectEntity.lights[0].shaderProgramLight);
+            ShaderHelper lightShader(objectEntity.lights[0].shaderProgramLight);
+            lightShader.setVec3("objectColor", objectEntity.lights[0].lightColor);
+            lightShader.setMat4("view", cam.getViewMatrix());
+            lightShader.setMat4("projection", projection);
+
+            glm::mat4 modelLight = glm::mat4(1.0f);
+            modelLight = glm::translate(modelLight, lightPos);
+            lightShader.setMat4("model", modelLight);
+            glDrawArrays(GL_TRIANGLES, 0, 36);
+            continue;
+        }
+    }
 }
 
 void Renderer::drawCleanup()

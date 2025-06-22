@@ -39,6 +39,5 @@ namespace QuavleEngine
 
         const GLFWvidmode* mode;
         ObjectEntity objectEntity;
-        ObjectEntity::LightData lightData;
     };
 }

@@ -53,6 +53,10 @@ namespace QuavleEngine
             unsigned int shaderProgramLight;
         };
 
+        static std::vector<LightData> lights;
+
+        void firstLightObject();
+
     private:
     };
 }

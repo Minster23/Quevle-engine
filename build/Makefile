@@ -152,6 +152,30 @@ application/application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/application/application.cpp.s
 .PHONY : application/application.cpp.s
 
+core/interface/interface.obj: core/interface/interface.cpp.obj
+.PHONY : core/interface/interface.obj
+
+# target to build an object file
+core/interface/interface.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj
+.PHONY : core/interface/interface.cpp.obj
+
+core/interface/interface.i: core/interface/interface.cpp.i
+.PHONY : core/interface/interface.i
+
+# target to preprocess a source file
+core/interface/interface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.i
+.PHONY : core/interface/interface.cpp.i
+
+core/interface/interface.s: core/interface/interface.cpp.s
+.PHONY : core/interface/interface.s
+
+# target to generate assembly for a file
+core/interface/interface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.s
+.PHONY : core/interface/interface.cpp.s
+
 core/model/model.obj: core/model/model.cpp.obj
 .PHONY : core/model/model.obj
 
@@ -416,6 +440,54 @@ vendor/glad/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.s
 .PHONY : vendor/glad/glad.c.s
 
+vendor/imgui/backends/imgui_impl_glfw.obj: vendor/imgui/backends/imgui_impl_glfw.cpp.obj
+.PHONY : vendor/imgui/backends/imgui_impl_glfw.obj
+
+# target to build an object file
+vendor/imgui/backends/imgui_impl_glfw.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.obj
+.PHONY : vendor/imgui/backends/imgui_impl_glfw.cpp.obj
+
+vendor/imgui/backends/imgui_impl_glfw.i: vendor/imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : vendor/imgui/backends/imgui_impl_glfw.i
+
+# target to preprocess a source file
+vendor/imgui/backends/imgui_impl_glfw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : vendor/imgui/backends/imgui_impl_glfw.cpp.i
+
+vendor/imgui/backends/imgui_impl_glfw.s: vendor/imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : vendor/imgui/backends/imgui_impl_glfw.s
+
+# target to generate assembly for a file
+vendor/imgui/backends/imgui_impl_glfw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : vendor/imgui/backends/imgui_impl_glfw.cpp.s
+
+vendor/imgui/backends/imgui_impl_opengl3.obj: vendor/imgui/backends/imgui_impl_opengl3.cpp.obj
+.PHONY : vendor/imgui/backends/imgui_impl_opengl3.obj
+
+# target to build an object file
+vendor/imgui/backends/imgui_impl_opengl3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.obj
+.PHONY : vendor/imgui/backends/imgui_impl_opengl3.cpp.obj
+
+vendor/imgui/backends/imgui_impl_opengl3.i: vendor/imgui/backends/imgui_impl_opengl3.cpp.i
+.PHONY : vendor/imgui/backends/imgui_impl_opengl3.i
+
+# target to preprocess a source file
+vendor/imgui/backends/imgui_impl_opengl3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.i
+.PHONY : vendor/imgui/backends/imgui_impl_opengl3.cpp.i
+
+vendor/imgui/backends/imgui_impl_opengl3.s: vendor/imgui/backends/imgui_impl_opengl3.cpp.s
+.PHONY : vendor/imgui/backends/imgui_impl_opengl3.s
+
+# target to generate assembly for a file
+vendor/imgui/backends/imgui_impl_opengl3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.s
+.PHONY : vendor/imgui/backends/imgui_impl_opengl3.cpp.s
+
 vendor/imgui/imgui.obj: vendor/imgui/imgui.cpp.obj
 .PHONY : vendor/imgui/imgui.obj
 
@@ -548,6 +620,9 @@ help:
 	@echo ... application/application.obj
 	@echo ... application/application.i
 	@echo ... application/application.s
+	@echo ... core/interface/interface.obj
+	@echo ... core/interface/interface.i
+	@echo ... core/interface/interface.s
 	@echo ... core/model/model.obj
 	@echo ... core/model/model.i
 	@echo ... core/model/model.s
@@ -581,6 +656,12 @@ help:
 	@echo ... vendor/glad/glad.obj
 	@echo ... vendor/glad/glad.i
 	@echo ... vendor/glad/glad.s
+	@echo ... vendor/imgui/backends/imgui_impl_glfw.obj
+	@echo ... vendor/imgui/backends/imgui_impl_glfw.i
+	@echo ... vendor/imgui/backends/imgui_impl_glfw.s
+	@echo ... vendor/imgui/backends/imgui_impl_opengl3.obj
+	@echo ... vendor/imgui/backends/imgui_impl_opengl3.i
+	@echo ... vendor/imgui/backends/imgui_impl_opengl3.s
 	@echo ... vendor/imgui/imgui.obj
 	@echo ... vendor/imgui/imgui.i
 	@echo ... vendor/imgui/imgui.s

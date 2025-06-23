@@ -15,16 +15,31 @@ namespace QuavleEngine
     class WindowManager
     {
     public:
-        const GLFWvidmode* mode;
-        // initWindow should return bool, not int
+        WindowManager();
+
+        // Framebuffer management
+        void bind_framebuffer();
+        void unbind_framebuffer();
+        void rescale_framebuffer(float width, float height);
+        GLuint get_texture_id() const;
+
+        // Window lifecycle
         bool initWindow();
         bool openGL();
         void mainLoop();
         void cleanup();
 
     private:
+        void create_framebuffer();
+
         // GLFW
-        GLFWwindow *window;
+        GLFWwindow *m_window;
+        const GLFWvidmode *m_mode;
+
+        // Framebuffer
+        GLuint m_FBO;
+        GLuint m_RBO;
+        GLuint m_texture_id;
 
         static void framebuffer_size_callback(GLFWwindow *window, int width, int height);
         static void mouse_callback(GLFWwindow* window, double xpos, double ypos);

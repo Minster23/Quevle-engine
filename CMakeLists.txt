@@ -17,6 +17,11 @@ set(VULKAN_SDK $ENV{VULKAN_SDK})
 # ImGui sources
 file(GLOB IMGUI_SOURCES
     vendor/imgui/*.cpp
+    vendor/imgui/*.h
+    vendor/imgui/backends/imgui_impl_glfw.h
+    vendor/imgui/backends/imgui_impl_glfw.cpp
+    vendor/imgui/backends/imgui_impl_opengl3.h
+    vendor/imgui/backends/imgui_impl_opengl3.cpp
 )
 
 file(GLOB ASSIMP_SOURCES

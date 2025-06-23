@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/QuavleEngine/vendor/glad/glad.c" "CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj" "gcc" "CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj.d"
   "D:/QuavleEngine/application/application.cpp" "CMakeFiles/QuavleEngine.dir/application/application.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/application/application.cpp.obj.d"
+  "D:/QuavleEngine/core/interface/interface.cpp" "CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj.d"
   "D:/QuavleEngine/core/model/model.cpp" "CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj.d"
   "D:/QuavleEngine/core/renderer/entity/objectEntity.cpp" "CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj.d"
   "D:/QuavleEngine/core/renderer/renderer.cpp" "CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj.d"
@@ -20,6 +21,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/QuavleEngine/utils/filereader.cpp" "CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.obj.d"
   "D:/QuavleEngine/utils/lightning/lightning.cpp" "CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj.d"
   "D:/QuavleEngine/utils/msgWnd.cpp" "CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.obj.d"
+  "D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.cpp" "CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.obj.d"
+  "D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.cpp" "CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.obj.d"
   "D:/QuavleEngine/vendor/imgui/imgui.cpp" "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj.d"
   "D:/QuavleEngine/vendor/imgui/imgui_demo.cpp" "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.obj.d"
   "D:/QuavleEngine/vendor/imgui/imgui_draw.cpp" "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.obj.d"

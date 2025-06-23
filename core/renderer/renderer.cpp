@@ -101,7 +101,8 @@ glm::vec3 pointLightPositions[] = {
     glm::vec3(2.8f, 2.8f, 0.0f),
     glm::vec3(-2.8f, 2.8f, 0.0f),
     glm::vec3(2.8f, -2.8f, 0.0f),
-    glm::vec3(-2.8f, -2.8f, 0.0f)};
+    glm::vec3(-2.8f, -2.8f, 0.0f)
+};
 
 float skyboxVertices[] = {
     // positions
@@ -648,10 +649,10 @@ void Renderer::drawCallback()
     {
         if (objectEntity.lights[i].shaderProgramLight != 0)
         {
-            for (int i = 0; i <= pointLightPositions->length(); ++i)
+            for (int l = 0; l <= pointLightPositions->length(); ++l)
             {
                 glm::mat4 modelLight = glm::mat4(1.0f);
-                modelLight = glm::translate(modelLight, pointLightPositions[i]);
+                modelLight = glm::translate(modelLight, pointLightPositions[l]);
                 lightShader.setMat4("model", modelLight);
                 glDrawArrays(GL_TRIANGLES, 0, 36);
                 continue;

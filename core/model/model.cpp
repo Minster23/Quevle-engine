@@ -1,8 +1,11 @@
 #include <core/model/model.hpp>
-#include <utils/Debug.h>
 #include <utils/msgWnd.hpp>
+#include <core/interface/interface.hpp>
 
 using namespace QuavleEngine;
+
+// This makes the global `intfc` object from renderer.cpp available here.
+extern interface intfc;
 
 Model::Model(std::string const &path, bool gamma)
 {
@@ -11,7 +14,7 @@ Model::Model(std::string const &path, bool gamma)
 
     if (!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode)
     {
-        DEBUG_PRINT("ERROR::ASSIMP::" + std::string(importer.GetErrorString()));
+        intfc.inputDebug("Warning", "ERROR::ASSIMP:: " + std::string(importer.GetErrorString()));
         return;
     }
 
@@ -37,6 +40,9 @@ void Model::setModelData(const aiScene *scene, const std::string &path)
         objectData.fragmentShader = 0;
         objectData.diffuseTextureID = 0;
         objectData.specularTextureID = 0;
+        objectData.position = glm::vec3(0.0f, 0.0f, 0.0f);
+        objectData.rotation = glm::vec3(0.0f, 0.0f, 0.0f);
+        objectData.scale = glm::vec3(1.0f, 1.0f, 1.0f);
 
         // Standard Assimp: Only positions, normals, texcoords
         size_t floatsPerVertex = 8; // 3 pos, 3 normal, 2 texcoord
@@ -120,9 +126,8 @@ void Model::setModelData(const aiScene *scene, const std::string &path)
         }
 
         ObjectEntity::objects.push_back(objectData);
-        DEBUG_PRINT("Processed mesh: " + objectData.name + " with " +
+        intfc.inputDebug("Info", "Processed mesh: " + objectData.name + " with " +
                     std::to_string(mesh->mNumVertices) + " vertices and " +
                     std::to_string(objectData.indicesCount) + " indices.");
     }
 }
-

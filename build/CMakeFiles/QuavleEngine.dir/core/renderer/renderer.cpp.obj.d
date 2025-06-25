@@ -466,4 +466,12 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  D:/QuavleEngine/vendor/assimp/include/assimp/Importer.hpp \
  D:/QuavleEngine/vendor/assimp/include/assimp/postprocess.h \
  D:/QuavleEngine/utils/fileReader.hpp D:/QuavleEngine/utils/Debug.h \
- D:/QuavleEngine/core/renderer/shader_h.h
+ D:/QuavleEngine/core/interface/interface.hpp \
+ D:/QuavleEngine/core/renderer/shader_h.h \
+ D:/QuavleEngine/vendor/imgui/imgui.h \
+ D:/QuavleEngine/vendor/imgui/imconfig.h \
+ F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+ F:/Devtool/mysys2/ucrt64/include/stdarg.h \
+ F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
+ D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
+ D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h

@@ -70,10 +70,16 @@ void interface::interfaceRender()
         }
         ImGui::EndMenuBar();
     }
-    ImGui::End(); // End the DockSpace window.
-
-    ImGui::Begin("Profiler");
     ImGui::End();
+
+
+    consolePanel();
+    objectHirarcy();
+    inspector();
+    cameraConfig();
+
+
+    ImGui::ShowDemoWindow();
 
     ImGui::Begin("My Scene");
     ImVec2 viewportPanelSize = ImGui::GetContentRegionAvail();
@@ -98,7 +104,6 @@ void interface::interfaceRender()
 
     // Render
     ImGui::Render();
-
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
     if (io.ConfigFlags & ImGuiConfigFlags_ViewportsEnable)
     {

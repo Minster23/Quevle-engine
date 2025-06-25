@@ -14,8 +14,8 @@
 #include <glm/gtc/type_ptr.hpp>
 
 #include <core/renderer/renderer.hpp>
+#include <core/interface/interface.hpp>
 #include <core/renderer/shader_h.h>
-#include <utils/Debug.h>
 
 
 // --- Constants ---
@@ -23,8 +23,10 @@ namespace
 {
     constexpr char VERT_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/vertex.glsl";
     constexpr char FRAG_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/fragment.glsl";
+
     constexpr char LIGHT_VERT_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/lightVert.glsl";
     constexpr char LIGHT_FRAG_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/lightFrag.glsl";
+    
     constexpr char DIFFUSE_TEXTURE_PATH[] = "F:/Devlopment/LLL/EmguCVApp/ak-47_kalashnikov/textures/material_baseColor.png";
     constexpr char NORMAL_TEXTURE_PATH[] = "F:/Devlopment/LLL/EmguCVApp/ak-47_kalashnikov/textures/material_normal.png";
     constexpr char METALLIC_TEXTURE_PATH[] = "F:/Devlopment/LLL/EmguCVApp/ak-47_kalashnikov/textures/material_metallicRoughness.png";
@@ -33,6 +35,9 @@ namespace
 
     constexpr char SKYBOX_VERT_PATH[] = "D:/QuavleEngine/utils/shader/skyVert.glsl";
     constexpr char SKYBOX_FRAG_PATH[] = "D:/QuavleEngine/utils/shader/skyFrag.glsl";
+
+    constexpr char GRID_VERT_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/gridVert.glsl";
+    constexpr char GRID_FRAG_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/gridFrag.glsl";
 }
 
 std::vector<std::string> faces{
@@ -89,21 +94,6 @@ float verticesLight[] = {
     -0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f,
     -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f};
 
-glm::vec3 pointLightPositions[] = {
-    // "Planets" orbiting around the sun in different axes/radii
-    glm::vec3(4.0f, 0.0f, 0.0f),  // X axis
-    glm::vec3(-4.0f, 0.0f, 0.0f), // -X axis
-    glm::vec3(0.0f, 4.0f, 0.0f),  // Y axis
-    glm::vec3(0.0f, -4.0f, 0.0f), // -Y axis
-    glm::vec3(0.0f, 0.0f, 4.0f),  // Z axis
-    glm::vec3(0.0f, 0.0f, -4.0f), // -Z axis
-    // Diagonal orbits for more "planets"
-    glm::vec3(2.8f, 2.8f, 0.0f),
-    glm::vec3(-2.8f, 2.8f, 0.0f),
-    glm::vec3(2.8f, -2.8f, 0.0f),
-    glm::vec3(-2.8f, -2.8f, 0.0f)
-};
-
 float skyboxVertices[] = {
     // positions
     -1.0f, 1.0f, -1.0f,
@@ -148,34 +138,54 @@ float skyboxVertices[] = {
     -1.0f, -1.0f, 1.0f,
     1.0f, -1.0f, 1.0f};
 
+unsigned int gridShaderProgram;
+GLuint gridVAO;
+GLuint gridVBO;
+GLuint gridEBO;
+
 // Lights facing cubes, each 10 units away on the +X axis
 using namespace QuavleEngine;
 
+bool Renderer::Diffuse = true;
+bool Renderer::Specular = true;
+bool Renderer::Normal = true;
+bool Renderer::Metallic = true;
+bool Renderer::Roughness = true;
+bool Renderer::Grid = true;
+
 WindowManager windowManager;
+interface intfc;
+ObjectEntity objectEntity;
 // --- Renderer Implementation ---
 
 void Renderer::init()
 {
     //* initialize the object entity
-    DEBUG_PRINT("Renderer::init() called");
-    Model model("F:/Devlopment/LLL/EmguCVApp/ak-47_kalashnikov/scene.gltf", true);
-    objectEntity.firstLightObject();
+    cam.init();
+    intfc.inputDebug("Info", "Renderer::init() called");
+    
+    shaderLoaderLight();
+    LightShaderLink();
+
     objectEntity.firstCubemap();
 
-    //* do something with the model
-    objectEntity.objects = ObjectEntity::objects;
-    shaderLoaderLight();
-    
-    LightShaderLink();
-    cam.init();
 
     //* CUBEMAP
     shaderLoader(0, RenderType::SKYBOX);
     shaderLink(0, RenderType::SKYBOX);
     loadCubemapTexture(faces, 0);
 
-    //* OBJECTS
-    for (size_t i = 0; i < objectEntity.objects.size(); ++i) {
+    //* GRID
+    createGridShaderProgram();
+    setupGridQuad();
+}
+
+void Renderer::loadModelFirst()
+{
+    //* OBJECTS (kalo UI dah jadi hapus aja buat ulang yang kayak gini)
+    Model model("F:/Devlopment/LLL/EmguCVApp/ak-47_kalashnikov/scene.gltf", true);
+    for (size_t i = 0; i < objectEntity.objects.size(); ++i)
+    {
         shaderLoader(i, RenderType::OBJECT);
         shaderLink(i, RenderType::OBJECT);
         // Load textures for each object (if you have per-object textures, set the path accordingly)
@@ -183,19 +193,82 @@ void Renderer::init()
         loadTexture(NORMAL_TEXTURE_PATH, i, TextureType::NORMAL);
         loadTexture(METALLIC_TEXTURE_PATH, i, TextureType::METALLIC);
     }
-    if (objectEntity.objects.size() == 0)
-    {
-        DEBUG_PRINT("No objects to render. Exiting drawCallback.");
+}
+
+void Renderer::LoadAnotherLight(){
+    objectEntity.firstLightObject();
+}
+
+//* ====================== GRID SHADER ==========================
+GLuint Renderer::compileShader(GLenum type, const char* source) {
+    GLuint gridShaderProgram = glCreateShader(type);
+    glShaderSource(gridShaderProgram, 1, &source, nullptr);
+    glCompileShader(gridShaderProgram);
+
+    GLint success;
+    glGetShaderiv(gridShaderProgram, GL_COMPILE_STATUS, &success);
+    if (!success) {
+        char info[512];
+        glGetShaderInfoLog(gridShaderProgram, 512, nullptr, info);
+        std::cerr << "Shader error:\n" << info << std::endl;
     }
-    for (int j = 0; j < objectEntity.objects.size(); ++j)
-    {
-        DEBUG_PRINT("IN RENDERER Object " + std::to_string(j) + ": " + objectEntity.objects[j].name +
-                    ", Diffuse Texture ID: " + std::to_string(objectEntity.objects[j].diffuseTextureID) +
-                    ", Specular Texture ID: " + std::to_string(objectEntity.objects[j].specularTextureID) +
-                    ", Shader Program: " + std::to_string(objectEntity.objects[j].shaderProgram) +
-                    ", vertices: " + std::to_string(reinterpret_cast<uintptr_t>(objectEntity.objects[j].vertices))
-                );
+    return gridShaderProgram;
+}
+
+void Renderer::createGridShaderProgram()
+{
+    std::string vertSource = readFile(GRID_VERT_SHADER_PATH);
+    std::string fragSource = readFile(GRID_FRAG_SHADER_PATH);
+    const char *vertexShaderSource = vertSource.c_str();
+    const char *fragmentShaderSource = fragSource.c_str();
+    GLuint vs = compileShader(GL_VERTEX_SHADER, vertexShaderSource);
+    GLuint fs = compileShader(GL_FRAGMENT_SHADER, fragmentShaderSource);
+
+    gridShaderProgram = glCreateProgram();
+    glAttachShader(gridShaderProgram, vs);
+    glAttachShader(gridShaderProgram, fs);
+    glLinkProgram(gridShaderProgram);
+
+    GLint success;
+    glGetProgramiv(gridShaderProgram, GL_LINK_STATUS, &success);
+    if (!success) {
+        char info[512];
+        glGetProgramInfoLog(gridShaderProgram, 512, nullptr, info);
+        std::cerr << "Link error:\n" << info << std::endl;
     }
+
+    glDeleteShader(vs);
+    glDeleteShader(fs);
+}
+
+void Renderer::setupGridQuad() {
+    float quadVertices[] = {
+        -1.0f, -1.0f,
+         1.0f, -1.0f,
+        -1.0f,  1.0f,
+         1.0f,  1.0f
+    };
+    unsigned int indices[] = {
+        0, 1, 2,
+        2, 1, 3
+    };
+
+    glGenVertexArrays(1, &gridVAO);
+    glGenBuffers(1, &gridVBO);
+    glGenBuffers(1, &gridEBO);
+
+    glBindVertexArray(gridVAO);
+
+    glBindBuffer(GL_ARRAY_BUFFER, gridVBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(quadVertices), quadVertices, GL_STATIC_DRAW);
+
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, gridEBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), (void*)0);
+
+    glBindVertexArray(0);
 }
 
 void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
@@ -203,7 +276,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
     if (expression == RenderType::OBJECT)
     {
         //* Load and compile vertex and fragment shaders for the object
-        DEBUG_PRINT("Renderer::shaderLoader() called OBJECT");
+        intfc.inputDebug("Info", "Renderer::shaderLoader() called for OBJECT");
         std::string vertSource = readFile(VERT_SHADER_PATH);
         std::string fragSource = readFile(FRAG_SHADER_PATH);
         const char *vertexShaderSource = vertSource.c_str();
@@ -217,7 +290,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetShaderInfoLog(objectEntity.objects[Index].vertexShader, 512, NULL, infoLog);
-            DEBUG_PRINT("ERROR::VERTEX::COMPILATION_FAILED\n" + std::string(infoLog));
+            intfc.inputDebug("Warning", "ERROR::VERTEX::COMPILATION_FAILED\n" + std::string(infoLog));
         }
 
         // Fragment Shader
@@ -228,7 +301,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetShaderInfoLog(objectEntity.objects[Index].fragmentShader, 512, NULL, infoLog);
-            DEBUG_PRINT("ERROR::FRAGMENT::COMPILATION_FAILED\n" + std::string(infoLog));
+            intfc.inputDebug("Warning", "ERROR::FRAGMENT::COMPILATION_FAILED\n" + std::string(infoLog));
         }
 
         // Shader Program
@@ -240,17 +313,18 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetProgramInfoLog(objectEntity.objects[Index].shaderProgram, 512, NULL, infoLog);
-            DEBUG_PRINT("ERROR::SHADER::LINKING_FAILED\n" + std::string(infoLog));
+            intfc.inputDebug("Warning", "ERROR::SHADER::LINKING_FAILED\n" + std::string(infoLog));
         }
 
         //* Clean up shaders after linking
         glDeleteShader(objectEntity.objects[Index].vertexShader);
         glDeleteShader(objectEntity.objects[Index].fragmentShader);
     }
+
     if (expression == RenderType::SKYBOX)
     {
         //* Load and compile vertex and fragment shaders for the cubemap
-        DEBUG_PRINT("Renderer::shaderLoader() called CUBEMAP");
+        intfc.inputDebug("Info", "Renderer::shaderLoader() called for SKYBOX");
         std::string vertSource = readFile(SKYBOX_VERT_PATH);
         std::string fragSource = readFile(SKYBOX_FRAG_PATH);
         const char *vertexShaderSource = vertSource.c_str();
@@ -264,7 +338,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetShaderInfoLog(objectEntity.CubeMaps[Index].vertex, 512, NULL, infoLog);
-            DEBUG_PRINT("ERROR::VERTEX::COMPILATION_FAILED\n" + std::string(infoLog));
+            intfc.inputDebug("Warning", "ERROR::VERTEX::COMPILATION_FAILED\n" + std::string(infoLog));
         }
 
         // Fragment Shader
@@ -275,7 +349,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetShaderInfoLog(objectEntity.CubeMaps[Index].fragment, 512, NULL, infoLog);
-            DEBUG_PRINT("ERROR::FRAGMENT::COMPILATION_FAILED\n" + std::string(infoLog));
+            intfc.inputDebug("Warning", "ERROR::FRAGMENT::COMPILATION_FAILED\n" + std::string(infoLog));
         }
 
         // Shader Program
@@ -287,7 +361,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetProgramInfoLog(objectEntity.CubeMaps[Index].shaderProgramCubemap, 512, NULL, infoLog);
-            DEBUG_PRINT("ERROR::SHADER::LINKING_FAILED\n" + std::string(infoLog));
+            intfc.inputDebug("Warning", "ERROR::SHADER::LINKING_FAILED\n" + std::string(infoLog));
         }
 
         //* Clean up shaders after linking
@@ -300,7 +374,7 @@ void Renderer::shaderLink(int Index, Renderer::RenderType expression)
 {
     if (expression == RenderType::OBJECT)
     {
-        DEBUG_PRINT("OBJECT LINKING SHADER");
+        intfc.inputDebug("Info", "Linking shader for OBJECT");
         // Generate and bind VAO, VBO, and EBO for the object
         glGenVertexArrays(1, &objectEntity.objects[Index].VAO);
         glGenBuffers(1, &objectEntity.objects[Index].VBO);
@@ -336,7 +410,7 @@ void Renderer::shaderLink(int Index, Renderer::RenderType expression)
     }
     if (expression == RenderType::SKYBOX)
     {
-        DEBUG_PRINT("CUBEMAP LINKING SHADER");
+        intfc.inputDebug("Info", "Linking shader for SKYBOX");
         glGenVertexArrays(1, &objectEntity.CubeMaps[Index].cubemapVAO);
         glGenBuffers(1, &objectEntity.CubeMaps[Index].cubemapVBO);
         glBindVertexArray(objectEntity.CubeMaps[Index].cubemapVAO);
@@ -453,7 +527,7 @@ void Renderer::loadTexture(const std::string &texturePath, int Index, TextureTyp
     glBindVertexArray(0);
 }
 
-// New function for loading cubemap textures
+// CubeMap Shader
 void Renderer::loadCubemapTexture(const std::vector<std::string>& faces, int Index)
 {
     unsigned int* texID = &objectEntity.CubeMaps[Index].textureID;
@@ -515,53 +589,53 @@ void Renderer::shaderLoaderLight()
     const char *vertexShaderSource = vertSourceLight.c_str();
     const char *fragmentShaderSource = fragSourceLight.c_str();
 
-    objectEntity.lights[0].vertexShaderLight = glCreateShader(GL_VERTEX_SHADER);
-    glShaderSource(objectEntity.lights[0].vertexShaderLight, 1, &vertexShaderSource, NULL);
-    glCompileShader(objectEntity.lights[0].vertexShaderLight);
-    glGetShaderiv(objectEntity.lights[0].vertexShaderLight, GL_COMPILE_STATUS, &success);
+    unsigned int vertexShaderLight = glCreateShader(GL_VERTEX_SHADER);
+    glShaderSource(vertexShaderLight, 1, &vertexShaderSource, NULL);
+    glCompileShader(vertexShaderLight);
+    glGetShaderiv(vertexShaderLight, GL_COMPILE_STATUS, &success);
     if (!success)
     {
-        glGetShaderInfoLog(objectEntity.lights[0].vertexShaderLight, 512, NULL, infoLog);
+        glGetShaderInfoLog(vertexShaderLight, 512, NULL, infoLog);
         std::cout << "ERROR::VERTEX::COMPILATION_FAILED\n"
                   << infoLog << std::endl;
     }
 
-    objectEntity.lights[0].fragmentShaderLight = glCreateShader(GL_FRAGMENT_SHADER);
-    glShaderSource(objectEntity.lights[0].fragmentShaderLight, 1, &fragmentShaderSource, NULL);
-    glCompileShader(objectEntity.lights[0].fragmentShaderLight);
-    glGetShaderiv(objectEntity.lights[0].fragmentShaderLight, GL_COMPILE_STATUS, &success);
+    unsigned int fragmentShaderLight = glCreateShader(GL_FRAGMENT_SHADER);
+    glShaderSource(fragmentShaderLight, 1, &fragmentShaderSource, NULL);
+    glCompileShader(fragmentShaderLight);
+    glGetShaderiv(fragmentShaderLight, GL_COMPILE_STATUS, &success);
     if (!success)
     {
-        glGetShaderInfoLog(objectEntity.lights[0].fragmentShaderLight, 512, NULL, infoLog);
+        glGetShaderInfoLog(fragmentShaderLight, 512, NULL, infoLog);
         std::cout << "ERROR::FRAGMENT::COMPILATION_FAILED\n"
                   << infoLog << std::endl;
     }
 
-    objectEntity.lights[0].shaderProgramLight = glCreateProgram();
-    glAttachShader(objectEntity.lights[0].shaderProgramLight, objectEntity.lights[0].vertexShaderLight);
-    glAttachShader(objectEntity.lights[0].shaderProgramLight, objectEntity.lights[0].fragmentShaderLight);
-    glLinkProgram(objectEntity.lights[0].shaderProgramLight);
-    glGetProgramiv(objectEntity.lights[0].shaderProgramLight, GL_LINK_STATUS, &success);
+    lightShaderProgram = glCreateProgram();
+    glAttachShader(lightShaderProgram, vertexShaderLight);
+    glAttachShader(lightShaderProgram, fragmentShaderLight);
+    glLinkProgram(lightShaderProgram);
+    glGetProgramiv(lightShaderProgram, GL_LINK_STATUS, &success);
     if (!success)
     {
-        glGetProgramInfoLog(objectEntity.lights[0].shaderProgramLight, 512, NULL, infoLog);
+        glGetProgramInfoLog(lightShaderProgram, 512, NULL, infoLog);
         std::cout << "ERROR::SHADER::LINKING_FAILED\n"
                   << infoLog << std::endl;
     }
 
-    glDeleteShader(objectEntity.lights[0].vertexShaderLight);
-    glDeleteShader(objectEntity.lights[0].fragmentShaderLight);
+    glDeleteShader(vertexShaderLight);
+    glDeleteShader(fragmentShaderLight);
 }
 
 void Renderer::LightShaderLink()
 {
-    glGenVertexArrays(1, &objectEntity.lights[0].lightCubeVAO);
-    glGenBuffers(1, &objectEntity.lights[0].lightCubeVBO);
+    glGenVertexArrays(1, &lightVAO);
+    glGenBuffers(1, &lightVBO);
 
-    glBindBuffer(GL_ARRAY_BUFFER, objectEntity.lights[0].lightCubeVBO);
+    glBindBuffer(GL_ARRAY_BUFFER, lightVBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(verticesLight), verticesLight, GL_STATIC_DRAW);
 
-    glBindVertexArray(objectEntity.lights[0].lightCubeVAO);
+    glBindVertexArray(lightVAO);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)0);
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)(3 * sizeof(float)));
@@ -572,109 +646,140 @@ void Renderer::LightShaderLink()
 
 void Renderer::drawCallback()
 {
+    intfc.inputDebug("Info", "CallBack");
     mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
     cam.update();
     float aspectRatio = static_cast<float>(mode->width) / static_cast<float>(mode->height);
     glm::mat4 projection = glm::perspective(glm::radians(cam.fov), aspectRatio, 0.1f, 1000.0f);
 
-    for (size_t i = 0; i < objectEntity.objects.size(); ++i)
+    if (objectEntity.objects.size() != 0)
     {
-        glUseProgram(objectEntity.objects[i].shaderProgram);
-        ShaderHelper shader(objectEntity.objects[i].shaderProgram);
-
-        // Bind diffuse texture and set uniform (standard, simple)
-        // Bind and set diffuse texture
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].diffuseTextureID);
-        shader.setInt("diffuse", 0);
-
-        // Bind and set specular texture
-        glActiveTexture(GL_TEXTURE1);
-        glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].specularTextureID);
-        shader.setInt("specular", 1);
-
-        // Bind and set normal map
-        glActiveTexture(GL_TEXTURE2);
-        glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].normalTextureID);
-        shader.setInt("normalMap", 2);
-
-        // Bind and set metallic map
-        glActiveTexture(GL_TEXTURE3);
-        glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].metallicTextureID);
-        shader.setInt("metallicMap", 3);
-
-        // Bind and set roughness map (if you have it)
-        glActiveTexture(GL_TEXTURE4);
-        glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].roughnessTextureID);
-        shader.setInt("roughnessMap", 4);
-
-        // shader.setVec3("lightPos", lightPos);
-        // shader.setFloat("lightIntensity", 20.0f); // Set light intensity
-
-        // Send to shader
-        shader.setInt("lightCount", pointLightPositions->length());
-        for (int i = 0; i <= pointLightPositions->length(); ++i)
+        for (size_t i = 0; i < objectEntity.objects.size(); ++i)
         {
-            std::string index = std::to_string(i);
-            shader.setVec3("lightPositions[" + index + "]", pointLightPositions[i]);
-            shader.setFloat("lightIntensities[" + index + "]", 0.9f); // Set light intensity for each light
-        }
+            glUseProgram(objectEntity.objects[i].shaderProgram);
+            ShaderHelper shader(objectEntity.objects[i].shaderProgram);
 
-        // Set view and projection matrices
-        shader.setMat4("view", cam.getViewMatrix());
-        shader.setMat4("projection", projection);
-
-        glm::mat4 modelMat = glm::mat4(1.0f);
-        //modelMat = glm::scale(modelMat, glm::vec3(0.1f, 0.1f, 0.1f));
-        shader.setMat4("model", modelMat);
-        
-        shader.setVec3("viewPos", cam.cameraPos);
-
-        glBindVertexArray(objectEntity.objects[i].VAO);
-        if (objectEntity.objects[i].indices && objectEntity.objects[i].indicesCount > 0) {
-            glDrawElements(GL_TRIANGLES, objectEntity.objects[i].indicesCount, GL_UNSIGNED_INT, 0);
-        } else {
-            glDrawArrays(GL_TRIANGLES, 0, objectEntity.objects[i].vertexCount);
-        }
-    }
-
-    glBindVertexArray(objectEntity.lights[0].lightCubeVAO);
-    glUseProgram(objectEntity.lights[0].shaderProgramLight);
-    ShaderHelper lightShader(objectEntity.lights[0].shaderProgramLight);
-    lightShader.setVec3("objectColor", objectEntity.lights[0].lightColor);
-    lightShader.setMat4("view", cam.getViewMatrix());
-    lightShader.setMat4("projection", projection);
-
-    for (unsigned int i = 0; i < objectEntity.lights.size(); ++i)
-    {
-        if (objectEntity.lights[i].shaderProgramLight != 0)
-        {
-            for (int l = 0; l <= pointLightPositions->length(); ++l)
+            // Bind diffuse texture and set uniform (standard, simple)
+            // Bind and set diffuse texture
+            if (Diffuse)
             {
-                glm::mat4 modelLight = glm::mat4(1.0f);
-                modelLight = glm::translate(modelLight, pointLightPositions[l]);
-                lightShader.setMat4("model", modelLight);
-                glDrawArrays(GL_TRIANGLES, 0, 36);
-                continue;
+                glActiveTexture(GL_TEXTURE0);
+                glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].diffuseTextureID);
+                shader.setInt("diffuse", 0);
+            }
+            // Bind and set specular texture
+            if (Specular)
+            {
+                glActiveTexture(GL_TEXTURE1);
+                glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].specularTextureID);
+                shader.setInt("specular", 1);
+            }
+
+            // Bind and set normal map
+            if (Normal)
+            {
+                glActiveTexture(GL_TEXTURE2);
+                glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].normalTextureID);
+                shader.setInt("normalMap", 2);
+            }
+
+            if (Metallic)
+            {
+                // Bind and set metallic map
+                glActiveTexture(GL_TEXTURE3);
+                glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].metallicTextureID);
+                shader.setInt("metallicMap", 3);
+            }
+
+            // Bind and set roughness map (if you have it)
+            if (Roughness)
+            {
+                glActiveTexture(GL_TEXTURE4);
+                glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].roughnessTextureID);
+                shader.setInt("roughnessMap", 4);
+            }
+
+            // Send to shader
+            shader.setInt("lightCount", objectEntity.lights.size());
+            for (size_t light_idx = 0; light_idx < objectEntity.lights.size(); ++light_idx)
+            {
+                std::string index = std::to_string(light_idx);
+                shader.setVec3("lightPositions[" + index + "]", objectEntity.lights[light_idx].position);
+                shader.setVec3("lightColors[" + index + "]", objectEntity.lights[light_idx].lightColor);
+                shader.setFloat("lightIntensities[" + index + "]", objectEntity.lights[light_idx].intensity); // Set light intensity for each light
+            }
+
+            shader.setMat4("view", cam.getViewMatrix());
+            shader.setMat4("projection", projection);
+
+            glm::mat4 modelMat = glm::mat4(1.0f);
+            modelMat = glm::scale(modelMat, objectEntity.objects[i].scale);
+            modelMat = glm::translate(modelMat, objectEntity.objects[i].position);
+            glm::vec3 rot = glm::radians(objectEntity.objects[i].rotation);
+
+            modelMat = glm::rotate(modelMat, rot.x, glm::vec3(1.0f, 0.0f, 0.0f));
+            modelMat = glm::rotate(modelMat, rot.y, glm::vec3(0.0f, 1.0f, 0.0f));
+            modelMat = glm::rotate(modelMat, rot.z, glm::vec3(0.0f, 0.0f, 1.0f));
+            shader.setMat4("model", modelMat);
+
+            shader.setVec3("viewPos", cam.cameraPos);
+
+            glBindVertexArray(objectEntity.objects[i].VAO);
+            if (objectEntity.objects[i].indices && objectEntity.objects[i].indicesCount > 0 && objectEntity.objects[i].isShow)
+            {
+                glDrawElements(GL_TRIANGLES, objectEntity.objects[i].indicesCount, GL_UNSIGNED_INT, 0);
+            }
+            else
+            {
+                glDrawArrays(GL_TRIANGLES, 0, objectEntity.objects[i].vertexCount);
             }
         }
     }
+    else
+    {
+    }
 
-    // draw skybox as last
+    if (!objectEntity.lights.empty())
+    {
+        glUseProgram(lightShaderProgram);
+        ShaderHelper lightShader(lightShaderProgram);
+        lightShader.setMat4("view", cam.getViewMatrix());
+        lightShader.setMat4("projection", projection);
+        glBindVertexArray(lightVAO);
+        for (unsigned int i = 0; i < objectEntity.lights.size(); ++i)
+        {
+            glm::mat4 modelLight = glm::mat4(1.0f);
+            modelLight = glm::translate(modelLight, objectEntity.lights[i].position);
+            lightShader.setMat4("model", modelLight);
+            lightShader.setVec3("objectColor", objectEntity.lights[i].lightColor);
+            glDrawArrays(GL_TRIANGLES, 0, 36);
+        }
+    }
+
+    if (Grid)
+    {
+        glUseProgram(gridShaderProgram);
+        ShaderHelper gridShader(gridShaderProgram);
+        gridShader.setMat4("view", cam.getViewMatrix());
+        gridShader.setMat4("projection", projection);
+        gridShader.setVec3("camPos", cam.cameraPos);
+        glBindVertexArray(gridVAO);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        glBindVertexArray(0);
+    }
+
     glDepthFunc(GL_LEQUAL);
     ShaderHelper skyboxShader(objectEntity.CubeMaps[0].shaderProgramCubemap);
     glUseProgram(objectEntity.CubeMaps[0].shaderProgramCubemap);
-    // Remove translation from view matrix
     glm::mat4 view = glm::mat4(glm::mat3(cam.getViewMatrix()));
     skyboxShader.setMat4("view", view);
     skyboxShader.setMat4("projection", projection);
-    // skybox cube
     glBindVertexArray(objectEntity.CubeMaps[0].cubemapVAO);
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_CUBE_MAP, objectEntity.CubeMaps[0].textureID);
     glDrawArrays(GL_TRIANGLES, 0, 36);
     glBindVertexArray(0);
-    glDepthFunc(GL_LESS); // set depth function back to default
+    glDepthFunc(GL_LESS);
 }
 
 void Renderer::drawCleanup()

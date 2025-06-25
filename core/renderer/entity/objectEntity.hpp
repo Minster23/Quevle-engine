@@ -39,16 +39,18 @@ namespace QuavleEngine
             unsigned int metallicTextureID;  // Metallic map
             unsigned int roughnessTextureID; // Roughness map
             size_t vertexCount; // Added for vertex count
+            glm::vec3 position;
+            glm::vec3 rotation;
+            glm::vec3 scale;
+            bool isShow = true;
         };
 
         struct LightData
         {
-            unsigned int lightCubeVAO;
-            unsigned int lightCubeVBO;
-            static glm::vec3 position;
-            static glm::vec3 lightColor;
-            unsigned int vertexShaderLight, fragmentShaderLight;
-            unsigned int shaderProgramLight;
+            glm::vec3 position;
+            glm::vec3 lightColor;
+            std::string name;
+            float intensity;
         };
 
         struct CubeMap

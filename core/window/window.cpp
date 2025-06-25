@@ -2,6 +2,7 @@
 #include <core/renderer/renderer.hpp>
 #include <string.h>
 #include <iostream> // Include iostream here if needed
+#include <string>
 #include <optional>
 #include <set>
 #include <core/interface/interface.hpp>
@@ -10,13 +11,14 @@ using namespace QuavleEngine;
 Renderer renderer;
 interface Interface;
 
-bool isMouseCaptured = false;
+bool isMouseCaptured = true;
 double lastPosX = 0.0, lastPosY = 0.0;
 float lastYaw = 0.0f, lastPitch = 0.0f;
 bool wasRightMousePressed = false;
 
 WindowManager::WindowManager()
-    : m_window(nullptr), m_mode(nullptr), m_FBO(0), m_RBO(0), m_texture_id(0)
+    : m_window(nullptr), m_mode(nullptr), m_FBO(0), m_RBO(0), m_texture_id(0),
+      m_key_d_pressed(false), m_key_s_pressed(false), m_key_n_pressed(false), m_key_m_pressed(false), m_key_r_pressed(false)
 {
 }
 
@@ -95,9 +97,6 @@ bool WindowManager::initWindow()
 
     m_window = glfwCreateWindow(m_mode->width, m_mode->height, "Quevle Engine", nullptr, nullptr);
 
-    // glad: load all OpenGL function pointers
-    // Note: GLAD initialization should happen *after* creating the window and making the context current.
-    // This function should probably just create the window. GLAD init belongs in openGL().
     if (m_window == nullptr)
     {
         std::cerr << "Failed to create GLFW window" << std::endl;
@@ -130,8 +129,8 @@ bool WindowManager::openGL()
     glEnable(GL_MULTISAMPLE); // Enable MSAA in OpenGL
     std::cout << "OpenGL version: " << glGetString(GL_VERSION) << std::endl;
     
-    renderer.init();        // Initialize renderer (includes camera init)
     Interface.init(m_window, this);
+    renderer.init();
     return true;
 }
 
@@ -181,9 +180,17 @@ void WindowManager::cleanup()
     glfwTerminate();
 }
 
+void WindowManager::refresh()
+{
+    glfwSwapBuffers(m_window);
+    glfwPollEvents();
+}
+
+
+
 void WindowManager::processInput(GLFWwindow *window)
 {
-    if (glfwGetKey(window, GLFW_KEY_LEFT_CONTROL) == GLFW_PRESS && glfwGetKey(window, GLFW_KEY_F4) == GLFW_PRESS)
+    if (glfwGetKey(window, GLFW_KEY_LEFT_ALT) == GLFW_PRESS && glfwGetKey(window, GLFW_KEY_F4) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
 
     float cameraSpeed = static_cast<float>(2.5 * renderer.cam.deltaTime); // Use renderer's camera deltaTime
@@ -195,6 +202,64 @@ void WindowManager::processInput(GLFWwindow *window)
          renderer.cam.cameraPos -= glm::normalize(glm::cross( renderer.cam.cameraFront,  renderer.cam.cameraUp)) * cameraSpeed; // Update renderer's camera
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
          renderer.cam.cameraPos += glm::normalize(glm::cross( renderer.cam.cameraFront,  renderer.cam.cameraUp)) * cameraSpeed; // Update renderer's camera
+
+    // --- Texture Toggles ---
+    bool ctrl_pressed = glfwGetKey(window, GLFW_KEY_LEFT_CONTROL) == GLFW_PRESS || glfwGetKey(window, GLFW_KEY_RIGHT_CONTROL) == GLFW_PRESS;
+
+    // Toggle Diffuse (Ctrl+D)
+    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS && !m_key_d_pressed) {
+        Renderer::Diffuse = !Renderer::Diffuse;
+        m_key_d_pressed = true;
+        Interface.inputDebug("Info", "Diffuse map toggled " + std::string(Renderer::Diffuse ? "ON" : "OFF"));
+        refresh();
+    }
+    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_RELEASE) {
+        m_key_d_pressed = false;
+    }
+
+    // Toggle Specular (Ctrl+S)
+    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS && !m_key_s_pressed) {
+        Renderer::Specular = !Renderer::Specular;
+        m_key_s_pressed = true;
+        Interface.inputDebug("Info", "Specular map toggled " + std::string(Renderer::Specular ? "ON" : "OFF"));
+        refresh();
+    }
+    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_RELEASE) {
+        m_key_s_pressed = false;
+    }
+
+    // Toggle Normal (Ctrl+N)
+    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_N) == GLFW_PRESS && !m_key_n_pressed) {
+        Renderer::Normal = !Renderer::Normal;
+        m_key_n_pressed = true;
+        Interface.inputDebug("Info", "Normal map toggled " + std::string(Renderer::Normal ? "ON" : "OFF"));
+        refresh();
+    }
+    if (glfwGetKey(window, GLFW_KEY_N) == GLFW_RELEASE) {
+        m_key_n_pressed = false;
+    }
+
+    // Toggle Metallic (Ctrl+M)
+    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_M) == GLFW_PRESS && !m_key_m_pressed) {
+        Renderer::Metallic = !Renderer::Metallic;
+        m_key_m_pressed = true;
+        Interface.inputDebug("Info", "Metallic map toggled " + std::string(Renderer::Metallic ? "ON" : "OFF"));
+        refresh();
+    }
+    if (glfwGetKey(window, GLFW_KEY_M) == GLFW_RELEASE) {
+        m_key_m_pressed = false;
+    }
+
+    // Toggle Roughness (Ctrl+R)
+    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_R) == GLFW_PRESS && !m_key_r_pressed) {
+        Renderer::Roughness = !Renderer::Roughness;
+        m_key_r_pressed = true;
+        Interface.inputDebug("Info", "Roughness map toggled " + std::string(Renderer::Roughness ? "ON" : "OFF"));
+        refresh();
+    }
+    if (glfwGetKey(window, GLFW_KEY_R) == GLFW_RELEASE) {
+        m_key_r_pressed = false;
+    }
 }
 
 

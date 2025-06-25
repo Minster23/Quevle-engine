@@ -176,6 +176,102 @@ core/interface/interface.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.s
 .PHONY : core/interface/interface.cpp.s
 
+core/interface/panel/camerConfig.obj: core/interface/panel/camerConfig.cpp.obj
+.PHONY : core/interface/panel/camerConfig.obj
+
+# target to build an object file
+core/interface/panel/camerConfig.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj
+.PHONY : core/interface/panel/camerConfig.cpp.obj
+
+core/interface/panel/camerConfig.i: core/interface/panel/camerConfig.cpp.i
+.PHONY : core/interface/panel/camerConfig.i
+
+# target to preprocess a source file
+core/interface/panel/camerConfig.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.i
+.PHONY : core/interface/panel/camerConfig.cpp.i
+
+core/interface/panel/camerConfig.s: core/interface/panel/camerConfig.cpp.s
+.PHONY : core/interface/panel/camerConfig.s
+
+# target to generate assembly for a file
+core/interface/panel/camerConfig.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.s
+.PHONY : core/interface/panel/camerConfig.cpp.s
+
+core/interface/panel/console.obj: core/interface/panel/console.cpp.obj
+.PHONY : core/interface/panel/console.obj
+
+# target to build an object file
+core/interface/panel/console.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj
+.PHONY : core/interface/panel/console.cpp.obj
+
+core/interface/panel/console.i: core/interface/panel/console.cpp.i
+.PHONY : core/interface/panel/console.i
+
+# target to preprocess a source file
+core/interface/panel/console.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.i
+.PHONY : core/interface/panel/console.cpp.i
+
+core/interface/panel/console.s: core/interface/panel/console.cpp.s
+.PHONY : core/interface/panel/console.s
+
+# target to generate assembly for a file
+core/interface/panel/console.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.s
+.PHONY : core/interface/panel/console.cpp.s
+
+core/interface/panel/inspector.obj: core/interface/panel/inspector.cpp.obj
+.PHONY : core/interface/panel/inspector.obj
+
+# target to build an object file
+core/interface/panel/inspector.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj
+.PHONY : core/interface/panel/inspector.cpp.obj
+
+core/interface/panel/inspector.i: core/interface/panel/inspector.cpp.i
+.PHONY : core/interface/panel/inspector.i
+
+# target to preprocess a source file
+core/interface/panel/inspector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.i
+.PHONY : core/interface/panel/inspector.cpp.i
+
+core/interface/panel/inspector.s: core/interface/panel/inspector.cpp.s
+.PHONY : core/interface/panel/inspector.s
+
+# target to generate assembly for a file
+core/interface/panel/inspector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.s
+.PHONY : core/interface/panel/inspector.cpp.s
+
+core/interface/panel/objectHirarcy.obj: core/interface/panel/objectHirarcy.cpp.obj
+.PHONY : core/interface/panel/objectHirarcy.obj
+
+# target to build an object file
+core/interface/panel/objectHirarcy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj
+.PHONY : core/interface/panel/objectHirarcy.cpp.obj
+
+core/interface/panel/objectHirarcy.i: core/interface/panel/objectHirarcy.cpp.i
+.PHONY : core/interface/panel/objectHirarcy.i
+
+# target to preprocess a source file
+core/interface/panel/objectHirarcy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.i
+.PHONY : core/interface/panel/objectHirarcy.cpp.i
+
+core/interface/panel/objectHirarcy.s: core/interface/panel/objectHirarcy.cpp.s
+.PHONY : core/interface/panel/objectHirarcy.s
+
+# target to generate assembly for a file
+core/interface/panel/objectHirarcy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.s
+.PHONY : core/interface/panel/objectHirarcy.cpp.s
+
 core/model/model.obj: core/model/model.cpp.obj
 .PHONY : core/model/model.obj
 
@@ -623,6 +719,18 @@ help:
 	@echo ... core/interface/interface.obj
 	@echo ... core/interface/interface.i
 	@echo ... core/interface/interface.s
+	@echo ... core/interface/panel/camerConfig.obj
+	@echo ... core/interface/panel/camerConfig.i
+	@echo ... core/interface/panel/camerConfig.s
+	@echo ... core/interface/panel/console.obj
+	@echo ... core/interface/panel/console.i
+	@echo ... core/interface/panel/console.s
+	@echo ... core/interface/panel/inspector.obj
+	@echo ... core/interface/panel/inspector.i
+	@echo ... core/interface/panel/inspector.s
+	@echo ... core/interface/panel/objectHirarcy.obj
+	@echo ... core/interface/panel/objectHirarcy.i
+	@echo ... core/interface/panel/objectHirarcy.s
 	@echo ... core/model/model.obj
 	@echo ... core/model/model.i
 	@echo ... core/model/model.s

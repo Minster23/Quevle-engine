@@ -41,9 +41,17 @@ namespace QuavleEngine
         GLuint m_RBO;
         GLuint m_texture_id;
 
+        // Key states for toggles
+        bool m_key_d_pressed;
+        bool m_key_s_pressed;
+        bool m_key_n_pressed;
+        bool m_key_m_pressed;
+        bool m_key_r_pressed;
+
         static void framebuffer_size_callback(GLFWwindow *window, int width, int height);
         static void mouse_callback(GLFWwindow* window, double xpos, double ypos);
         static void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
+        void refresh();
         void processInput(GLFWwindow *window);
     };
 }

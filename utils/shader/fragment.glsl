@@ -12,8 +12,9 @@ uniform sampler2D roughnessMap;
 
 uniform vec3 viewPos;
 uniform int lightCount;
-uniform vec3 lightPositions[16];        // Maks 16 cahaya
+uniform vec3 lightPositions[16];
 uniform float lightIntensities[16];
+uniform vec3 lightColors[16]; // ✅ NEW
 
 float DistributionGGX(vec3 N, vec3 H, float roughness)
 {
@@ -85,7 +86,9 @@ void main()
         kD *= 1.0 - metallic;
 
         float NdotL = max(dot(N, L), 0.0);
-        vec3 radiance = vec3(lightIntensities[i]) * NdotL;
+        
+        // ✅ Combine light color with intensity to boost visual effect
+        vec3 radiance = lightColors[i] * lightIntensities[i] * NdotL;
 
         Lo += (kD * albedo / 3.14159265359 + specular) * radiance;
     }

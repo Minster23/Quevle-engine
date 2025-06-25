@@ -40,11 +40,30 @@ namespace QuavleEngine
         void loadCubemapTexture(const std::vector<std::string>& faces, int Index);
         void renderObject(const ObjectEntity::ObjectData& objectData, unsigned int shaderProgram);
 
+        void loadModelFirst();
+        void LoadAnotherLight();
+
+        static bool Diffuse;
+        static bool Specular;
+        static bool Normal;
+        static bool Metallic;
+        static bool Roughness;
+
+        static bool Grid;
     private:
         int success;
         char infoLog[512];
+        float intensityForIndex;
 
-        const GLFWvidmode* mode;
-        ObjectEntity objectEntity;
+        const GLFWvidmode *mode;
+
+        void createGridShaderProgram();
+        GLuint compileShader(GLenum type, const char *source);
+        void setupGridQuad();
+
+        // Shared resources for light gizmos
+        unsigned int lightShaderProgram;
+        unsigned int lightVAO;
+        unsigned int lightVBO;
     };
 }

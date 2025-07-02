@@ -21,5 +21,6 @@ namespace QuavleEngine
 
         private:
         void setModelData(const aiScene *scene, const std::string &path);
+        std::string locationData;
     };
 }

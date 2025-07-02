@@ -20,6 +20,7 @@ namespace QuavleEngine
 
         struct ObjectData
         {
+            std::string UUID;
             unsigned int VAO;
             unsigned int VBO;
             unsigned int EBO;
@@ -43,6 +44,7 @@ namespace QuavleEngine
             glm::vec3 rotation;
             glm::vec3 scale;
             bool isShow = true;
+            bool isSelected = false;
         };
 
         struct LightData
@@ -65,8 +67,7 @@ namespace QuavleEngine
         static std::vector<ObjectData> objects;
         static std::vector<CubeMap> CubeMaps;
 
-
-
+        void changeName(int index, std::string newName);
         void firstLightObject();
         void firstCubemap();
 

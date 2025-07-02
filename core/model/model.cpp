@@ -1,11 +1,15 @@
 #include <core/model/model.hpp>
 #include <utils/msgWnd.hpp>
 #include <core/interface/interface.hpp>
+#include <core/renderer/renderer.hpp>
+#include <core/interface/interface.hpp>
+#include <core/model/UUID.hpp>
+
 
 using namespace QuavleEngine;
-
-// This makes the global `intfc` object from renderer.cpp available here.
-extern interface intfc;
+Renderer renderForModel;
+interface intfcForModel;
+UUID uid;
 
 Model::Model(std::string const &path, bool gamma)
 {
@@ -17,7 +21,8 @@ Model::Model(std::string const &path, bool gamma)
         intfc.inputDebug("Warning", "ERROR::ASSIMP:: " + std::string(importer.GetErrorString()));
         return;
     }
-
+    locationData = path.substr(0, path.find_last_of('/'));
+    intfcForModel.inputDebug("Info", "Model Loaded from path:"+locationData);
     setModelData(scene, path);
 }
 
@@ -28,6 +33,7 @@ void Model::setModelData(const aiScene *scene, const std::string &path)
         aiMesh *mesh = scene->mMeshes[i];
         ObjectEntity::ObjectData objectData;
 
+        objectData.UUID = uid.generate_uuid();
         objectData.name = mesh->mName.C_Str();
         objectData.vertexCount = mesh->mNumVertices;
 
@@ -105,6 +111,8 @@ void Model::setModelData(const aiScene *scene, const std::string &path)
             objectData.indicesCount = 0;
         }
 
+        ObjectEntity::objects.push_back(objectData);
+
         // Material
         if (mesh->mMaterialIndex >= 0 && scene->mMaterials)
         {
@@ -119,15 +127,57 @@ void Model::setModelData(const aiScene *scene, const std::string &path)
             float shininess = 0.0f;
             if (AI_SUCCESS == material->Get(AI_MATKEY_SHININESS, shininess))
                 objectData.material.shininess = shininess;
+
+            if (material->GetTextureCount(aiTextureType_DIFFUSE) > 0)
+            {
+                aiString texPath;
+                if (material->GetTexture(aiTextureType_DIFFUSE, 0, &texPath) == AI_SUCCESS)
+                {
+                    std::string textureFile = locationData +"/"+ std::string(texPath.C_Str());
+                    std::cout << "Texture path: " << textureFile << std::endl;
+                    renderForModel.loadTexture(textureFile, ObjectEntity::objects.size() - 1, Renderer::TextureType::DIFFUSE);
+                    intfcForModel.inputDebug("Info", "loading DIFFUSE map");
+                }
+            }
+            if (material->GetTextureCount(aiTextureType_SPECULAR) > 0)
+            {
+                aiString texPath;
+                if (material->GetTexture(aiTextureType_SPECULAR, 0, &texPath) == AI_SUCCESS)
+                {
+                    std::string textureFile = locationData +"/"+ std::string(texPath.C_Str());
+                    std::cout << "Texture path: " << textureFile << std::endl;
+                    renderForModel.loadTexture(textureFile, ObjectEntity::objects.size() - 1, Renderer::TextureType::SPECULAR);
+                    intfcForModel.inputDebug("Info", "loading SPECULAR map");
+                }
+            }
+            if (material->GetTextureCount(aiTextureType_METALNESS) > 0)
+            {
+                aiString texPath;
+                if (material->GetTexture(aiTextureType_METALNESS, 0, &texPath) == AI_SUCCESS)
+                {
+                    std::string textureFile = locationData +"/"+ std::string(texPath.C_Str());
+                    std::cout << "Texture path: " << textureFile << std::endl;
+                    renderForModel.loadTexture(textureFile, ObjectEntity::objects.size() - 1, Renderer::TextureType::METALLIC);
+                    intfcForModel.inputDebug("Info", "loading METALLIC map");
+                }
+            }
+            if (material->GetTextureCount(aiTextureType_NORMALS) > 0)
+            {
+                aiString texPath;
+                if (material->GetTexture(aiTextureType_NORMALS, 0, &texPath) == AI_SUCCESS)
+                {
+                    std::string textureFile = locationData +"/"+ std::string(texPath.C_Str());
+                    std::cout << "Texture path: " << textureFile << std::endl;
+                    renderForModel.loadTexture(textureFile, ObjectEntity::objects.size() - 1, Renderer::TextureType::NORMAL);
+                    intfcForModel.inputDebug("Info", "loading NORMAL map");
+                }
+            }
         }
+
         else
         {
             objectData.material = {};
+            intfcForModel.inputDebug("Warning","Item without material"); 
         }
-
-        ObjectEntity::objects.push_back(objectData);
-        intfc.inputDebug("Info", "Processed mesh: " + objectData.name + " with " +
-                    std::to_string(mesh->mNumVertices) + " vertices and " +
-                    std::to_string(objectData.indicesCount) + " indices.");
     }
 }

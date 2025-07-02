@@ -163,7 +163,8 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
- D:/QuavleEngine/utils/camera/camera.hpp \
+ D:/QuavleEngine/core/interface/interface.hpp \
+ D:/QuavleEngine/core/renderer/shader_h.h \
  D:/QuavleEngine/vendor/glm/glm/glm.hpp \
  D:/QuavleEngine/vendor/glm/glm/detail/_fixes.hpp \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
@@ -332,6 +333,43 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: \
  D:/QuavleEngine/vendor/glm/glm/detail/type_half.inl \
  D:/QuavleEngine/vendor/glm/glm/integer.hpp \
  D:/QuavleEngine/vendor/glm/glm/detail/func_integer.inl \
+ D:/QuavleEngine/vendor/imgui/imgui.h \
+ D:/QuavleEngine/vendor/imgui/imconfig.h \
+ F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+ F:/Devtool/mysys2/ucrt64/include/stdarg.h \
+ F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
+ F:/Devtool/mysys2/ucrt64/include/string.h \
+ F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
+ D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
+ D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h \
+ D:/QuavleEngine/utils/font/IconsCodicons.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/filesystem \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_fwd.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/chrono.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ratio \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ctime \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/parse_numbers.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_path.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_conv.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iomanip \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/quoted_string.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/codecvt \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/concurrence.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocated_ptr.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_ptr.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_dir.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_ops.h \
+ D:/QuavleEngine/vendor/implot-master/implot.h \
  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.hpp \
  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.hpp \
  D:/QuavleEngine/vendor/glm/glm/gtc/constants.hpp \
@@ -381,8 +419,6 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: \
  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1.hpp \
  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1_sized.hpp \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
- F:/Devtool/mysys2/ucrt64/include/string.h \
- F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
  D:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
  D:/QuavleEngine/core/model/model.hpp \
@@ -390,11 +426,6 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tempbuf.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/align.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_ptr.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocated_ptr.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/concurrence.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_base.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
@@ -441,23 +472,13 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: \
  D:/QuavleEngine/vendor/assimp/include/assimp/postprocess.h \
  D:/QuavleEngine/utils/fileReader.hpp \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/fstream \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fstream.tcc \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
  D:/QuavleEngine/utils/Debug.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/optional \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/set \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_set.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multiset.h \
- D:/QuavleEngine/core/interface/interface.hpp \
- D:/QuavleEngine/core/renderer/shader_h.h \
- D:/QuavleEngine/vendor/imgui/imgui.h \
- D:/QuavleEngine/vendor/imgui/imconfig.h \
- F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
- F:/Devtool/mysys2/ucrt64/include/stdarg.h \
- F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
- D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
- D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h
+ D:/QuavleEngine/core/scripting/scripting.h \
+ D:/QuavleEngine/utils/camera/camera.hpp

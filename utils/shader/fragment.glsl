@@ -14,7 +14,10 @@ uniform vec3 viewPos;
 uniform int lightCount;
 uniform vec3 lightPositions[16];
 uniform float lightIntensities[16];
-uniform vec3 lightColors[16]; // ✅ NEW
+uniform vec3 lightColors[16];
+
+uniform bool selected;            // ✅ NEW
+uniform vec3 colorSelected;       // ✅ NEW
 
 float DistributionGGX(vec3 N, vec3 H, float roughness)
 {
@@ -86,8 +89,7 @@ void main()
         kD *= 1.0 - metallic;
 
         float NdotL = max(dot(N, L), 0.0);
-        
-        // ✅ Combine light color with intensity to boost visual effect
+
         vec3 radiance = lightColors[i] * lightIntensities[i] * NdotL;
 
         Lo += (kD * albedo / 3.14159265359 + specular) * radiance;
@@ -96,8 +98,13 @@ void main()
     vec3 ambient = vec3(0.03) * albedo * ao;
     vec3 color = ambient + Lo;
 
+    // Tone mapping and gamma correction
     color = color / (color + vec3(1.0));
     color = pow(color, vec3(1.0 / 2.2));
+
+    // ✅ Override color if selected
+    if (selected)
+        color = colorSelected;
 
     FragColor = vec4(color, 1.0);
 }

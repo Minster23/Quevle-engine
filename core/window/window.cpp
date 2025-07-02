@@ -6,8 +6,11 @@
 #include <optional>
 #include <set>
 #include <core/interface/interface.hpp>
+#include <core/scripting/scripting.h>
+#include <utils/camera/camera.hpp>
 
 using namespace QuavleEngine;
+Scripting::script Scriptings;
 Renderer renderer;
 interface Interface;
 
@@ -15,6 +18,8 @@ bool isMouseCaptured = true;
 double lastPosX = 0.0, lastPosY = 0.0;
 float lastYaw = 0.0f, lastPitch = 0.0f;
 bool wasRightMousePressed = false;
+double QuavleEngine::WindowManager::mousePosX = 0.0;
+double QuavleEngine::WindowManager::mousePosY = 0.0;
 
 WindowManager::WindowManager()
     : m_window(nullptr), m_mode(nullptr), m_FBO(0), m_RBO(0), m_texture_id(0),
@@ -24,53 +29,53 @@ WindowManager::WindowManager()
 
 void WindowManager::create_framebuffer()
 {
-	glGenFramebuffers(1, &m_FBO);
-	glBindFramebuffer(GL_FRAMEBUFFER, m_FBO);
+    glGenFramebuffers(1, &m_FBO);
+    glBindFramebuffer(GL_FRAMEBUFFER, m_FBO);
 
-	glGenTextures(1, &m_texture_id);
-	glBindTexture(GL_TEXTURE_2D, m_texture_id);
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, m_mode->width, m_mode->height, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-	glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, m_texture_id, 0);
+    glGenTextures(1, &m_texture_id);
+    glBindTexture(GL_TEXTURE_2D, m_texture_id);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, m_mode->width, m_mode->height, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, m_texture_id, 0);
 
-	glGenRenderbuffers(1, &m_RBO);
-	glBindRenderbuffer(GL_RENDERBUFFER, m_RBO);
-	glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, m_mode->width, m_mode->height);
-	glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, m_RBO);
+    glGenRenderbuffers(1, &m_RBO);
+    glBindRenderbuffer(GL_RENDERBUFFER, m_RBO);
+    glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, m_mode->width, m_mode->height);
+    glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, m_RBO);
 
-	if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
-		std::cout << "ERROR::FRAMEBUFFER:: Framebuffer is not complete!\n";
+    if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
+        std::cout << "ERROR::FRAMEBUFFER:: Framebuffer is not complete!\n";
 
-	glBindFramebuffer(GL_FRAMEBUFFER, 0);
-	glBindTexture(GL_TEXTURE_2D, 0);
-	glBindRenderbuffer(GL_RENDERBUFFER, 0);
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    glBindTexture(GL_TEXTURE_2D, 0);
+    glBindRenderbuffer(GL_RENDERBUFFER, 0);
 }
 
 // here we bind our framebuffer
 void WindowManager::bind_framebuffer()
 {
-	glBindFramebuffer(GL_FRAMEBUFFER, m_FBO);
+    glBindFramebuffer(GL_FRAMEBUFFER, m_FBO);
 }
 
 // here we unbind our framebuffer
 void WindowManager::unbind_framebuffer()
 {
-	glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
 }
 
 // and we rescale the buffer, so we're able to resize the window
 void WindowManager::rescale_framebuffer(float width, float height)
 {
-	glBindTexture(GL_TEXTURE_2D, m_texture_id);
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-	glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, m_texture_id, 0);
+    glBindTexture(GL_TEXTURE_2D, m_texture_id);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, m_texture_id, 0);
 
-	glBindRenderbuffer(GL_RENDERBUFFER, m_RBO);
-	glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, width, height);
-	glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, m_RBO);
+    glBindRenderbuffer(GL_RENDERBUFFER, m_RBO);
+    glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, width, height);
+    glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, m_RBO);
 }
 
 GLuint WindowManager::get_texture_id() const
@@ -89,7 +94,8 @@ bool WindowManager::initWindow()
 
     // Initialize mode after glfwInit()
     m_mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
-    if (!m_mode) {
+    if (!m_mode)
+    {
         std::cerr << "Failed to get video mode for primary monitor" << std::endl;
         glfwTerminate();
         return false;
@@ -103,6 +109,7 @@ bool WindowManager::initWindow()
         glfwTerminate();
         return false; // Return false on failure
     }
+
     //* nyeting callbacks
     glfwSetFramebufferSizeCallback(m_window, framebuffer_size_callback);
     glfwSetCursorPosCallback(m_window, mouse_callback);
@@ -128,7 +135,7 @@ bool WindowManager::openGL()
     glFrontFace(GL_CCW);
     glEnable(GL_MULTISAMPLE); // Enable MSAA in OpenGL
     std::cout << "OpenGL version: " << glGetString(GL_VERSION) << std::endl;
-    
+
     Interface.init(m_window, this);
     renderer.init();
     return true;
@@ -138,25 +145,38 @@ void WindowManager::mainLoop()
 {
     while (!glfwWindowShouldClose(m_window))
     {
-        processInput(m_window);
+        float currentFrame = glfwGetTime();
+        cameras[0].deltaTime = currentFrame - cameras[0].lastFrame;
+        cameras[0].lastFrame = currentFrame;
+        if (!play)
+        {
+            processInput(m_window);
+        }
+
+        if (play)
+        {
+            Scriptings.scripting();
+        }
 
         int rightMouseState = glfwGetMouseButton(m_window, GLFW_MOUSE_BUTTON_RIGHT);
-        if (rightMouseState == GLFW_PRESS && !isMouseCaptured) {
+        if (rightMouseState == GLFW_PRESS && !isMouseCaptured)
+        {
             isMouseCaptured = true;
             // Save last mouse position and camera rotation
             double xpos, ypos;
             glfwGetCursorPos(m_window, &xpos, &ypos);
             lastPosX = xpos;
             lastPosY = ypos;
-            lastYaw = renderer.cam.yaw;
-            lastPitch = renderer.cam.pitch;
+            lastYaw = cameras[0].yaw;
+            lastPitch = cameras[0].pitch;
             glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
         }
-        if (rightMouseState == GLFW_RELEASE && isMouseCaptured) {
+        if (rightMouseState == GLFW_RELEASE && isMouseCaptured)
+        {
             isMouseCaptured = false;
             glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
         }
-        
+
         bind_framebuffer();
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -186,118 +206,131 @@ void WindowManager::refresh()
     glfwPollEvents();
 }
 
-
-
 void WindowManager::processInput(GLFWwindow *window)
 {
     if (glfwGetKey(window, GLFW_KEY_LEFT_ALT) == GLFW_PRESS && glfwGetKey(window, GLFW_KEY_F4) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
 
-    float cameraSpeed = static_cast<float>(2.5 * renderer.cam.deltaTime); // Use renderer's camera deltaTime
+    float cameraSpeed = static_cast<float>(2.5 * cameras[0].deltaTime); // Use renderer's camera deltaTime
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-         renderer.cam.cameraPos += cameraSpeed * renderer.cam.cameraFront; // Update renderer's camera
+        cameras[0].cameraPos += cameraSpeed * cameras[0].cameraFront; // Update renderer's camera
     if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-         renderer.cam.cameraPos -= cameraSpeed * renderer.cam.cameraFront; // Update renderer's camera
+        cameras[0].cameraPos -= cameraSpeed * cameras[0].cameraFront; // Update renderer's camera
     if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-         renderer.cam.cameraPos -= glm::normalize(glm::cross( renderer.cam.cameraFront,  renderer.cam.cameraUp)) * cameraSpeed; // Update renderer's camera
+        cameras[0].cameraPos -= glm::normalize(glm::cross(cameras[0].cameraFront, cameras[0].cameraUp)) * cameraSpeed; // Update renderer's camera
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-         renderer.cam.cameraPos += glm::normalize(glm::cross( renderer.cam.cameraFront,  renderer.cam.cameraUp)) * cameraSpeed; // Update renderer's camera
+        cameras[0].cameraPos += glm::normalize(glm::cross(cameras[0].cameraFront, cameras[0].cameraUp)) * cameraSpeed; // Update renderer's camera
 
     // --- Texture Toggles ---
     bool ctrl_pressed = glfwGetKey(window, GLFW_KEY_LEFT_CONTROL) == GLFW_PRESS || glfwGetKey(window, GLFW_KEY_RIGHT_CONTROL) == GLFW_PRESS;
 
     // Toggle Diffuse (Ctrl+D)
-    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS && !m_key_d_pressed) {
+    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS && !m_key_d_pressed)
+    {
         Renderer::Diffuse = !Renderer::Diffuse;
         m_key_d_pressed = true;
         Interface.inputDebug("Info", "Diffuse map toggled " + std::string(Renderer::Diffuse ? "ON" : "OFF"));
         refresh();
     }
-    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_RELEASE) {
+    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_RELEASE)
+    {
         m_key_d_pressed = false;
     }
 
     // Toggle Specular (Ctrl+S)
-    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS && !m_key_s_pressed) {
+    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS && !m_key_s_pressed)
+    {
         Renderer::Specular = !Renderer::Specular;
         m_key_s_pressed = true;
         Interface.inputDebug("Info", "Specular map toggled " + std::string(Renderer::Specular ? "ON" : "OFF"));
         refresh();
     }
-    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_RELEASE) {
+    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_RELEASE)
+    {
         m_key_s_pressed = false;
     }
 
     // Toggle Normal (Ctrl+N)
-    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_N) == GLFW_PRESS && !m_key_n_pressed) {
+    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_N) == GLFW_PRESS && !m_key_n_pressed)
+    {
         Renderer::Normal = !Renderer::Normal;
         m_key_n_pressed = true;
         Interface.inputDebug("Info", "Normal map toggled " + std::string(Renderer::Normal ? "ON" : "OFF"));
         refresh();
     }
-    if (glfwGetKey(window, GLFW_KEY_N) == GLFW_RELEASE) {
+    if (glfwGetKey(window, GLFW_KEY_N) == GLFW_RELEASE)
+    {
         m_key_n_pressed = false;
     }
 
     // Toggle Metallic (Ctrl+M)
-    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_M) == GLFW_PRESS && !m_key_m_pressed) {
+    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_M) == GLFW_PRESS && !m_key_m_pressed)
+    {
         Renderer::Metallic = !Renderer::Metallic;
         m_key_m_pressed = true;
         Interface.inputDebug("Info", "Metallic map toggled " + std::string(Renderer::Metallic ? "ON" : "OFF"));
         refresh();
     }
-    if (glfwGetKey(window, GLFW_KEY_M) == GLFW_RELEASE) {
+    if (glfwGetKey(window, GLFW_KEY_M) == GLFW_RELEASE)
+    {
         m_key_m_pressed = false;
     }
 
     // Toggle Roughness (Ctrl+R)
-    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_R) == GLFW_PRESS && !m_key_r_pressed) {
+    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_R) == GLFW_PRESS && !m_key_r_pressed)
+    {
         Renderer::Roughness = !Renderer::Roughness;
         m_key_r_pressed = true;
         Interface.inputDebug("Info", "Roughness map toggled " + std::string(Renderer::Roughness ? "ON" : "OFF"));
         refresh();
     }
-    if (glfwGetKey(window, GLFW_KEY_R) == GLFW_RELEASE) {
+    if (glfwGetKey(window, GLFW_KEY_R) == GLFW_RELEASE)
+    {
         m_key_r_pressed = false;
     }
+
+    cameras[0].view = glm::lookAt(cameras[0].cameraPos, cameras[0].cameraPos + cameras[0].cameraFront, cameras[0].cameraUp);
+    cameras[0].projection = glm::perspective(glm::radians(cameras[0].fov), 800.0f / 600.0f, 0.1f, 100.0f);
 }
 
-
-void WindowManager::mouse_callback(GLFWwindow* window, double xpos, double ypos)
+void WindowManager::mouse_callback(GLFWwindow *window, double xpos, double ypos)
 {
-    if (!isMouseCaptured) return;
+    if (!isMouseCaptured)
+        return;
 
     static bool firstFrame = true;
     static float smoothedYaw = 0.0f;
     static float smoothedPitch = 0.0f;
 
-    if (firstFrame) {
-        renderer.cam.lastX = lastPosX;
-        renderer.cam.lastY = lastPosY;
-        renderer.cam.yaw = lastYaw;
-        renderer.cam.pitch = lastPitch;
+    if (firstFrame)
+    {
+        cameras[0].lastX = lastPosX;
+        cameras[0].lastY = lastPosY;
+        cameras[0].yaw = lastYaw;
+        cameras[0].pitch = lastPitch;
         smoothedYaw = lastYaw;
         smoothedPitch = lastPitch;
         firstFrame = false;
     }
 
-    if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT) == GLFW_RELEASE) {
+    if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT) == GLFW_RELEASE)
+    {
         firstFrame = true;
         return;
     }
 
-    float xoffset = xpos - renderer.cam.lastX;
-    float yoffset = renderer.cam.lastY - ypos;
-    renderer.cam.lastX = xpos;
-    renderer.cam.lastY = ypos;
+    float xoffset = xpos - cameras[0].lastX;
+    float yoffset = cameras[0].lastY - ypos;
+    cameras[0].lastX = xpos;
+    cameras[0].lastY = ypos;
 
-    float sensitivity = 0.1f;
+    float sensitivity = 0.9f;
     xoffset *= sensitivity;
     yoffset *= sensitivity;
 
     // Raw input
-    float targetYaw = renderer.cam.yaw + xoffset;
-    float targetPitch = renderer.cam.pitch + yoffset;
+    float targetYaw = cameras[0].yaw + xoffset;
+    float targetPitch = cameras[0].pitch + yoffset;
 
     // Clamp target pitch
     if (targetPitch > 89.0f)
@@ -310,24 +343,32 @@ void WindowManager::mouse_callback(GLFWwindow* window, double xpos, double ypos)
     smoothedYaw = smoothedYaw + (targetYaw - smoothedYaw) * smoothingFactor;
     smoothedPitch = smoothedPitch + (targetPitch - smoothedPitch) * smoothingFactor;
 
-    renderer.cam.yaw = smoothedYaw;
-    renderer.cam.pitch = smoothedPitch;
+    cameras[0].yaw = smoothedYaw;
+    cameras[0].pitch = smoothedPitch;
+
+    mousePosX = xpos;
+    mousePosY = ypos;
 
     glm::vec3 direction;
-    direction.x = cos(glm::radians(renderer.cam.yaw)) * cos(glm::radians(renderer.cam.pitch));
-    direction.y = sin(glm::radians(renderer.cam.pitch));
-    direction.z = sin(glm::radians(renderer.cam.yaw)) * cos(glm::radians(renderer.cam.pitch));
-    renderer.cam.cameraFront = glm::normalize(direction);
+    direction.x = cos(glm::radians(cameras[0].yaw)) * cos(glm::radians(cameras[0].pitch));
+    direction.y = sin(glm::radians(cameras[0].pitch));
+    direction.z = sin(glm::radians(cameras[0].yaw)) * cos(glm::radians(cameras[0].pitch));
+    cameras[0].cameraFront = glm::normalize(direction);
+
+    cameras[0].view = glm::lookAt(cameras[0].cameraPos, cameras[0].cameraPos + cameras[0].cameraFront, cameras[0].cameraUp);
+    cameras[0].projection = glm::perspective(glm::radians(cameras[0].fov), 800.0f / 600.0f, 0.1f, 100.0f);
 }
 
-
-void WindowManager::scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
+void WindowManager::scroll_callback(GLFWwindow *window, double xoffset, double yoffset)
 {
-    renderer.cam.fov -= (float)yoffset;
-    if (renderer.cam.fov < 1.0f)
-        renderer.cam.fov = 1.0f;
-    if (renderer.cam.fov > 45.0f)
-        renderer.cam.fov = 45.0f;
+    cameras[0].fov -= (float)yoffset;
+    if (cameras[0].fov < 1.0f)
+        cameras[0].fov = 1.0f;
+    if (cameras[0].fov > 45.0f)
+        cameras[0].fov = 45.0f;
+
+    cameras[0].view = glm::lookAt(cameras[0].cameraPos, cameras[0].cameraPos + cameras[0].cameraFront, cameras[0].cameraUp);
+    cameras[0].projection = glm::perspective(glm::radians(cameras[0].fov), 800.0f / 600.0f, 0.1f, 100.0f);
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes

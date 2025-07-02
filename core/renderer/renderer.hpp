@@ -3,17 +3,17 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <string>
-#include <utils/camera/camera.hpp> // Include camera definition
+#include <core/interface/interface.hpp>
 #include <core/renderer/entity/objectEntity.hpp>
 #include <core/model/model.hpp>
 
 namespace QuavleEngine
 {
+    extern interface intfc;
+
     class Renderer
     {
     public:
-        camera cam;
-
         enum class TextureType
         {
             DIFFUSE,
@@ -26,7 +26,8 @@ namespace QuavleEngine
 
         enum class RenderType{
             OBJECT,
-            SKYBOX
+            SKYBOX,
+            BILLBOARD
         };
 
         void init();
@@ -39,8 +40,11 @@ namespace QuavleEngine
         void loadTexture(const std::string& texturePath, int Index, Renderer::TextureType expression);
         void loadCubemapTexture(const std::vector<std::string>& faces, int Index);
         void renderObject(const ObjectEntity::ObjectData& objectData, unsigned int shaderProgram);
+        void SetupBillboards(int index);
+        void SetUpImageBillboard(int index, const std::string &image_path);
+        glm::mat4 getBillboardModel(const glm::vec3& pos, const glm::mat4& view);
 
-        void loadModelFirst();
+        void loadModelFirst(std::string path);
         void LoadAnotherLight();
 
         static bool Diffuse;
@@ -50,6 +54,11 @@ namespace QuavleEngine
         static bool Roughness;
 
         static bool Grid;
+        static glm::vec3 gridColor;
+        static float gridSpacing;
+
+        static glm::mat4 projection;
+
     private:
         int success;
         char infoLog[512];

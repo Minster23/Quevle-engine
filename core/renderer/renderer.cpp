@@ -13,6 +13,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+#include <utils/camera/camera.hpp>
 #include <core/renderer/renderer.hpp>
 #include <core/interface/interface.hpp>
 #include <core/renderer/shader_h.h>
@@ -27,7 +28,7 @@ namespace
     constexpr char LIGHT_VERT_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/lightVert.glsl";
     constexpr char LIGHT_FRAG_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/lightFrag.glsl";
     
-    constexpr char DIFFUSE_TEXTURE_PATH[] = "F:/Devlopment/LLL/EmguCVApp/ak-47_kalashnikov/textures/material_baseColor.png";
+    constexpr char DIFFUSE_TEXTURE_PATH[] = "F:/Devlopment/LLL/EmguCVApp/genshin_impact_-_furina/textures/material_1_baseColor.png";
     constexpr char NORMAL_TEXTURE_PATH[] = "F:/Devlopment/LLL/EmguCVApp/ak-47_kalashnikov/textures/material_normal.png";
     constexpr char METALLIC_TEXTURE_PATH[] = "F:/Devlopment/LLL/EmguCVApp/ak-47_kalashnikov/textures/material_metallicRoughness.png";
     constexpr char DIFFUSE_TEX_TEST[] = "F:/Devlopment/LLL/EmguCVApp/tex.png";
@@ -152,17 +153,22 @@ bool Renderer::Normal = true;
 bool Renderer::Metallic = true;
 bool Renderer::Roughness = true;
 bool Renderer::Grid = true;
+glm::mat4  Renderer::projection;
 
-WindowManager windowManager;
-interface intfc;
-ObjectEntity objectEntity;
-// --- Renderer Implementation ---
+glm::vec3 Renderer::gridColor = glm::vec3(1.0f);
+float Renderer::gridSpacing = 2.0f;
 
+namespace QuavleEngine { // Explicitly define within the namespace
+    WindowManager windowManager;
+    interface intfc;
+    ObjectEntity objectEntity;
+}
+
+//* ====================== Renderer Implementation ======================
 void Renderer::init()
 {
     //* initialize the object entity
-    cam.init();
-    intfc.inputDebug("Info", "Renderer::init() called");
+    intfc.inputDebug("Info", "Engine loading any assets");
     
     shaderLoaderLight();
     LightShaderLink();
@@ -180,22 +186,20 @@ void Renderer::init()
     setupGridQuad();
 }
 
-void Renderer::loadModelFirst()
+void Renderer::loadModelFirst(std::string path)
 {
     //* OBJECTS (kalo UI dah jadi hapus aja buat ulang yang kayak gini)
-    Model model("F:/Devlopment/LLL/EmguCVApp/ak-47_kalashnikov/scene.gltf", true);
+    Model model(path, true);
     for (size_t i = 0; i < objectEntity.objects.size(); ++i)
     {
+        intfc.inputDebug("Info", "loading model");
         shaderLoader(i, RenderType::OBJECT);
         shaderLink(i, RenderType::OBJECT);
-        // Load textures for each object (if you have per-object textures, set the path accordingly)
-        loadTexture(DIFFUSE_TEXTURE_PATH, i, TextureType::DIFFUSE);
-        loadTexture(NORMAL_TEXTURE_PATH, i, TextureType::NORMAL);
-        loadTexture(METALLIC_TEXTURE_PATH, i, TextureType::METALLIC);
     }
 }
 
 void Renderer::LoadAnotherLight(){
+    intfc.inputDebug("Info", "loading Light");
     objectEntity.firstLightObject();
 }
 
@@ -441,37 +445,41 @@ void Renderer::loadTexture(const std::string &texturePath, int Index, TextureTyp
         texID = &objectEntity.objects[Index].metallicTextureID;
         break;
     default:
-        break;
+        std::cerr << "Invalid texture type specified.\n";
+        return;
     }
 
-    if (!texID) return;
+    if (!texID)
+        return;
 
+    // Generate and bind texture
     glGenTextures(1, texID);
     glBindTexture(GL_TEXTURE_2D, *texID);
 
-    // Texture wrapping/filtering options
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    // Texture parameters
+    constexpr GLint wrapMode = GL_REPEAT;
+    constexpr GLint minFilter = GL_LINEAR_MIPMAP_LINEAR;
+    constexpr GLint magFilter = GL_LINEAR;
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, wrapMode);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, wrapMode);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, minFilter);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, magFilter);
 
-    // Load image using stb_image
+    // Load image
     int width, height, nrChannels;
     stbi_set_flip_vertically_on_load(true);
     unsigned char *data = stbi_load(texturePath.c_str(), &width, &height, &nrChannels, 0);
 
     if (data)
     {
-        GLenum format;
-        if (nrChannels == 1)
-            format = GL_RED;
-        else if (nrChannels == 3)
-            format = GL_RGB;
-        else if (nrChannels == 4)
-            format = GL_RGBA;
-        else
+        GLenum format = GL_RGB;
+        switch (nrChannels)
         {
-            std::cout << "Unsupported texture format: " << nrChannels << " channels\n";
+        case 1: format = GL_RED; break;
+        case 3: format = GL_RGB; break;
+        case 4: format = GL_RGBA; break;
+        default:
+            std::cerr << "Unsupported texture format: " << nrChannels << " channels\n";
             stbi_image_free(data);
             return;
         }
@@ -481,53 +489,46 @@ void Renderer::loadTexture(const std::string &texturePath, int Index, TextureTyp
     }
     else
     {
-        std::cout << "Failed to load texture at path: " << texturePath << std::endl;
+        std::cerr << "Failed to load texture at path: " << texturePath << std::endl;
         *texID = 0;
     }
 
     stbi_image_free(data);
 
-    // Fill VAO, VBO, EBO if not already filled
-    if (objectEntity.objects[Index].VAO == 0)
-        glGenVertexArrays(1, &objectEntity.objects[Index].VAO);
-    if (objectEntity.objects[Index].VBO == 0)
-        glGenBuffers(1, &objectEntity.objects[Index].VBO);
-    if (objectEntity.objects[Index].EBO == 0)
-        glGenBuffers(1, &objectEntity.objects[Index].EBO);
+    auto &obj = objectEntity.objects[Index];
 
-    glBindVertexArray(objectEntity.objects[Index].VAO);
+    // Generate VAO/VBO/EBO if not created
+    if (obj.VAO == 0) glGenVertexArrays(1, &obj.VAO);
+    if (obj.VBO == 0) glGenBuffers(1, &obj.VBO);
+    if (obj.EBO == 0) glGenBuffers(1, &obj.EBO);
 
-    // Fill VBO
-    glBindBuffer(GL_ARRAY_BUFFER, objectEntity.objects[Index].VBO);
-    glBufferData(
-        GL_ARRAY_BUFFER,
-        objectEntity.objects[Index].vertexCount * 8 * sizeof(float),
-        objectEntity.objects[Index].vertices,
-        GL_STATIC_DRAW);
+    glBindVertexArray(obj.VAO);
 
-    // Fill EBO if indices exist
-    if (objectEntity.objects[Index].indices && objectEntity.objects[Index].indicesCount > 0)
+    // Upload vertex data
+    glBindBuffer(GL_ARRAY_BUFFER, obj.VBO);
+    glBufferData(GL_ARRAY_BUFFER, obj.vertexCount * 8 * sizeof(float), obj.vertices, GL_STATIC_DRAW);
+
+    // Upload index data if available
+    if (obj.indices && obj.indicesCount > 0)
     {
-        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, objectEntity.objects[Index].EBO);
-        glBufferData(
-            GL_ELEMENT_ARRAY_BUFFER,
-            objectEntity.objects[Index].indicesCount * sizeof(unsigned int),
-            objectEntity.objects[Index].indices,
-            GL_STATIC_DRAW);
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, obj.EBO);
+        glBufferData(GL_ELEMENT_ARRAY_BUFFER, obj.indicesCount * sizeof(unsigned int), obj.indices, GL_STATIC_DRAW);
     }
 
-    // Set up vertex attributes: position, normal, texcoord
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)(0));
+    // Setup vertex attribute pointers
+    constexpr GLsizei stride = 8 * sizeof(float);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, stride, (void *)(0));
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)(3 * sizeof(float)));
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, stride, (void *)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)(6 * sizeof(float)));
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, stride, (void *)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
 
     glBindVertexArray(0);
 }
 
-// CubeMap Shader
+
+//* ====================== CubeMap Shader ======================
 void Renderer::loadCubemapTexture(const std::vector<std::string>& faces, int Index)
 {
     unsigned int* texID = &objectEntity.CubeMaps[Index].textureID;
@@ -646,11 +647,24 @@ void Renderer::LightShaderLink()
 
 void Renderer::drawCallback()
 {
-    intfc.inputDebug("Info", "CallBack");
     mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
-    cam.update();
     float aspectRatio = static_cast<float>(mode->width) / static_cast<float>(mode->height);
-    glm::mat4 projection = glm::perspective(glm::radians(cam.fov), aspectRatio, 0.1f, 1000.0f);
+    projection = glm::perspective(glm::radians(cameras[0].fov), aspectRatio, 0.1f, 1000.0f);
+    
+
+    if (Grid)
+    {
+        glUseProgram(gridShaderProgram);
+        ShaderHelper gridShader(gridShaderProgram);
+        gridShader.setMat4("view", cameras[0].view);
+        gridShader.setMat4("projection", projection);
+        gridShader.setVec3("camPos", cameras[0].cameraPos);
+        gridShader.setVec3("gridColor", gridColor);
+        gridShader.setFloat("gridSpacing", gridSpacing);
+        glBindVertexArray(gridVAO);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        glBindVertexArray(0);
+    }
 
     if (objectEntity.objects.size() != 0)
     {
@@ -709,8 +723,11 @@ void Renderer::drawCallback()
                 shader.setFloat("lightIntensities[" + index + "]", objectEntity.lights[light_idx].intensity); // Set light intensity for each light
             }
 
-            shader.setMat4("view", cam.getViewMatrix());
+            shader.setMat4("view", cameras[0].view);
             shader.setMat4("projection", projection);
+
+            shader.setBool("selected", objectEntity.objects[i].isSelected);
+            shader.setVec3("colorSelected", glm::vec3( 1.0f, 1.0f, 0.0f));
 
             glm::mat4 modelMat = glm::mat4(1.0f);
             modelMat = glm::scale(modelMat, objectEntity.objects[i].scale);
@@ -722,7 +739,7 @@ void Renderer::drawCallback()
             modelMat = glm::rotate(modelMat, rot.z, glm::vec3(0.0f, 0.0f, 1.0f));
             shader.setMat4("model", modelMat);
 
-            shader.setVec3("viewPos", cam.cameraPos);
+            shader.setVec3("viewPos", cameras[0].cameraPos);
 
             glBindVertexArray(objectEntity.objects[i].VAO);
             if (objectEntity.objects[i].indices && objectEntity.objects[i].indicesCount > 0 && objectEntity.objects[i].isShow)
@@ -738,12 +755,12 @@ void Renderer::drawCallback()
     else
     {
     }
-
+    
     if (!objectEntity.lights.empty())
     {
         glUseProgram(lightShaderProgram);
         ShaderHelper lightShader(lightShaderProgram);
-        lightShader.setMat4("view", cam.getViewMatrix());
+        lightShader.setMat4("view", cameras[0].view);
         lightShader.setMat4("projection", projection);
         glBindVertexArray(lightVAO);
         for (unsigned int i = 0; i < objectEntity.lights.size(); ++i)
@@ -756,22 +773,10 @@ void Renderer::drawCallback()
         }
     }
 
-    if (Grid)
-    {
-        glUseProgram(gridShaderProgram);
-        ShaderHelper gridShader(gridShaderProgram);
-        gridShader.setMat4("view", cam.getViewMatrix());
-        gridShader.setMat4("projection", projection);
-        gridShader.setVec3("camPos", cam.cameraPos);
-        glBindVertexArray(gridVAO);
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-        glBindVertexArray(0);
-    }
-
     glDepthFunc(GL_LEQUAL);
     ShaderHelper skyboxShader(objectEntity.CubeMaps[0].shaderProgramCubemap);
     glUseProgram(objectEntity.CubeMaps[0].shaderProgramCubemap);
-    glm::mat4 view = glm::mat4(glm::mat3(cam.getViewMatrix()));
+    glm::mat4 view = glm::mat4(glm::mat3(cameras[0].view));
     skyboxShader.setMat4("view", view);
     skyboxShader.setMat4("projection", projection);
     glBindVertexArray(objectEntity.CubeMaps[0].cubemapVAO);

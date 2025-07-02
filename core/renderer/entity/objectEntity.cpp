@@ -27,3 +27,11 @@ void ObjectEntity::firstCubemap(){
     cubemap.vertex = 0;
     CubeMaps.push_back(cubemap);
 }
+
+void ObjectEntity::changeName(int index, std::string newName)
+{
+    if (index >= 0 && index < objects.size())
+    {
+        objects[index].name = newName;
+    }
+}

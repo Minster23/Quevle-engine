@@ -405,6 +405,7 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/string.h \
  F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
+ D:/QuavleEngine/utils/camera/camera.hpp \
  D:/QuavleEngine/core/renderer/renderer.hpp \
  D:/QuavleEngine/core/window/window.hpp \
  D:/QuavleEngine/vendor/glad/glad.h \
@@ -414,7 +415,17 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tree.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_map.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
- D:/QuavleEngine/utils/camera/camera.hpp \
+ D:/QuavleEngine/core/interface/interface.hpp \
+ D:/QuavleEngine/core/renderer/shader_h.h \
+ D:/QuavleEngine/vendor/imgui/imgui.h \
+ D:/QuavleEngine/vendor/imgui/imconfig.h \
+ F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+ F:/Devtool/mysys2/ucrt64/include/stdarg.h \
+ F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
+ D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
+ D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h \
+ D:/QuavleEngine/utils/font/IconsCodicons.h \
+ D:/QuavleEngine/vendor/implot-master/implot.h \
  D:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
  D:/QuavleEngine/core/model/model.hpp \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/memory \
@@ -465,13 +476,4 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  D:/QuavleEngine/vendor/assimp/include/assimp/metadata.h \
  D:/QuavleEngine/vendor/assimp/include/assimp/Importer.hpp \
  D:/QuavleEngine/vendor/assimp/include/assimp/postprocess.h \
- D:/QuavleEngine/utils/fileReader.hpp D:/QuavleEngine/utils/Debug.h \
- D:/QuavleEngine/core/interface/interface.hpp \
- D:/QuavleEngine/core/renderer/shader_h.h \
- D:/QuavleEngine/vendor/imgui/imgui.h \
- D:/QuavleEngine/vendor/imgui/imconfig.h \
- F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
- F:/Devtool/mysys2/ucrt64/include/stdarg.h \
- F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
- D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
- D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h
+ D:/QuavleEngine/utils/fileReader.hpp D:/QuavleEngine/utils/Debug.h

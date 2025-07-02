@@ -29,6 +29,8 @@ namespace QuavleEngine
         void mainLoop();
         void cleanup();
 
+        static double mousePosX, mousePosY;
+
     private:
         void create_framebuffer();
 

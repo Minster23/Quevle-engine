@@ -4,134 +4,7 @@
 CMakeFiles/QuavleEngine.dir/application/application.cpp.obj: D:/QuavleEngine/application/application.cpp \
   D:/QuavleEngine/application/application.hpp \
   D:/QuavleEngine/core/window/window.hpp \
-  D:/QuavleEngine/vendor/glad/glad.h \
-  D:/QuavleEngine/vendor/glad/khrplatform.h \
-  D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/include/GLFW/glfw3.h \
-  F:/Devtool/mysys2/ucrt64/include/_mingw.h \
-  F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
-  F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
-  F:/Devtool/mysys2/ucrt64/include/_mingw_secapi.h \
-  F:/Devtool/mysys2/ucrt64/include/_mingw_stat64.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/binders.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/alloc_traits.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocator.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_init_exception.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/erase_if.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hash_bytes.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/invoke.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/move.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/nested_exception.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/new_allocator.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_bvector.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_construct.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_function.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_map.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_pair.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tree.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_vector.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/string_view.tcc \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/utility.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/vector.tcc \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cctype \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cerrno \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/debug.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/exception \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/aligned_buffer.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/alloc_traits.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/map \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string_view \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tuple \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/type_traits \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/typeinfo \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/vector \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
-  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
-  F:/Devtool/mysys2/ucrt64/include/corecrt.h \
-  F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
-  F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h \
-  F:/Devtool/mysys2/ucrt64/include/crtdefs.h \
-  F:/Devtool/mysys2/ucrt64/include/ctype.h \
-  F:/Devtool/mysys2/ucrt64/include/errno.h \
-  F:/Devtool/mysys2/ucrt64/include/limits.h \
-  F:/Devtool/mysys2/ucrt64/include/locale.h \
-  F:/Devtool/mysys2/ucrt64/include/malloc.h \
-  F:/Devtool/mysys2/ucrt64/include/sdks/_mingw_ddk.h \
-  F:/Devtool/mysys2/ucrt64/include/sec_api/stdio_s.h \
-  F:/Devtool/mysys2/ucrt64/include/sec_api/stdlib_s.h \
-  F:/Devtool/mysys2/ucrt64/include/sec_api/wchar_s.h \
-  F:/Devtool/mysys2/ucrt64/include/stddef.h \
-  F:/Devtool/mysys2/ucrt64/include/stdint.h \
-  F:/Devtool/mysys2/ucrt64/include/stdio.h \
-  F:/Devtool/mysys2/ucrt64/include/stdlib.h \
-  F:/Devtool/mysys2/ucrt64/include/swprintf.inl \
-  F:/Devtool/mysys2/ucrt64/include/vadefs.h \
-  F:/Devtool/mysys2/ucrt64/include/wchar.h \
-  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
-  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
-  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
-  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
-  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h
-
-CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj: D:/QuavleEngine/core/interface/interface.cpp \
-  D:/QuavleEngine/core/interface/interface.hpp \
-  D:/QuavleEngine/core/renderer/shader_h.h \
-  D:/QuavleEngine/core/window/window.hpp \
-  D:/QuavleEngine/utils/Debug.h \
+  D:/QuavleEngine/utils/camera/camera.hpp \
   D:/QuavleEngine/vendor/glad/glad.h \
   D:/QuavleEngine/vendor/glad/khrplatform.h \
   D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/include/GLFW/glfw3.h \
@@ -151,6 +24,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj: D:/QuavleEngine/co
   D:/QuavleEngine/vendor/glm/glm/detail/func_vector_relational.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/qualifier.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_float.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_half.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_half.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.hpp \
@@ -171,6 +45,8 @@ CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj: D:/QuavleEngine/co
   D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.hpp \
@@ -180,6 +56,8 @@ CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj: D:/QuavleEngine/co
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.inl \
   D:/QuavleEngine/vendor/glm/glm/exponential.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.inl \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3.hpp \
@@ -216,32 +94,64 @@ CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj: D:/QuavleEngine/co
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.inl \
   D:/QuavleEngine/vendor/glm/glm/ext/scalar_int_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/scalar_uint_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double2_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double3.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double3_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float2_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float3.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float3_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int2_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int3.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int3_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3.hpp \
@@ -251,6 +161,17 @@ CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj: D:/QuavleEngine/co
   D:/QuavleEngine/vendor/glm/glm/fwd.hpp \
   D:/QuavleEngine/vendor/glm/glm/geometric.hpp \
   D:/QuavleEngine/vendor/glm/glm/glm.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/vec1.hpp \
   D:/QuavleEngine/vendor/glm/glm/integer.hpp \
   D:/QuavleEngine/vendor/glm/glm/mat2x2.hpp \
   D:/QuavleEngine/vendor/glm/glm/mat2x3.hpp \
@@ -269,16 +190,11 @@ CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj: D:/QuavleEngine/co
   D:/QuavleEngine/vendor/glm/glm/vec3.hpp \
   D:/QuavleEngine/vendor/glm/glm/vec4.hpp \
   D:/QuavleEngine/vendor/glm/glm/vector_relational.hpp \
-  D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h \
-  D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
-  D:/QuavleEngine/vendor/imgui/imconfig.h \
-  D:/QuavleEngine/vendor/imgui/imgui.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_secapi.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_stat64.h \
-  F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
   F:/Devtool/mysys2/ucrt64/include/_timeval.h \
   F:/Devtool/mysys2/ucrt64/include/assert.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/array \
@@ -367,6 +283,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj: D:/QuavleEngine/co
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdint \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
@@ -423,6 +340,423 @@ CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj: D:/QuavleEngine/co
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/crtdefs.h \
+  F:/Devtool/mysys2/ucrt64/include/ctype.h \
+  F:/Devtool/mysys2/ucrt64/include/errno.h \
+  F:/Devtool/mysys2/ucrt64/include/float.h \
+  F:/Devtool/mysys2/ucrt64/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/include/locale.h \
+  F:/Devtool/mysys2/ucrt64/include/malloc.h \
+  F:/Devtool/mysys2/ucrt64/include/math.h \
+  F:/Devtool/mysys2/ucrt64/include/process.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_compat.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_signal.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_time.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_unistd.h \
+  F:/Devtool/mysys2/ucrt64/include/sdks/_mingw_ddk.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdio_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdlib_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/sys/timeb_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/wchar_s.h \
+  F:/Devtool/mysys2/ucrt64/include/signal.h \
+  F:/Devtool/mysys2/ucrt64/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/include/stdio.h \
+  F:/Devtool/mysys2/ucrt64/include/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/string.h \
+  F:/Devtool/mysys2/ucrt64/include/swprintf.inl \
+  F:/Devtool/mysys2/ucrt64/include/sys/timeb.h \
+  F:/Devtool/mysys2/ucrt64/include/sys/types.h \
+  F:/Devtool/mysys2/ucrt64/include/time.h \
+  F:/Devtool/mysys2/ucrt64/include/vadefs.h \
+  F:/Devtool/mysys2/ucrt64/include/wchar.h \
+  F:/Devtool/mysys2/ucrt64/include/wctype.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h
+
+CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj: D:/QuavleEngine/core/interface/interface.cpp \
+  D:/QuavleEngine/core/interface/interface.hpp \
+  D:/QuavleEngine/core/renderer/shader_h.h \
+  D:/QuavleEngine/core/window/window.hpp \
+  D:/QuavleEngine/utils/Debug.h \
+  D:/QuavleEngine/utils/font/IconsCodicons.h \
+  D:/QuavleEngine/vendor/glad/glad.h \
+  D:/QuavleEngine/vendor/glad/khrplatform.h \
+  D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/include/GLFW/glfw3.h \
+  D:/QuavleEngine/vendor/glm/glm/common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/_fixes.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/_vectorize.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_decl.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_exponential.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_integer.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_matrix.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_packing.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/qualifier.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_half.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_half.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.inl \
+  D:/QuavleEngine/vendor/glm/glm/exponential.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_int_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_uint_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int2_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int3_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/fwd.hpp \
+  D:/QuavleEngine/vendor/glm/glm/geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/glm.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/vec1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/integer.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/matrix.hpp \
+  D:/QuavleEngine/vendor/glm/glm/packing.hpp \
+  D:/QuavleEngine/vendor/glm/glm/simd/platform.h \
+  D:/QuavleEngine/vendor/glm/glm/trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vector_relational.hpp \
+  D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h \
+  D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
+  D:/QuavleEngine/vendor/imgui/imconfig.h \
+  D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/implot-master/implot.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_secapi.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stat64.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/_timeval.h \
+  F:/Devtool/mysys2/ucrt64/include/assert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/array \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/binders.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocated_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/chrono.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/enable_special_members.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/erase_if.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_dir.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_fwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_path.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hash_bytes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable_policy.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/invoke.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ios_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_conv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/move.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/nested_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/new_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/parse_numbers.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/quoted_string.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_bvector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_construct.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_pair.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tree.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_vector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/string_view.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/utility.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/vector.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cassert \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cerrno \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cfloat \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/climits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/codecvt \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdint \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ctime \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/debug.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/exception \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/aligned_buffer.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/atomicity.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/concurrence.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/filesystem \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/functional \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iomanip \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ratio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/streambuf \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string_view \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/system_error \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/bessel_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/beta_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/ell_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/exp_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/gamma.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/hypergeometric.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/legendre_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_hermite.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/special_function_util.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tuple \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/type_traits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/typeinfo \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/vector \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
@@ -479,6 +813,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj: D:/QuavleE
   D:/QuavleEngine/utils/Debug.h \
   D:/QuavleEngine/utils/camera/camera.hpp \
   D:/QuavleEngine/utils/fileReader.hpp \
+  D:/QuavleEngine/utils/font/IconsCodicons.h \
   D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/poppack1.h \
   D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/pushpack1.h \
   D:/QuavleEngine/vendor/assimp/include/assimp/Importer.hpp \
@@ -698,6 +1033,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj: D:/QuavleE
   D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
   D:/QuavleEngine/vendor/imgui/imconfig.h \
   D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/implot-master/implot.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
@@ -724,6 +1060,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj: D:/QuavleE
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/chrono.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
@@ -734,6 +1071,10 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj: D:/QuavleE
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_dir.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_fwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_path.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fstream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
@@ -745,8 +1086,11 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj: D:/QuavleE
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_conv.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
@@ -756,9 +1100,11 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj: D:/QuavleE
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/parse_numbers.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/quoted_string.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
@@ -806,6 +1152,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj: D:/QuavleE
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/climits \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/codecvt \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef \
@@ -813,6 +1160,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj: D:/QuavleE
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ctime \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
@@ -825,14 +1173,17 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj: D:/QuavleE
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/filesystem \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/fstream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/functional \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iomanip \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/map \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/memory \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new \
@@ -841,6 +1192,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj: D:/QuavleE
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_memory_defs.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ratio \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
@@ -878,7 +1230,9 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj: D:/QuavleE
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
@@ -928,6 +1282,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj: D:/QuavleE
 CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngine/core/interface/panel/console.cpp \
   D:/QuavleEngine/core/interface/interface.hpp \
   D:/QuavleEngine/core/renderer/shader_h.h \
+  D:/QuavleEngine/utils/font/IconsCodicons.h \
   D:/QuavleEngine/vendor/glad/glad.h \
   D:/QuavleEngine/vendor/glad/khrplatform.h \
   D:/QuavleEngine/vendor/glm/glm/common.hpp \
@@ -946,6 +1301,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngin
   D:/QuavleEngine/vendor/glm/glm/detail/func_vector_relational.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/qualifier.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_float.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_half.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_half.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.hpp \
@@ -966,6 +1322,8 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngin
   D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.hpp \
@@ -975,6 +1333,8 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngin
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.inl \
   D:/QuavleEngine/vendor/glm/glm/exponential.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.inl \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3.hpp \
@@ -1011,32 +1371,64 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngin
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.inl \
   D:/QuavleEngine/vendor/glm/glm/ext/scalar_int_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/scalar_uint_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double2_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double3.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double3_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float2_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float3.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float3_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int2_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int3.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int3_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3.hpp \
@@ -1046,6 +1438,17 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngin
   D:/QuavleEngine/vendor/glm/glm/fwd.hpp \
   D:/QuavleEngine/vendor/glm/glm/geometric.hpp \
   D:/QuavleEngine/vendor/glm/glm/glm.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/vec1.hpp \
   D:/QuavleEngine/vendor/glm/glm/integer.hpp \
   D:/QuavleEngine/vendor/glm/glm/mat2x2.hpp \
   D:/QuavleEngine/vendor/glm/glm/mat2x3.hpp \
@@ -1068,6 +1471,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngin
   D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
   D:/QuavleEngine/vendor/imgui/imconfig.h \
   D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/implot-master/implot.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
@@ -1080,6 +1484,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngin
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/binders.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocated_ptr.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocator.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc \
@@ -1087,6 +1492,8 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngin
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/chrono.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h \
@@ -1096,6 +1503,10 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngin
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_dir.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_fwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_path.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hash_bytes.h \
@@ -1106,8 +1517,11 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngin
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_conv.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
@@ -1117,13 +1531,18 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngin
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/parse_numbers.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/quoted_string.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_function.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
@@ -1140,6 +1559,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngin
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf_iterator.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/string_view.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_ptr.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_map.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h \
@@ -1153,12 +1573,15 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngin
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/climits \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/codecvt \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdint \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ctime \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
@@ -1167,19 +1590,25 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngin
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/aligned_buffer.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/alloc_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/atomicity.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/concurrence.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/filesystem \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/functional \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iomanip \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ostream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ratio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/streambuf \
@@ -1213,7 +1642,9 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngin
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
@@ -1260,10 +1691,11 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngin
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h
 
-CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: D:/QuavleEngine/core/interface/panel/inspector.cpp \
+CMakeFiles/QuavleEngine.dir/core/interface/panel/editor.cpp.obj: D:/QuavleEngine/core/interface/panel/editor.cpp \
   D:/QuavleEngine/core/interface/interface.hpp \
-  D:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
   D:/QuavleEngine/core/renderer/shader_h.h \
+  D:/QuavleEngine/utils/font/IconsCodicons.h \
+  D:/QuavleEngine/vendor/editor/TextEditor.h \
   D:/QuavleEngine/vendor/glad/glad.h \
   D:/QuavleEngine/vendor/glad/khrplatform.h \
   D:/QuavleEngine/vendor/glm/glm/common.hpp \
@@ -1282,6 +1714,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: D:/QuavleEng
   D:/QuavleEngine/vendor/glm/glm/detail/func_vector_relational.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/qualifier.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_float.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_half.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_half.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.hpp \
@@ -1302,6 +1735,8 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: D:/QuavleEng
   D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.hpp \
@@ -1311,6 +1746,8 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: D:/QuavleEng
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.inl \
   D:/QuavleEngine/vendor/glm/glm/exponential.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.inl \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3.hpp \
@@ -1347,32 +1784,64 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: D:/QuavleEng
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.inl \
   D:/QuavleEngine/vendor/glm/glm/ext/scalar_int_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/scalar_uint_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double2_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double3.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double3_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float2_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float3.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float3_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int2_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int3.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int3_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3.hpp \
@@ -1382,6 +1851,17 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: D:/QuavleEng
   D:/QuavleEngine/vendor/glm/glm/fwd.hpp \
   D:/QuavleEngine/vendor/glm/glm/geometric.hpp \
   D:/QuavleEngine/vendor/glm/glm/glm.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/vec1.hpp \
   D:/QuavleEngine/vendor/glm/glm/integer.hpp \
   D:/QuavleEngine/vendor/glm/glm/mat2x2.hpp \
   D:/QuavleEngine/vendor/glm/glm/mat2x3.hpp \
@@ -1404,6 +1884,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: D:/QuavleEng
   D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
   D:/QuavleEngine/vendor/imgui/imconfig.h \
   D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/implot-master/implot.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
@@ -1413,25 +1894,39 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: D:/QuavleEng
   F:/Devtool/mysys2/ucrt64/include/_timeval.h \
   F:/Devtool/mysys2/ucrt64/include/assert.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/array \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/auto_ptr.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/binders.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/algorithmfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/align.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocated_ptr.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/chrono.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/deque.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/enable_special_members.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/erase_if.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_dir.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_fwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_path.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fstream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hash_bytes.h \
@@ -1442,8 +1937,11 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: D:/QuavleEng
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_conv.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
@@ -1453,35 +1951,66 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: D:/QuavleEng
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/parse_numbers.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/quoted_string.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_automaton.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_automaton.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_compiler.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_compiler.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_constants.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_error.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_executor.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_executor.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_scanner.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_scanner.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algo.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_bvector.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_construct.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_deque.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_heap.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_pair.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_stack.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tempbuf.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tree.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_vector.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf_iterator.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/string_view.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uniform_int_dist.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_ptr.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_set.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/utility.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/vector.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bitset \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cassert \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cctype \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cerrno \
@@ -1489,33 +2018,50 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: D:/QuavleEng
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/climits \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/codecvt \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdint \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ctime \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/debug.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/deque \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/exception \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/aligned_buffer.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/alloc_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/atomicity.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/concurrence.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/filesystem \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/fstream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/functional \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iomanip \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/memory \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/execution_defs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_memory_defs.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ratio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/regex \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stack \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/streambuf \
@@ -1538,10 +2084,13 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: D:/QuavleEng
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/type_traits \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/typeinfo \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_set \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/vector \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
@@ -1549,7 +2098,9 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: D:/QuavleEng
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
@@ -1596,7 +2147,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: D:/QuavleEng
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h
 
-CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: D:/QuavleEngine/core/interface/panel/objectHirarcy.cpp \
+CMakeFiles/QuavleEngine.dir/core/interface/panel/fileExplorer.cpp.obj: D:/QuavleEngine/core/interface/panel/fileExplorer.cpp \
   D:/QuavleEngine/core/interface/interface.hpp \
   D:/QuavleEngine/core/model/model.hpp \
   D:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
@@ -1604,8 +2155,8 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: D:/Quavl
   D:/QuavleEngine/core/renderer/shader_h.h \
   D:/QuavleEngine/core/window/window.hpp \
   D:/QuavleEngine/utils/Debug.h \
-  D:/QuavleEngine/utils/camera/camera.hpp \
   D:/QuavleEngine/utils/fileReader.hpp \
+  D:/QuavleEngine/utils/font/IconsCodicons.h \
   D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/poppack1.h \
   D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/pushpack1.h \
   D:/QuavleEngine/vendor/assimp/include/assimp/Importer.hpp \
@@ -1825,6 +2376,8 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: D:/Quavl
   D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
   D:/QuavleEngine/vendor/imgui/imconfig.h \
   D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/imgui/imgui_internal.h \
+  D:/QuavleEngine/vendor/implot-master/implot.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
@@ -1851,6 +2404,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: D:/Quavl
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/chrono.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
@@ -1861,6 +2415,10 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: D:/Quavl
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_dir.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_fwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_path.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fstream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
@@ -1872,8 +2430,11 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: D:/Quavl
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_conv.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
@@ -1883,9 +2444,11 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: D:/Quavl
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/parse_numbers.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/quoted_string.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
@@ -1933,6 +2496,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: D:/Quavl
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/climits \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/codecvt \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef \
@@ -1940,6 +2504,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: D:/Quavl
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ctime \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
@@ -1952,15 +2517,19 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: D:/Quavl
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/filesystem \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/fstream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/functional \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iomanip \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/math.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/memory \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ostream \
@@ -1968,6 +2537,7 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: D:/Quavl
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_memory_defs.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ratio \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
@@ -2005,7 +2575,9 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: D:/Quavl
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
@@ -2044,22 +2616,122 @@ CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: D:/Quavl
   F:/Devtool/mysys2/ucrt64/include/vadefs.h \
   F:/Devtool/mysys2/ucrt64/include/wchar.h \
   F:/Devtool/mysys2/ucrt64/include/wctype.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/adxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxbf16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxcomplexintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxfp16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxint8intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxtileintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124fmapsintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124vnniwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512cdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512dqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512erintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512ifmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512ifmavlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512pfintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmivlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlbwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vldqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnnivlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vp2intersectintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vp2intersectvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxifmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxneconvertintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint8intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmi2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cetintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cldemoteintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clflushoptintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clwbintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clzerointrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cmpccxaddintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/enqcmdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/f16cintrin.h \
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fxsrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/gfniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/hresetintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/ia32intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/immintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/keylockerintrin.h \
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lwpintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lzcntintrin.h \
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/movdirintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pconfigintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pkuintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/popcntintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/prfchiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/prfchwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/raointintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/rdseedintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/rtmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/serializeintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sgxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sha512intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/shaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm3intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm4intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/smmintrin.h \
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
-  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tbmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tsxldtrkintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/uintrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/usermsrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vaesintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vpclmulqdqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/waitpkgintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wbnoinvdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/x86gprintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavecintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveoptintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavesintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xtestintrin.h
 
-CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model/model.cpp \
+CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: D:/QuavleEngine/core/interface/panel/inspector.cpp \
   D:/QuavleEngine/core/interface/interface.hpp \
   D:/QuavleEngine/core/model/model.hpp \
   D:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
   D:/QuavleEngine/core/renderer/shader_h.h \
   D:/QuavleEngine/utils/Debug.h \
+  D:/QuavleEngine/utils/camera/camera.hpp \
   D:/QuavleEngine/utils/fileReader.hpp \
-  D:/QuavleEngine/utils/msgWnd.hpp \
+  D:/QuavleEngine/utils/font/IconsCodicons.h \
   D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/poppack1.h \
   D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/pushpack1.h \
   D:/QuavleEngine/vendor/assimp/include/assimp/Importer.hpp \
@@ -2108,6 +2780,7 @@ CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model
   D:/QuavleEngine/vendor/glm/glm/detail/func_vector_relational.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/qualifier.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_float.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_half.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_half.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.hpp \
@@ -2128,6 +2801,8 @@ CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model
   D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.inl \
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.hpp \
@@ -2137,6 +2812,8 @@ CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.inl \
   D:/QuavleEngine/vendor/glm/glm/exponential.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.inl \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3.hpp \
@@ -2173,32 +2850,64 @@ CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.inl \
   D:/QuavleEngine/vendor/glm/glm/ext/scalar_int_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/scalar_uint_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double2_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double3.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double3_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_double4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float2_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float3.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float3_precision.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_float4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int2_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int3.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int3_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int4.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_int4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2_sized.hpp \
   D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3.hpp \
@@ -2208,6 +2917,17 @@ CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model
   D:/QuavleEngine/vendor/glm/glm/fwd.hpp \
   D:/QuavleEngine/vendor/glm/glm/geometric.hpp \
   D:/QuavleEngine/vendor/glm/glm/glm.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/vec1.hpp \
   D:/QuavleEngine/vendor/glm/glm/integer.hpp \
   D:/QuavleEngine/vendor/glm/glm/mat2x2.hpp \
   D:/QuavleEngine/vendor/glm/glm/mat2x3.hpp \
@@ -2230,6 +2950,7 @@ CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model
   D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
   D:/QuavleEngine/vendor/imgui/imconfig.h \
   D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/implot-master/implot.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
@@ -2256,6 +2977,7 @@ CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/chrono.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
@@ -2266,6 +2988,10 @@ CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_dir.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_fwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_path.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fstream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
@@ -2277,8 +3003,11 @@ CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_conv.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
@@ -2288,9 +3017,11 @@ CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/parse_numbers.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/quoted_string.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
@@ -2335,6 +3066,7 @@ CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/climits \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/codecvt \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef \
@@ -2342,6 +3074,7 @@ CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ctime \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
@@ -2354,14 +3087,17 @@ CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/filesystem \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/fstream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/functional \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iomanip \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/memory \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ostream \
@@ -2369,6 +3105,7 @@ CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_memory_defs.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ratio \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
@@ -2406,7 +3143,9 @@ CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
@@ -2452,6 +3191,2341 @@ CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h
+
+CMakeFiles/QuavleEngine.dir/core/interface/panel/nodePanel.cpp.obj: D:/QuavleEngine/core/interface/panel/nodePanel.cpp \
+  D:/QuavleEngine/core/interface/interface.hpp \
+  D:/QuavleEngine/core/interface/nodes.h \
+  D:/QuavleEngine/core/renderer/shader_h.h \
+  D:/QuavleEngine/utils/font/IconsCodicons.h \
+  D:/QuavleEngine/vendor/glad/glad.h \
+  D:/QuavleEngine/vendor/glad/khrplatform.h \
+  D:/QuavleEngine/vendor/glm/glm/common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/_fixes.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/_vectorize.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_decl.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_exponential.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_integer.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_matrix.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_packing.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/qualifier.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_half.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_half.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.inl \
+  D:/QuavleEngine/vendor/glm/glm/exponential.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_int_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_uint_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int2_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int3_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/fwd.hpp \
+  D:/QuavleEngine/vendor/glm/glm/geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/glm.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/vec1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/integer.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/matrix.hpp \
+  D:/QuavleEngine/vendor/glm/glm/packing.hpp \
+  D:/QuavleEngine/vendor/glm/glm/simd/platform.h \
+  D:/QuavleEngine/vendor/glm/glm/trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vector_relational.hpp \
+  D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h \
+  D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
+  D:/QuavleEngine/vendor/imgui/imconfig.h \
+  D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/imgui/imgui_internal.h \
+  D:/QuavleEngine/vendor/imnode/include/ImNodeFlow.h \
+  D:/QuavleEngine/vendor/imnode/src/ImNodeFlow.inl \
+  D:/QuavleEngine/vendor/imnode/src/context_wrapper.h \
+  D:/QuavleEngine/vendor/imnode/src/imgui_bezier_math.h \
+  D:/QuavleEngine/vendor/imnode/src/imgui_bezier_math.inl \
+  D:/QuavleEngine/vendor/imnode/src/imgui_extra_math.h \
+  D:/QuavleEngine/vendor/imnode/src/imgui_extra_math.inl \
+  D:/QuavleEngine/vendor/implot-master/implot.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_secapi.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stat64.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/_timeval.h \
+  F:/Devtool/mysys2/ucrt64/include/assert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/algorithm \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/array \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/auto_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/binders.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/algorithmfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/align.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocated_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/chrono.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/enable_special_members.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/erase_if.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_dir.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_fwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_path.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hash_bytes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable_policy.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/invoke.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ios_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_conv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/move.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/nested_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/new_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/parse_numbers.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/quoted_string.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algo.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_bvector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_construct.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_heap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_pair.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_relops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tempbuf.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tree.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_vector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/string_view.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uniform_int_dist.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/utility.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/vector.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cassert \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cerrno \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cfloat \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/climits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/codecvt \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdint \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ctime \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/debug.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/exception \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/aligned_buffer.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/atomicity.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/concurrence.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/filesystem \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/functional \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iomanip \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/math.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/memory \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/execution_defs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_memory_defs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ratio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/streambuf \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string_view \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/system_error \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/bessel_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/beta_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/ell_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/exp_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/gamma.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/hypergeometric.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/legendre_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_hermite.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/special_function_util.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tuple \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/type_traits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/typeinfo \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/utility \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/vector \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/crtdefs.h \
+  F:/Devtool/mysys2/ucrt64/include/ctype.h \
+  F:/Devtool/mysys2/ucrt64/include/errno.h \
+  F:/Devtool/mysys2/ucrt64/include/float.h \
+  F:/Devtool/mysys2/ucrt64/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/include/locale.h \
+  F:/Devtool/mysys2/ucrt64/include/malloc.h \
+  F:/Devtool/mysys2/ucrt64/include/math.h \
+  F:/Devtool/mysys2/ucrt64/include/process.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_compat.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_signal.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_time.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_unistd.h \
+  F:/Devtool/mysys2/ucrt64/include/sdks/_mingw_ddk.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdio_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdlib_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/sys/timeb_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/wchar_s.h \
+  F:/Devtool/mysys2/ucrt64/include/signal.h \
+  F:/Devtool/mysys2/ucrt64/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/include/stdio.h \
+  F:/Devtool/mysys2/ucrt64/include/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/string.h \
+  F:/Devtool/mysys2/ucrt64/include/swprintf.inl \
+  F:/Devtool/mysys2/ucrt64/include/sys/timeb.h \
+  F:/Devtool/mysys2/ucrt64/include/sys/types.h \
+  F:/Devtool/mysys2/ucrt64/include/time.h \
+  F:/Devtool/mysys2/ucrt64/include/vadefs.h \
+  F:/Devtool/mysys2/ucrt64/include/wchar.h \
+  F:/Devtool/mysys2/ucrt64/include/wctype.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/adxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxbf16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxcomplexintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxfp16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxint8intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxtileintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124fmapsintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124vnniwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512cdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512dqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512erintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512ifmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512ifmavlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512pfintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmivlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlbwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vldqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnnivlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vp2intersectintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vp2intersectvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxifmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxneconvertintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint8intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmi2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cetintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cldemoteintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clflushoptintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clwbintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clzerointrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cmpccxaddintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/enqcmdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/f16cintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fxsrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/gfniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/hresetintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/ia32intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/immintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/keylockerintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lwpintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lzcntintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/movdirintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pconfigintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pkuintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/popcntintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/prfchiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/prfchwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/raointintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/rdseedintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/rtmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/serializeintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sgxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sha512intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/shaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm3intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm4intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/smmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tbmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tsxldtrkintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/uintrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/usermsrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vaesintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vpclmulqdqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/waitpkgintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wbnoinvdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/x86gprintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavecintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveoptintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavesintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xtestintrin.h
+
+CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: D:/QuavleEngine/core/interface/panel/objectHirarcy.cpp \
+  D:/QuavleEngine/core/interface/interface.hpp \
+  D:/QuavleEngine/core/model/model.hpp \
+  D:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
+  D:/QuavleEngine/core/renderer/renderer.hpp \
+  D:/QuavleEngine/core/renderer/shader_h.h \
+  D:/QuavleEngine/core/window/window.hpp \
+  D:/QuavleEngine/utils/Debug.h \
+  D:/QuavleEngine/utils/camera/camera.hpp \
+  D:/QuavleEngine/utils/fileReader.hpp \
+  D:/QuavleEngine/utils/font/IconsCodicons.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/poppack1.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/pushpack1.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/Importer.hpp \
+  D:/QuavleEngine/vendor/assimp/include/assimp/MathFunctions.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/aabb.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/anim.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/camera.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/color4.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/color4.inl \
+  D:/QuavleEngine/vendor/assimp/include/assimp/config.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/defs.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/light.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/material.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/material.inl \
+  D:/QuavleEngine/vendor/assimp/include/assimp/matrix3x3.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/matrix3x3.inl \
+  D:/QuavleEngine/vendor/assimp/include/assimp/matrix4x4.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/matrix4x4.inl \
+  D:/QuavleEngine/vendor/assimp/include/assimp/mesh.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/metadata.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/postprocess.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/quaternion.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/quaternion.inl \
+  D:/QuavleEngine/vendor/assimp/include/assimp/scene.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/texture.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/types.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/vector2.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/vector2.inl \
+  D:/QuavleEngine/vendor/assimp/include/assimp/vector3.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/vector3.inl \
+  D:/QuavleEngine/vendor/glad/glad.h \
+  D:/QuavleEngine/vendor/glad/khrplatform.h \
+  D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/include/GLFW/glfw3.h \
+  D:/QuavleEngine/vendor/glm/glm/common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/_fixes.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/_vectorize.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_decl.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_exponential.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_integer.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_matrix.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_packing.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/qualifier.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_half.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_half.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.inl \
+  D:/QuavleEngine/vendor/glm/glm/exponential.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_int_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_uint_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int2_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int3_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/fwd.hpp \
+  D:/QuavleEngine/vendor/glm/glm/geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/glm.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/vec1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/integer.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/matrix.hpp \
+  D:/QuavleEngine/vendor/glm/glm/packing.hpp \
+  D:/QuavleEngine/vendor/glm/glm/simd/platform.h \
+  D:/QuavleEngine/vendor/glm/glm/trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vector_relational.hpp \
+  D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h \
+  D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
+  D:/QuavleEngine/vendor/imgui/imconfig.h \
+  D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/implot-master/implot.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_secapi.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stat64.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/_timeval.h \
+  F:/Devtool/mysys2/ucrt64/include/assert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/algorithm \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/array \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/auto_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/binders.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/algorithmfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/align.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocated_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/chrono.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/enable_special_members.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/erase_if.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_dir.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_fwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_path.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fstream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hash_bytes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable_policy.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/invoke.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ios_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_conv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/move.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/nested_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/new_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/parse_numbers.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/quoted_string.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algo.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_bvector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_construct.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_heap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_pair.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tempbuf.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tree.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_vector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/string_view.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uniform_int_dist.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_set.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/utility.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/vector.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cassert \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cerrno \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cfloat \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/climits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/codecvt \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdint \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ctime \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/debug.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/exception \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/aligned_buffer.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/atomicity.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/concurrence.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/filesystem \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/fstream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/functional \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iomanip \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/memory \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/execution_defs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_memory_defs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ratio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/streambuf \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string_view \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/system_error \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/bessel_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/beta_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/ell_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/exp_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/gamma.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/hypergeometric.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/legendre_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_hermite.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/special_function_util.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tuple \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/type_traits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/typeinfo \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_set \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/vector \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/crtdefs.h \
+  F:/Devtool/mysys2/ucrt64/include/ctype.h \
+  F:/Devtool/mysys2/ucrt64/include/errno.h \
+  F:/Devtool/mysys2/ucrt64/include/float.h \
+  F:/Devtool/mysys2/ucrt64/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/include/locale.h \
+  F:/Devtool/mysys2/ucrt64/include/malloc.h \
+  F:/Devtool/mysys2/ucrt64/include/math.h \
+  F:/Devtool/mysys2/ucrt64/include/process.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_compat.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_signal.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_time.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_unistd.h \
+  F:/Devtool/mysys2/ucrt64/include/sdks/_mingw_ddk.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdio_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdlib_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/sys/timeb_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/wchar_s.h \
+  F:/Devtool/mysys2/ucrt64/include/signal.h \
+  F:/Devtool/mysys2/ucrt64/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/include/stdio.h \
+  F:/Devtool/mysys2/ucrt64/include/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/string.h \
+  F:/Devtool/mysys2/ucrt64/include/swprintf.inl \
+  F:/Devtool/mysys2/ucrt64/include/sys/timeb.h \
+  F:/Devtool/mysys2/ucrt64/include/sys/types.h \
+  F:/Devtool/mysys2/ucrt64/include/time.h \
+  F:/Devtool/mysys2/ucrt64/include/vadefs.h \
+  F:/Devtool/mysys2/ucrt64/include/wchar.h \
+  F:/Devtool/mysys2/ucrt64/include/wctype.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h
+
+CMakeFiles/QuavleEngine.dir/core/interface/panel/profiler.cpp.obj: D:/QuavleEngine/core/interface/panel/profiler.cpp \
+  D:/QuavleEngine/core/interface/interface.hpp \
+  D:/QuavleEngine/core/renderer/shader_h.h \
+  D:/QuavleEngine/utils/font/IconsCodicons.h \
+  D:/QuavleEngine/vendor/glad/glad.h \
+  D:/QuavleEngine/vendor/glad/khrplatform.h \
+  D:/QuavleEngine/vendor/glm/glm/common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/_fixes.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/_vectorize.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_decl.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_exponential.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_integer.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_matrix.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_packing.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/qualifier.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_half.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_half.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.inl \
+  D:/QuavleEngine/vendor/glm/glm/exponential.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_int_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_uint_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int2_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int3_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/fwd.hpp \
+  D:/QuavleEngine/vendor/glm/glm/geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/glm.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/vec1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/integer.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/matrix.hpp \
+  D:/QuavleEngine/vendor/glm/glm/packing.hpp \
+  D:/QuavleEngine/vendor/glm/glm/simd/platform.h \
+  D:/QuavleEngine/vendor/glm/glm/trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vector_relational.hpp \
+  D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h \
+  D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
+  D:/QuavleEngine/vendor/imgui/imconfig.h \
+  D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/implot-master/implot.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_secapi.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stat64.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/_timeval.h \
+  F:/Devtool/mysys2/ucrt64/include/assert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/array \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/binders.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocated_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/chrono.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/deque.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/enable_special_members.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/erase_if.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_dir.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_fwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_path.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hash_bytes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable_policy.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/invoke.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ios_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_conv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/move.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/nested_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/new_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/parse_numbers.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/quoted_string.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_bvector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_construct.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_deque.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_pair.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_vector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/string_view.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/utility.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/vector.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cassert \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cerrno \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cfloat \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/climits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/codecvt \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdint \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ctime \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/debug.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/deque \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/exception \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/aligned_buffer.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/atomicity.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/concurrence.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/filesystem \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/functional \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iomanip \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ratio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/streambuf \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string_view \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/system_error \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/bessel_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/beta_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/ell_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/exp_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/gamma.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/hypergeometric.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/legendre_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_hermite.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/special_function_util.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tuple \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/type_traits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/typeinfo \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/vector \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/crtdefs.h \
+  F:/Devtool/mysys2/ucrt64/include/ctype.h \
+  F:/Devtool/mysys2/ucrt64/include/errno.h \
+  F:/Devtool/mysys2/ucrt64/include/float.h \
+  F:/Devtool/mysys2/ucrt64/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/include/locale.h \
+  F:/Devtool/mysys2/ucrt64/include/malloc.h \
+  F:/Devtool/mysys2/ucrt64/include/math.h \
+  F:/Devtool/mysys2/ucrt64/include/process.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_compat.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_signal.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_time.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_unistd.h \
+  F:/Devtool/mysys2/ucrt64/include/sdks/_mingw_ddk.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdio_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdlib_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/sys/timeb_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/wchar_s.h \
+  F:/Devtool/mysys2/ucrt64/include/signal.h \
+  F:/Devtool/mysys2/ucrt64/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/include/stdio.h \
+  F:/Devtool/mysys2/ucrt64/include/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/string.h \
+  F:/Devtool/mysys2/ucrt64/include/swprintf.inl \
+  F:/Devtool/mysys2/ucrt64/include/sys/timeb.h \
+  F:/Devtool/mysys2/ucrt64/include/sys/types.h \
+  F:/Devtool/mysys2/ucrt64/include/time.h \
+  F:/Devtool/mysys2/ucrt64/include/vadefs.h \
+  F:/Devtool/mysys2/ucrt64/include/wchar.h \
+  F:/Devtool/mysys2/ucrt64/include/wctype.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h
+
+CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.obj: D:/QuavleEngine/core/interface/panel/sceneSetting.cpp \
+  D:/QuavleEngine/core/interface/interface.hpp \
+  D:/QuavleEngine/core/renderer/shader_h.h \
+  D:/QuavleEngine/utils/font/IconsCodicons.h \
+  D:/QuavleEngine/vendor/glad/glad.h \
+  D:/QuavleEngine/vendor/glad/khrplatform.h \
+  D:/QuavleEngine/vendor/glm/glm/common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/_fixes.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/_vectorize.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_decl.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_exponential.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_integer.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_matrix.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_packing.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/qualifier.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_half.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_half.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.inl \
+  D:/QuavleEngine/vendor/glm/glm/exponential.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_int_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_uint_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int2_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int3_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/fwd.hpp \
+  D:/QuavleEngine/vendor/glm/glm/geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/glm.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/vec1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/integer.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/matrix.hpp \
+  D:/QuavleEngine/vendor/glm/glm/packing.hpp \
+  D:/QuavleEngine/vendor/glm/glm/simd/platform.h \
+  D:/QuavleEngine/vendor/glm/glm/trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vector_relational.hpp \
+  D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h \
+  D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
+  D:/QuavleEngine/vendor/imgui/imconfig.h \
+  D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/implot-master/implot.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_secapi.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stat64.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/_timeval.h \
+  F:/Devtool/mysys2/ucrt64/include/assert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/array \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/binders.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocated_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/chrono.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/enable_special_members.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/erase_if.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_dir.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_fwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_path.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hash_bytes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable_policy.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/invoke.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ios_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_conv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/move.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/nested_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/new_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/parse_numbers.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/quoted_string.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_bvector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_construct.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_pair.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_vector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/string_view.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/utility.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/vector.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cassert \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cerrno \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cfloat \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/climits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/codecvt \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdint \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ctime \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/debug.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/exception \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/aligned_buffer.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/atomicity.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/concurrence.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/filesystem \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/functional \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iomanip \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ratio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/streambuf \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string_view \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/system_error \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/bessel_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/beta_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/ell_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/exp_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/gamma.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/hypergeometric.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/legendre_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_hermite.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/special_function_util.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tuple \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/type_traits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/typeinfo \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/vector \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/crtdefs.h \
+  F:/Devtool/mysys2/ucrt64/include/ctype.h \
+  F:/Devtool/mysys2/ucrt64/include/errno.h \
+  F:/Devtool/mysys2/ucrt64/include/float.h \
+  F:/Devtool/mysys2/ucrt64/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/include/locale.h \
+  F:/Devtool/mysys2/ucrt64/include/malloc.h \
+  F:/Devtool/mysys2/ucrt64/include/math.h \
+  F:/Devtool/mysys2/ucrt64/include/process.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_compat.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_signal.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_time.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_unistd.h \
+  F:/Devtool/mysys2/ucrt64/include/sdks/_mingw_ddk.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdio_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdlib_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/sys/timeb_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/wchar_s.h \
+  F:/Devtool/mysys2/ucrt64/include/signal.h \
+  F:/Devtool/mysys2/ucrt64/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/include/stdio.h \
+  F:/Devtool/mysys2/ucrt64/include/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/string.h \
+  F:/Devtool/mysys2/ucrt64/include/swprintf.inl \
+  F:/Devtool/mysys2/ucrt64/include/sys/timeb.h \
+  F:/Devtool/mysys2/ucrt64/include/sys/types.h \
+  F:/Devtool/mysys2/ucrt64/include/time.h \
+  F:/Devtool/mysys2/ucrt64/include/vadefs.h \
+  F:/Devtool/mysys2/ucrt64/include/wchar.h \
+  F:/Devtool/mysys2/ucrt64/include/wctype.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h
+
+CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model/model.cpp \
+  D:/QuavleEngine/core/interface/interface.hpp \
+  D:/QuavleEngine/core/model/UUID.hpp \
+  D:/QuavleEngine/core/model/model.hpp \
+  D:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
+  D:/QuavleEngine/core/renderer/renderer.hpp \
+  D:/QuavleEngine/core/renderer/shader_h.h \
+  D:/QuavleEngine/core/window/window.hpp \
+  D:/QuavleEngine/utils/Debug.h \
+  D:/QuavleEngine/utils/fileReader.hpp \
+  D:/QuavleEngine/utils/font/IconsCodicons.h \
+  D:/QuavleEngine/utils/msgWnd.hpp \
+  D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/poppack1.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/pushpack1.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/Importer.hpp \
+  D:/QuavleEngine/vendor/assimp/include/assimp/MathFunctions.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/aabb.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/anim.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/camera.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/color4.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/color4.inl \
+  D:/QuavleEngine/vendor/assimp/include/assimp/config.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/defs.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/light.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/material.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/material.inl \
+  D:/QuavleEngine/vendor/assimp/include/assimp/matrix3x3.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/matrix3x3.inl \
+  D:/QuavleEngine/vendor/assimp/include/assimp/matrix4x4.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/matrix4x4.inl \
+  D:/QuavleEngine/vendor/assimp/include/assimp/mesh.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/metadata.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/postprocess.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/quaternion.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/quaternion.inl \
+  D:/QuavleEngine/vendor/assimp/include/assimp/scene.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/texture.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/types.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/vector2.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/vector2.inl \
+  D:/QuavleEngine/vendor/assimp/include/assimp/vector3.h \
+  D:/QuavleEngine/vendor/assimp/include/assimp/vector3.inl \
+  D:/QuavleEngine/vendor/glad/glad.h \
+  D:/QuavleEngine/vendor/glad/khrplatform.h \
+  D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/include/GLFW/glfw3.h \
+  D:/QuavleEngine/vendor/glm/glm/common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/_fixes.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/_vectorize.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_decl.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_exponential.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_integer.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_matrix.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_packing.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/qualifier.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_half.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_half.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.inl \
+  D:/QuavleEngine/vendor/glm/glm/exponential.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_int_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_uint_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int2_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int3_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/fwd.hpp \
+  D:/QuavleEngine/vendor/glm/glm/geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/glm.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/vec1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/integer.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/matrix.hpp \
+  D:/QuavleEngine/vendor/glm/glm/packing.hpp \
+  D:/QuavleEngine/vendor/glm/glm/simd/platform.h \
+  D:/QuavleEngine/vendor/glm/glm/trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vector_relational.hpp \
+  D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h \
+  D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
+  D:/QuavleEngine/vendor/imgui/imconfig.h \
+  D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/implot-master/implot.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_secapi.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stat64.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/_timeval.h \
+  F:/Devtool/mysys2/ucrt64/include/assert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/algorithm \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/array \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/auto_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/binders.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/algorithmfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/align.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocated_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/chrono.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/enable_special_members.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/erase_if.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_dir.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_fwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_path.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fstream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hash_bytes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable_policy.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/invoke.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ios_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_conv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/move.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/nested_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/new_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/parse_numbers.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/quoted_string.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/random.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/random.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algo.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_bvector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_construct.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_heap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_numeric.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_pair.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tempbuf.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tree.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_vector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/string_view.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uniform_int_dist.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_set.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/utility.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/vector.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cassert \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cerrno \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cfloat \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/climits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/codecvt \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdint \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ctime \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/debug.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/exception \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/aligned_buffer.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/atomicity.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/concurrence.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/filesystem \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/fstream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/functional \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iomanip \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/memory \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/numeric \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/execution_defs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_memory_defs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_numeric_defs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/random \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ratio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/streambuf \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string_view \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/system_error \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/bessel_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/beta_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/ell_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/exp_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/gamma.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/hypergeometric.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/legendre_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_hermite.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/special_function_util.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tuple \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/type_traits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/typeinfo \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_set \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/vector \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/opt_random.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/crtdefs.h \
+  F:/Devtool/mysys2/ucrt64/include/ctype.h \
+  F:/Devtool/mysys2/ucrt64/include/errno.h \
+  F:/Devtool/mysys2/ucrt64/include/float.h \
+  F:/Devtool/mysys2/ucrt64/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/include/locale.h \
+  F:/Devtool/mysys2/ucrt64/include/malloc.h \
+  F:/Devtool/mysys2/ucrt64/include/math.h \
+  F:/Devtool/mysys2/ucrt64/include/process.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_compat.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_signal.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_time.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_unistd.h \
+  F:/Devtool/mysys2/ucrt64/include/sdks/_mingw_ddk.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdio_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdlib_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/sys/timeb_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/wchar_s.h \
+  F:/Devtool/mysys2/ucrt64/include/signal.h \
+  F:/Devtool/mysys2/ucrt64/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/include/stdio.h \
+  F:/Devtool/mysys2/ucrt64/include/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/string.h \
+  F:/Devtool/mysys2/ucrt64/include/swprintf.inl \
+  F:/Devtool/mysys2/ucrt64/include/sys/timeb.h \
+  F:/Devtool/mysys2/ucrt64/include/sys/types.h \
+  F:/Devtool/mysys2/ucrt64/include/time.h \
+  F:/Devtool/mysys2/ucrt64/include/vadefs.h \
+  F:/Devtool/mysys2/ucrt64/include/wchar.h \
+  F:/Devtool/mysys2/ucrt64/include/wctype.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xmmintrin.h
 
 CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj: D:/QuavleEngine/core/renderer/entity/objectEntity.cpp \
   D:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
@@ -2786,6 +5860,7 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: D:/QuavleEngine/core
   D:/QuavleEngine/utils/Debug.h \
   D:/QuavleEngine/utils/camera/camera.hpp \
   D:/QuavleEngine/utils/fileReader.hpp \
+  D:/QuavleEngine/utils/font/IconsCodicons.h \
   D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/poppack1.h \
   D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/pushpack1.h \
   D:/QuavleEngine/vendor/assimp/include/assimp/Importer.hpp \
@@ -3005,6 +6080,7 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: D:/QuavleEngine/core
   D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
   D:/QuavleEngine/vendor/imgui/imconfig.h \
   D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/implot-master/implot.h \
   D:/QuavleEngine/vendor/stb/stb_image.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
@@ -3334,16 +6410,442 @@ CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj: D:/QuavleEngin
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xmmintrin.h
 
+CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.obj: D:/QuavleEngine/core/scripting/scripting.cpp \
+  D:/QuavleEngine/core/interface/interface.hpp \
+  D:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
+  D:/QuavleEngine/core/renderer/shader_h.h \
+  D:/QuavleEngine/core/scripting/scripting.h \
+  D:/QuavleEngine/core/window/window.hpp \
+  D:/QuavleEngine/utils/font/IconsCodicons.h \
+  D:/QuavleEngine/vendor/glad/glad.h \
+  D:/QuavleEngine/vendor/glad/khrplatform.h \
+  D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/include/GLFW/glfw3.h \
+  D:/QuavleEngine/vendor/glm/glm/common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/_fixes.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/_vectorize.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_decl.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_exponential.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_integer.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_matrix.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_packing.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/func_vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/qualifier.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_half.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_half.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_quat.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.inl \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.inl \
+  D:/QuavleEngine/vendor/glm/glm/exponential.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_int_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/scalar_uint_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_double4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float1_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float2_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float3_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_float4_precision.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int1_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int2_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int3_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_int4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.inl \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4_sized.hpp \
+  D:/QuavleEngine/vendor/glm/glm/fwd.hpp \
+  D:/QuavleEngine/vendor/glm/glm/geometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/glm.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/constants.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.hpp \
+  D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
+  D:/QuavleEngine/vendor/glm/glm/gtc/vec1.hpp \
+  D:/QuavleEngine/vendor/glm/glm/integer.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat2x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat3x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/mat4x4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/matrix.hpp \
+  D:/QuavleEngine/vendor/glm/glm/packing.hpp \
+  D:/QuavleEngine/vendor/glm/glm/simd/platform.h \
+  D:/QuavleEngine/vendor/glm/glm/trigonometric.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec2.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec3.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vec4.hpp \
+  D:/QuavleEngine/vendor/glm/glm/vector_relational.hpp \
+  D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h \
+  D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
+  D:/QuavleEngine/vendor/imgui/imconfig.h \
+  D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/implot-master/implot.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_secapi.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stat64.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/_timeval.h \
+  F:/Devtool/mysys2/ucrt64/include/assert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/array \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/binders.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocated_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/chrono.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/enable_special_members.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/erase_if.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_dir.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_fwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_path.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hash_bytes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable_policy.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/invoke.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ios_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_conv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/move.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/nested_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/new_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/parse_numbers.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/quoted_string.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_bvector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_construct.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_pair.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tree.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_vector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/string_view.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/utility.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/vector.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cassert \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cerrno \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cfloat \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/climits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/codecvt \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdint \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ctime \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/debug.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/exception \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/aligned_buffer.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/atomicity.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/concurrence.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/filesystem \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/functional \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iomanip \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ratio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/streambuf \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string_view \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/system_error \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/bessel_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/beta_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/ell_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/exp_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/gamma.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/hypergeometric.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/legendre_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_hermite.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/special_function_util.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tuple \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/type_traits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/typeinfo \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/vector \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/crtdefs.h \
+  F:/Devtool/mysys2/ucrt64/include/ctype.h \
+  F:/Devtool/mysys2/ucrt64/include/errno.h \
+  F:/Devtool/mysys2/ucrt64/include/float.h \
+  F:/Devtool/mysys2/ucrt64/include/lauxlib.h \
+  F:/Devtool/mysys2/ucrt64/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/include/locale.h \
+  F:/Devtool/mysys2/ucrt64/include/lua.h \
+  F:/Devtool/mysys2/ucrt64/include/luaconf.h \
+  F:/Devtool/mysys2/ucrt64/include/lualib.h \
+  F:/Devtool/mysys2/ucrt64/include/malloc.h \
+  F:/Devtool/mysys2/ucrt64/include/math.h \
+  F:/Devtool/mysys2/ucrt64/include/process.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_compat.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_signal.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_time.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_unistd.h \
+  F:/Devtool/mysys2/ucrt64/include/sdks/_mingw_ddk.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdio_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdlib_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/sys/timeb_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/wchar_s.h \
+  F:/Devtool/mysys2/ucrt64/include/signal.h \
+  F:/Devtool/mysys2/ucrt64/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/include/stdio.h \
+  F:/Devtool/mysys2/ucrt64/include/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/string.h \
+  F:/Devtool/mysys2/ucrt64/include/swprintf.inl \
+  F:/Devtool/mysys2/ucrt64/include/sys/timeb.h \
+  F:/Devtool/mysys2/ucrt64/include/sys/types.h \
+  F:/Devtool/mysys2/ucrt64/include/time.h \
+  F:/Devtool/mysys2/ucrt64/include/vadefs.h \
+  F:/Devtool/mysys2/ucrt64/include/wchar.h \
+  F:/Devtool/mysys2/ucrt64/include/wctype.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h
+
 CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: D:/QuavleEngine/core/window/window.cpp \
   D:/QuavleEngine/core/interface/interface.hpp \
   D:/QuavleEngine/core/model/model.hpp \
   D:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
   D:/QuavleEngine/core/renderer/renderer.hpp \
   D:/QuavleEngine/core/renderer/shader_h.h \
+  D:/QuavleEngine/core/scripting/scripting.h \
   D:/QuavleEngine/core/window/window.hpp \
   D:/QuavleEngine/utils/Debug.h \
   D:/QuavleEngine/utils/camera/camera.hpp \
   D:/QuavleEngine/utils/fileReader.hpp \
+  D:/QuavleEngine/utils/font/IconsCodicons.h \
   D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/poppack1.h \
   D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/pushpack1.h \
   D:/QuavleEngine/vendor/assimp/include/assimp/Importer.hpp \
@@ -3563,6 +7065,7 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: D:/QuavleEngine/core/win
   D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
   D:/QuavleEngine/vendor/imgui/imconfig.h \
   D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/implot-master/implot.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
@@ -3589,6 +7092,7 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: D:/QuavleEngine/core/win
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/chrono.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
@@ -3599,6 +7103,10 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: D:/QuavleEngine/core/win
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_dir.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_fwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_path.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fstream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
@@ -3610,8 +7118,11 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: D:/QuavleEngine/core/win
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_conv.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
@@ -3621,9 +7132,11 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: D:/QuavleEngine/core/win
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/parse_numbers.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/quoted_string.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
@@ -3673,6 +7186,7 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: D:/QuavleEngine/core/win
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/climits \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/codecvt \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef \
@@ -3680,6 +7194,7 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: D:/QuavleEngine/core/win
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ctime \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
@@ -3692,14 +7207,17 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: D:/QuavleEngine/core/win
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/filesystem \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/fstream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/functional \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iomanip \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/map \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/memory \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new \
@@ -3709,6 +7227,7 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: D:/QuavleEngine/core/win
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_memory_defs.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ratio \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/set \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
@@ -3747,7 +7266,9 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: D:/QuavleEngine/core/win
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
@@ -3799,7 +7320,6 @@ CMakeFiles/QuavleEngine.dir/src/main.cpp.obj: D:/QuavleEngine/src/main.cpp \
 
 CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj: D:/QuavleEngine/utils/camera/camera.cpp \
   D:/QuavleEngine/utils/camera/camera.hpp \
-  D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/include/GLFW/glfw3.h \
   D:/QuavleEngine/vendor/glm/glm/common.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/_fixes.hpp \
   D:/QuavleEngine/vendor/glm/glm/detail/_vectorize.hpp \
@@ -3982,33 +7502,56 @@ CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj: D:/QuavleEngine/utils/c
   D:/QuavleEngine/vendor/glm/glm/vec3.hpp \
   D:/QuavleEngine/vendor/glm/glm/vec4.hpp \
   D:/QuavleEngine/vendor/glm/glm/vector_relational.hpp \
-  F:/Devtool/mysys2/ucrt64/include/GL/gl.h \
+  D:/QuavleEngine/utils/camera/camera.hpp \
   F:/Devtool/mysys2/ucrt64/include/_mingw.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
   F:/Devtool/mysys2/ucrt64/include/_mingw_secapi.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stat64.h \
+  F:/Devtool/mysys2/ucrt64/include/_timeval.h \
   F:/Devtool/mysys2/ucrt64/include/assert.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/array \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/binders.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/alloc_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_init_exception.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/enable_special_members.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/erase_if.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hash_bytes.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable_policy.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/invoke.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ios_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/move.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/nested_exception.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/new_allocator.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h \
@@ -4027,6 +7570,10 @@ CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj: D:/QuavleEngine/utils/c
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_pair.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_vector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/string_view.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_map.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h \
@@ -4034,27 +7581,46 @@ CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj: D:/QuavleEngine/utils/c
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/vector.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cassert \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cerrno \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cfloat \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/climits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdint \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/debug.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/exception \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/aligned_buffer.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/atomicity.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/functional \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ostream \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/streambuf \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string_view \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/system_error \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/bessel_function.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/beta_function.tcc \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/ell_integral.tcc \
@@ -4072,26 +7638,54 @@ CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj: D:/QuavleEngine/utils/c
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/typeinfo \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_map \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/vector \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
   F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
   F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h \
   F:/Devtool/mysys2/ucrt64/include/crtdefs.h \
+  F:/Devtool/mysys2/ucrt64/include/ctype.h \
   F:/Devtool/mysys2/ucrt64/include/errno.h \
   F:/Devtool/mysys2/ucrt64/include/float.h \
   F:/Devtool/mysys2/ucrt64/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/include/locale.h \
   F:/Devtool/mysys2/ucrt64/include/malloc.h \
   F:/Devtool/mysys2/ucrt64/include/math.h \
+  F:/Devtool/mysys2/ucrt64/include/process.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_compat.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_signal.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_time.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_unistd.h \
   F:/Devtool/mysys2/ucrt64/include/sdks/_mingw_ddk.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdio_s.h \
   F:/Devtool/mysys2/ucrt64/include/sec_api/stdlib_s.h \
   F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/sys/timeb_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/wchar_s.h \
+  F:/Devtool/mysys2/ucrt64/include/signal.h \
   F:/Devtool/mysys2/ucrt64/include/stddef.h \
   F:/Devtool/mysys2/ucrt64/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/include/stdio.h \
   F:/Devtool/mysys2/ucrt64/include/stdlib.h \
   F:/Devtool/mysys2/ucrt64/include/string.h \
+  F:/Devtool/mysys2/ucrt64/include/swprintf.inl \
+  F:/Devtool/mysys2/ucrt64/include/sys/timeb.h \
+  F:/Devtool/mysys2/ucrt64/include/sys/types.h \
+  F:/Devtool/mysys2/ucrt64/include/time.h \
   F:/Devtool/mysys2/ucrt64/include/vadefs.h \
+  F:/Devtool/mysys2/ucrt64/include/wchar.h \
+  F:/Devtool/mysys2/ucrt64/include/wctype.h \
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h \
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
@@ -4942,6 +8536,257 @@ CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.obj: D:/QuavleEngine/utils/msgWnd.c
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveoptintrin.h \
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavesintrin.h \
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xtestintrin.h
+
+CMakeFiles/QuavleEngine.dir/vendor/editor/TextEditor.cpp.obj: D:/QuavleEngine/vendor/editor/TextEditor.cpp \
+  D:/QuavleEngine/vendor/imgui/imconfig.h \
+  D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/editor/TextEditor.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_secapi.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stat64.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/_timeval.h \
+  F:/Devtool/mysys2/ucrt64/include/assert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/algorithm \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/array \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/auto_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/binders.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/algorithmfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/align.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocated_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/chrono.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/deque.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/enable_special_members.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/erase_if.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hash_bytes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable_policy.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/invoke.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ios_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_conv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/move.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/nested_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/new_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/parse_numbers.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_automaton.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_automaton.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_compiler.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_compiler.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_constants.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_error.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_executor.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_executor.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_scanner.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_scanner.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algo.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_bvector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_construct.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_deque.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_heap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_pair.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_stack.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tempbuf.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tree.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_vector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/string_view.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uniform_int_dist.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_set.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/utility.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/vector.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bitset \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cerrno \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/chrono \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdint \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ctime \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/debug.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/deque \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/exception \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/aligned_buffer.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/atomicity.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/concurrence.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/memory \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/execution_defs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_memory_defs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ratio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/regex \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stack \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/streambuf \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string_view \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/system_error \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/bessel_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/beta_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/ell_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/exp_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/gamma.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/hypergeometric.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/legendre_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_hermite.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/special_function_util.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tuple \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/type_traits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/typeinfo \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_set \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/vector \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/crtdefs.h \
+  F:/Devtool/mysys2/ucrt64/include/ctype.h \
+  F:/Devtool/mysys2/ucrt64/include/errno.h \
+  F:/Devtool/mysys2/ucrt64/include/float.h \
+  F:/Devtool/mysys2/ucrt64/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/include/locale.h \
+  F:/Devtool/mysys2/ucrt64/include/malloc.h \
+  F:/Devtool/mysys2/ucrt64/include/math.h \
+  F:/Devtool/mysys2/ucrt64/include/process.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_compat.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_signal.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_time.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_unistd.h \
+  F:/Devtool/mysys2/ucrt64/include/sdks/_mingw_ddk.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdio_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdlib_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/sys/timeb_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/wchar_s.h \
+  F:/Devtool/mysys2/ucrt64/include/signal.h \
+  F:/Devtool/mysys2/ucrt64/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/include/stdio.h \
+  F:/Devtool/mysys2/ucrt64/include/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/string.h \
+  F:/Devtool/mysys2/ucrt64/include/swprintf.inl \
+  F:/Devtool/mysys2/ucrt64/include/sys/timeb.h \
+  F:/Devtool/mysys2/ucrt64/include/sys/types.h \
+  F:/Devtool/mysys2/ucrt64/include/time.h \
+  F:/Devtool/mysys2/ucrt64/include/vadefs.h \
+  F:/Devtool/mysys2/ucrt64/include/wchar.h \
+  F:/Devtool/mysys2/ucrt64/include/wctype.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h
 
 CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj: D:/QuavleEngine/vendor/glad/glad.c \
   D:/QuavleEngine/vendor/glad/glad.h \
@@ -6655,512 +10500,970 @@ CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.obj: D:/QuavleEngine/
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavesintrin.h \
   F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xtestintrin.h
 
+CMakeFiles/QuavleEngine.dir/vendor/imnode/src/ImNodeFlow.cpp.obj: D:/QuavleEngine/vendor/imnode/src/ImNodeFlow.cpp \
+  D:/QuavleEngine/vendor/imgui/imconfig.h \
+  D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/imgui/imgui_internal.h \
+  D:/QuavleEngine/vendor/imnode/include/ImNodeFlow.h \
+  D:/QuavleEngine/vendor/imnode/src/ImNodeFlow.inl \
+  D:/QuavleEngine/vendor/imnode/src/context_wrapper.h \
+  D:/QuavleEngine/vendor/imnode/src/imgui_bezier_math.h \
+  D:/QuavleEngine/vendor/imnode/src/imgui_bezier_math.inl \
+  D:/QuavleEngine/vendor/imnode/src/imgui_extra_math.h \
+  D:/QuavleEngine/vendor/imnode/src/imgui_extra_math.inl \
+  F:/Devtool/mysys2/ucrt64/include/_mingw.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_secapi.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stat64.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/_timeval.h \
+  F:/Devtool/mysys2/ucrt64/include/assert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/algorithm \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/array \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/auto_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/binders.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/algorithmfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/align.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocated_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/enable_special_members.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/erase_if.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hash_bytes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable_policy.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/invoke.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ios_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/move.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/nested_exception.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/new_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algo.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_bvector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_construct.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_function.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_heap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_pair.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_relops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tempbuf.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tree.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_vector.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/string_view.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uniform_int_dist.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_ptr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_map.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/utility.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/vector.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cerrno \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/debug.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/exception \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/aligned_buffer.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/alloc_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/atomicity.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/concurrence.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/functional \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/math.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/memory \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ostream \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/execution_defs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_memory_defs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/streambuf \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string_view \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/system_error \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/bessel_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/beta_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/ell_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/exp_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/gamma.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/hypergeometric.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/legendre_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_hermite.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/special_function_util.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tuple \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/type_traits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/typeinfo \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_map \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/utility \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/vector \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/crtdefs.h \
+  F:/Devtool/mysys2/ucrt64/include/ctype.h \
+  F:/Devtool/mysys2/ucrt64/include/errno.h \
+  F:/Devtool/mysys2/ucrt64/include/float.h \
+  F:/Devtool/mysys2/ucrt64/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/include/locale.h \
+  F:/Devtool/mysys2/ucrt64/include/malloc.h \
+  F:/Devtool/mysys2/ucrt64/include/math.h \
+  F:/Devtool/mysys2/ucrt64/include/process.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_compat.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_signal.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_time.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_unistd.h \
+  F:/Devtool/mysys2/ucrt64/include/sdks/_mingw_ddk.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdio_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdlib_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/sys/timeb_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/wchar_s.h \
+  F:/Devtool/mysys2/ucrt64/include/signal.h \
+  F:/Devtool/mysys2/ucrt64/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/include/stdio.h \
+  F:/Devtool/mysys2/ucrt64/include/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/string.h \
+  F:/Devtool/mysys2/ucrt64/include/swprintf.inl \
+  F:/Devtool/mysys2/ucrt64/include/sys/timeb.h \
+  F:/Devtool/mysys2/ucrt64/include/sys/types.h \
+  F:/Devtool/mysys2/ucrt64/include/time.h \
+  F:/Devtool/mysys2/ucrt64/include/vadefs.h \
+  F:/Devtool/mysys2/ucrt64/include/wchar.h \
+  F:/Devtool/mysys2/ucrt64/include/wctype.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/adxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxbf16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxcomplexintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxfp16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxint8intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxtileintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124fmapsintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124vnniwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512cdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512dqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512erintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512ifmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512ifmavlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512pfintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmivlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlbwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vldqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnnivlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vp2intersectintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vp2intersectvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxifmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxneconvertintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint8intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmi2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cetintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cldemoteintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clflushoptintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clwbintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clzerointrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cmpccxaddintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/enqcmdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/f16cintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fxsrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/gfniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/hresetintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/ia32intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/immintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/keylockerintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lwpintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lzcntintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/movdirintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pconfigintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pkuintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/popcntintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/prfchiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/prfchwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/raointintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/rdseedintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/rtmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/serializeintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sgxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sha512intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/shaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm3intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm4intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/smmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tbmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tsxldtrkintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/uintrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/usermsrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vaesintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vpclmulqdqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/waitpkgintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wbnoinvdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/x86gprintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavecintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveoptintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavesintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xtestintrin.h
+
+CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot.cpp.obj: D:/QuavleEngine/vendor/implot-master/implot.cpp \
+  D:/QuavleEngine/vendor/imgui/imconfig.h \
+  D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/imgui/imgui_internal.h \
+  D:/QuavleEngine/vendor/implot-master/implot.h \
+  D:/QuavleEngine/vendor/implot-master/implot_internal.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_secapi.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/_timeval.h \
+  F:/Devtool/mysys2/ucrt64/include/assert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/move.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_pair.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/utility.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/debug.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/math.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/bessel_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/beta_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/ell_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/exp_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/gamma.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/hypergeometric.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/legendre_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_hermite.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/special_function_util.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/type_traits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/crtdefs.h \
+  F:/Devtool/mysys2/ucrt64/include/errno.h \
+  F:/Devtool/mysys2/ucrt64/include/float.h \
+  F:/Devtool/mysys2/ucrt64/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/include/malloc.h \
+  F:/Devtool/mysys2/ucrt64/include/math.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_time.h \
+  F:/Devtool/mysys2/ucrt64/include/sdks/_mingw_ddk.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdio_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdlib_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/sys/timeb_s.h \
+  F:/Devtool/mysys2/ucrt64/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/include/stdio.h \
+  F:/Devtool/mysys2/ucrt64/include/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/string.h \
+  F:/Devtool/mysys2/ucrt64/include/swprintf.inl \
+  F:/Devtool/mysys2/ucrt64/include/sys/timeb.h \
+  F:/Devtool/mysys2/ucrt64/include/time.h \
+  F:/Devtool/mysys2/ucrt64/include/vadefs.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/adxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxbf16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxcomplexintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxfp16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxint8intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxtileintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124fmapsintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124vnniwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512cdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512dqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512erintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512ifmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512ifmavlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512pfintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmivlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlbwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vldqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnnivlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vp2intersectintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vp2intersectvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxifmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxneconvertintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint8intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmi2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cetintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cldemoteintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clflushoptintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clwbintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clzerointrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cmpccxaddintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/enqcmdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/f16cintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fxsrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/gfniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/hresetintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/ia32intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/immintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/keylockerintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lwpintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lzcntintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/movdirintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pconfigintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pkuintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/popcntintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/prfchiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/prfchwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/raointintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/rdseedintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/rtmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/serializeintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sgxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sha512intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/shaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm3intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm4intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/smmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tbmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tsxldtrkintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/uintrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/usermsrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vaesintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vpclmulqdqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/waitpkgintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wbnoinvdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/x86gprintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavecintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveoptintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavesintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xtestintrin.h
+
+CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_demo.cpp.obj: D:/QuavleEngine/vendor/implot-master/implot_demo.cpp \
+  D:/QuavleEngine/vendor/imgui/imconfig.h \
+  D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/imgui/imgui_internal.h \
+  D:/QuavleEngine/vendor/implot-master/implot.h \
+  D:/QuavleEngine/vendor/implot-master/implot_internal.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_secapi.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/_timeval.h \
+  F:/Devtool/mysys2/ucrt64/include/assert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/move.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_pair.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/utility.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/debug.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/math.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/bessel_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/beta_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/ell_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/exp_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/gamma.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/hypergeometric.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/legendre_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_hermite.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/special_function_util.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/type_traits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/crtdefs.h \
+  F:/Devtool/mysys2/ucrt64/include/errno.h \
+  F:/Devtool/mysys2/ucrt64/include/float.h \
+  F:/Devtool/mysys2/ucrt64/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/include/malloc.h \
+  F:/Devtool/mysys2/ucrt64/include/math.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_time.h \
+  F:/Devtool/mysys2/ucrt64/include/sdks/_mingw_ddk.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdio_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdlib_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/sys/timeb_s.h \
+  F:/Devtool/mysys2/ucrt64/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/include/stdio.h \
+  F:/Devtool/mysys2/ucrt64/include/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/string.h \
+  F:/Devtool/mysys2/ucrt64/include/swprintf.inl \
+  F:/Devtool/mysys2/ucrt64/include/sys/timeb.h \
+  F:/Devtool/mysys2/ucrt64/include/time.h \
+  F:/Devtool/mysys2/ucrt64/include/vadefs.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/adxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxbf16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxcomplexintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxfp16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxint8intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxtileintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124fmapsintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124vnniwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512cdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512dqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512erintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512ifmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512ifmavlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512pfintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmivlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlbwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vldqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnnivlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vp2intersectintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vp2intersectvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxifmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxneconvertintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint8intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmi2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cetintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cldemoteintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clflushoptintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clwbintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clzerointrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cmpccxaddintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/enqcmdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/f16cintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fxsrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/gfniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/hresetintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/ia32intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/immintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/keylockerintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lwpintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lzcntintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/movdirintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pconfigintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pkuintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/popcntintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/prfchiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/prfchwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/raointintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/rdseedintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/rtmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/serializeintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sgxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sha512intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/shaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm3intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm4intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/smmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tbmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tsxldtrkintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/uintrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/usermsrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vaesintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vpclmulqdqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/waitpkgintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wbnoinvdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/x86gprintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavecintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveoptintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavesintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xtestintrin.h
+
+CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_items.cpp.obj: D:/QuavleEngine/vendor/implot-master/implot_items.cpp \
+  D:/QuavleEngine/vendor/imgui/imconfig.h \
+  D:/QuavleEngine/vendor/imgui/imgui.h \
+  D:/QuavleEngine/vendor/imgui/imgui_internal.h \
+  D:/QuavleEngine/vendor/implot-master/implot.h \
+  D:/QuavleEngine/vendor/implot-master/implot_internal.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_secapi.h \
+  F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/_timeval.h \
+  F:/Devtool/mysys2/ucrt64/include/assert.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/move.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_pair.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/utility.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/debug.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/math.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/bessel_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/beta_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/ell_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/exp_integral.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/gamma.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/hypergeometric.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/legendre_function.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_hermite.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/special_function_util.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/type_traits \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h \
+  F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/crtdefs.h \
+  F:/Devtool/mysys2/ucrt64/include/errno.h \
+  F:/Devtool/mysys2/ucrt64/include/float.h \
+  F:/Devtool/mysys2/ucrt64/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/include/malloc.h \
+  F:/Devtool/mysys2/ucrt64/include/math.h \
+  F:/Devtool/mysys2/ucrt64/include/pthread_time.h \
+  F:/Devtool/mysys2/ucrt64/include/sdks/_mingw_ddk.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdio_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/stdlib_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
+  F:/Devtool/mysys2/ucrt64/include/sec_api/sys/timeb_s.h \
+  F:/Devtool/mysys2/ucrt64/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/include/stdio.h \
+  F:/Devtool/mysys2/ucrt64/include/stdlib.h \
+  F:/Devtool/mysys2/ucrt64/include/string.h \
+  F:/Devtool/mysys2/ucrt64/include/swprintf.inl \
+  F:/Devtool/mysys2/ucrt64/include/sys/timeb.h \
+  F:/Devtool/mysys2/ucrt64/include/time.h \
+  F:/Devtool/mysys2/ucrt64/include/vadefs.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/adxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxbf16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxcomplexintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxfp16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxint8intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxtileintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124fmapsintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124vnniwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512cdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512dqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512erintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512ifmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512ifmavlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512pfintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmivlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlbwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vldqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnnivlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vp2intersectintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vp2intersectvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqvlintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxifmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxneconvertintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint16intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint8intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmi2intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cetintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cldemoteintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clflushoptintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clwbintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clzerointrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cmpccxaddintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/enqcmdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/f16cintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fmaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fxsrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/gfniintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/hresetintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/ia32intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/immintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/keylockerintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lwpintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lzcntintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/movdirintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pconfigintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pkuintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/popcntintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/prfchiintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/prfchwintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/raointintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/rdseedintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/rtmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/serializeintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sgxintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sha512intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/shaintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm3intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm4intrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/smmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tbmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tsxldtrkintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/uintrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/usermsrintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vaesintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vpclmulqdqintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/waitpkgintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wbnoinvdintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/x86gprintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xmmintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavecintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveoptintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavesintrin.h \
+  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xtestintrin.h
+
+
+D:/QuavleEngine/application/application.cpp:
+
+D:/QuavleEngine/vendor/glm/glm/common.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h:
+
+D:/QuavleEngine/core/interface/panel/sceneSetting.cpp:
 
 D:/QuavleEngine/vendor/glad/khrplatform.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare:
 
-F:/Devtool/mysys2/ucrt64/include/_mingw_mac.h:
+D:/QuavleEngine/vendor/imnode/src/imgui_bezier_math.inl:
 
-D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.hpp:
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2intrin.h:
 
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stringfwd.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmiintrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hash_bytes.h:
+D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.inl:
 
 D:/QuavleEngine/vendor/glm/glm/detail/func_exponential.inl:
 
 D:/QuavleEngine/vendor/glm/glm/mat2x3.hpp:
 
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hash_bytes.h:
+
 D:/QuavleEngine/vendor/glad/glad.h:
-
-D:/QuavleEngine/application/application.cpp:
-
-D:/QuavleEngine/vendor/imgui/imstb_truetype.h:
-
-F:/Devtool/mysys2/ucrt64/include/winnt.h:
-
-D:/QuavleEngine/vendor/glm/glm/gtc/vec1.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_int1_sized.hpp:
 
 F:/Devtool/mysys2/ucrt64/include/processtopologyapi.h:
 
 D:/QuavleEngine/application/application.hpp:
 
+D:/QuavleEngine/vendor/glm/glm/trigonometric.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.hpp:
+
 D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4.hpp:
 
 D:/QuavleEngine/core/window/window.hpp:
 
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h:
+F:/Devtool/mysys2/ucrt64/include/psdk_inc/_wsa_errnos.h:
 
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h:
+D:/QuavleEngine/utils/camera/camera.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/stdint.h:
+
+D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.inl:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cfloat:
 
 D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/include/GLFW/glfw3.h:
 
-F:/Devtool/mysys2/ucrt64/include/_mingw.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clflushoptintrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/limits.h:
-
-F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h:
-
-D:/QuavleEngine/vendor/glm/glm/detail/func_common.inl:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/legendre_function.tcc:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator.h:
-
-F:/Devtool/mysys2/ucrt64/include/stdio.h:
-
-F:/Devtool/mysys2/ucrt64/include/commdlg.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc:
-
-D:/QuavleEngine/vendor/assimp/include/assimp/Importer.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h:
-
-F:/Devtool/mysys2/ucrt64/include/_mingw_secapi.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2_precision.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_double3_precision.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_float4_precision.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable_policy.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h:
-
-F:/Devtool/mysys2/ucrt64/include/_mingw_stat64.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tree.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/algorithm:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/binders.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.inl:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/new_allocator.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/scalar_uint_sized.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/string_view.tcc:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/codecvt:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/alloc_traits.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xmmintrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h:
-
-D:/QuavleEngine/vendor/assimp/include/assimp/anim.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocator.h:
-
-D:/QuavleEngine/vendor/assimp/include/assimp/material.h:
-
-F:/Devtool/mysys2/ucrt64/include/profileapi.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_construct.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multiset.h:
-
-D:/QuavleEngine/vendor/assimp/include/assimp/vector3.inl:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/auto_ptr.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_init_exception.h:
-
-F:/Devtool/mysys2/ucrt64/include/_mingw_unicode.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/erase_if.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ctime:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/modified_bessel_func.tcc:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_map.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_double4.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_float3.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.inl:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h:
-
-D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.inl:
-
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2_precision.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/dpapi.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/immintrin.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_float1.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/mciapi.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algobase.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/invoke.h:
-
-F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_int4.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_path.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_vector.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_bvector.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2_precision.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/errno.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/ell_integral.tcc:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fmaintrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/move.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/nested_exception.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxifmaintrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h:
-
-F:/Devtool/mysys2/ucrt64/include/malloc.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_function.h:
-
-D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/exponential.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/concurrence.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/algorithmfwd.h:
-
-D:/QuavleEngine/vendor/glm/glm/mat3x4.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/msxml.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2vlintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multimap.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/type_traits:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/utility.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wmmintrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_pair.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/vector.tcc:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cctype:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tuple:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4_sized.hpp:
-
-D:/QuavleEngine/vendor/imgui/imgui_tables.cpp:
-
-F:/Devtool/mysys2/ucrt64/include/stddef.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cerrno:
-
-F:/Devtool/mysys2/ucrt64/include/threadpoollegacyapiset.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef:
-
-F:/Devtool/mysys2/ucrt64/include/sysinfoapi.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/ia32intrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/debug.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/exception:
-
-D:/QuavleEngine/utils/filereader.cpp:
-
-F:/Devtool/mysys2/ucrt64/include/namedpipeapi.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/aligned_buffer.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/alloc_traits.h:
-
-F:/Devtool/mysys2/ucrt64/include/rpcsal.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_set.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pkuintrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h:
-
-F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.inl:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list:
-
-F:/Devtool/mysys2/ucrt64/include/sys/types.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/exp_integral.tcc:
-
-F:/Devtool/mysys2/ucrt64/include/bemapiset.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/map:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new:
-
-D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.inl:
-
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h:
-
-F:/Devtool/mysys2/ucrt64/include/objbase.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string_view:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/typeinfo:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc:
-
-D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.inl:
-
-D:/QuavleEngine/vendor/assimp/include/assimp/texture.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/vector:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_float2.hpp:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h:
-
-F:/Devtool/mysys2/ucrt64/include/corecrt.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uniform_int_dist.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tmmintrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/wnnc.h:
-
-D:/QuavleEngine/core/model/model.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h:
-
-F:/Devtool/mysys2/ucrt64/include/GL/gl.h:
-
-F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cldemoteintrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/crtdefs.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/filesystem:
-
-D:/QuavleEngine/vendor/imgui/imgui_internal.h:
-
-F:/Devtool/mysys2/ucrt64/include/winuser.h:
-
-F:/Devtool/mysys2/ucrt64/include/ctype.h:
-
-D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.inl:
-
-D:/QuavleEngine/vendor/glm/glm/simd/platform.h:
-
-F:/Devtool/mysys2/ucrt64/include/locale.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/x86gprintrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/sdks/_mingw_ddk.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/shaintrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/sec_api/stdio_s.h:
-
-D:/QuavleEngine/vendor/glm/glm/detail/type_half.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc:
-
-D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/sec_api/stdlib_s.h:
-
-F:/Devtool/mysys2/ucrt64/include/sec_api/wchar_s.h:
-
-F:/Devtool/mysys2/ucrt64/include/psdk_inc/_wsa_errnos.h:
-
-F:/Devtool/mysys2/ucrt64/include/stdint.h:
-
-D:/QuavleEngine/utils/camera/camera.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/stdlib.h:
-
-F:/Devtool/mysys2/ucrt64/include/swprintf.inl:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cmpccxaddintrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/timezoneapi.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/vadefs.h:
-
-F:/Devtool/mysys2/ucrt64/include/windows.h:
-
-F:/Devtool/mysys2/ucrt64/include/wchar.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3.hpp:
-
-D:/QuavleEngine/core/interface/interface.cpp:
-
-D:/QuavleEngine/core/interface/interface.hpp:
-
-D:/QuavleEngine/core/renderer/shader_h.h:
-
-D:/QuavleEngine/vendor/imgui/imconfig.h:
-
-D:/QuavleEngine/utils/Debug.h:
-
-D:/QuavleEngine/vendor/glm/glm/common.hpp:
-
 D:/QuavleEngine/vendor/glm/glm/ext/vector_int3.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/detail/_fixes.hpp:
 
+D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.hpp:
+
 D:/QuavleEngine/vendor/glm/glm/detail/_vectorize.hpp:
 
+D:/QuavleEngine/vendor/glm/glm/detail/func_packing.inl:
+
+F:/Devtool/mysys2/ucrt64/include/time.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/regex:
+
 D:/QuavleEngine/vendor/glm/glm/detail/compute_common.hpp:
+
+D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.cpp:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xtestintrin.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4_precision.hpp:
 
 F:/Devtool/mysys2/ucrt64/include/interlockedapi.h:
 
@@ -7169,6 +11472,26 @@ D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_decl.hpp:
 D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_relational.hpp:
 
 D:/QuavleEngine/vendor/assimp/include/assimp/config.h:
+
+F:/Devtool/mysys2/ucrt64/include/rpcnsip.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator.h:
+
+F:/Devtool/mysys2/ucrt64/include/stdio.h:
+
+D:/QuavleEngine/vendor/glm/glm/detail/func_common.inl:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/legendre_function.tcc:
+
+D:/QuavleEngine/vendor/glm/glm/detail/type_half.inl:
+
+D:/QuavleEngine/vendor/assimp/include/assimp/matrix4x4.inl:
+
+F:/Devtool/mysys2/ucrt64/include/_timeval.h:
+
+D:/QuavleEngine/vendor/assimp/include/assimp/defs.h:
 
 D:/QuavleEngine/vendor/glm/glm/detail/func_geometric.inl:
 
@@ -7182,37 +11505,53 @@ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ratio:
 
 D:/QuavleEngine/vendor/glm/glm/detail/func_matrix.inl:
 
-D:/QuavleEngine/vendor/glm/glm/detail/func_packing.inl:
-
-F:/Devtool/mysys2/ucrt64/include/time.h:
-
 F:/Devtool/mysys2/ucrt64/include/psdk_inc/_wsadata.h:
 
 D:/QuavleEngine/vendor/glm/glm/detail/func_trigonometric.inl:
 
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.inl:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/codecvt.h:
+
+D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.inl:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_ptr.h:
+
 D:/QuavleEngine/vendor/glm/glm/detail/func_vector_relational.inl:
+
+D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.inl:
 
 D:/QuavleEngine/vendor/glm/glm/detail/qualifier.hpp:
 
+D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.hpp:
+
 D:/QuavleEngine/vendor/glm/glm/detail/setup.hpp:
 
-D:/QuavleEngine/vendor/glm/glm/detail/type_half.inl:
+F:/Devtool/mysys2/ucrt64/include/prsht.h:
 
-D:/QuavleEngine/vendor/assimp/include/assimp/matrix4x4.inl:
+D:/QuavleEngine/core/model/model.cpp:
 
-F:/Devtool/mysys2/ucrt64/include/_timeval.h:
+D:/QuavleEngine/vendor/glm/glm/detail/type_float.hpp:
 
-D:/QuavleEngine/vendor/assimp/include/assimp/defs.h:
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/shaintrin.h:
+
+D:/QuavleEngine/vendor/glm/glm/detail/type_half.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/sec_api/stdio_s.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.tcc:
 
 F:/Devtool/mysys2/ucrt64/include/stringapiset.h:
 
 D:/QuavleEngine/vendor/glm/glm/matrix.hpp:
 
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/movdirintrin.h:
-
 F:/Devtool/mysys2/ucrt64/include/minwindef.h:
 
 F:/Devtool/mysys2/ucrt64/include/memoryapi.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/movdirintrin.h:
 
 D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.hpp:
 
@@ -7222,21 +11561,23 @@ D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.hpp:
 
-D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.hpp:
-
 D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.inl:
 
 D:/QuavleEngine/vendor/glm/glm/integer.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_constants.h:
 
 F:/Devtool/mysys2/ucrt64/include/winapifamily.h:
 
 D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.hpp:
 
-D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.inl:
-
 F:/Devtool/mysys2/ucrt64/include/securityappcontainer.h:
 
 D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.inl:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fma4intrin.h:
+
+D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.inl:
 
 F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/prfchwintrin.h:
 
@@ -7244,9 +11585,27 @@ D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.hpp:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.h:
 
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mmintrin.h:
+F:/Devtool/mysys2/ucrt64/include/winuser.h:
 
-D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.inl:
+D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.inl:
+
+D:/QuavleEngine/vendor/glm/glm/simd/platform.h:
+
+F:/Devtool/mysys2/ucrt64/include/ctype.h:
+
+D:/QuavleEngine/vendor/imgui/imgui_internal.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/filesystem:
+
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/exponential.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_function.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/concurrence.h:
 
 F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniintrin.h:
 
@@ -7256,17 +11615,23 @@ D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.hpp:
 
 F:/Devtool/mysys2/ucrt64/include/signal.h:
 
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2intrin.h:
-
-D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.inl:
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.hpp:
 
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2.hpp:
+D:/QuavleEngine/vendor/glm/glm/vec2.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/detail/type_quat.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.inl:
 
-D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.hpp:
+F:/Devtool/mysys2/ucrt64/include/pshpack1.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4_precision.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/windef.h:
+
+D:/QuavleEngine/vendor/glm/glm/detail/type_quat.inl:
 
 F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/usermsrintrin.h:
 
@@ -7276,35 +11641,41 @@ F:/Devtool/mysys2/ucrt64/include/consoleapi.h:
 
 D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.hpp:
 
-D:/QuavleEngine/vendor/glm/glm/trigonometric.hpp:
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/pstl_config.h:
 
-D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.hpp:
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.inl:
 
 D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.inl:
 
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fma4intrin.h:
+F:/Devtool/mysys2/ucrt64/include/sec_api/stdlib_s.h:
 
-D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.inl:
+D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.hpp:
 
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/set:
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pkuintrin.h:
 
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2_precision.hpp:
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.inl:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/type_traits.h:
+
+F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h:
 
 D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3.hpp:
 
-D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl:
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2_precision.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3_precision.hpp:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf_iterator.h:
 
-D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.cpp:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xtestintrin.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4_precision.hpp:
+D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl:
 
 D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2_precision.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stringfwd.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3_precision.hpp:
 
@@ -7320,13 +11691,31 @@ F:/Devtool/mysys2/ucrt64/include/winnetwk.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/bessel_function.tcc:
 
+F:/Devtool/mysys2/ucrt64/include/dpapi.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functexcept.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2_precision.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h:
+
 D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3_precision.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/vadefs.h:
+
+F:/Devtool/mysys2/ucrt64/include/timezoneapi.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cmpccxaddintrin.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4_precision.hpp:
 
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2.hpp:
-
 D:/QuavleEngine/core/interface/panel/inspector.cpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2.hpp:
 
 F:/Devtool/mysys2/ucrt64/include/servprov.h:
 
@@ -7344,15 +11733,15 @@ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/align.h:
 
 D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4.hpp:
 
-F:/Devtool/mysys2/ucrt64/include/windef.h:
-
-D:/QuavleEngine/vendor/glm/glm/detail/type_quat.inl:
-
-F:/Devtool/mysys2/ucrt64/include/pshpack1.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4_precision.hpp:
-
 D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_path.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2_precision.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_bvector.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_vector.h:
 
 D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3.hpp:
 
@@ -7374,6 +11763,14 @@ D:/QuavleEngine/vendor/glm/glm/ext/vector_float4.hpp:
 
 D:/QuavleEngine/vendor/assimp/include/assimp/metadata.h:
 
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2_precision.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_double3_precision.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_float4_precision.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/_mingw_secapi.h:
+
 D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/ext/vector_double2.hpp:
@@ -7382,11 +11779,79 @@ D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3_precision.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/ext/vector_double2_precision.hpp:
 
-D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.hpp:
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex.tcc:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_float2.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h:
 
 D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4_precision.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/ext/vector_float2_precision.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.inl:
+
+D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.inl:
+
+D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale:
+
+D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double_precision.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/opt_random.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/math.h:
+
+F:/Devtool/mysys2/ucrt64/include/bcrypt.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pmmintrin.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float_precision.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/mat4x4.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/threadpoolapiset.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/new_allocator.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.inl:
+
+D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.hpp:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lzcntintrin.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.inl:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fintrin.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/packing.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.inl:
+
+D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.inl:
+
+D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.inl:
 
 F:/Devtool/mysys2/ucrt64/include/handleapi.h:
 
@@ -7395,6 +11860,18 @@ D:/QuavleEngine/vendor/glm/glm/gtc/constants.hpp:
 F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vp2intersectintrin.h:
 
 D:/QuavleEngine/vendor/glm/glm/ext/scalar_int_sized.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bit:
+
+D:/QuavleEngine/vendor/glm/glm/ext/scalar_uint_sized.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1_precision.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2.hpp:
 
@@ -7410,9 +11887,53 @@ D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4_precision.hpp:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.h:
 
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_double1.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_double1_precision.hpp:
+
+D:/QuavleEngine/vendor/imnode/src/ImNodeFlow.cpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_double4.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_float3.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_map.h:
+
 D:/QuavleEngine/vendor/glm/glm/ext/vector_double4_precision.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/ext/vector_float3_precision.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/mciapi.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algobase.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/immintrin.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_float1.hpp:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vldqintrin.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_float1_precision.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring:
+
+D:/QuavleEngine/vendor/assimp/include/assimp/matrix3x3.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_int1.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_int1_sized.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/concept_check.h:
+
+D:/QuavleEngine/vendor/imgui/imstb_truetype.h:
+
+F:/Devtool/mysys2/ucrt64/include/winnt.h:
+
+D:/QuavleEngine/vendor/glm/glm/gtc/vec1.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/ext/vector_int2.hpp:
 
@@ -7422,31 +11943,103 @@ D:/QuavleEngine/vendor/glm/glm/ext/vector_int3_sized.hpp:
 
 D:/QuavleEngine/utils/fileReader.hpp:
 
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stack:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memoryfwd.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_int4.hpp:
+
 F:/Devtool/mysys2/ucrt64/include/nb30.h:
+
+D:/QuavleEngine/utils/camera/camera.cpp:
 
 D:/QuavleEngine/vendor/glm/glm/ext/vector_int4_sized.hpp:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h:
 
-D:/QuavleEngine/utils/camera/camera.cpp:
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/ammintrin.h:
 
-D:/QuavleEngine/vendor/assimp/include/assimp/MathFunctions.h:
+D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_scanner.h:
+
+F:/Devtool/mysys2/ucrt64/include/process.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgintrin.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.inl:
+
+D:/QuavleEngine/vendor/glm/glm/mat4x2.hpp:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cldemoteintrin.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/crtdefs.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1_sized.hpp:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/chrono.h:
 
+D:/QuavleEngine/vendor/assimp/include/assimp/MathFunctions.h:
+
 D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2_sized.hpp:
 
-D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3_sized.hpp:
+D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3.hpp:
 
-D:/QuavleEngine/vendor/stb/stb_image.h:
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_automaton.h:
 
 D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/pushpack1.h:
 
+D:/QuavleEngine/vendor/stb/stb_image.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3_sized.hpp:
+
 D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4.hpp:
+
+D:/QuavleEngine/vendor/imgui/imgui_tables.cpp:
+
+F:/Devtool/mysys2/ucrt64/include/stddef.h:
+
+D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4_sized.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cctype:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tuple:
 
 D:/QuavleEngine/vendor/glm/glm/geometric.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/glm.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/gtc/constants.inl:
+
+F:/Devtool/mysys2/ucrt64/include/winnls.h:
+
+D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.inl:
+
+D:/QuavleEngine/vendor/assimp/include/assimp/texture.h:
+
+D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.inl:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/istream.tcc:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/typeinfo:
+
+D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.hpp:
+
+D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.inl:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/gfniintrin.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/sstream.tcc:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmiintrin.h:
+
+D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/mat2x2.hpp:
 
@@ -7460,33 +12053,13 @@ F:/Devtool/mysys2/ucrt64/include/shellapi.h:
 
 D:/QuavleEngine/vendor/glm/glm/mat3x3.hpp:
 
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgintrin.h:
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ptr_traits.h:
 
-D:/QuavleEngine/vendor/glm/glm/mat4x2.hpp:
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/algorithmfwd.h:
 
-D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.inl:
+D:/QuavleEngine/vendor/glm/glm/mat3x4.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/mat4x3.hpp:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pmmintrin.h:
-
-D:/QuavleEngine/vendor/glm/glm/mat4x4.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float_precision.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/bcrypt.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/math.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fintrin.h:
-
-D:/QuavleEngine/vendor/glm/glm/packing.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/detail/type_quat.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/vec2.hpp:
 
 D:/QuavleEngine/vendor/glm/glm/vec3.hpp:
 
@@ -7494,15 +12067,17 @@ F:/Devtool/mysys2/ucrt64/include/float.h:
 
 D:/QuavleEngine/vendor/glm/glm/vec4.hpp:
 
-D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h:
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h:
 
-D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h:
+F:/Devtool/mysys2/ucrt64/include/_mingw.h:
 
-D:/QuavleEngine/vendor/imgui/imgui.h:
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clflushoptintrin.h:
 
-F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h:
+F:/Devtool/mysys2/ucrt64/include/limits.h:
 
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype:
+F:/Devtool/mysys2/ucrt64/include/_mingw_off_t.h:
+
+F:/Devtool/mysys2/ucrt64/include/_mingw_stat64.h:
 
 F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlbwintrin.h:
 
@@ -7510,9 +12085,73 @@ F:/Devtool/mysys2/ucrt64/include/assert.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/array:
 
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tree.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/algorithm:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/binders.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xmmintrin.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/alloc_traits.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocator.h:
+
+D:/QuavleEngine/vendor/assimp/include/assimp/material.h:
+
+F:/Devtool/mysys2/ucrt64/include/windows.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc:
+
+F:/Devtool/mysys2/ucrt64/include/wchar.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/basic_string.tcc:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/char_traits.h:
+
+F:/Devtool/mysys2/ucrt64/include/profileapi.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/string_conversions.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/charconv.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator.h:
+
+F:/Devtool/mysys2/ucrt64/include/commdlg.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc:
+
+D:/QuavleEngine/vendor/assimp/include/assimp/Importer.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/cxxabi_init_exception.h:
+
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/enable_special_members.h:
 
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/erase_if.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ctime:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/modified_bessel_func.tcc:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/exception_defines.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/functional_hash.h:
+
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/refwrap.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/hashtable_policy.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/invoke.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ios_base.h:
 
@@ -7520,33 +12159,159 @@ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_raw_storage_iter.h:
 
-D:/QuavleEngine/src/main.cpp:
-
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc:
 
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/deque:
+
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets.tcc:
+
+F:/Devtool/mysys2/ucrt64/include/corecrt_startup.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/localefwd.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/memory_resource.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/version.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/ell_integral.tcc:
+
+F:/Devtool/mysys2/ucrt64/include/errno.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fmaintrin.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/move.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/nested_exception.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdio:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/node_handle.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_fwd.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream.tcc:
 
-D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.inl:
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/ostream_insert.h:
 
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h:
+D:/QuavleEngine/vendor/assimp/include/assimp/anim.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/postypes.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxifmaintrin.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/predefined_ops.h:
+
+F:/Devtool/mysys2/ucrt64/include/malloc.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/range_access.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmiintrin.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_abs.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_function.h:
 
+D:/QuavleEngine/vendor/assimp/include/assimp/vector3.inl:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/auto_ptr.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multiset.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_construct.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2vlintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h:
+
+D:/QuavleEngine/core/scripting/scripting.cpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multimap.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/type_traits:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wmmintrin.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_pair.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/codecvt:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/random.tcc:
+
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/streambuf.tcc:
 
-D:/QuavleEngine/utils/lightning/lightning.hpp:
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/string_view.tcc:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_map.h:
 
+F:/Devtool/mysys2/ucrt64/include/msxml.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/utility.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/vector.tcc:
+
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cassert:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cerrno:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_stack.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/climits:
 
+F:/Devtool/mysys2/ucrt64/include/threadpoollegacyapiset.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/clocale:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/numeric_traits.h:
+
+F:/Devtool/mysys2/ucrt64/include/rpcsal.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_set.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/concepts:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstddef:
+
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdint:
+
+F:/Devtool/mysys2/ucrt64/include/sysinfoapi.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdlib:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwchar:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cwctype:
+
+F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/assertions.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/ia32intrin.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/debug/debug.h:
+
+D:/QuavleEngine/utils/font/IconsCodicons.h:
+
+D:/QuavleEngine/utils/filereader.cpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/exception:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/adxintrin.h:
+
+F:/Devtool/mysys2/ucrt64/include/namedpipeapi.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/aligned_buffer.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/alloc_traits.h:
 
 F:/Devtool/mysys2/ucrt64/include/psdk_inc/_ip_mreq1.h:
 
@@ -7554,7 +12319,21 @@ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ext/atomicity.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/functional:
 
+F:/Devtool/mysys2/ucrt64/include/psdk_inc/intrin-impl.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxfp16intrin.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/initializer_list:
+
+F:/Devtool/mysys2/ucrt64/include/sys/types.h:
+
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ios:
+
+F:/Devtool/mysys2/ucrt64/include/bemapiset.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/exp_integral.tcc:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iosfwd:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream:
 
@@ -7564,13 +12343,29 @@ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/istream:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/limits:
 
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/map:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/new:
+
 D:/QuavleEngine/core/renderer/entity/objectEntity.hpp:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/ostream:
 
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdexcept:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h:
+
+F:/Devtool/mysys2/ucrt64/include/objbase.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/stdlib.h:
+
 F:/Devtool/mysys2/ucrt64/include/consoleapi2.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/streambuf:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/string_view:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/system_error:
 
@@ -7590,15 +12385,27 @@ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/special_function_util.h:
 
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/vector:
+
 F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vpclmulqdqintrin.h:
 
 F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lwpintrin.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h:
 
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h:
+
 D:/QuavleEngine/vendor/glad/glad.c:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h:
+
+F:/Devtool/mysys2/ucrt64/include/corecrt_wstdlib.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/execution_defs.h:
 
@@ -7606,13 +12413,27 @@ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_consta
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h:
 
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h:
+
+F:/Devtool/mysys2/ucrt64/include/corecrt.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uniform_int_dist.h:
+
+F:/Devtool/mysys2/ucrt64/include/wnnc.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tmmintrin.h:
+
+D:/QuavleEngine/core/model/model.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/GL/gl.h:
+
+F:/Devtool/mysys2/ucrt64/include/corecrt_stdio_config.h:
+
+F:/Devtool/mysys2/ucrt64/include/locale.h:
+
 F:/Devtool/mysys2/ucrt64/include/math.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/ammintrin.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/process.h:
 
 F:/Devtool/mysys2/ucrt64/include/pthread.h:
 
@@ -7628,13 +12449,19 @@ F:/Devtool/mysys2/ucrt64/include/pthread_time.h:
 
 F:/Devtool/mysys2/ucrt64/include/pthread_unistd.h:
 
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/x86gprintrin.h:
+
+F:/Devtool/mysys2/ucrt64/include/sdks/_mingw_ddk.h:
+
 F:/Devtool/mysys2/ucrt64/include/sec_api/sys/timeb_s.h:
 
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmivlintrin.h:
+F:/Devtool/mysys2/ucrt64/include/sec_api/wchar_s.h:
 
-F:/Devtool/mysys2/ucrt64/include/stdarg.h:
+F:/Devtool/mysys2/ucrt64/include/stdlib.h:
 
 F:/Devtool/mysys2/ucrt64/include/string.h:
+
+F:/Devtool/mysys2/ucrt64/include/swprintf.inl:
 
 F:/Devtool/mysys2/ucrt64/include/sys/timeb.h:
 
@@ -7645,6 +12472,58 @@ D:/QuavleEngine/vendor/assimp/include/assimp/color4.h:
 F:/Devtool/mysys2/ucrt64/include/psdk_inc/_socket_types.h:
 
 F:/Devtool/mysys2/ucrt64/include/wctype.h:
+
+D:/QuavleEngine/vendor/implot-master/implot.h:
+
+F:/Devtool/mysys2/ucrt64/include/lua.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_relops.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h:
+
+D:/QuavleEngine/core/interface/interface.cpp:
+
+D:/QuavleEngine/core/interface/interface.hpp:
+
+D:/QuavleEngine/core/renderer/shader_h.h:
+
+D:/QuavleEngine/vendor/imgui/imconfig.h:
+
+D:/QuavleEngine/utils/Debug.h:
+
+D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h:
+
+D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h:
+
+D:/QuavleEngine/vendor/imgui/imgui.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocated_ptr.h:
+
+F:/Devtool/mysys2/ucrt64/include/fltwinerror.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_dir.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_ops.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_conv.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/parse_numbers.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_ptr.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h:
+
+F:/Devtool/mysys2/ucrt64/include/virtdisk.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmivlintrin.h:
+
+F:/Devtool/mysys2/ucrt64/include/stdarg.h:
 
 F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h:
 
@@ -7664,18 +12543,6 @@ D:/QuavleEngine/vendor/assimp/include/assimp/color4.inl:
 
 D:/QuavleEngine/vendor/assimp/include/assimp/light.h:
 
-D:/QuavleEngine/utils/msgWnd.cpp:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vldqintrin.h:
-
-D:/QuavleEngine/vendor/assimp/include/assimp/matrix3x3.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_float1_precision.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring:
-
-D:/QuavleEngine/utils/lightning/lightning.cpp:
-
 D:/QuavleEngine/vendor/assimp/include/assimp/matrix3x3.inl:
 
 F:/Devtool/mysys2/ucrt64/include/processthreadsapi.h:
@@ -7684,11 +12551,9 @@ D:/QuavleEngine/vendor/assimp/include/assimp/matrix4x4.h:
 
 D:/QuavleEngine/vendor/assimp/include/assimp/mesh.h:
 
-D:/QuavleEngine/core/renderer/entity/objectEntity.cpp:
+F:/Devtool/mysys2/ucrt64/include/joystickapi.h:
 
 F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitintrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/joystickapi.h:
 
 D:/QuavleEngine/vendor/assimp/include/assimp/postprocess.h:
 
@@ -7700,9 +12565,9 @@ D:/QuavleEngine/vendor/assimp/include/assimp/quaternion.inl:
 
 D:/QuavleEngine/vendor/assimp/include/assimp/scene.h:
 
-D:/QuavleEngine/vendor/assimp/include/assimp/types.h:
-
 F:/Devtool/mysys2/ucrt64/include/combaseapi.h:
+
+D:/QuavleEngine/vendor/assimp/include/assimp/types.h:
 
 D:/QuavleEngine/vendor/assimp/include/assimp/vector2.h:
 
@@ -7710,95 +12575,9 @@ D:/QuavleEngine/vendor/assimp/include/assimp/vector2.inl:
 
 D:/QuavleEngine/vendor/assimp/include/assimp/vector3.h:
 
-F:/Devtool/mysys2/ucrt64/include/prsht.h:
-
-D:/QuavleEngine/vendor/glm/glm/detail/type_float.hpp:
-
-D:/QuavleEngine/core/model/model.cpp:
-
-F:/Devtool/mysys2/ucrt64/include/rpcnsip.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/apisetcconv.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.inl:
-
-D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.inl:
-
-D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/locale:
-
-D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double_precision.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/threadpoolapiset.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.hpp:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lzcntintrin.h:
-
-D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.inl:
-
-D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.inl:
-
-D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.inl:
-
-D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1_precision.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_double1.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/sstream:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_double1_precision.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_int1.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1_sized.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/gtc/constants.inl:
-
-F:/Devtool/mysys2/ucrt64/include/winnls.h:
-
-D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.inl:
-
-D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.hpp:
-
-D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.inl:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/gfniintrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/sstream.tcc:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmiintrin.h:
-
-D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.hpp:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/allocated_ptr.h:
-
-D:/QuavleEngine/core/renderer/renderer.cpp:
-
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_lockfree_defines.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fstream.tcc:
-
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/shared_ptr_atomic.h:
 
@@ -7810,8 +12589,6 @@ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_heap.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tempbuf.h:
 
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_ptr.h:
-
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_set.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/fstream:
@@ -7822,43 +12599,133 @@ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_memory_defs.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h:
 
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_executor.tcc:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxtileintrin.h:
+
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_compiler.tcc:
 
 F:/Devtool/mysys2/ucrt64/include/processenv.h:
 
 D:/QuavleEngine/core/interface/panel/console.cpp:
 
-D:/QuavleEngine/core/interface/panel/objectHirarcy.cpp:
+D:/QuavleEngine/core/interface/panel/editor.cpp:
 
-D:/QuavleEngine/utils/msgWnd.hpp:
+D:/QuavleEngine/vendor/editor/TextEditor.h:
 
-F:/Devtool/mysys2/ucrt64/include/fltwinerror.h:
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/deque.tcc:
 
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_dir.h:
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_automaton.tcc:
 
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fs_ops.h:
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_executor.h:
 
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_conv.h:
+F:/Devtool/mysys2/ucrt64/include/ioapiset.h:
 
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/locale_facets_nonio.h:
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_compiler.h:
 
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/parse_numbers.h:
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_error.h:
 
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h:
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fxsrintrin.h:
 
-F:/Devtool/mysys2/ucrt64/include/virtdisk.h:
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/regex_scanner.tcc:
 
-F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h:
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_deque.h:
 
-D:/QuavleEngine/core/renderer/stb_image_impl.cpp:
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bitset:
 
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxintrin.h:
+D:/QuavleEngine/core/interface/nodes.h:
+
+D:/QuavleEngine/core/interface/panel/fileExplorer.cpp:
+
+F:/Devtool/mysys2/ucrt64/include/imm.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxbf16intrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxcomplexintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxint8intrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx2intrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124fmapsintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124vnniwintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16intrin.h:
+
+D:/QuavleEngine/core/model/UUID.hpp:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16vlintrin.h:
+
+F:/Devtool/mysys2/ucrt64/include/ddeml.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgvlintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bwintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512cdintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512erintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16intrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16vlintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512ifmavlintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512pfintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnniintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnnivlintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pconfigintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqvlintrin.h:
 
 F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h:
 
-D:/QuavleEngine/core/window/window.cpp:
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxintrin.h:
 
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/serializeintrin.h:
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxneconvertintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint16intrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint8intrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmi2intrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cetintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clwbintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clzerointrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/f16cintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/hresetintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/keylockerintrin.h:
+
+D:/QuavleEngine/core/scripting/scripting.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mmintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitxintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/popcntintrin.h:
+
+D:/QuavleEngine/vendor/imnode/src/context_wrapper.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/raointintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/rdseedintrin.h:
 
 F:/Devtool/mysys2/ucrt64/include/sdkddkver.h:
 
@@ -7866,11 +12733,105 @@ F:/Devtool/mysys2/ucrt64/include/poppack.h:
 
 F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/optional:
 
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/serializeintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sgxintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sha512intrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm3intrin.h:
+
+F:/Devtool/mysys2/ucrt64/include/consoleapi3.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm4intrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/smmintrin.h:
+
+F:/Devtool/mysys2/ucrt64/include/rpcndr.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tbmintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tsxldtrkintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vaesintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/waitpkgintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wbnoinvdintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavecintrin.h:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveoptintrin.h:
+
+D:/QuavleEngine/vendor/imnode/src/imgui_extra_math.inl:
+
+F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavesintrin.h:
+
+D:/QuavleEngine/core/interface/panel/nodePanel.cpp:
+
+F:/Devtool/mysys2/ucrt64/include/sal.h:
+
+D:/QuavleEngine/vendor/imnode/include/ImNodeFlow.h:
+
+D:/QuavleEngine/vendor/imnode/src/ImNodeFlow.inl:
+
+D:/QuavleEngine/vendor/imnode/src/imgui_bezier_math.h:
+
+D:/QuavleEngine/vendor/imnode/src/imgui_extra_math.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/utility:
+
+D:/QuavleEngine/core/interface/panel/objectHirarcy.cpp:
+
+D:/QuavleEngine/core/interface/panel/profiler.cpp:
+
+D:/QuavleEngine/utils/msgWnd.hpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/random.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_numeric.h:
+
+F:/Devtool/mysys2/ucrt64/include/rpcasync.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/numeric:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_numeric_defs.h:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/random:
+
+D:/QuavleEngine/core/renderer/entity/objectEntity.cpp:
+
+D:/QuavleEngine/core/renderer/renderer.cpp:
+
+D:/QuavleEngine/core/renderer/stb_image_impl.cpp:
+
+F:/Devtool/mysys2/ucrt64/include/lauxlib.h:
+
+F:/Devtool/mysys2/ucrt64/include/luaconf.h:
+
+F:/Devtool/mysys2/ucrt64/include/lualib.h:
+
+D:/QuavleEngine/core/window/window.cpp:
+
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/set:
+
+D:/QuavleEngine/src/main.cpp:
+
+D:/QuavleEngine/utils/lightning/lightning.cpp:
+
+D:/QuavleEngine/utils/lightning/lightning.hpp:
+
+D:/QuavleEngine/utils/msgWnd.cpp:
+
 F:/Devtool/mysys2/ucrt64/include/stralign.h:
 
 F:/Devtool/mysys2/ucrt64/include/_bsd_types.h:
 
+F:/Devtool/mysys2/ucrt64/include/_mingw_unicode.h:
+
 F:/Devtool/mysys2/ucrt64/include/apiset.h:
+
+F:/Devtool/mysys2/ucrt64/include/apisetcconv.h:
 
 F:/Devtool/mysys2/ucrt64/include/basetsd.h:
 
@@ -7884,17 +12845,9 @@ F:/Devtool/mysys2/ucrt64/include/commctrl.h:
 
 F:/Devtool/mysys2/ucrt64/include/concurrencysal.h:
 
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm4intrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/consoleapi3.h:
-
 F:/Devtool/mysys2/ucrt64/include/datetimeapi.h:
 
 F:/Devtool/mysys2/ucrt64/include/dde.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgvlintrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/ddeml.h:
 
 F:/Devtool/mysys2/ucrt64/include/debugapi.h:
 
@@ -7912,13 +12865,7 @@ F:/Devtool/mysys2/ucrt64/include/guiddef.h:
 
 F:/Devtool/mysys2/ucrt64/include/heapapi.h:
 
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxbf16intrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/imm.h:
-
 F:/Devtool/mysys2/ucrt64/include/inaddr.h:
-
-F:/Devtool/mysys2/ucrt64/include/ioapiset.h:
 
 F:/Devtool/mysys2/ucrt64/include/jobapi.h:
 
@@ -7968,10 +12915,6 @@ F:/Devtool/mysys2/ucrt64/include/psdk_inc/_ip_types.h:
 
 F:/Devtool/mysys2/ucrt64/include/psdk_inc/_xmitfile.h:
 
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxfp16intrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/psdk_inc/intrin-impl.h:
-
 F:/Devtool/mysys2/ucrt64/include/pshpack2.h:
 
 F:/Devtool/mysys2/ucrt64/include/pshpack4.h:
@@ -7984,21 +12927,13 @@ F:/Devtool/mysys2/ucrt64/include/reason.h:
 
 F:/Devtool/mysys2/ucrt64/include/rpc.h:
 
-F:/Devtool/mysys2/ucrt64/include/rpcasync.h:
-
 F:/Devtool/mysys2/ucrt64/include/rpcdce.h:
 
 F:/Devtool/mysys2/ucrt64/include/rpcdcep.h:
 
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tbmintrin.h:
-
-F:/Devtool/mysys2/ucrt64/include/rpcndr.h:
-
 F:/Devtool/mysys2/ucrt64/include/rpcnsi.h:
 
 F:/Devtool/mysys2/ucrt64/include/rpcnterr.h:
-
-F:/Devtool/mysys2/ucrt64/include/sal.h:
 
 F:/Devtool/mysys2/ucrt64/include/sec_api/stralign_s.h:
 
@@ -8058,105 +12993,13 @@ F:/Devtool/mysys2/ucrt64/include/wtypes.h:
 
 F:/Devtool/mysys2/ucrt64/include/wtypesbase.h:
 
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/adxintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxcomplexintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxint8intrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxtileintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx2intrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124fmapsintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124vnniwintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16intrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16vlintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bwintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512cdintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512erintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16intrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16vlintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512ifmavlintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512pfintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnniintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnnivlintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pconfigintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqvlintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxneconvertintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint16intrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint8intrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmi2intrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cetintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clwbintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clzerointrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/f16cintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fxsrintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/hresetintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/keylockerintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitxintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/popcntintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/raointintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/rdseedintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sgxintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sha512intrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm3intrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/smmintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tsxldtrkintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vaesintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/waitpkgintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wbnoinvdintrin.h:
-
 F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/x86intrin.h:
 
 F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xopintrin.h:
 
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavecintrin.h:
+F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/chrono:
 
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveoptintrin.h:
-
-F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavesintrin.h:
+D:/QuavleEngine/vendor/editor/TextEditor.cpp:
 
 D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/include/GLFW/glfw3native.h:
 
@@ -8175,3 +13018,11 @@ F:/Devtool/mysys2/ucrt64/include/inttypes.h:
 D:/QuavleEngine/vendor/imgui/imstb_rectpack.h:
 
 D:/QuavleEngine/vendor/imgui/imgui_widgets.cpp:
+
+D:/QuavleEngine/vendor/implot-master/implot.cpp:
+
+D:/QuavleEngine/vendor/implot-master/implot_internal.h:
+
+D:/QuavleEngine/vendor/implot-master/implot_demo.cpp:
+
+D:/QuavleEngine/vendor/implot-master/implot_items.cpp:

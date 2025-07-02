@@ -45,9 +45,24 @@ file(GLOB_RECURSE ENGINE_SOURCES
 # vendor/vk-bootstrap/src/*.cpp
 # )
 
-file(GLOB_RECURSE GLAD_SOURCES
-vendor/glad/*.c
+file(GLOB_RECURSE IMPLOT
+    vendor/implot-master/*.h
+    vendor/implot-master/*.cpp
+)
 
+file(GLOB_RECURSE IMNODE
+    vendor/imnode/include/*.h
+    vendor/imnode/src/*.h
+    vendor/imnode/src/*.cpp
+)
+
+file(GLOB_RECURSE EDITOR
+    vendor/editor/*.cpp
+    vendor/editor/*.h
+)
+
+file(GLOB_RECURSE GLAD_SOURCES
+    vendor/glad/*.c
 )
 
 # Create executable
@@ -56,7 +71,15 @@ add_executable(QuavleEngine
     ${IMGUI_SOURCES}
     ${ENGINE_SOURCES}
     ${GLAD_SOURCES}
+    ${IMPLOT}
+    ${IMNODE}
+    ${EDITOR}
+    # ${VK_BOOTSTRAP_SOURCES}
 )
+
+# Lua
+set(LUA_INCLUDE_DIR "F:/Devtool/mysys2/ucrt64/include")
+set(LUA_LIBRARY "F:/Devtool/mysys2/ucrt64/lib/liblua.dll.a")
 
 # Include directories
 target_include_directories(QuavleEngine PRIVATE
@@ -68,6 +91,11 @@ target_include_directories(QuavleEngine PRIVATE
     ${CMAKE_SOURCE_DIR}/vendor/glad
     ${CMAKE_SOURCE_DIR}/vendor/stb
     ${CMAKE_SOURCE_DIR}/vendor/assimp/include
+    ${CMAKE_SOURCE_DIR}/vendor/implot-master
+    ${CMAKE_SOURCE_DIR}/vendor/imnode/include
+    ${CMAKE_SOURCE_DIR}/vendor/imnode/src
+    ${CMAKE_SOURCE_DIR}/vendor/editor
+    ${LUA_INCLUDE_DIR}
 )
 
 # GLFW static library (MinGW assumed)
@@ -81,16 +109,19 @@ set_target_properties(glfw PROPERTIES
     INTERFACE_INCLUDE_DIRECTORIES "${GLFW_INCLUDE_DIR}"
 )
 
+
 # OpenGL
 find_package(OpenGL REQUIRED)
 
 
+
 # Link all libraries
 target_link_libraries(QuavleEngine
+    ${LUA_LIBRARY}
     glfw
     assimp
     ${OPENGL_gl_LIBRARY}
-    comctl32 
+    comctl32
 )
 
 # Optional: show sources in IDE with folders

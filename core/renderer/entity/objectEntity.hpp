@@ -10,12 +10,16 @@ namespace QuavleEngine
     class ObjectEntity
     {
     public:
+    
         struct materialData
         {
-            glm::vec3 ambient;
-            glm::vec3 diffuse;
-            glm::vec3 specular;
-            float shininess;
+            glm::vec3 ambient = glm::vec3(1.0f);
+            glm::vec3 diffuse = glm::vec3(1.0f);
+            glm::vec3 specular = glm::vec3(1.0f);
+            glm::vec3 emissive;
+            float shininess = 1.0f;
+            float opacity = 1.0f;
+            float shininessStrength = 1.0f;
         };
 
         struct ObjectData
@@ -25,21 +29,28 @@ namespace QuavleEngine
             unsigned int VBO;
             unsigned int EBO;
             unsigned int TexCoords;
+            bool hasOwnTexture = false;
+            std::string shaderLocation;
             unsigned int shaderProgram;
             unsigned int vertexShader;
             unsigned int fragmentShader;
-            float* vertices;
-            unsigned int* indices; 
+            float *vertices;
+            unsigned int *indices;
             size_t indicesCount;
-            size_t floatsPerVertex; 
+            size_t floatsPerVertex;
             std::string name;
             materialData material;
-            unsigned int diffuseTextureID; 
+            unsigned int diffuseTextureID;
             unsigned int specularTextureID;
             unsigned int normalTextureID;    // Normal map
             unsigned int metallicTextureID;  // Metallic map
             unsigned int roughnessTextureID; // Roughness map
-            size_t vertexCount; // Added for vertex count
+            unsigned int HeightTextureID;
+            unsigned int ambientTextureID;      // Ambient map
+            unsigned int emissiveTextureID;     // Emissive map
+            unsigned int opacityTextureID;      // Opacity / transparency map
+            unsigned int displacementTextureID; // Displacement map
+            size_t vertexCount;                 // Added for vertex count
             glm::vec3 position;
             glm::vec3 rotation;
             glm::vec3 scale;
@@ -53,6 +64,7 @@ namespace QuavleEngine
             glm::vec3 lightColor;
             std::string name;
             float intensity;
+            bool isShow = true;
         };
 
         struct CubeMap

@@ -272,6 +272,30 @@ core/interface/panel/fileExplorer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/fileExplorer.cpp.s
 .PHONY : core/interface/panel/fileExplorer.cpp.s
 
+core/interface/panel/guizmo.obj: core/interface/panel/guizmo.cpp.obj
+.PHONY : core/interface/panel/guizmo.obj
+
+# target to build an object file
+core/interface/panel/guizmo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/guizmo.cpp.obj
+.PHONY : core/interface/panel/guizmo.cpp.obj
+
+core/interface/panel/guizmo.i: core/interface/panel/guizmo.cpp.i
+.PHONY : core/interface/panel/guizmo.i
+
+# target to preprocess a source file
+core/interface/panel/guizmo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/guizmo.cpp.i
+.PHONY : core/interface/panel/guizmo.cpp.i
+
+core/interface/panel/guizmo.s: core/interface/panel/guizmo.cpp.s
+.PHONY : core/interface/panel/guizmo.s
+
+# target to generate assembly for a file
+core/interface/panel/guizmo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/guizmo.cpp.s
+.PHONY : core/interface/panel/guizmo.cpp.s
+
 core/interface/panel/inspector.obj: core/interface/panel/inspector.cpp.obj
 .PHONY : core/interface/panel/inspector.obj
 
@@ -584,6 +608,30 @@ utils/camera/camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.s
 .PHONY : utils/camera/camera.cpp.s
 
+utils/config.obj: utils/config.cpp.obj
+.PHONY : utils/config.obj
+
+# target to build an object file
+utils/config.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/config.cpp.obj
+.PHONY : utils/config.cpp.obj
+
+utils/config.i: utils/config.cpp.i
+.PHONY : utils/config.i
+
+# target to preprocess a source file
+utils/config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/config.cpp.i
+.PHONY : utils/config.cpp.i
+
+utils/config.s: utils/config.cpp.s
+.PHONY : utils/config.s
+
+# target to generate assembly for a file
+utils/config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/config.cpp.s
+.PHONY : utils/config.cpp.s
+
 utils/filereader.obj: utils/filereader.cpp.obj
 .PHONY : utils/filereader.obj
 
@@ -656,6 +704,150 @@ utils/msgWnd.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.s
 .PHONY : utils/msgWnd.cpp.s
 
+utils/uiTextureloader/utiTexLoader.obj: utils/uiTextureloader/utiTexLoader.cpp.obj
+.PHONY : utils/uiTextureloader/utiTexLoader.obj
+
+# target to build an object file
+utils/uiTextureloader/utiTexLoader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/uiTextureloader/utiTexLoader.cpp.obj
+.PHONY : utils/uiTextureloader/utiTexLoader.cpp.obj
+
+utils/uiTextureloader/utiTexLoader.i: utils/uiTextureloader/utiTexLoader.cpp.i
+.PHONY : utils/uiTextureloader/utiTexLoader.i
+
+# target to preprocess a source file
+utils/uiTextureloader/utiTexLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/uiTextureloader/utiTexLoader.cpp.i
+.PHONY : utils/uiTextureloader/utiTexLoader.cpp.i
+
+utils/uiTextureloader/utiTexLoader.s: utils/uiTextureloader/utiTexLoader.cpp.s
+.PHONY : utils/uiTextureloader/utiTexLoader.s
+
+# target to generate assembly for a file
+utils/uiTextureloader/utiTexLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/utils/uiTextureloader/utiTexLoader.cpp.s
+.PHONY : utils/uiTextureloader/utiTexLoader.cpp.s
+
+vendor/ImGuizmo/GraphEditor.obj: vendor/ImGuizmo/GraphEditor.cpp.obj
+.PHONY : vendor/ImGuizmo/GraphEditor.obj
+
+# target to build an object file
+vendor/ImGuizmo/GraphEditor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/GraphEditor.cpp.obj
+.PHONY : vendor/ImGuizmo/GraphEditor.cpp.obj
+
+vendor/ImGuizmo/GraphEditor.i: vendor/ImGuizmo/GraphEditor.cpp.i
+.PHONY : vendor/ImGuizmo/GraphEditor.i
+
+# target to preprocess a source file
+vendor/ImGuizmo/GraphEditor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/GraphEditor.cpp.i
+.PHONY : vendor/ImGuizmo/GraphEditor.cpp.i
+
+vendor/ImGuizmo/GraphEditor.s: vendor/ImGuizmo/GraphEditor.cpp.s
+.PHONY : vendor/ImGuizmo/GraphEditor.s
+
+# target to generate assembly for a file
+vendor/ImGuizmo/GraphEditor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/GraphEditor.cpp.s
+.PHONY : vendor/ImGuizmo/GraphEditor.cpp.s
+
+vendor/ImGuizmo/ImCurveEdit.obj: vendor/ImGuizmo/ImCurveEdit.cpp.obj
+.PHONY : vendor/ImGuizmo/ImCurveEdit.obj
+
+# target to build an object file
+vendor/ImGuizmo/ImCurveEdit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImCurveEdit.cpp.obj
+.PHONY : vendor/ImGuizmo/ImCurveEdit.cpp.obj
+
+vendor/ImGuizmo/ImCurveEdit.i: vendor/ImGuizmo/ImCurveEdit.cpp.i
+.PHONY : vendor/ImGuizmo/ImCurveEdit.i
+
+# target to preprocess a source file
+vendor/ImGuizmo/ImCurveEdit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImCurveEdit.cpp.i
+.PHONY : vendor/ImGuizmo/ImCurveEdit.cpp.i
+
+vendor/ImGuizmo/ImCurveEdit.s: vendor/ImGuizmo/ImCurveEdit.cpp.s
+.PHONY : vendor/ImGuizmo/ImCurveEdit.s
+
+# target to generate assembly for a file
+vendor/ImGuizmo/ImCurveEdit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImCurveEdit.cpp.s
+.PHONY : vendor/ImGuizmo/ImCurveEdit.cpp.s
+
+vendor/ImGuizmo/ImGradient.obj: vendor/ImGuizmo/ImGradient.cpp.obj
+.PHONY : vendor/ImGuizmo/ImGradient.obj
+
+# target to build an object file
+vendor/ImGuizmo/ImGradient.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGradient.cpp.obj
+.PHONY : vendor/ImGuizmo/ImGradient.cpp.obj
+
+vendor/ImGuizmo/ImGradient.i: vendor/ImGuizmo/ImGradient.cpp.i
+.PHONY : vendor/ImGuizmo/ImGradient.i
+
+# target to preprocess a source file
+vendor/ImGuizmo/ImGradient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGradient.cpp.i
+.PHONY : vendor/ImGuizmo/ImGradient.cpp.i
+
+vendor/ImGuizmo/ImGradient.s: vendor/ImGuizmo/ImGradient.cpp.s
+.PHONY : vendor/ImGuizmo/ImGradient.s
+
+# target to generate assembly for a file
+vendor/ImGuizmo/ImGradient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGradient.cpp.s
+.PHONY : vendor/ImGuizmo/ImGradient.cpp.s
+
+vendor/ImGuizmo/ImGuizmo.obj: vendor/ImGuizmo/ImGuizmo.cpp.obj
+.PHONY : vendor/ImGuizmo/ImGuizmo.obj
+
+# target to build an object file
+vendor/ImGuizmo/ImGuizmo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGuizmo.cpp.obj
+.PHONY : vendor/ImGuizmo/ImGuizmo.cpp.obj
+
+vendor/ImGuizmo/ImGuizmo.i: vendor/ImGuizmo/ImGuizmo.cpp.i
+.PHONY : vendor/ImGuizmo/ImGuizmo.i
+
+# target to preprocess a source file
+vendor/ImGuizmo/ImGuizmo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGuizmo.cpp.i
+.PHONY : vendor/ImGuizmo/ImGuizmo.cpp.i
+
+vendor/ImGuizmo/ImGuizmo.s: vendor/ImGuizmo/ImGuizmo.cpp.s
+.PHONY : vendor/ImGuizmo/ImGuizmo.s
+
+# target to generate assembly for a file
+vendor/ImGuizmo/ImGuizmo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGuizmo.cpp.s
+.PHONY : vendor/ImGuizmo/ImGuizmo.cpp.s
+
+vendor/ImGuizmo/ImSequencer.obj: vendor/ImGuizmo/ImSequencer.cpp.obj
+.PHONY : vendor/ImGuizmo/ImSequencer.obj
+
+# target to build an object file
+vendor/ImGuizmo/ImSequencer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImSequencer.cpp.obj
+.PHONY : vendor/ImGuizmo/ImSequencer.cpp.obj
+
+vendor/ImGuizmo/ImSequencer.i: vendor/ImGuizmo/ImSequencer.cpp.i
+.PHONY : vendor/ImGuizmo/ImSequencer.i
+
+# target to preprocess a source file
+vendor/ImGuizmo/ImSequencer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImSequencer.cpp.i
+.PHONY : vendor/ImGuizmo/ImSequencer.cpp.i
+
+vendor/ImGuizmo/ImSequencer.s: vendor/ImGuizmo/ImSequencer.cpp.s
+.PHONY : vendor/ImGuizmo/ImSequencer.s
+
+# target to generate assembly for a file
+vendor/ImGuizmo/ImSequencer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImSequencer.cpp.s
+.PHONY : vendor/ImGuizmo/ImSequencer.cpp.s
+
 vendor/editor/TextEditor.obj: vendor/editor/TextEditor.cpp.obj
 .PHONY : vendor/editor/TextEditor.obj
 
@@ -680,29 +872,29 @@ vendor/editor/TextEditor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/editor/TextEditor.cpp.s
 .PHONY : vendor/editor/TextEditor.cpp.s
 
-vendor/glad/glad.obj: vendor/glad/glad.c.obj
-.PHONY : vendor/glad/glad.obj
+vendor/glad/src/glad.obj: vendor/glad/src/glad.c.obj
+.PHONY : vendor/glad/src/glad.obj
 
 # target to build an object file
-vendor/glad/glad.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.obj
-.PHONY : vendor/glad/glad.c.obj
+vendor/glad/src/glad.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/glad/src/glad.c.obj
+.PHONY : vendor/glad/src/glad.c.obj
 
-vendor/glad/glad.i: vendor/glad/glad.c.i
-.PHONY : vendor/glad/glad.i
+vendor/glad/src/glad.i: vendor/glad/src/glad.c.i
+.PHONY : vendor/glad/src/glad.i
 
 # target to preprocess a source file
-vendor/glad/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.i
-.PHONY : vendor/glad/glad.c.i
+vendor/glad/src/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/glad/src/glad.c.i
+.PHONY : vendor/glad/src/glad.c.i
 
-vendor/glad/glad.s: vendor/glad/glad.c.s
-.PHONY : vendor/glad/glad.s
+vendor/glad/src/glad.s: vendor/glad/src/glad.c.s
+.PHONY : vendor/glad/src/glad.s
 
 # target to generate assembly for a file
-vendor/glad/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/glad/glad.c.s
-.PHONY : vendor/glad/glad.c.s
+vendor/glad/src/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/glad/src/glad.c.s
+.PHONY : vendor/glad/src/glad.c.s
 
 vendor/imgui/backends/imgui_impl_glfw.obj: vendor/imgui/backends/imgui_impl_glfw.cpp.obj
 .PHONY : vendor/imgui/backends/imgui_impl_glfw.obj
@@ -995,6 +1187,9 @@ help:
 	@echo ... core/interface/panel/fileExplorer.obj
 	@echo ... core/interface/panel/fileExplorer.i
 	@echo ... core/interface/panel/fileExplorer.s
+	@echo ... core/interface/panel/guizmo.obj
+	@echo ... core/interface/panel/guizmo.i
+	@echo ... core/interface/panel/guizmo.s
 	@echo ... core/interface/panel/inspector.obj
 	@echo ... core/interface/panel/inspector.i
 	@echo ... core/interface/panel/inspector.s
@@ -1034,6 +1229,9 @@ help:
 	@echo ... utils/camera/camera.obj
 	@echo ... utils/camera/camera.i
 	@echo ... utils/camera/camera.s
+	@echo ... utils/config.obj
+	@echo ... utils/config.i
+	@echo ... utils/config.s
 	@echo ... utils/filereader.obj
 	@echo ... utils/filereader.i
 	@echo ... utils/filereader.s
@@ -1043,12 +1241,30 @@ help:
 	@echo ... utils/msgWnd.obj
 	@echo ... utils/msgWnd.i
 	@echo ... utils/msgWnd.s
+	@echo ... utils/uiTextureloader/utiTexLoader.obj
+	@echo ... utils/uiTextureloader/utiTexLoader.i
+	@echo ... utils/uiTextureloader/utiTexLoader.s
+	@echo ... vendor/ImGuizmo/GraphEditor.obj
+	@echo ... vendor/ImGuizmo/GraphEditor.i
+	@echo ... vendor/ImGuizmo/GraphEditor.s
+	@echo ... vendor/ImGuizmo/ImCurveEdit.obj
+	@echo ... vendor/ImGuizmo/ImCurveEdit.i
+	@echo ... vendor/ImGuizmo/ImCurveEdit.s
+	@echo ... vendor/ImGuizmo/ImGradient.obj
+	@echo ... vendor/ImGuizmo/ImGradient.i
+	@echo ... vendor/ImGuizmo/ImGradient.s
+	@echo ... vendor/ImGuizmo/ImGuizmo.obj
+	@echo ... vendor/ImGuizmo/ImGuizmo.i
+	@echo ... vendor/ImGuizmo/ImGuizmo.s
+	@echo ... vendor/ImGuizmo/ImSequencer.obj
+	@echo ... vendor/ImGuizmo/ImSequencer.i
+	@echo ... vendor/ImGuizmo/ImSequencer.s
 	@echo ... vendor/editor/TextEditor.obj
 	@echo ... vendor/editor/TextEditor.i
 	@echo ... vendor/editor/TextEditor.s
-	@echo ... vendor/glad/glad.obj
-	@echo ... vendor/glad/glad.i
-	@echo ... vendor/glad/glad.s
+	@echo ... vendor/glad/src/glad.obj
+	@echo ... vendor/glad/src/glad.i
+	@echo ... vendor/glad/src/glad.s
 	@echo ... vendor/imgui/backends/imgui_impl_glfw.obj
 	@echo ... vendor/imgui/backends/imgui_impl_glfw.i
 	@echo ... vendor/imgui/backends/imgui_impl_glfw.s

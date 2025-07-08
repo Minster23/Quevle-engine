@@ -11,9 +11,10 @@ void ObjectEntity::firstLightObject()
 {
     LightData light;
     light.position = glm::vec3(0.0f, 0.0f, -3.0f);
-    light.lightColor = glm::vec3(1.0f, 9.0f, 1.0f);
+    light.lightColor = glm::vec3(1.0f, 1.0f, 1.0f);
     light.intensity = 9.0f;
     light.name = "Light object " + std::to_string(lights.size());
+    light.isShow = true;
     lights.push_back(light);
 }
 

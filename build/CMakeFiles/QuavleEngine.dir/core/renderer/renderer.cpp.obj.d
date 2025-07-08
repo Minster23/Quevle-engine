@@ -408,8 +408,8 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  D:/QuavleEngine/utils/camera/camera.hpp \
  D:/QuavleEngine/core/renderer/renderer.hpp \
  D:/QuavleEngine/core/window/window.hpp \
- D:/QuavleEngine/vendor/glad/glad.h \
- D:/QuavleEngine/vendor/glad/khrplatform.h \
+ D:/QuavleEngine/vendor/glad/include/glad/glad.h \
+ D:/QuavleEngine/vendor/glad/include/KHR/khrplatform.h \
  D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/include/GLFW/glfw3.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/map \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tree.h \
@@ -426,6 +426,13 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h \
  D:/QuavleEngine/utils/font/IconsCodicons.h \
  D:/QuavleEngine/vendor/implot-master/implot.h \
+ D:/QuavleEngine/vendor/glm/glm/gtx/string_cast.hpp \
+ D:/QuavleEngine/vendor/glm/glm/gtc/type_precision.hpp \
+ D:/QuavleEngine/vendor/glm/glm/gtc/type_precision.inl \
+ D:/QuavleEngine/vendor/glm/glm/gtx/dual_quaternion.hpp \
+ D:/QuavleEngine/vendor/glm/glm/gtx/dual_quaternion.inl \
+ D:/QuavleEngine/vendor/glm/glm/gtx/string_cast.inl \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdarg \
  D:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
  D:/QuavleEngine/core/model/model.hpp \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/memory \

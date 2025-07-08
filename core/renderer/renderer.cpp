@@ -18,7 +18,6 @@
 #include <core/interface/interface.hpp>
 #include <core/renderer/shader_h.h>
 
-
 // --- Constants ---
 namespace
 {
@@ -27,12 +26,6 @@ namespace
 
     constexpr char LIGHT_VERT_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/lightVert.glsl";
     constexpr char LIGHT_FRAG_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/lightFrag.glsl";
-    
-    constexpr char DIFFUSE_TEXTURE_PATH[] = "F:/Devlopment/LLL/EmguCVApp/genshin_impact_-_furina/textures/material_1_baseColor.png";
-    constexpr char NORMAL_TEXTURE_PATH[] = "F:/Devlopment/LLL/EmguCVApp/ak-47_kalashnikov/textures/material_normal.png";
-    constexpr char METALLIC_TEXTURE_PATH[] = "F:/Devlopment/LLL/EmguCVApp/ak-47_kalashnikov/textures/material_metallicRoughness.png";
-    constexpr char DIFFUSE_TEX_TEST[] = "F:/Devlopment/LLL/EmguCVApp/tex.png";
-    constexpr char SPECULAR_TEXTURE_PATH[] = "C:/Users/athilah/Downloads/container2_specular.png";
 
     constexpr char SKYBOX_VERT_PATH[] = "D:/QuavleEngine/utils/shader/skyVert.glsl";
     constexpr char SKYBOX_FRAG_PATH[] = "D:/QuavleEngine/utils/shader/skyFrag.glsl";
@@ -153,12 +146,16 @@ bool Renderer::Normal = true;
 bool Renderer::Metallic = true;
 bool Renderer::Roughness = true;
 bool Renderer::Grid = true;
-glm::mat4  Renderer::projection;
+
+glm::mat4 Renderer::projection;
+glm::mat4 Renderer::view;
+glm::mat4 Renderer::model;
 
 glm::vec3 Renderer::gridColor = glm::vec3(1.0f);
 float Renderer::gridSpacing = 2.0f;
 
-namespace QuavleEngine { // Explicitly define within the namespace
+namespace QuavleEngine
+{ // Explicitly define within the namespace
     WindowManager windowManager;
     interface intfc;
     ObjectEntity objectEntity;
@@ -167,14 +164,14 @@ namespace QuavleEngine { // Explicitly define within the namespace
 //* ====================== Renderer Implementation ======================
 void Renderer::init()
 {
+    glEnable(GL_MULTISAMPLE);
     //* initialize the object entity
     intfc.inputDebug("Info", "Engine loading any assets");
-    
+
     shaderLoaderLight();
     LightShaderLink();
 
     objectEntity.firstCubemap();
-
 
     //* CUBEMAP
     shaderLoader(0, RenderType::SKYBOX);
@@ -188,7 +185,6 @@ void Renderer::init()
 
 void Renderer::loadModelFirst(std::string path)
 {
-    //* OBJECTS (kalo UI dah jadi hapus aja buat ulang yang kayak gini)
     Model model(path, true);
     for (size_t i = 0; i < objectEntity.objects.size(); ++i)
     {
@@ -198,23 +194,27 @@ void Renderer::loadModelFirst(std::string path)
     }
 }
 
-void Renderer::LoadAnotherLight(){
+void Renderer::LoadAnotherLight()
+{
     intfc.inputDebug("Info", "loading Light");
     objectEntity.firstLightObject();
 }
 
 //* ====================== GRID SHADER ==========================
-GLuint Renderer::compileShader(GLenum type, const char* source) {
+GLuint Renderer::compileShader(GLenum type, const char *source)
+{
     GLuint gridShaderProgram = glCreateShader(type);
     glShaderSource(gridShaderProgram, 1, &source, nullptr);
     glCompileShader(gridShaderProgram);
 
     GLint success;
     glGetShaderiv(gridShaderProgram, GL_COMPILE_STATUS, &success);
-    if (!success) {
+    if (!success)
+    {
         char info[512];
         glGetShaderInfoLog(gridShaderProgram, 512, nullptr, info);
-        std::cerr << "Shader error:\n" << info << std::endl;
+        std::cerr << "Shader error:\n"
+                  << info << std::endl;
     }
     return gridShaderProgram;
 }
@@ -235,27 +235,28 @@ void Renderer::createGridShaderProgram()
 
     GLint success;
     glGetProgramiv(gridShaderProgram, GL_LINK_STATUS, &success);
-    if (!success) {
+    if (!success)
+    {
         char info[512];
         glGetProgramInfoLog(gridShaderProgram, 512, nullptr, info);
-        std::cerr << "Link error:\n" << info << std::endl;
+        std::cerr << "Link error:\n"
+                  << info << std::endl;
     }
 
     glDeleteShader(vs);
     glDeleteShader(fs);
 }
 
-void Renderer::setupGridQuad() {
+void Renderer::setupGridQuad()
+{
     float quadVertices[] = {
         -1.0f, -1.0f,
-         1.0f, -1.0f,
-        -1.0f,  1.0f,
-         1.0f,  1.0f
-    };
+        1.0f, -1.0f,
+        -1.0f, 1.0f,
+        1.0f, 1.0f};
     unsigned int indices[] = {
         0, 1, 2,
-        2, 1, 3
-    };
+        2, 1, 3};
 
     glGenVertexArrays(1, &gridVAO);
     glGenBuffers(1, &gridVBO);
@@ -270,7 +271,7 @@ void Renderer::setupGridQuad() {
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), (void *)0);
 
     glBindVertexArray(0);
 }
@@ -278,11 +279,17 @@ void Renderer::setupGridQuad() {
 void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
 {
     if (expression == RenderType::OBJECT)
-    {
-        //* Load and compile vertex and fragment shaders for the object
+    { // Declare vertSource here
         intfc.inputDebug("Info", "Renderer::shaderLoader() called for OBJECT");
+        std::string fragSource;
+        
+        if (!objectEntity.objects[Index].hasOwnTexture) {
+            fragSource = readFile(FRAG_SHADER_PATH);
+        }else{
+            fragSource = readFile(objectEntity.objects[Index].shaderLocation);
+        }
+
         std::string vertSource = readFile(VERT_SHADER_PATH);
-        std::string fragSource = readFile(FRAG_SHADER_PATH);
         const char *vertexShaderSource = vertSource.c_str();
         const char *fragmentShaderSource = fragSource.c_str();
 
@@ -444,6 +451,24 @@ void Renderer::loadTexture(const std::string &texturePath, int Index, TextureTyp
     case Renderer::TextureType::METALLIC:
         texID = &objectEntity.objects[Index].metallicTextureID;
         break;
+    case Renderer::TextureType::ROUGHNESS:
+        texID = &objectEntity.objects[Index].roughnessTextureID;
+        break;
+    case Renderer::TextureType::HEIGHT:
+        texID = &objectEntity.objects[Index].HeightTextureID;
+        break;
+    case Renderer::TextureType::AMBIENT:
+        texID = &objectEntity.objects[Index].ambientTextureID;
+        break;
+    case Renderer::TextureType::EMISSIVE:
+        texID = &objectEntity.objects[Index].emissiveTextureID;
+        break;
+    case Renderer::TextureType::OPACITY:
+        texID = &objectEntity.objects[Index].opacityTextureID;
+        break;
+    case Renderer::TextureType::DISPLACEMENT:
+        texID = &objectEntity.objects[Index].displacementTextureID;
+        break;
     default:
         std::cerr << "Invalid texture type specified.\n";
         return;
@@ -475,9 +500,15 @@ void Renderer::loadTexture(const std::string &texturePath, int Index, TextureTyp
         GLenum format = GL_RGB;
         switch (nrChannels)
         {
-        case 1: format = GL_RED; break;
-        case 3: format = GL_RGB; break;
-        case 4: format = GL_RGBA; break;
+        case 1:
+            format = GL_RED;
+            break;
+        case 3:
+            format = GL_RGB;
+            break;
+        case 4:
+            format = GL_RGBA;
+            break;
         default:
             std::cerr << "Unsupported texture format: " << nrChannels << " channels\n";
             stbi_image_free(data);
@@ -498,9 +529,12 @@ void Renderer::loadTexture(const std::string &texturePath, int Index, TextureTyp
     auto &obj = objectEntity.objects[Index];
 
     // Generate VAO/VBO/EBO if not created
-    if (obj.VAO == 0) glGenVertexArrays(1, &obj.VAO);
-    if (obj.VBO == 0) glGenBuffers(1, &obj.VBO);
-    if (obj.EBO == 0) glGenBuffers(1, &obj.EBO);
+    if (obj.VAO == 0)
+        glGenVertexArrays(1, &obj.VAO);
+    if (obj.VBO == 0)
+        glGenBuffers(1, &obj.VBO);
+    if (obj.EBO == 0)
+        glGenBuffers(1, &obj.EBO);
 
     glBindVertexArray(obj.VAO);
 
@@ -527,11 +561,10 @@ void Renderer::loadTexture(const std::string &texturePath, int Index, TextureTyp
     glBindVertexArray(0);
 }
 
-
 //* ====================== CubeMap Shader ======================
-void Renderer::loadCubemapTexture(const std::vector<std::string>& faces, int Index)
+void Renderer::loadCubemapTexture(const std::vector<std::string> &faces, int Index)
 {
-    unsigned int* texID = &objectEntity.CubeMaps[Index].textureID;
+    unsigned int *texID = &objectEntity.CubeMaps[Index].textureID;
     glGenTextures(1, texID);
     glBindTexture(GL_TEXTURE_CUBE_MAP, *texID);
 
@@ -539,7 +572,7 @@ void Renderer::loadCubemapTexture(const std::vector<std::string>& faces, int Ind
     for (unsigned int i = 0; i < faces.size(); i++)
     {
         stbi_set_flip_vertically_on_load(false); // Cubemaps should not be flipped
-        unsigned char* data = stbi_load(faces[i].c_str(), &width, &height, &nrChannels, 0);
+        unsigned char *data = stbi_load(faces[i].c_str(), &width, &height, &nrChannels, 0);
         if (data)
         {
             GLenum format;
@@ -554,8 +587,7 @@ void Renderer::loadCubemapTexture(const std::vector<std::string>& faces, int Ind
 
             glTexImage2D(
                 GL_TEXTURE_CUBE_MAP_POSITIVE_X + i,
-                0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data
-            );
+                0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
             stbi_image_free(data);
         }
         else
@@ -577,7 +609,7 @@ void Renderer::loadCubemapTexture(const std::vector<std::string>& faces, int Ind
     glBindBuffer(GL_ARRAY_BUFFER, objectEntity.CubeMaps[Index].cubemapVBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(skyboxVertices), &skyboxVertices, GL_STATIC_DRAW);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
 
     glBindVertexArray(0);
 }
@@ -649,18 +681,21 @@ void Renderer::drawCallback()
 {
     mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
     float aspectRatio = static_cast<float>(mode->width) / static_cast<float>(mode->height);
-    projection = glm::perspective(glm::radians(cameras[0].fov), aspectRatio, 0.1f, 1000.0f);
-    
+    projection = glm::perspective(glm::radians(cameras[0].fov), aspectRatio, 0.1f, 10000.0f);
 
     if (Grid)
     {
+        glEnable(GL_DEPTH_TEST); // just to be explicit
+        glDepthMask(GL_TRUE);    // ensure depth writing
         glUseProgram(gridShaderProgram);
+
         ShaderHelper gridShader(gridShaderProgram);
         gridShader.setMat4("view", cameras[0].view);
         gridShader.setMat4("projection", projection);
         gridShader.setVec3("camPos", cameras[0].cameraPos);
         gridShader.setVec3("gridColor", gridColor);
         gridShader.setFloat("gridSpacing", gridSpacing);
+
         glBindVertexArray(gridVAO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         glBindVertexArray(0);
@@ -668,94 +703,120 @@ void Renderer::drawCallback()
 
     if (objectEntity.objects.size() != 0)
     {
+        int currentShader = -1;
+        GLuint lastVAO = 0;
+
+        auto bindTexture = [](GLuint texID, int unit, const std::string &name, ShaderHelper &shader)
+        {
+            glActiveTexture(GL_TEXTURE0 + unit);
+            glBindTexture(GL_TEXTURE_2D, texID);
+            shader.setInt(name, unit);
+        };
+
         for (size_t i = 0; i < objectEntity.objects.size(); ++i)
         {
-            glUseProgram(objectEntity.objects[i].shaderProgram);
-            ShaderHelper shader(objectEntity.objects[i].shaderProgram);
+            const auto &obj = objectEntity.objects[i];
 
-            // Bind diffuse texture and set uniform (standard, simple)
-            // Bind and set diffuse texture
+            // Use program only if different
+            if ((int)obj.shaderProgram != currentShader)
+            {
+                glUseProgram(obj.shaderProgram);
+                currentShader = obj.shaderProgram;
+            }
+
+            ShaderHelper shader(obj.shaderProgram);
+
+            // Set view/projection/camera once per shader
+            shader.setMat4("view", cameras[0].view);
+            shader.setMat4("projection", projection);
+            shader.setVec3("viewPos", cameras[0].cameraPos);
+
+            // Material textures
             if (Diffuse)
-            {
-                glActiveTexture(GL_TEXTURE0);
-                glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].diffuseTextureID);
-                shader.setInt("diffuse", 0);
-            }
-            // Bind and set specular texture
+                bindTexture(obj.diffuseTextureID, 0, "diffuse", shader);
             if (Specular)
-            {
-                glActiveTexture(GL_TEXTURE1);
-                glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].specularTextureID);
-                shader.setInt("specular", 1);
-            }
-
-            // Bind and set normal map
+                bindTexture(obj.specularTextureID, 1, "specular", shader);
             if (Normal)
-            {
-                glActiveTexture(GL_TEXTURE2);
-                glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].normalTextureID);
-                shader.setInt("normalMap", 2);
-            }
-
+                bindTexture(obj.normalTextureID, 2, "normalMap", shader);
             if (Metallic)
-            {
-                // Bind and set metallic map
-                glActiveTexture(GL_TEXTURE3);
-                glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].metallicTextureID);
-                shader.setInt("metallicMap", 3);
-            }
-
-            // Bind and set roughness map (if you have it)
+                bindTexture(obj.metallicTextureID, 3, "metallicMap", shader);
             if (Roughness)
-            {
-                glActiveTexture(GL_TEXTURE4);
-                glBindTexture(GL_TEXTURE_2D, objectEntity.objects[i].roughnessTextureID);
-                shader.setInt("roughnessMap", 4);
-            }
+                bindTexture(obj.roughnessTextureID, 4, "roughnessMap", shader);
 
-            // Send to shader
+            bindTexture(obj.HeightTextureID, 5, "heightMap", shader);
+            bindTexture(obj.ambientTextureID, 6, "ambientMap", shader);
+            bindTexture(obj.emissiveTextureID, 7, "emissiveMap", shader);
+            bindTexture(obj.opacityTextureID, 8, "opacityMap", shader);
+            bindTexture(obj.displacementTextureID, 9, "displacementMap", shader);
+
+            // Material data (.mtl style)
+            shader.setVec3("mat_ambient", obj.material.ambient);
+            shader.setVec3("mat_diffuse", obj.material.diffuse);
+            shader.setVec3("mat_specular", obj.material.specular);
+            shader.setVec3("mat_emissive", obj.material.emissive);
+            shader.setFloat("mat_shininess", obj.material.shininess);
+            shader.setFloat("mat_opacity", obj.material.opacity);
+            shader.setFloat("mat_shininessStrength", obj.material.shininessStrength);
+
+            // Lights
             shader.setInt("lightCount", objectEntity.lights.size());
             for (size_t light_idx = 0; light_idx < objectEntity.lights.size(); ++light_idx)
             {
+                const auto &light = objectEntity.lights[light_idx];
                 std::string index = std::to_string(light_idx);
-                shader.setVec3("lightPositions[" + index + "]", objectEntity.lights[light_idx].position);
-                shader.setVec3("lightColors[" + index + "]", objectEntity.lights[light_idx].lightColor);
-                shader.setFloat("lightIntensities[" + index + "]", objectEntity.lights[light_idx].intensity); // Set light intensity for each light
+                if (!objectEntity.lights[light_idx].isShow)
+                {
+                    shader.setFloat("lightIntensities[" + index + "]", 0.0f); // Set intensity to 0 if not shown
+                } else
+                {
+                    shader.setVec3("lightPositions[" + index + "]", light.position);
+                    shader.setVec3("lightColors[" + index + "]", light.lightColor);
+                    shader.setFloat("lightIntensities[" + index + "]", light.intensity);
+                }
             }
 
-            shader.setMat4("view", cameras[0].view);
-            shader.setMat4("projection", projection);
+            // Model matrix
+            model = glm::mat4(1.0f);
 
-            shader.setBool("selected", objectEntity.objects[i].isSelected);
-            shader.setVec3("colorSelected", glm::vec3( 1.0f, 1.0f, 0.0f));
+            // Apply translation first
+            model = glm::translate(model, obj.position);
 
-            glm::mat4 modelMat = glm::mat4(1.0f);
-            modelMat = glm::scale(modelMat, objectEntity.objects[i].scale);
-            modelMat = glm::translate(modelMat, objectEntity.objects[i].position);
-            glm::vec3 rot = glm::radians(objectEntity.objects[i].rotation);
+            // Then apply rotation (in radians)
+            glm::vec3 rot = glm::radians(obj.rotation);
+            model = glm::rotate(model, rot.x, glm::vec3(1, 0, 0));
+            model = glm::rotate(model, rot.y, glm::vec3(0, 1, 0));
+            model = glm::rotate(model, rot.z, glm::vec3(0, 0, 1));
 
-            modelMat = glm::rotate(modelMat, rot.x, glm::vec3(1.0f, 0.0f, 0.0f));
-            modelMat = glm::rotate(modelMat, rot.y, glm::vec3(0.0f, 1.0f, 0.0f));
-            modelMat = glm::rotate(modelMat, rot.z, glm::vec3(0.0f, 0.0f, 1.0f));
-            shader.setMat4("model", modelMat);
+            // Finally apply scale
+            model = glm::scale(model, obj.scale);
 
-            shader.setVec3("viewPos", cameras[0].cameraPos);
+            shader.setMat4("model", model);
 
-            glBindVertexArray(objectEntity.objects[i].VAO);
-            if (objectEntity.objects[i].indices && objectEntity.objects[i].indicesCount > 0 && objectEntity.objects[i].isShow)
+            // Optional: selection highlight
+            shader.setBool("selected", obj.isSelected);
+            shader.setVec3("colorSelected", glm::vec3(1,1,0));
+
+            // VAO binding only if changed
+            if (obj.VAO != lastVAO)
             {
-                glDrawElements(GL_TRIANGLES, objectEntity.objects[i].indicesCount, GL_UNSIGNED_INT, 0);
+                glBindVertexArray(obj.VAO);
+                lastVAO = obj.VAO;
             }
-            else
+
+            // Draw
+            if (obj.isShow)
             {
-                glDrawArrays(GL_TRIANGLES, 0, objectEntity.objects[i].vertexCount);
+                if (obj.indices && obj.indicesCount > 0)
+                    glDrawElements(GL_TRIANGLES, obj.indicesCount, GL_UNSIGNED_INT, 0);
+                else
+                    glDrawArrays(GL_TRIANGLES, 0, obj.vertexCount);
             }
         }
     }
     else
     {
     }
-    
+
     if (!objectEntity.lights.empty())
     {
         glUseProgram(lightShaderProgram);
@@ -765,18 +826,21 @@ void Renderer::drawCallback()
         glBindVertexArray(lightVAO);
         for (unsigned int i = 0; i < objectEntity.lights.size(); ++i)
         {
-            glm::mat4 modelLight = glm::mat4(1.0f);
-            modelLight = glm::translate(modelLight, objectEntity.lights[i].position);
-            lightShader.setMat4("model", modelLight);
-            lightShader.setVec3("objectColor", objectEntity.lights[i].lightColor);
-            glDrawArrays(GL_TRIANGLES, 0, 36);
+            if (objectEntity.lights[i].isShow)
+            {
+                glm::mat4 modelLight = glm::mat4(1.0f);
+                modelLight = glm::translate(modelLight, objectEntity.lights[i].position);
+                lightShader.setMat4("model", modelLight);
+                lightShader.setVec3("objectColor", objectEntity.lights[i].lightColor);
+                glDrawArrays(GL_TRIANGLES, 0, 36);
+            }
         }
     }
 
     glDepthFunc(GL_LEQUAL);
     ShaderHelper skyboxShader(objectEntity.CubeMaps[0].shaderProgramCubemap);
     glUseProgram(objectEntity.CubeMaps[0].shaderProgramCubemap);
-    glm::mat4 view = glm::mat4(glm::mat3(cameras[0].view));
+    view = glm::mat4(glm::mat3(cameras[0].view));
     skyboxShader.setMat4("view", view);
     skyboxShader.setMat4("projection", projection);
     glBindVertexArray(objectEntity.CubeMaps[0].cubemapVAO);

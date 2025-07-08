@@ -21,6 +21,11 @@ namespace QuavleEngine
             NORMAL,
             METALLIC,
             ROUGHNESS,
+            HEIGHT,
+            AMBIENT,
+            EMISSIVE,
+            OPACITY,
+            DISPLACEMENT,
             CUBEMAP
         };
 
@@ -58,6 +63,8 @@ namespace QuavleEngine
         static float gridSpacing;
 
         static glm::mat4 projection;
+        static glm::mat4 view;
+        static glm::mat4 model;
 
     private:
         int success;

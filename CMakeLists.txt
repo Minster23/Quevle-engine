@@ -13,6 +13,14 @@ set(MAIN_SOURCES
 # Add vulkan sdk
 set(VULKAN_SDK $ENV{VULKAN_SDK})
 
+# include FETCHCONTENT
+include(FetchContent)
+
+# Fetch untuk JSON
+FetchContent_Declare(json
+    URL https://github.com/nlohmann/json/releases/download/v3.12.0/json.tar.xz
+)
+FetchContent_MakeAvailable(json)
 
 # ImGui sources
 file(GLOB IMGUI_SOURCES
@@ -37,7 +45,6 @@ file(GLOB_RECURSE ENGINE_SOURCES
     utils/*.cpp utils/*.hpp utils/*.h
     core/renderer/*.cpp core/renderer/*.hpp
     core/model/*.cpp core/model/*.hpp
-
 )
 
 # file(GLOB_RECURSE VK_BOOTSTRAP_SOURCES
@@ -62,7 +69,14 @@ file(GLOB_RECURSE EDITOR
 )
 
 file(GLOB_RECURSE GLAD_SOURCES
-    vendor/glad/*.c
+    vendor/glad/src/*.c
+    vendor/glad/include/glad/*.h
+    vendor/glad/include/KHR/*.h
+)
+
+file(GLOB_RECURSE GUIZMO_SOURCES
+    vendor/ImGuizmo/*.cpp
+    vendor/ImGuizmo/*.h
 )
 
 # Create executable
@@ -74,6 +88,7 @@ add_executable(QuavleEngine
     ${IMPLOT}
     ${IMNODE}
     ${EDITOR}
+    ${GUIZMO_SOURCES}
     # ${VK_BOOTSTRAP_SOURCES}
 )
 
@@ -88,13 +103,14 @@ target_include_directories(QuavleEngine PRIVATE
     ${CMAKE_SOURCE_DIR}/vendor/glfw-3.4.bin.WIN64/include
     ${CMAKE_SOURCE_DIR}/vendor/glm
     ${CMAKE_SOURCE_DIR}/vendor/vk-bootstrap/src
-    ${CMAKE_SOURCE_DIR}/vendor/glad
+    ${CMAKE_SOURCE_DIR}/vendor/glad/include
     ${CMAKE_SOURCE_DIR}/vendor/stb
     ${CMAKE_SOURCE_DIR}/vendor/assimp/include
     ${CMAKE_SOURCE_DIR}/vendor/implot-master
     ${CMAKE_SOURCE_DIR}/vendor/imnode/include
     ${CMAKE_SOURCE_DIR}/vendor/imnode/src
     ${CMAKE_SOURCE_DIR}/vendor/editor
+    ${CMAKE_SOURCE_DIR}/vendor/ImGuizmo
     ${LUA_INCLUDE_DIR}
 )
 
@@ -109,11 +125,8 @@ set_target_properties(glfw PROPERTIES
     INTERFACE_INCLUDE_DIRECTORIES "${GLFW_INCLUDE_DIR}"
 )
 
-
 # OpenGL
 find_package(OpenGL REQUIRED)
-
-
 
 # Link all libraries
 target_link_libraries(QuavleEngine
@@ -122,6 +135,7 @@ target_link_libraries(QuavleEngine
     assimp
     ${OPENGL_gl_LIBRARY}
     comctl32
+    nlohmann_json::nlohmann_json
 )
 
 # Optional: show sources in IDE with folders

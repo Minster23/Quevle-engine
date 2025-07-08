@@ -11,9 +11,12 @@
 #include <iostream>
 #include <vector>
 #include <string>
+ #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#include <glm/gtx/string_cast.hpp>
+#include <utils/camera/camera.hpp>
 
 namespace QuavleEngine
 {
@@ -27,7 +30,13 @@ namespace QuavleEngine
         void interfaceRender();
         void interfaceCleanup();
         void inputDebug(const std::string &typeOfDebug, const std::string &text);
-        const ImGuiViewport *viewport;
+        const ImGuiViewport* viewport;
+        static float cameraSpeed;
+
+        //* -=========Guizmo Setting ===========
+        void guizmoSetting(glm::mat4& modelMatrix, const glm::mat4& view, const glm::mat4& projection, ImVec2 pos, ImVec2 size);
+
+        static bool isCodeEditor;
 
     private:
         WindowManager *m_windowManager = nullptr;
@@ -56,8 +65,9 @@ namespace QuavleEngine
 
         //* -=========Inspector===========
         void inspector();
-        int InspectorIndex;
-        int InspectorIndexUtility;
+        int InspectorIndex = -1;
+        int InspectorIndexUtility = -1;
+        std::vector<std::string> selectedNames;
 
         //* -=========Camera Config===========
         void cameraConfig();
@@ -72,12 +82,12 @@ namespace QuavleEngine
         const char *iconShow = ICON_CI_EYE_WATCH;
         const char *iconPosition = ICON_CI_MOVE;
 
-        //* -=========File Explorer===========
-        void nodePanel();
+        //* -=========Node Editor===========
+        void nodePanel(int index);
 
         //* -=========Text Editor===========
         void codeEditor();
-        void loadCode(std::string path);
+        void loadCode(const std::string& path);
         std::string codePath;
 
         //* -=========Scene Config===========

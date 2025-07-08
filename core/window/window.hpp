@@ -1,6 +1,6 @@
 #pragma once
 
-#include <glad.h> // Include GLAD first
+#include <glad/glad.h>
 
 #define GLFW_INCLUDE_NONE // Tell GLFW not to include the system GL header
 #include <GLFW/glfw3.h>   // Include GLFW after GLAD and defining GLFW_INCLUDE_NONE
@@ -30,6 +30,7 @@ namespace QuavleEngine
         void cleanup();
 
         static double mousePosX, mousePosY;
+        static bool isInteractive;
 
     private:
         void create_framebuffer();

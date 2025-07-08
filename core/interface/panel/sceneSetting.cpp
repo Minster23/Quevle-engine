@@ -1,26 +1,38 @@
 #include <core/interface/interface.hpp>
 #include <utils/font/IconsCodicons.h>
+#include <core/renderer/renderer.hpp>
 
 using namespace QuavleEngine;
+Renderer rendder;
 
-void interface::sceneConfig() {
-    ImGui::Begin("Scene Config", nullptr, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoBackground);
+void interface::sceneConfig()
+{
+    ImGui::Begin("Scene", nullptr, ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize);
 
     ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(8, 4));
 
-    if (!play) { // Use the 'play' variable
-        if (ImGui::Button(ICON_CI_PLAY)) { // Use the 'play' variable
-            play = true; // Use the 'play' variable
-        }
-        ImGui::SameLine(); // Use the 'play' variable
-        ImGui::Text("Stopped");
-    } else {
-        if (ImGui::Button(ICON_CI_STOP)) {
-            play = false;
-        }
-        ImGui::SameLine();
-        ImGui::Text("Running...");
+    float buttonWidth = 32.0f; // Approximate width (depends on font size)
+    float availWidth = ImGui::GetContentRegionAvail().x;
+    float offsetX = (availWidth - buttonWidth) * 0.5f;
+    if (offsetX > 0)
+        ImGui::SetCursorPosX(ImGui::GetCursorPosX() + offsetX);
+
+    if (!play)
+    {
+        if (ImGui::Button(ICON_CI_PLAY))
+            play = true;
     }
+    else
+    {
+        if (ImGui::Button(ICON_CI_STOP))
+            play = false;
+    }
+    ImGui::SameLine();
+    ImGui::Checkbox("Grid", &rendder.Grid);
+    ImGui::SameLine();
+    ImGui::ColorEdit3("Grid Color", glm::value_ptr(rendder.gridColor));
+    ImGui::SameLine();
+    ImGui::DragFloat("Grid Spacing", &rendder.gridSpacing, 0.1f, 0.1f, 10.0f);
 
     ImGui::PopStyleVar();
     ImGui::End();

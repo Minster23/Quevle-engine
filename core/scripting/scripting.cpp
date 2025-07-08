@@ -53,10 +53,8 @@ int lua_GetPosition(lua_State* L) {
         lua_pushnumber(L, locationObject.z);
         lua_setfield(L, -2, "z");
 
-        return 1; // Mengembalikan table
+        return 1; 
     }
-
-    // Kalau tidak ditemukan, return nil
     lua_pushnil(L);
     return 1;
 }
@@ -81,25 +79,6 @@ int lua_SetPosition(lua_State *L)
 }
 
 
-//! MASIH BUG
-int lua_getTick(lua_State* L){
-    const int tick = glfwGetTime();
-    lua_pushnumber(L, tick); // Placeholder: return 0 for now
-}
-//! ============
-
-//! MASIH BUG
-int lua_getMousePos(lua_State* L) {
-    double xPos = windowManagerForScript.mousePosX;
-    double yPos = windowManagerForScript.mousePosY;
-
-    lua_pushnumber(L, xPos); // return value 1
-    lua_pushnumber(L, yPos); // return value 2
-
-    return 2; // Total 2 nilai dikembalikan ke Lua
-}
-//! ============
-
 void script::scripting()
 {
     lua_State *L = luaL_newstate();
@@ -108,8 +87,6 @@ void script::scripting()
     lua_register(L, "GetPosition", lua_GetPosition);
     lua_register(L, "debugPrint", lua_debugPrint);
     lua_register(L, "SetPosition", lua_SetPosition);
-    lua_register(L, "GetMousePos", lua_getMousePos);
-    lua_register(L, "getTick", lua_getTick);
 
 
     if (luaL_dofile(L, "D:/QuavleEngine/build/test/test.lua") != LUA_OK) {

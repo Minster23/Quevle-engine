@@ -2,9 +2,12 @@
 #include <TextEditor.h>
 #include <fstream>
 #include <string>
+#include <utils/config.hpp>
 
 using namespace QuavleEngine;
 TextEditor editor;
+
+std::string scriptPath = config["LOCATION"]["script"];
 
 void interface::codeEditor()
 {
@@ -12,19 +15,16 @@ void interface::codeEditor()
     static std::filesystem::file_time_type lastWriteTime;
     static bool shouldReload = false;
 
-    // If no file, just return or show a "No file" window
-    if (currentFile.empty())
-        return;
-
-    // Set Lua syntax highlighting once
+    // Set Lua language highlighting once
     static bool initialized = false;
     if (!initialized)
     {
         editor.SetLanguageDefinition(TextEditor::LanguageDefinition::Lua());
+        editor.SetPalette(TextEditor::GetDarkPalette()); // Optional: Use a nicer color scheme
         initialized = true;
     }
 
-    // Check for external file modification
+    // Check for external modification
     if (std::filesystem::exists(currentFile))
     {
         auto writeTime = std::filesystem::last_write_time(currentFile);
@@ -35,9 +35,9 @@ void interface::codeEditor()
         }
     }
 
-    ImGui::Begin("Code Editor", nullptr, ImGuiWindowFlags_MenuBar | ImGuiWindowFlags_NoCollapse);
+    ImGui::Begin("Code Editor", nullptr, ImGuiWindowFlags_MenuBar | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoDocking);
 
-    // Menu bar
+    // === Menu Bar ===
     if (ImGui::BeginMenuBar())
     {
         if (ImGui::BeginMenu("File"))
@@ -46,6 +46,7 @@ void interface::codeEditor()
             {
                 editor.SetText("");
                 currentFile = "untitled.lua";
+                codePath.clear();
             }
 
             if (ImGui::MenuItem("Open", "Ctrl+O"))
@@ -53,8 +54,7 @@ void interface::codeEditor()
                 std::ifstream file(currentFile);
                 if (file)
                 {
-                    std::string content((std::istreambuf_iterator<char>(file)),
-                                        std::istreambuf_iterator<char>());
+                    std::string content((std::istreambuf_iterator<char>(file)), {});
                     editor.SetText(content);
                     lastWriteTime = std::filesystem::last_write_time(currentFile);
                 }
@@ -70,16 +70,9 @@ void interface::codeEditor()
                 }
             }
 
-            if (ImGui::MenuItem("Save As", "Ctrl+Shift+S"))
+            if (ImGui::MenuItem("Quit", "Ctrl+O"))
             {
-                // Dumb Save As: change to another fixed file name
-                currentFile = "saved_as.lua";
-                std::ofstream file(currentFile);
-                if (file)
-                {
-                    file << editor.GetText();
-                    lastWriteTime = std::filesystem::last_write_time(currentFile);
-                }
+                isCodeEditor = false;
             }
 
             ImGui::EndMenu();
@@ -99,17 +92,19 @@ void interface::codeEditor()
         ImGui::EndMenuBar();
     }
 
-    // Show reload suggestion
+    // === Reload warning ===
     if (shouldReload)
     {
-        ImGui::TextColored(ImVec4(1, 1, 0, 1), "File modified externally. Press Ctrl+R to reload.");
-        if (ImGui::IsKeyPressed(ImGuiKey_R) && (ImGui::GetIO().KeyCtrl))
+        ImGui::PushStyleColor(ImGuiCol_Text, IM_COL32(255, 255, 0, 255));
+        ImGui::Text("File modified externally. Press Ctrl+R to reload.");
+        ImGui::PopStyleColor();
+
+        if (ImGui::IsKeyPressed(ImGuiKey_R) && ImGui::GetIO().KeyCtrl)
         {
             std::ifstream file(currentFile);
             if (file)
             {
-                std::string content((std::istreambuf_iterator<char>(file)),
-                                    std::istreambuf_iterator<char>());
+                std::string content((std::istreambuf_iterator<char>(file)), {});
                 editor.SetText(content);
                 shouldReload = false;
                 lastWriteTime = std::filesystem::last_write_time(currentFile);
@@ -117,20 +112,58 @@ void interface::codeEditor()
         }
     }
 
-    // Render editor
+    // === Render editor ===
     editor.Render(currentFile.c_str());
 
-    // Footer: status bar
+    // === Status bar ===
     ImGui::Separator();
     auto cursor = editor.GetCursorPosition();
-    ImGui::Text("Line %d, Col %d  |  %s", cursor.mLine + 1, cursor.mColumn + 1,
-                editor.IsTextChanged() ? "Modified" : "Saved");
+    ImGui::Text("Line %d, Col %d", cursor.mLine + 1, cursor.mColumn + 1);
+    ImGui::SameLine();
+    ImGui::TextDisabled("|");
+    ImGui::SameLine();
+    ImGui::Text("%s", editor.IsTextChanged() ? "Modified" : "Saved");
 
     ImGui::End();
+
+    // === Keyboard shortcuts ===
+    ImGuiIO &io = ImGui::GetIO();
+    if (io.KeyCtrl && ImGui::IsKeyPressed(ImGuiKey_N))
+        editor.SetText("");
+
+    if (io.KeyCtrl && ImGui::IsKeyPressed(ImGuiKey_S))
+    {
+        std::ofstream file(currentFile);
+        if (file)
+        {
+            file << editor.GetText();
+            lastWriteTime = std::filesystem::last_write_time(currentFile);
+        }
+    }
+
+    if (io.KeyCtrl && ImGui::IsKeyPressed(ImGuiKey_O))
+    {
+        std::ifstream file(currentFile);
+        if (file)
+        {
+            std::string content((std::istreambuf_iterator<char>(file)), {});
+            editor.SetText(content);
+            lastWriteTime = std::filesystem::last_write_time(currentFile);
+        }
+    }
 }
 
 
-void interface::loadCode(std::string path)
+void interface::loadCode(const std::string& path)
 {
     codePath = path;
+
+    std::ifstream file(path);
+    if (file)
+    {
+        std::string content((std::istreambuf_iterator<char>(file)), {});
+        editor.SetText(content);
+        // Optional: set Lua again
+        editor.SetLanguageDefinition(TextEditor::LanguageDefinition::Lua());
+    }
 }

@@ -1,8 +1,8 @@
 CMakeFiles/QuavleEngine.dir/application/application.cpp.obj: \
  D:\QuavleEngine\application\application.cpp \
  D:/QuavleEngine/core/window/window.hpp \
- D:/QuavleEngine/vendor/glad/glad.h \
- D:/QuavleEngine/vendor/glad/khrplatform.h \
+ D:/QuavleEngine/vendor/glad/include/glad/glad.h \
+ D:/QuavleEngine/vendor/glad/include/KHR/khrplatform.h \
  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
  F:/Devtool/mysys2/ucrt64/include/stdint.h \
  F:/Devtool/mysys2/ucrt64/include/crtdefs.h \

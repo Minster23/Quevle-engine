@@ -21,6 +21,8 @@ bool wasRightMousePressed = false;
 double QuavleEngine::WindowManager::mousePosX = 0.0;
 double QuavleEngine::WindowManager::mousePosY = 0.0;
 
+bool WindowManager::isInteractive = false;
+
 WindowManager::WindowManager()
     : m_window(nullptr), m_mode(nullptr), m_FBO(0), m_RBO(0), m_texture_id(0),
       m_key_d_pressed(false), m_key_s_pressed(false), m_key_n_pressed(false), m_key_m_pressed(false), m_key_r_pressed(false)

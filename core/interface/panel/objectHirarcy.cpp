@@ -2,6 +2,8 @@
 #include <core/renderer/entity/objectEntity.hpp>
 #include <core/renderer/renderer.hpp>
 #include <utils/camera/camera.hpp>
+#include <utils/font/IconsCodicons.h>
+#include <core/interface/nodes.h>
 
 using namespace QuavleEngine;
 ObjectEntity entitiy;
@@ -10,36 +12,65 @@ Renderer rend;
 void interface::objectHirarcy()
 {
     ImGui::Begin("Object Hirarcy");
-    // if (ImGui::Button("Load Model"))
-    // {
-    //     rend.loadModelFirst();
-    // }
-    ImGui::SameLine();
-    if (ImGui::Button("Load Light"))
+
+    // Right-click popup
+    if (ImGui::IsMouseClicked(ImGuiMouseButton_Right) && !ImGui::IsAnyItemHovered() && ImGui::IsWindowHovered())
     {
-        rend.LoadAnotherLight();
+        ImGui::OpenPopup("Daalog");
+        ImGui::SetNextWindowPos(ImGui::GetMousePos());
+    }
+
+    if (ImGui::BeginPopup("Daalog"))
+    {
+        ImGui::Text("Choose");
+        if (ImGui::Button("Load Light"))
+        {
+            rend.LoadAnotherLight();
+            ImGui::CloseCurrentPopup();
+        }
+        if (ImGui::Button("Close"))
+            ImGui::CloseCurrentPopup();
+
+        ImGui::EndPopup();
     }
 
     if (ImGui::CollapsingHeader("Utility"))
     {
         for (int g = 0; g < entitiy.lights.size(); g++)
         {
-            if (ImGui::Button((entitiy.lights[g].name + "##Light" + std::to_string(g)).c_str()))
+            ImGui::PushID(g);
+            ImGui::TextUnformatted(ICON_CI_LIGHTBULB);
+            ImGui::SameLine();
+
+            std::string lightLabel = entitiy.lights[g].name + "##Light" + std::to_string(g);
+            if (ImGui::Button(lightLabel.c_str()))
             {
                 interface::utilityType = interface::UTILITY_TYPE::light;
+                selectedNames.clear();
                 InspectorIndexUtility = g;
                 InspectorIndex = -1;
             }
+
+            ImGui::SameLine();
+            ImGui::Checkbox("##show", &entitiy.lights[g].isShow);
+            ImGui::PopID();
         }
 
         for (int g = 1; g < cameras.size(); g++)
         {
-            if (ImGui::Button((cameras[g].name + "##Camera" + std::to_string(g)).c_str()))
+            ImGui::PushID(1000 + g); // Offset ID to avoid collision
+            ImGui::TextUnformatted(ICON_CI_DEVICE_CAMERA);
+            ImGui::SameLine();
+
+            std::string camLabel = cameras[g].name + "##Camera" + std::to_string(g);
+            if (ImGui::Button(camLabel.c_str()))
             {
                 interface::utilityType = interface::UTILITY_TYPE::camera;
+                selectedNames.clear();
                 InspectorIndexUtility = g;
                 InspectorIndex = -1;
             }
+            ImGui::PopID();
         }
     }
 
@@ -47,26 +78,49 @@ void interface::objectHirarcy()
     {
         for (int k = 0; k < entitiy.objects.size(); k++)
         {
-            if (ImGui::Button((entitiy.objects[k].name + "##Object" + std::to_string(k)).c_str()))
+            bool isSelected = entitiy.objects[k].isSelected;
+            ImGui::PushID(k);
+
+            if (isSelected)
+                ImGui::PushStyleColor(ImGuiCol_Button, ImGui::GetStyle().Colors[ImGuiCol_ButtonActive]);
+
+            ImGui::TextUnformatted(ICON_CI_SYMBOL_METHOD);
+            ImGui::SameLine();
+
+            std::string objLabel = entitiy.objects[k].name + "##Object" + std::to_string(k);
+            if (ImGui::Button(objLabel.c_str()))
             {
-                if (InspectorIndex == k)
+                bool isCtrlDown = ImGui::GetIO().KeyCtrl;
+
+                if (isCtrlDown)
                 {
-                    // If already selected, unselect it
-                    entitiy.objects[k].isSelected = false;
-                    InspectorIndex = -1;
+                    entitiy.objects[k].isSelected = !entitiy.objects[k].isSelected;
+                    InspectorIndex = entitiy.objects[k].isSelected ? k : (InspectorIndex == k ? -1 : InspectorIndex);
+                    selectedNames.clear();
+
+                    for (const auto& obj : entitiy.objects)
+                        if (obj.isSelected)
+                            selectedNames.push_back(obj.name);
                 }
                 else
                 {
-                    // Unselect all
-                    for (int i = 0; i < entitiy.objects.size(); ++i)
-                        entitiy.objects[i].isSelected = false;
+                    for (auto& obj : entitiy.objects)
+                        obj.isSelected = false;
 
-                    // Select this one
                     entitiy.objects[k].isSelected = true;
                     InspectorIndex = k;
                     InspectorIndexUtility = -1;
+                    selectedNames.clear();
                 }
             }
+
+            ImGui::SameLine();
+            ImGui::Checkbox("## show", &entitiy.objects[k].isShow);
+
+            if (isSelected)
+                ImGui::PopStyleColor();
+
+            ImGui::PopID();
         }
     }
 

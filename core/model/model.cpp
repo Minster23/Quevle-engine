@@ -119,14 +119,11 @@ void Model::setModelData(const aiScene *scene, const std::string &path)
             aiMaterial *material = scene->mMaterials[mesh->mMaterialIndex];
             aiColor3D color(0.f, 0.f, 0.f);
 
-            if (AI_SUCCESS == material->Get(AI_MATKEY_COLOR_DIFFUSE, color))
-                objectData.material.diffuse = {color.r, color.g, color.b};
-            if (AI_SUCCESS == material->Get(AI_MATKEY_COLOR_SPECULAR, color))
-                objectData.material.specular = {color.r, color.g, color.b};
 
-            float shininess = 0.0f;
-            if (AI_SUCCESS == material->Get(AI_MATKEY_SHININESS, shininess))
-                objectData.material.shininess = shininess;
+            // * Default
+            objectData.material.diffuse = {1.0f, 1.0f, 1.0f};
+            objectData.material.specular = {1.0f, 1.0f, 1.0f};
+            objectData.material.shininess = 1.0f;
 
             if (material->GetTextureCount(aiTextureType_DIFFUSE) > 0)
             {
@@ -170,6 +167,77 @@ void Model::setModelData(const aiScene *scene, const std::string &path)
                     std::cout << "Texture path: " << textureFile << std::endl;
                     renderForModel.loadTexture(textureFile, ObjectEntity::objects.size() - 1, Renderer::TextureType::NORMAL);
                     intfcForModel.inputDebug("Info", "loading NORMAL map");
+                }
+            }
+            if (material->GetTextureCount(aiTextureType_HEIGHT) > 0)
+            {
+                aiString texPath;
+                if (material->GetTexture(aiTextureType_HEIGHT, 0, &texPath) == AI_SUCCESS)
+                {
+                    std::string textureFile = locationData + "/" + std::string(texPath.C_Str());
+                    std::cout << "Texture path: " << textureFile << std::endl;
+                    renderForModel.loadTexture(textureFile, ObjectEntity::objects.size() - 1, Renderer::TextureType::HEIGHT);
+                    intfcForModel.inputDebug("Info", "loading HEIGHT map");
+                }
+            }
+
+            if (material->GetTextureCount(aiTextureType_AMBIENT) > 0)
+            {
+                aiString texPath;
+                if (material->GetTexture(aiTextureType_AMBIENT, 0, &texPath) == AI_SUCCESS)
+                {
+                    std::string textureFile = locationData + "/" + std::string(texPath.C_Str());
+                    std::cout << "Texture path: " << textureFile << std::endl;
+                    renderForModel.loadTexture(textureFile, ObjectEntity::objects.size() - 1, Renderer::TextureType::AMBIENT);
+                    intfcForModel.inputDebug("Info", "loading AMBIENT map");
+                }
+            }
+
+            if (material->GetTextureCount(aiTextureType_EMISSIVE) > 0)
+            {
+                aiString texPath;
+                if (material->GetTexture(aiTextureType_EMISSIVE, 0, &texPath) == AI_SUCCESS)
+                {
+                    std::string textureFile = locationData + "/" + std::string(texPath.C_Str());
+                    std::cout << "Texture path: " << textureFile << std::endl;
+                    renderForModel.loadTexture(textureFile, ObjectEntity::objects.size() - 1, Renderer::TextureType::EMISSIVE);
+                    intfcForModel.inputDebug("Info", "loading EMISSIVE map");
+                }
+            }
+
+            if (material->GetTextureCount(aiTextureType_OPACITY) > 0)
+            {
+                aiString texPath;
+                if (material->GetTexture(aiTextureType_OPACITY, 0, &texPath) == AI_SUCCESS)
+                {
+                    std::string textureFile = locationData + "/" + std::string(texPath.C_Str());
+                    std::cout << "Texture path: " << textureFile << std::endl;
+                    renderForModel.loadTexture(textureFile, ObjectEntity::objects.size() - 1, Renderer::TextureType::OPACITY);
+                    intfcForModel.inputDebug("Info", "loading OPACITY map");
+                }
+            }
+
+            if (material->GetTextureCount(aiTextureType_DISPLACEMENT) > 0)
+            {
+                aiString texPath;
+                if (material->GetTexture(aiTextureType_DISPLACEMENT, 0, &texPath) == AI_SUCCESS)
+                {
+                    std::string textureFile = locationData + "/" + std::string(texPath.C_Str());
+                    std::cout << "Texture path: " << textureFile << std::endl;
+                    renderForModel.loadTexture(textureFile, ObjectEntity::objects.size() - 1, Renderer::TextureType::DISPLACEMENT);
+                    intfcForModel.inputDebug("Info", "loading DISPLACEMENT map");
+                }
+            }
+
+            if (material->GetTextureCount(aiTextureType_DIFFUSE_ROUGHNESS) > 0)
+            {
+                aiString texPath;
+                if (material->GetTexture(aiTextureType_DIFFUSE_ROUGHNESS, 0, &texPath) == AI_SUCCESS)
+                {
+                    std::string textureFile = locationData + "/" + std::string(texPath.C_Str());
+                    std::cout << "Texture path: " << textureFile << std::endl;
+                    renderForModel.loadTexture(textureFile, ObjectEntity::objects.size() - 1, Renderer::TextureType::ROUGHNESS);
+                    intfcForModel.inputDebug("Info", "loading ROUGHNESS map");
                 }
             }
         }

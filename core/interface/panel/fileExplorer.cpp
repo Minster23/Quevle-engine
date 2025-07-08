@@ -70,7 +70,7 @@ void interface::fileExplorer()
                     std::string extension = path.extension().string();
 
                     const char *icon = ICON_CI_FILE;
-                    if (extension == ".obj" || extension == ".gltf" || extension == ".fbx")
+                    if (extension == ".obj" || extension == ".gltf" || extension == ".fbx" || extension == ".mtl")
                         icon = ICON_CI_SYMBOL_OBJECT;
                     else if (extension == ".png" || extension == ".jpg" || extension == ".jpeg")
                         icon = ICON_CI_FILE_MEDIA;
@@ -149,7 +149,7 @@ void interface::fileExplorer()
 
                         if (ImGui::IsMouseDoubleClicked(0))
                         {
-                            if (extension == ".obj" || extension == ".gltf" || extension == ".fbx")
+                            if (extension == ".obj" || extension == ".gltf" || extension == ".fbx" || extension == ".mtl")
                             {
                                 std::cout << "Openable\n";
                                 std::string path_str = path.string();

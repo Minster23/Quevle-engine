@@ -14,7 +14,17 @@ UUID uid;
 Model::Model(std::string const &path, bool gamma)
 {
     Assimp::Importer importer;
-    const aiScene *scene = importer.ReadFile(path, aiProcess_Triangulate | aiProcess_CalcTangentSpace);
+    const aiScene *scene = importer.ReadFile(
+        path,
+        aiProcess_Triangulate |                // Ensure all faces are triangles
+            aiProcess_GenSmoothNormals |       // Generate normals if not present
+            aiProcess_CalcTangentSpace |       // For normal mapping support
+            aiProcess_JoinIdenticalVertices |  // Optimize vertex buffer
+            aiProcess_ImproveCacheLocality |   // Better GPU vertex cache performance
+            aiProcess_SortByPType |            // Split different primitive types
+            aiProcess_OptimizeMeshes |         // Merge small meshes, improve batch rendering
+            aiProcess_RemoveRedundantMaterials // Clean up unused materials
+    );
 
     if (!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode)
     {

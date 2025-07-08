@@ -11,8 +11,14 @@ struct Camera {
     glm::vec3 cameraPos;
     glm::vec3 cameraFront;
     glm::vec3 cameraUp;
+
+    //* DOENST USE
+    glm::vec3 rotation;
+    glm::vec3 scale;
+
     glm::mat4 projection;
     glm::mat4 view;
+    glm::mat4 model = glm::mat4(1.0f);
     float deltaTime;
     float lastFrame;
     bool firstMouse;
@@ -22,6 +28,7 @@ struct Camera {
     float lastY;
     float fov;
     glm::vec3 worldUp;
+    bool isSelected = false;
 };
 
 void initCamera();

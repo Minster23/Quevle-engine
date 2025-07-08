@@ -483,4 +483,15 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  D:/QuavleEngine/vendor/assimp/include/assimp/metadata.h \
  D:/QuavleEngine/vendor/assimp/include/assimp/Importer.hpp \
  D:/QuavleEngine/vendor/assimp/include/assimp/postprocess.h \
- D:/QuavleEngine/utils/fileReader.hpp D:/QuavleEngine/utils/Debug.h
+ D:/QuavleEngine/utils/fileReader.hpp D:/QuavleEngine/utils/Debug.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/future \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/mutex \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_mutex.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_lock.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/condition_variable \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_futex.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/atomic \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_thread.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/thread \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/this_thread_sleep.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/chrono

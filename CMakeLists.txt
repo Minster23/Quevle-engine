@@ -47,20 +47,10 @@ file(GLOB_RECURSE ENGINE_SOURCES
     core/model/*.cpp core/model/*.hpp
 )
 
-# file(GLOB_RECURSE VK_BOOTSTRAP_SOURCES
-# vendor/vk-bootstrap/src/*.h
-# vendor/vk-bootstrap/src/*.cpp
-# )
 
 file(GLOB_RECURSE IMPLOT
     vendor/implot-master/*.h
     vendor/implot-master/*.cpp
-)
-
-file(GLOB_RECURSE IMNODE
-    vendor/imnode/include/*.h
-    vendor/imnode/src/*.h
-    vendor/imnode/src/*.cpp
 )
 
 file(GLOB_RECURSE EDITOR
@@ -86,7 +76,6 @@ add_executable(QuavleEngine
     ${ENGINE_SOURCES}
     ${GLAD_SOURCES}
     ${IMPLOT}
-    ${IMNODE}
     ${EDITOR}
     ${GUIZMO_SOURCES}
     # ${VK_BOOTSTRAP_SOURCES}
@@ -107,8 +96,6 @@ target_include_directories(QuavleEngine PRIVATE
     ${CMAKE_SOURCE_DIR}/vendor/stb
     ${CMAKE_SOURCE_DIR}/vendor/assimp/include
     ${CMAKE_SOURCE_DIR}/vendor/implot-master
-    ${CMAKE_SOURCE_DIR}/vendor/imnode/include
-    ${CMAKE_SOURCE_DIR}/vendor/imnode/src
     ${CMAKE_SOURCE_DIR}/vendor/editor
     ${CMAKE_SOURCE_DIR}/vendor/ImGuizmo
     ${LUA_INCLUDE_DIR}

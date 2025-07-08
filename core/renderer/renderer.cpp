@@ -18,6 +18,11 @@
 #include <core/interface/interface.hpp>
 #include <core/renderer/shader_h.h>
 
+#include <future>
+#include <thread>
+#include <chrono>
+#include <memory>
+
 // --- Constants ---
 namespace
 {
@@ -32,6 +37,10 @@ namespace
 
     constexpr char GRID_VERT_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/gridVert.glsl";
     constexpr char GRID_FRAG_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/gridFrag.glsl";
+
+    constexpr char BILLBOARD_VERT_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/billboardVert.glsl";
+    constexpr char BILLBOARD_FRAG_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/billboardFrag.glsl";
+
 }
 
 std::vector<std::string> faces{
@@ -151,8 +160,11 @@ glm::mat4 Renderer::projection;
 glm::mat4 Renderer::view;
 glm::mat4 Renderer::model;
 
+glm::mat4 Renderer::modelLight;
+
 glm::vec3 Renderer::gridColor = glm::vec3(1.0f);
 float Renderer::gridSpacing = 2.0f;
+
 
 namespace QuavleEngine
 { // Explicitly define within the namespace
@@ -168,6 +180,7 @@ void Renderer::init()
     //* initialize the object entity
     intfc.inputDebug("Info", "Engine loading any assets");
 
+    //* Lights
     shaderLoaderLight();
     LightShaderLink();
 
@@ -185,7 +198,8 @@ void Renderer::init()
 
 void Renderer::loadModelFirst(std::string path)
 {
-    Model model(path, true);
+    
+    Model mode(path, true);
     for (size_t i = 0; i < objectEntity.objects.size(); ++i)
     {
         intfc.inputDebug("Info", "loading model");
@@ -197,7 +211,20 @@ void Renderer::loadModelFirst(std::string path)
 void Renderer::LoadAnotherLight()
 {
     intfc.inputDebug("Info", "loading Light");
+
     objectEntity.firstLightObject();
+}
+
+void Renderer::loadBillboard(){
+    intfc.inputDebug("Info", "loading Billboard");
+    objectEntity.firstBillboard();
+    for (size_t i = 0; i < objectEntity.billboards.size(); ++i)
+    {
+        intfc.inputDebug("Info", "loading Billboard");
+        shaderLoader(i, RenderType::BILLBOARD);
+        loadTexture("F:/Devlopment/LLL/EmguCVApp/tex.png", i, TextureType::BILLBOARD);
+        shaderLink(i, RenderType::BILLBOARD);
+    }
 }
 
 //* ====================== GRID SHADER ==========================
@@ -379,6 +406,54 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         glDeleteShader(objectEntity.CubeMaps[Index].vertex);
         glDeleteShader(objectEntity.CubeMaps[Index].fragment);
     }
+
+    if (expression == RenderType::BILLBOARD)
+    {
+        //* Load and compile vertex and fragment shaders for the cubemap
+        intfc.inputDebug("Info", "Renderer::shaderLoader() called for BILLBOARD");
+        std::string vertSource = readFile(BILLBOARD_VERT_SHADER_PATH);
+        std::string fragSource = readFile(BILLBOARD_FRAG_SHADER_PATH);
+        const char *vertexShaderSource = vertSource.c_str();
+        const char *fragmentShaderSource = fragSource.c_str();
+
+        // Vertex Shader
+        objectEntity.billboards[Index].vertexShader = glCreateShader(GL_VERTEX_SHADER);
+        glShaderSource(objectEntity.billboards[Index].vertexShader, 1, &vertexShaderSource, NULL);
+        glCompileShader(objectEntity.billboards[Index].vertexShader);
+        glGetShaderiv(objectEntity.billboards[Index].vertexShader, GL_COMPILE_STATUS, &success);
+        if (!success)
+        {
+            glGetShaderInfoLog(objectEntity.billboards[Index].vertexShader, 512, NULL, infoLog);
+            intfc.inputDebug("Warning", "ERROR::VERTEX::COMPILATION_FAILED\n" + std::string(infoLog));
+        }
+
+        // Fragment Shader
+        objectEntity.billboards[Index].fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+        glShaderSource(objectEntity.billboards[Index].fragmentShader, 1, &fragmentShaderSource, NULL);
+        glCompileShader(objectEntity.billboards[Index].fragmentShader);
+        glGetShaderiv(objectEntity.billboards[Index].fragmentShader, GL_COMPILE_STATUS, &success);
+        if (!success)
+        {
+            glGetShaderInfoLog(objectEntity.billboards[Index].fragmentShader, 512, NULL, infoLog);
+            intfc.inputDebug("Warning", "ERROR::FRAGMENT::COMPILATION_FAILED\n" + std::string(infoLog));
+        }
+
+        // Shader Program
+        objectEntity.billboards[Index].shaderProgram = glCreateProgram();
+        glAttachShader(objectEntity.billboards[Index].shaderProgram, objectEntity.billboards[Index].vertexShader);
+        glAttachShader(objectEntity.billboards[Index].shaderProgram, objectEntity.billboards[Index].fragmentShader);
+        glLinkProgram(objectEntity.billboards[Index].shaderProgram);
+        glGetProgramiv(objectEntity.billboards[Index].shaderProgram, GL_LINK_STATUS, &success);
+        if (!success)
+        {
+            glGetProgramInfoLog(objectEntity.billboards[Index].shaderProgram, 512, NULL, infoLog);
+            intfc.inputDebug("Warning", "ERROR::SHADER::LINKING_FAILED\n" + std::string(infoLog));
+        }
+
+        //* Clean up shaders after linking
+        glDeleteShader(objectEntity.billboards[Index].vertexShader);
+        glDeleteShader(objectEntity.billboards[Index].fragmentShader);
+    }
 }
 
 void Renderer::shaderLink(int Index, Renderer::RenderType expression)
@@ -418,6 +493,7 @@ void Renderer::shaderLink(int Index, Renderer::RenderType expression)
         glEnableVertexAttribArray(1);
         glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)(6 * sizeof(float)));
         glEnableVertexAttribArray(2);
+        glBindVertexArray(0); // Unbind VAO
     }
     if (expression == RenderType::SKYBOX)
     {
@@ -429,9 +505,40 @@ void Renderer::shaderLink(int Index, Renderer::RenderType expression)
         glBufferData(GL_ARRAY_BUFFER, sizeof(skyboxVertices), &skyboxVertices, GL_STATIC_DRAW);
         glEnableVertexAttribArray(0);
         glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
+        glBindVertexArray(0); // Unbind VAO
     }
+if (expression == RenderType::BILLBOARD)
+{
+    intfc.inputDebug("Info", "Linking shader for BILLBOARD");
 
-    glBindVertexArray(0); // Unbind VAO
+    glGenVertexArrays(1, &objectEntity.billboards[Index].VAO);
+    glGenBuffers(1, &objectEntity.billboards[Index].VBO);
+
+    glBindVertexArray(objectEntity.billboards[Index].VAO);
+    glBindBuffer(GL_ARRAY_BUFFER, objectEntity.billboards[Index].VBO);
+    
+    glBufferData(GL_ARRAY_BUFFER, 
+                sizeof(float) * objectEntity.billboards[Index].vertices.size(),
+                objectEntity.billboards[Index].vertices.data(), 
+                GL_STATIC_DRAW);
+
+    // Position attribute: location = 0, 3 floats
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(
+        0, 3, GL_FLOAT, GL_FALSE, 
+        5 * sizeof(float), (void*)0
+    );
+
+    // Texture coordinate attribute: location = 1, 2 floats
+    glEnableVertexAttribArray(1);
+    glVertexAttribPointer(
+        1, 2, GL_FLOAT, GL_FALSE, 
+        5 * sizeof(float), (void*)(3 * sizeof(float))
+    );
+
+    glBindVertexArray(0);
+}
+
 }
 
 void Renderer::loadTexture(const std::string &texturePath, int Index, TextureType expression)
@@ -468,6 +575,9 @@ void Renderer::loadTexture(const std::string &texturePath, int Index, TextureTyp
         break;
     case Renderer::TextureType::DISPLACEMENT:
         texID = &objectEntity.objects[Index].displacementTextureID;
+        break;
+    case Renderer::TextureType::BILLBOARD:
+        texID = &objectEntity.billboards[Index].textureID;
         break;
     default:
         std::cerr << "Invalid texture type specified.\n";
@@ -526,39 +636,64 @@ void Renderer::loadTexture(const std::string &texturePath, int Index, TextureTyp
 
     stbi_image_free(data);
 
-    auto &obj = objectEntity.objects[Index];
-
-    // Generate VAO/VBO/EBO if not created
-    if (obj.VAO == 0)
-        glGenVertexArrays(1, &obj.VAO);
-    if (obj.VBO == 0)
-        glGenBuffers(1, &obj.VBO);
-    if (obj.EBO == 0)
-        glGenBuffers(1, &obj.EBO);
-
-    glBindVertexArray(obj.VAO);
-
-    // Upload vertex data
-    glBindBuffer(GL_ARRAY_BUFFER, obj.VBO);
-    glBufferData(GL_ARRAY_BUFFER, obj.vertexCount * 8 * sizeof(float), obj.vertices, GL_STATIC_DRAW);
-
-    // Upload index data if available
-    if (obj.indices && obj.indicesCount > 0)
+    if (expression == Renderer::TextureType::BILLBOARD)
     {
-        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, obj.EBO);
-        glBufferData(GL_ELEMENT_ARRAY_BUFFER, obj.indicesCount * sizeof(unsigned int), obj.indices, GL_STATIC_DRAW);
+        auto &obj = objectEntity.billboards[Index];
+
+        // Generate VAO/VBO if not created
+        if (obj.VAO == 0)
+            glGenVertexArrays(1, &obj.VAO);
+        if (obj.VBO == 0)
+            glGenBuffers(1, &obj.VBO);
+
+        glBindVertexArray(obj.VAO);
+        glBindBuffer(GL_ARRAY_BUFFER, obj.VBO);
+
+        // Upload vertex data (position + texcoord = 5 floats per vertex)
+        glBufferData(GL_ARRAY_BUFFER,
+                     sizeof(float) * obj.vertices.size(),
+                     obj.vertices.data(),
+                     GL_STATIC_DRAW);
+
+        // Setup vertex attributes
+        // Location 0: position (vec3)
+        glEnableVertexAttribArray(0);
+        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *)0);
+
+        // Location 1: texcoords (vec2)
+        glEnableVertexAttribArray(1);
+        glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *)(3 * sizeof(float)));
+
+        glBindVertexArray(0);
     }
 
-    // Setup vertex attribute pointers
-    constexpr GLsizei stride = 8 * sizeof(float);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, stride, (void *)(0));
-    glEnableVertexAttribArray(0);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, stride, (void *)(3 * sizeof(float)));
-    glEnableVertexAttribArray(1);
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, stride, (void *)(6 * sizeof(float)));
-    glEnableVertexAttribArray(2);
+    else
+    {
+        auto &obj = objectEntity.objects[Index];
 
-    glBindVertexArray(0);
+        // Generate VAO/VBO/EBO if not created
+        if (obj.VAO == 0)
+            glGenVertexArrays(1, &obj.VAO);
+        if (obj.VBO == 0)
+            glGenBuffers(1, &obj.VBO);
+        if (obj.EBO == 0)
+            glGenBuffers(1, &obj.EBO);
+
+        glBindVertexArray(obj.VAO);
+
+        // Upload vertex data
+        glBindBuffer(GL_ARRAY_BUFFER, obj.VBO);
+        glBufferData(GL_ARRAY_BUFFER, obj.vertexCount * 8 * sizeof(float), obj.vertices, GL_STATIC_DRAW);
+
+        // Upload index data if available
+        if (obj.indices && obj.indicesCount > 0) {
+            glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, obj.EBO);
+            glBufferData(GL_ELEMENT_ARRAY_BUFFER, obj.indicesCount * sizeof(unsigned int), obj.indices, GL_STATIC_DRAW);
+        }
+
+        // Vertex attribute pointers are set in shaderLink for objects
+        glBindVertexArray(0);
+    }
 }
 
 //* ====================== CubeMap Shader ======================
@@ -681,7 +816,20 @@ void Renderer::drawCallback()
 {
     mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
     float aspectRatio = static_cast<float>(mode->width) / static_cast<float>(mode->height);
-    projection = glm::perspective(glm::radians(cameras[0].fov), aspectRatio, 0.1f, 10000.0f);
+    projection = glm::perspective(glm::radians(cameras[cameraIndex].fov), aspectRatio, 0.1f, 1000.0f);
+
+    //* Update matriks
+    cameras[cameraIndex].view = glm::lookAt(
+        cameras[cameraIndex].cameraPos,
+        cameras[cameraIndex].cameraPos + cameras[cameraIndex].cameraFront,
+        cameras[cameraIndex].cameraUp);
+
+    auto bindTexture = [](GLuint texID, int unit, const std::string &name, ShaderHelper &shader)
+    {
+        glActiveTexture(GL_TEXTURE0 + unit);
+        glBindTexture(GL_TEXTURE_2D, texID);
+        shader.setInt(name, unit);
+    };
 
     if (Grid)
     {
@@ -690,9 +838,9 @@ void Renderer::drawCallback()
         glUseProgram(gridShaderProgram);
 
         ShaderHelper gridShader(gridShaderProgram);
-        gridShader.setMat4("view", cameras[0].view);
+        gridShader.setMat4("view", cameras[cameraIndex].view);
         gridShader.setMat4("projection", projection);
-        gridShader.setVec3("camPos", cameras[0].cameraPos);
+        gridShader.setVec3("camPos", cameras[cameraIndex].cameraPos);
         gridShader.setVec3("gridColor", gridColor);
         gridShader.setFloat("gridSpacing", gridSpacing);
 
@@ -701,17 +849,33 @@ void Renderer::drawCallback()
         glBindVertexArray(0);
     }
 
+    if (objectEntity.billboards.size() > 0)
+    {
+        glUseProgram(objectEntity.billboards[0].shaderProgram); // Use the first billboard's shader
+
+        for (size_t i = 0; i < objectEntity.billboards.size(); ++i)
+        {
+            if (!objectEntity.billboards[i].isShow)
+                continue;
+
+            ShaderHelper shader(objectEntity.billboards[i].shaderProgram);
+            shader.setMat4("view", cameras[cameraIndex].view);
+            shader.setMat4("projection", projection);
+            shader.setVec3("billboardPos", objectEntity.billboards[i].position);
+            shader.setVec3("cameraPos", cameras[cameraIndex].cameraPos);
+
+            bindTexture(objectEntity.billboards[i].textureID, 0, "texture1", shader);
+
+            glBindVertexArray(objectEntity.billboards[i].VAO);
+            glDrawArrays(GL_TRIANGLES, 0, 6); // 6 vertices for two triangles
+        }
+    }
+
     if (objectEntity.objects.size() != 0)
     {
         int currentShader = -1;
         GLuint lastVAO = 0;
 
-        auto bindTexture = [](GLuint texID, int unit, const std::string &name, ShaderHelper &shader)
-        {
-            glActiveTexture(GL_TEXTURE0 + unit);
-            glBindTexture(GL_TEXTURE_2D, texID);
-            shader.setInt(name, unit);
-        };
 
         for (size_t i = 0; i < objectEntity.objects.size(); ++i)
         {
@@ -727,9 +891,9 @@ void Renderer::drawCallback()
             ShaderHelper shader(obj.shaderProgram);
 
             // Set view/projection/camera once per shader
-            shader.setMat4("view", cameras[0].view);
+            shader.setMat4("view", cameras[cameraIndex].view);
             shader.setMat4("projection", projection);
-            shader.setVec3("viewPos", cameras[0].cameraPos);
+            shader.setVec3("viewPos", cameras[cameraIndex].cameraPos);
 
             // Material textures
             if (Diffuse)
@@ -813,22 +977,19 @@ void Renderer::drawCallback()
             }
         }
     }
-    else
-    {
-    }
 
     if (!objectEntity.lights.empty())
     {
         glUseProgram(lightShaderProgram);
         ShaderHelper lightShader(lightShaderProgram);
-        lightShader.setMat4("view", cameras[0].view);
+        lightShader.setMat4("view", cameras[cameraIndex].view);
         lightShader.setMat4("projection", projection);
         glBindVertexArray(lightVAO);
         for (unsigned int i = 0; i < objectEntity.lights.size(); ++i)
         {
             if (objectEntity.lights[i].isShow)
             {
-                glm::mat4 modelLight = glm::mat4(1.0f);
+                modelLight = glm::mat4(1.0f);
                 modelLight = glm::translate(modelLight, objectEntity.lights[i].position);
                 lightShader.setMat4("model", modelLight);
                 lightShader.setVec3("objectColor", objectEntity.lights[i].lightColor);
@@ -840,7 +1001,7 @@ void Renderer::drawCallback()
     glDepthFunc(GL_LEQUAL);
     ShaderHelper skyboxShader(objectEntity.CubeMaps[0].shaderProgramCubemap);
     glUseProgram(objectEntity.CubeMaps[0].shaderProgramCubemap);
-    view = glm::mat4(glm::mat3(cameras[0].view));
+    view = glm::mat4(glm::mat3(cameras[cameraIndex].view));
     skyboxShader.setMat4("view", view);
     skyboxShader.setMat4("projection", projection);
     glBindVertexArray(objectEntity.CubeMaps[0].cubemapVAO);
@@ -849,6 +1010,7 @@ void Renderer::drawCallback()
     glDrawArrays(GL_TRIANGLES, 0, 36);
     glBindVertexArray(0);
     glDepthFunc(GL_LESS);
+
 }
 
 void Renderer::drawCleanup()

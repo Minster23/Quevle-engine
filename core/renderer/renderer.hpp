@@ -26,7 +26,8 @@ namespace QuavleEngine
             EMISSIVE,
             OPACITY,
             DISPLACEMENT,
-            CUBEMAP
+            CUBEMAP,
+            BILLBOARD
         };
 
         enum class RenderType{
@@ -39,6 +40,7 @@ namespace QuavleEngine
         void shaderLoader(int Index, Renderer::RenderType expression);
         void shaderLoaderLight();
         void LightShaderLink();
+        void loadBillboard();
         void shaderLink(int Index, Renderer::RenderType expression);
         void drawCallback();
         void drawCleanup();
@@ -65,6 +67,8 @@ namespace QuavleEngine
         static glm::mat4 projection;
         static glm::mat4 view;
         static glm::mat4 model;
+
+        static glm::mat4 modelLight;
 
     private:
         int success;

@@ -34,6 +34,13 @@ void interface::sceneConfig()
     ImGui::SameLine();
     ImGui::DragFloat("Grid Spacing", &rendder.gridSpacing, 0.1f, 0.1f, 10.0f);
 
+    if(play){
+        cameraIndex = 1;
+    }else{
+        cameraIndex = 0;
+    }
+
+
     ImGui::PopStyleVar();
     ImGui::End();
 }

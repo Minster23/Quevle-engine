@@ -148,8 +148,12 @@ void WindowManager::mainLoop()
     while (!glfwWindowShouldClose(m_window))
     {
         float currentFrame = glfwGetTime();
-        cameras[0].deltaTime = currentFrame - cameras[0].lastFrame;
-        cameras[0].lastFrame = currentFrame;
+        for (auto& cam : cameras) {
+            cam.deltaTime = currentFrame - cam.lastFrame;
+            cam.lastFrame = currentFrame;
+        }
+
+
         if (!play)
         {
             processInput(m_window);
@@ -212,16 +216,18 @@ void WindowManager::processInput(GLFWwindow *window)
 {
     if (glfwGetKey(window, GLFW_KEY_LEFT_ALT) == GLFW_PRESS && glfwGetKey(window, GLFW_KEY_F4) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
+    
+    Camera& activeCam = cameras[cameraIndex];
 
-    float cameraSpeed = static_cast<float>(2.5 * cameras[0].deltaTime); // Use renderer's camera deltaTime
+    float cameraSpeed = static_cast<float>(2.5 * activeCam.deltaTime);
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-        cameras[0].cameraPos += cameraSpeed * cameras[0].cameraFront; // Update renderer's camera
+        activeCam.cameraPos += cameraSpeed * activeCam.cameraFront;
     if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-        cameras[0].cameraPos -= cameraSpeed * cameras[0].cameraFront; // Update renderer's camera
+        activeCam.cameraPos -= cameraSpeed * activeCam.cameraFront;
     if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-        cameras[0].cameraPos -= glm::normalize(glm::cross(cameras[0].cameraFront, cameras[0].cameraUp)) * cameraSpeed; // Update renderer's camera
+        activeCam.cameraPos -= glm::normalize(glm::cross(activeCam.cameraFront, activeCam.cameraUp)) * cameraSpeed;
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-        cameras[0].cameraPos += glm::normalize(glm::cross(cameras[0].cameraFront, cameras[0].cameraUp)) * cameraSpeed; // Update renderer's camera
+        activeCam.cameraPos += glm::normalize(glm::cross(activeCam.cameraFront, activeCam.cameraUp)) * cameraSpeed;
 
     // --- Texture Toggles ---
     bool ctrl_pressed = glfwGetKey(window, GLFW_KEY_LEFT_CONTROL) == GLFW_PRESS || glfwGetKey(window, GLFW_KEY_RIGHT_CONTROL) == GLFW_PRESS;
@@ -291,8 +297,8 @@ void WindowManager::processInput(GLFWwindow *window)
         m_key_r_pressed = false;
     }
 
-    cameras[0].view = glm::lookAt(cameras[0].cameraPos, cameras[0].cameraPos + cameras[0].cameraFront, cameras[0].cameraUp);
-    cameras[0].projection = glm::perspective(glm::radians(cameras[0].fov), 800.0f / 600.0f, 0.1f, 100.0f);
+    activeCam.view = glm::lookAt(activeCam.cameraPos, activeCam.cameraPos + activeCam.cameraFront, activeCam.cameraUp);
+    activeCam.projection = glm::perspective(glm::radians(activeCam.fov), 800.0f / 600.0f, 0.1f, 100.0f);
 }
 
 void WindowManager::mouse_callback(GLFWwindow *window, double xpos, double ypos)

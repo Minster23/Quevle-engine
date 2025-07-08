@@ -3,7 +3,6 @@
 #include <core/model/model.hpp>
 #include <utils/camera/camera.hpp>
 #include <core/renderer/renderer.hpp>
-#include <core/interface/nodes.h>
 #include <nlohmann/json.hpp>
 
 
@@ -168,17 +167,12 @@ void interface::inspector()
                 ImGui::Separator();
                 if (ImGui::Button("Create new shader"))
                 {
-                    openEditor(shaderPath + entity.objects[InspectorIndex].name + ".json");
-                    nodePanel(InspectorIndex);
-                    entity.objects[InspectorIndex].hasOwnTexture = true;
                 }
             }else{
                 if (ImGui::Button(("Open "+entity.objects[InspectorIndex].name+".shd").c_str()))
                 {
-                    openEditor(shaderPath + entity.objects[InspectorIndex].name + ".json");
-                    nodePanel(InspectorIndex);
+
                 }
-                shaderVariableViewer(shaderPath + entity.objects[InspectorIndex].name + ".json");
             }
         }
         
@@ -219,6 +213,7 @@ void interface::inspector()
                 ImGui::DragFloat("Y ", &cameras[InspectorIndexUtility].cameraPos.y);
                 ImGui::DragFloat("Z  ", &cameras[InspectorIndexUtility].cameraPos.z);
                 ImGui::Separator();
+
             }
             else
             {
@@ -229,6 +224,14 @@ void interface::inspector()
 
     if (!selectedNames.empty())
     {
+        if (ImGui::Button("Delate"))
+        {
+            for (int i = entity.objects.size() - 1; i >= 0; --i)
+            {
+                if (entity.objects[i].isSelected)
+                    entity.objects.erase(entity.objects.begin() + i);
+            }
+        }
         if (ImGui::CollapsingHeader("Object Transform"))
         {
             if (selectedNames.size() > 1)
@@ -253,14 +256,13 @@ void interface::inspector()
                         }
                     }
                 }
-                ImGui::Separator();
+
                 ImGui::Separator();
 
                 // Show common properties that can be batch edited
                 static float commonPosition[3] = {0};
                 static float commonScale[3] = {1, 1, 1};
                 static float commonRotation[3] = {0};
-
                 // Position
                 std::string positionLabel = std::string(std::string(iconPosition) + " Position");
                 ImGui::Text(positionLabel.c_str());

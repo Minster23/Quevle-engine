@@ -320,30 +320,6 @@ core/interface/panel/inspector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.s
 .PHONY : core/interface/panel/inspector.cpp.s
 
-core/interface/panel/nodePanel.obj: core/interface/panel/nodePanel.cpp.obj
-.PHONY : core/interface/panel/nodePanel.obj
-
-# target to build an object file
-core/interface/panel/nodePanel.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/nodePanel.cpp.obj
-.PHONY : core/interface/panel/nodePanel.cpp.obj
-
-core/interface/panel/nodePanel.i: core/interface/panel/nodePanel.cpp.i
-.PHONY : core/interface/panel/nodePanel.i
-
-# target to preprocess a source file
-core/interface/panel/nodePanel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/nodePanel.cpp.i
-.PHONY : core/interface/panel/nodePanel.cpp.i
-
-core/interface/panel/nodePanel.s: core/interface/panel/nodePanel.cpp.s
-.PHONY : core/interface/panel/nodePanel.s
-
-# target to generate assembly for a file
-core/interface/panel/nodePanel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/nodePanel.cpp.s
-.PHONY : core/interface/panel/nodePanel.cpp.s
-
 core/interface/panel/objectHirarcy.obj: core/interface/panel/objectHirarcy.cpp.obj
 .PHONY : core/interface/panel/objectHirarcy.obj
 
@@ -511,6 +487,30 @@ core/renderer/stb_image_impl.s: core/renderer/stb_image_impl.cpp.s
 core/renderer/stb_image_impl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.s
 .PHONY : core/renderer/stb_image_impl.cpp.s
+
+core/scripting/asyncCompile.obj: core/scripting/asyncCompile.cpp.obj
+.PHONY : core/scripting/asyncCompile.obj
+
+# target to build an object file
+core/scripting/asyncCompile.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj
+.PHONY : core/scripting/asyncCompile.cpp.obj
+
+core/scripting/asyncCompile.i: core/scripting/asyncCompile.cpp.i
+.PHONY : core/scripting/asyncCompile.i
+
+# target to preprocess a source file
+core/scripting/asyncCompile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.i
+.PHONY : core/scripting/asyncCompile.cpp.i
+
+core/scripting/asyncCompile.s: core/scripting/asyncCompile.cpp.s
+.PHONY : core/scripting/asyncCompile.s
+
+# target to generate assembly for a file
+core/scripting/asyncCompile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.s
+.PHONY : core/scripting/asyncCompile.cpp.s
 
 core/scripting/scripting.obj: core/scripting/scripting.cpp.obj
 .PHONY : core/scripting/scripting.obj
@@ -1064,30 +1064,6 @@ vendor/imgui/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.s
 .PHONY : vendor/imgui/imgui_widgets.cpp.s
 
-vendor/imnode/src/ImNodeFlow.obj: vendor/imnode/src/ImNodeFlow.cpp.obj
-.PHONY : vendor/imnode/src/ImNodeFlow.obj
-
-# target to build an object file
-vendor/imnode/src/ImNodeFlow.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/imnode/src/ImNodeFlow.cpp.obj
-.PHONY : vendor/imnode/src/ImNodeFlow.cpp.obj
-
-vendor/imnode/src/ImNodeFlow.i: vendor/imnode/src/ImNodeFlow.cpp.i
-.PHONY : vendor/imnode/src/ImNodeFlow.i
-
-# target to preprocess a source file
-vendor/imnode/src/ImNodeFlow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/imnode/src/ImNodeFlow.cpp.i
-.PHONY : vendor/imnode/src/ImNodeFlow.cpp.i
-
-vendor/imnode/src/ImNodeFlow.s: vendor/imnode/src/ImNodeFlow.cpp.s
-.PHONY : vendor/imnode/src/ImNodeFlow.s
-
-# target to generate assembly for a file
-vendor/imnode/src/ImNodeFlow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/vendor/imnode/src/ImNodeFlow.cpp.s
-.PHONY : vendor/imnode/src/ImNodeFlow.cpp.s
-
 vendor/implot-master/implot.obj: vendor/implot-master/implot.cpp.obj
 .PHONY : vendor/implot-master/implot.obj
 
@@ -1193,9 +1169,6 @@ help:
 	@echo ... core/interface/panel/inspector.obj
 	@echo ... core/interface/panel/inspector.i
 	@echo ... core/interface/panel/inspector.s
-	@echo ... core/interface/panel/nodePanel.obj
-	@echo ... core/interface/panel/nodePanel.i
-	@echo ... core/interface/panel/nodePanel.s
 	@echo ... core/interface/panel/objectHirarcy.obj
 	@echo ... core/interface/panel/objectHirarcy.i
 	@echo ... core/interface/panel/objectHirarcy.s
@@ -1217,6 +1190,9 @@ help:
 	@echo ... core/renderer/stb_image_impl.obj
 	@echo ... core/renderer/stb_image_impl.i
 	@echo ... core/renderer/stb_image_impl.s
+	@echo ... core/scripting/asyncCompile.obj
+	@echo ... core/scripting/asyncCompile.i
+	@echo ... core/scripting/asyncCompile.s
 	@echo ... core/scripting/scripting.obj
 	@echo ... core/scripting/scripting.i
 	@echo ... core/scripting/scripting.s
@@ -1286,9 +1262,6 @@ help:
 	@echo ... vendor/imgui/imgui_widgets.obj
 	@echo ... vendor/imgui/imgui_widgets.i
 	@echo ... vendor/imgui/imgui_widgets.s
-	@echo ... vendor/imnode/src/ImNodeFlow.obj
-	@echo ... vendor/imnode/src/ImNodeFlow.i
-	@echo ... vendor/imnode/src/ImNodeFlow.s
 	@echo ... vendor/implot-master/implot.obj
 	@echo ... vendor/implot-master/implot.i
 	@echo ... vendor/implot-master/implot.s

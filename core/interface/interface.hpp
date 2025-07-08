@@ -21,6 +21,7 @@
 namespace QuavleEngine
 {
     extern bool play;
+    extern int cameraIndex;
     class WindowManager;
 
     class interface
@@ -33,8 +34,17 @@ namespace QuavleEngine
         const ImGuiViewport* viewport;
         static float cameraSpeed;
 
+        enum GUIZMOTARGET
+        {
+            OBJECT,
+            LIGHT,
+            CAMERA
+        };
+
+        GUIZMOTARGET guizmoTarget;
+
         //* -=========Guizmo Setting ===========
-        void guizmoSetting(glm::mat4& modelMatrix, const glm::mat4& view, const glm::mat4& projection, ImVec2 pos, ImVec2 size);
+        void guizmoSetting(glm::mat4& modelMatrix, const glm::mat4& view, const glm::mat4& projection, ImVec2 pos, ImVec2 size, GUIZMOTARGET target);
 
         static bool isCodeEditor;
 
@@ -81,9 +91,6 @@ namespace QuavleEngine
         const char *iconTrash = ICON_CI_TRASHCAN;
         const char *iconShow = ICON_CI_EYE_WATCH;
         const char *iconPosition = ICON_CI_MOVE;
-
-        //* -=========Node Editor===========
-        void nodePanel(int index);
 
         //* -=========Text Editor===========
         void codeEditor();

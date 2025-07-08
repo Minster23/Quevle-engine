@@ -3,13 +3,13 @@
 #include <utils/Debug.h>
 #include <utils/font/IconsCodicons.h>
 #include <core/window/window.hpp>
-#include <core/interface/nodes.h>
 #include <utils/camera/camera.hpp>
 #include <GLFW/glfw3.h>
 #include <core/renderer/entity/objectEntity.hpp>
 
 namespace QuavleEngine{
     bool play = false;
+    int cameraIndex = 0;
 };
 
 
@@ -210,7 +210,6 @@ void interface::interfaceRender()
     consolePanel();
     objectHirarcy();
     inspector();
-    // cameraConfig();
     profiler();
     fileExplorer();
     sceneConfig();
@@ -253,19 +252,33 @@ void interface::interfaceRender()
         ImVec2(0, 1),
         ImVec2(1, 0));
 
-    if (InspectorIndex >= 0 && InspectorIndex < objectsEntity.objects.size())
+    if (!play)
     {
-        if (objectsEntity.objects[InspectorIndex].isSelected)
+        if (InspectorIndex >= 0 && InspectorIndex < objectsEntity.objects.size())
         {
-            guizmoSetting(rendeeers.model, cameras[0].view, rendeeers.projection, pos, m_viewportSize);
+            if (objectsEntity.objects[InspectorIndex].isSelected && guizmoTarget == GUIZMOTARGET::OBJECT)
+            {
+                guizmoSetting(rendeeers.model, cameras[0].view, rendeeers.projection, pos, m_viewportSize, guizmoTarget);
+            }
+        }
+
+        if (InspectorIndexUtility >= 0 && InspectorIndexUtility < objectsEntity.lights.size())
+        {
+            if (objectsEntity.lights[InspectorIndexUtility].isSelected && guizmoTarget == GUIZMOTARGET::LIGHT)
+            {
+                guizmoSetting(rendeeers.modelLight, cameras[0].view, rendeeers.projection, pos, m_viewportSize, guizmoTarget);
+            }
+        }
+        if (InspectorIndexUtility >= 0 && InspectorIndexUtility < cameras.size())
+        {
+            if (cameras[InspectorIndexUtility].isSelected && guizmoTarget == GUIZMOTARGET::CAMERA)
+            {
+                guizmoSetting(cameras[InspectorIndexUtility].model, cameras[0].view, rendeeers.projection, pos, m_viewportSize, guizmoTarget);
+            }
         }
     }
 
     ImGui::End();
-
-    if(nodePanelOpen){
-        nodePanel(InspectorIndex);
-    }
 
     // Render
     ImGui::Render();

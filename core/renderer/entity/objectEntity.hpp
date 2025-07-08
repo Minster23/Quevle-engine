@@ -16,7 +16,7 @@ namespace QuavleEngine
             glm::vec3 ambient = glm::vec3(1.0f);
             glm::vec3 diffuse = glm::vec3(1.0f);
             glm::vec3 specular = glm::vec3(1.0f);
-            glm::vec3 emissive;
+            glm::vec3 emissive = glm::vec3(0.0f);
             float shininess = 1.0f;
             float opacity = 1.0f;
             float shininessStrength = 1.0f;
@@ -61,10 +61,13 @@ namespace QuavleEngine
         struct LightData
         {
             glm::vec3 position;
+            glm::vec3 rotation;
+            glm::vec3 scale;
             glm::vec3 lightColor;
             std::string name;
             float intensity;
             bool isShow = true;
+            bool isSelected = false;
         };
 
         struct CubeMap
@@ -75,13 +78,38 @@ namespace QuavleEngine
             unsigned int textureID;
         };
 
+        struct Billboard
+        {
+            std::string name;
+            std::vector<float> vertices;
+            std::vector<unsigned int> indices;
+            size_t indicesCount = 0;
+
+            unsigned int vertexShader = 0;
+            unsigned int fragmentShader = 0;
+            unsigned int shaderProgram = 0;
+            unsigned int VAO = 0;
+            unsigned int VBO = 0;
+            unsigned int textureID;
+
+            glm::vec3 position = glm::vec3(0.0f);
+            glm::mat4 view = glm::mat4(1.0f);
+            glm::mat4 projection = glm::mat4(1.0f);
+            glm::vec4 color = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);
+
+            bool isShow = true;
+            
+        };
+
         static std::vector<LightData> lights;
         static std::vector<ObjectData> objects;
         static std::vector<CubeMap> CubeMaps;
+        static std::vector<Billboard> billboards;
 
         void changeName(int index, std::string newName);
         void firstLightObject();
         void firstCubemap();
+        void firstBillboard();
 
     private:
     };

@@ -3,7 +3,6 @@
 #include <core/renderer/renderer.hpp>
 #include <utils/camera/camera.hpp>
 #include <utils/font/IconsCodicons.h>
-#include <core/interface/nodes.h>
 
 using namespace QuavleEngine;
 ObjectEntity entitiy;
@@ -23,9 +22,19 @@ void interface::objectHirarcy()
     if (ImGui::BeginPopup("Daalog"))
     {
         ImGui::Text("Choose");
-        if (ImGui::Button("Load Light"))
+        if (ImGui::Button("add Light"))
         {
             rend.LoadAnotherLight();
+            ImGui::CloseCurrentPopup();
+        }
+        if (ImGui::Button("add Camera"))
+        {
+            addCamera();
+            ImGui::CloseCurrentPopup();
+        }
+        if (ImGui::Button("add Billboard"))
+        {
+            rend.loadBillboard();
             ImGui::CloseCurrentPopup();
         }
         if (ImGui::Button("Close"))
@@ -45,7 +54,16 @@ void interface::objectHirarcy()
             std::string lightLabel = entitiy.lights[g].name + "##Light" + std::to_string(g);
             if (ImGui::Button(lightLabel.c_str()))
             {
+                for (auto &obj : entitiy.objects)
+                    obj.isSelected = false;
+
+                for (auto &obj : cameras)
+                    obj.isSelected = false;
+
                 interface::utilityType = interface::UTILITY_TYPE::light;
+
+                guizmoTarget = GUIZMOTARGET::LIGHT;
+                entitiy.lights[g].isSelected = true;
                 selectedNames.clear();
                 InspectorIndexUtility = g;
                 InspectorIndex = -1;
@@ -65,6 +83,15 @@ void interface::objectHirarcy()
             std::string camLabel = cameras[g].name + "##Camera" + std::to_string(g);
             if (ImGui::Button(camLabel.c_str()))
             {
+
+                for (auto &obj : entitiy.objects)
+                    obj.isSelected = false;
+
+                for (auto &obj : entitiy.lights)
+                    obj.isSelected = false;
+
+                guizmoTarget = GUIZMOTARGET::CAMERA;
+                cameras[g].isSelected = true;
                 interface::utilityType = interface::UTILITY_TYPE::camera;
                 selectedNames.clear();
                 InspectorIndexUtility = g;
@@ -92,13 +119,22 @@ void interface::objectHirarcy()
             {
                 bool isCtrlDown = ImGui::GetIO().KeyCtrl;
 
+                for (auto &obj : entitiy.lights)
+                    obj.isSelected = false;
+                
+                
+                for (auto &obj : cameras)
+                    obj.isSelected = false;
+                    
+                InspectorIndexUtility = -1;
+
                 if (isCtrlDown)
                 {
                     entitiy.objects[k].isSelected = !entitiy.objects[k].isSelected;
                     InspectorIndex = entitiy.objects[k].isSelected ? k : (InspectorIndex == k ? -1 : InspectorIndex);
                     selectedNames.clear();
 
-                    for (const auto& obj : entitiy.objects)
+                    for (const auto &obj : entitiy.objects)
                         if (obj.isSelected)
                             selectedNames.push_back(obj.name);
                 }
@@ -107,9 +143,9 @@ void interface::objectHirarcy()
                     for (auto& obj : entitiy.objects)
                         obj.isSelected = false;
 
+                    guizmoTarget = GUIZMOTARGET::OBJECT;
                     entitiy.objects[k].isSelected = true;
                     InspectorIndex = k;
-                    InspectorIndexUtility = -1;
                     selectedNames.clear();
                 }
             }

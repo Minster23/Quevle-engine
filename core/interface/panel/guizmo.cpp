@@ -30,6 +30,7 @@ void interface::guizmoSetting(glm::mat4 &modelMatrix, const glm::mat4 &view, con
         // 1. Build modelMatrix from object BEFORE rendering gizmo
         const auto &obj = entittyGuizmo.objects[InspectorIndex];
 
+        modelMatrix = glm::translate(modelMatrix, obj.position);
         modelMatrix = glm::mat4(1.0f);
 
         // Apply translation first (this sets gizmo position)
@@ -254,5 +255,46 @@ void interface::guizmoSetting(glm::mat4 &modelMatrix, const glm::mat4 &view, con
         cameras[InspectorIndexUtility].cameraPos = glm::vec3(translation[0], translation[1], translation[2]);
         cameras[InspectorIndexUtility].rotation = glm::vec3(rotation[0], rotation[1], rotation[2]); // still in degrees
         cameras[InspectorIndexUtility].scale = glm::vec3(scale[0], scale[1], scale[2]);
+    }
+
+    if (target == GUIZMOTARGET::BILLBOARD && InspectorIndexUtility != -1)
+    {
+        // 1. Build modelMatrix from object BEFORE rendering gizmo
+        const auto &obj = entittyGuizmo.billboards[InspectorIndexUtility];
+
+        modelMatrix = glm::mat4(1.0f);
+
+        // Apply translation first (this sets gizmo position)
+        modelMatrix = glm::translate(modelMatrix, obj.position);
+
+        // Apply rotation in radians
+        glm::vec3 rotRad = glm::radians(obj.rotation);
+        modelMatrix = glm::rotate(modelMatrix, rotRad.x, glm::vec3(1, 0, 0));
+        modelMatrix = glm::rotate(modelMatrix, rotRad.y, glm::vec3(0, 1, 0));
+        modelMatrix = glm::rotate(modelMatrix, rotRad.z, glm::vec3(0, 0, 1));
+
+        // Apply scale last
+        modelMatrix = glm::scale(modelMatrix, obj.scale);
+
+        // 2. Setup ImGuizmo viewport area
+        ImGuizmo::BeginFrame();
+        ImGuizmo::SetDrawlist();
+        ImGuizmo::SetRect(pos.x, pos.y, size.x, size.y);
+
+        // 3. Manipulate
+        ImGuizmo::Manipulate(
+            glm::value_ptr(view),
+            glm::value_ptr(projection),
+            mCurrentGizmoOperation,
+            ImGuizmo::WORLD,
+            glm::value_ptr(modelMatrix));
+
+        // 4. Decompose matrix back into object transform
+        float translation[3], rotation[3], scale[3];
+        ImGuizmo::DecomposeMatrixToComponents(glm::value_ptr(modelMatrix), translation, rotation, scale);
+
+        entittyGuizmo.billboards[InspectorIndexUtility].position = glm::vec3(translation[0], translation[1], translation[2]);
+        entittyGuizmo.billboards[InspectorIndexUtility].rotation = glm::vec3(rotation[0], rotation[1], rotation[2]); // still in degrees
+        entittyGuizmo.billboards[InspectorIndexUtility].scale = glm::vec3(scale[0], scale[1], scale[2]);
     }
 }

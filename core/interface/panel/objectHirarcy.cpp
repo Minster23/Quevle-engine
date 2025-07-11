@@ -15,11 +15,11 @@ void interface::objectHirarcy()
     // Right-click popup
     if (ImGui::IsMouseClicked(ImGuiMouseButton_Right) && !ImGui::IsAnyItemHovered() && ImGui::IsWindowHovered())
     {
-        ImGui::OpenPopup("Daalog");
+        ImGui::OpenPopup("Dialog");
         ImGui::SetNextWindowPos(ImGui::GetMousePos());
     }
 
-    if (ImGui::BeginPopup("Daalog"))
+    if (ImGui::BeginPopup("Dialog"))
     {
         ImGui::Text("Choose");
         if (ImGui::Button("add Light"))
@@ -29,7 +29,7 @@ void interface::objectHirarcy()
         }
         if (ImGui::Button("add Camera"))
         {
-            addCamera();
+            rend.loadAnotherCam();
             ImGui::CloseCurrentPopup();
         }
         if (ImGui::Button("add Billboard"))
@@ -99,6 +99,39 @@ void interface::objectHirarcy()
             }
             ImGui::PopID();
         }
+
+        for (int g = 0; g < entitiy.billboards.size(); g++)
+        {
+            ImGui::PushID(g+10);
+            ImGui::TextUnformatted(ICON_CI_LIGHTBULB);
+            ImGui::SameLine();
+
+            std::string label = entitiy.billboards[g].name + "##billboard" + std::to_string(g);
+            if (ImGui::Button(label.c_str()))
+            {
+                for (auto &obj : entitiy.objects)
+                    obj.isSelected = false;
+
+                for (auto &obj : cameras)
+                    obj.isSelected = false;
+
+                    
+                for (auto &obj : entitiy.lights)
+                    obj.isSelected = false;
+
+                interface::utilityType = interface::UTILITY_TYPE::billboard;
+
+                guizmoTarget = GUIZMOTARGET::BILLBOARD;
+                entitiy.billboards[g].isSelected = true;
+                selectedNames.clear();
+                InspectorIndexUtility = g;
+                InspectorIndex = -1;
+            }
+
+            ImGui::SameLine();
+            ImGui::Checkbox("##show", &entitiy.billboards[g].isShow);
+            ImGui::PopID();
+        }
     }
 
     if (ImGui::CollapsingHeader("Objects"))
@@ -117,6 +150,7 @@ void interface::objectHirarcy()
             std::string objLabel = entitiy.objects[k].name + "##Object" + std::to_string(k);
             if (ImGui::Button(objLabel.c_str()))
             {
+                interface::OBJECT_TYPE::single;
                 bool isCtrlDown = ImGui::GetIO().KeyCtrl;
 
                 for (auto &obj : entitiy.lights)
@@ -130,6 +164,7 @@ void interface::objectHirarcy()
 
                 if (isCtrlDown)
                 {
+                    interface::OBJECT_TYPE::multi;
                     entitiy.objects[k].isSelected = !entitiy.objects[k].isSelected;
                     InspectorIndex = entitiy.objects[k].isSelected ? k : (InspectorIndex == k ? -1 : InspectorIndex);
                     selectedNames.clear();
@@ -140,6 +175,7 @@ void interface::objectHirarcy()
                 }
                 else
                 {
+                    interface::OBJECT_TYPE::single;
                     for (auto& obj : entitiy.objects)
                         obj.isSelected = false;
 

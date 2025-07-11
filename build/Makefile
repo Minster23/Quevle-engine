@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\QuavleEngine
+CMAKE_SOURCE_DIR = E:\QuavleEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\QuavleEngine\build
+CMAKE_BINARY_DIR = E:\QuavleEngine\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\QuavleEngine\build\CMakeFiles D:\QuavleEngine\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\QuavleEngine\build\CMakeFiles E:\QuavleEngine\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\QuavleEngine\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\QuavleEngine\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -151,6 +151,30 @@ application/application.s: application/application.cpp.s
 application/application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/application/application.cpp.s
 .PHONY : application/application.cpp.s
+
+core/components/components.obj: core/components/components.cpp.obj
+.PHONY : core/components/components.obj
+
+# target to build an object file
+core/components/components.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/components/components.cpp.obj
+.PHONY : core/components/components.cpp.obj
+
+core/components/components.i: core/components/components.cpp.i
+.PHONY : core/components/components.i
+
+# target to preprocess a source file
+core/components/components.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/components/components.cpp.i
+.PHONY : core/components/components.cpp.i
+
+core/components/components.s: core/components/components.cpp.s
+.PHONY : core/components/components.s
+
+# target to generate assembly for a file
+core/components/components.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/components/components.cpp.s
+.PHONY : core/components/components.cpp.s
 
 core/interface/interface.obj: core/interface/interface.cpp.obj
 .PHONY : core/interface/interface.obj
@@ -487,6 +511,30 @@ core/renderer/stb_image_impl.s: core/renderer/stb_image_impl.cpp.s
 core/renderer/stb_image_impl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.s
 .PHONY : core/renderer/stb_image_impl.cpp.s
+
+core/saveData/savedData.obj: core/saveData/savedData.cpp.obj
+.PHONY : core/saveData/savedData.obj
+
+# target to build an object file
+core/saveData/savedData.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.obj
+.PHONY : core/saveData/savedData.cpp.obj
+
+core/saveData/savedData.i: core/saveData/savedData.cpp.i
+.PHONY : core/saveData/savedData.i
+
+# target to preprocess a source file
+core/saveData/savedData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.i
+.PHONY : core/saveData/savedData.cpp.i
+
+core/saveData/savedData.s: core/saveData/savedData.cpp.s
+.PHONY : core/saveData/savedData.s
+
+# target to generate assembly for a file
+core/saveData/savedData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.s
+.PHONY : core/saveData/savedData.cpp.s
 
 core/scripting/asyncCompile.obj: core/scripting/asyncCompile.cpp.obj
 .PHONY : core/scripting/asyncCompile.obj
@@ -1148,6 +1196,9 @@ help:
 	@echo ... application/application.obj
 	@echo ... application/application.i
 	@echo ... application/application.s
+	@echo ... core/components/components.obj
+	@echo ... core/components/components.i
+	@echo ... core/components/components.s
 	@echo ... core/interface/interface.obj
 	@echo ... core/interface/interface.i
 	@echo ... core/interface/interface.s
@@ -1190,6 +1241,9 @@ help:
 	@echo ... core/renderer/stb_image_impl.obj
 	@echo ... core/renderer/stb_image_impl.i
 	@echo ... core/renderer/stb_image_impl.s
+	@echo ... core/saveData/savedData.obj
+	@echo ... core/saveData/savedData.i
+	@echo ... core/saveData/savedData.s
 	@echo ... core/scripting/asyncCompile.obj
 	@echo ... core/scripting/asyncCompile.i
 	@echo ... core/scripting/asyncCompile.s

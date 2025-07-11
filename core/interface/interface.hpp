@@ -36,6 +36,7 @@ namespace QuavleEngine
 
         enum GUIZMOTARGET
         {
+            BILLBOARD,
             OBJECT,
             LIGHT,
             CAMERA
@@ -54,8 +55,14 @@ namespace QuavleEngine
         void styleInterface();
 
         enum UTILITY_TYPE{
+            billboard,
             camera,
             light
+        };
+
+        enum OBJECT_TYPE{
+            single,
+            multi
         };
 
         UTILITY_TYPE utilityType;

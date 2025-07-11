@@ -10,9 +10,6 @@ set(MAIN_SOURCES
     src/main.cpp
 )
 
-# Add vulkan sdk
-set(VULKAN_SDK $ENV{VULKAN_SDK})
-
 # include FETCHCONTENT
 include(FetchContent)
 
@@ -80,6 +77,7 @@ add_executable(QuavleEngine
     ${GUIZMO_SOURCES}
     # ${VK_BOOTSTRAP_SOURCES}
 )
+target_compile_options(QuavleEngine PRIVATE -fpermissive)
 
 # Lua
 set(LUA_INCLUDE_DIR "F:/Devtool/mysys2/ucrt64/include")

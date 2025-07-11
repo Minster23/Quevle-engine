@@ -1,18 +1,20 @@
 #include <core/window/window.hpp>
 #include <core/renderer/renderer.hpp>
 #include <string.h>
-#include <iostream> // Include iostream here if needed
+#include <iostream>
 #include <string>
 #include <optional>
 #include <set>
 #include <core/interface/interface.hpp>
 #include <core/scripting/scripting.h>
 #include <utils/camera/camera.hpp>
+#include <core/saveData/savedData.hpp>
 
 using namespace QuavleEngine;
 Scripting::script Scriptings;
 Renderer renderer;
 interface Interface;
+saveData data;
 
 bool isMouseCaptured = true;
 double lastPosX = 0.0, lastPosY = 0.0;
@@ -20,12 +22,15 @@ float lastYaw = 0.0f, lastPitch = 0.0f;
 bool wasRightMousePressed = false;
 double QuavleEngine::WindowManager::mousePosX = 0.0;
 double QuavleEngine::WindowManager::mousePosY = 0.0;
+bool loadOnce = true;
 
 bool WindowManager::isInteractive = false;
+bool loadData = false;
 
 WindowManager::WindowManager()
     : m_window(nullptr), m_mode(nullptr), m_FBO(0), m_RBO(0), m_texture_id(0),
-      m_key_d_pressed(false), m_key_s_pressed(false), m_key_n_pressed(false), m_key_m_pressed(false), m_key_r_pressed(false)
+      m_key_d_pressed(false), m_key_s_pressed(false), m_key_n_pressed(false),
+      m_key_m_pressed(false), m_key_r_pressed(false)
 {
 }
 
@@ -54,19 +59,16 @@ void WindowManager::create_framebuffer()
     glBindRenderbuffer(GL_RENDERBUFFER, 0);
 }
 
-// here we bind our framebuffer
 void WindowManager::bind_framebuffer()
 {
     glBindFramebuffer(GL_FRAMEBUFFER, m_FBO);
 }
 
-// here we unbind our framebuffer
 void WindowManager::unbind_framebuffer()
 {
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
 }
 
-// and we rescale the buffer, so we're able to resize the window
 void WindowManager::rescale_framebuffer(float width, float height)
 {
     glBindTexture(GL_TEXTURE_2D, m_texture_id);
@@ -94,7 +96,6 @@ bool WindowManager::initWindow()
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_SAMPLES, 4); // 4x antialiasing
 
-    // Initialize mode after glfwInit()
     m_mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
     if (!m_mode)
     {
@@ -109,15 +110,14 @@ bool WindowManager::initWindow()
     {
         std::cerr << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
-        return false; // Return false on failure
+        return false;
     }
 
-    //* nyeting callbacks
     glfwSetFramebufferSizeCallback(m_window, framebuffer_size_callback);
     glfwSetCursorPosCallback(m_window, mouse_callback);
     glfwSetScrollCallback(m_window, scroll_callback);
     glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-    return true; // Return true on success
+    return true;
 }
 
 bool WindowManager::openGL()
@@ -135,11 +135,18 @@ bool WindowManager::openGL()
     glEnable(GL_CULL_FACE);
     glCullFace(GL_BACK);
     glFrontFace(GL_CCW);
-    glEnable(GL_MULTISAMPLE); // Enable MSAA in OpenGL
+    glEnable(GL_MULTISAMPLE);
     std::cout << "OpenGL version: " << glGetString(GL_VERSION) << std::endl;
 
     Interface.init(m_window, this);
     renderer.init();
+
+    if (!loadData)
+    {
+        data.load();
+        loadData = true;
+    }
+
     return true;
 }
 
@@ -148,13 +155,13 @@ void WindowManager::mainLoop()
     while (!glfwWindowShouldClose(m_window))
     {
         float currentFrame = glfwGetTime();
-        for (auto& cam : cameras) {
+        for (auto &cam : cameras)
+        {
             cam.deltaTime = currentFrame - cam.lastFrame;
             cam.lastFrame = currentFrame;
         }
 
-
-        if (!play)
+        if (cameras[cameraIndex].type == CAMERATYPE::ENGINE)
         {
             processInput(m_window);
         }
@@ -168,7 +175,6 @@ void WindowManager::mainLoop()
         if (rightMouseState == GLFW_PRESS && !isMouseCaptured)
         {
             isMouseCaptured = true;
-            // Save last mouse position and camera rotation
             double xpos, ypos;
             glfwGetCursorPos(m_window, &xpos, &ypos);
             lastPosX = xpos;
@@ -188,12 +194,11 @@ void WindowManager::mainLoop()
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         renderer.drawCallback();
         unbind_framebuffer();
+
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
         Interface.interfaceRender();
 
-        // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
-        // -------------------------------------------------------------------------------
         glfwSwapBuffers(m_window);
         glfwPollEvents();
     }
@@ -216,8 +221,9 @@ void WindowManager::processInput(GLFWwindow *window)
 {
     if (glfwGetKey(window, GLFW_KEY_LEFT_ALT) == GLFW_PRESS && glfwGetKey(window, GLFW_KEY_F4) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
-    
-    Camera& activeCam = cameras[cameraIndex];
+
+    Camera &activeCam = cameras[cameraIndex];
+    if (cameras[cameraIndex].type != CAMERATYPE::ENGINE) return;
 
     float cameraSpeed = static_cast<float>(2.5 * activeCam.deltaTime);
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
@@ -305,6 +311,7 @@ void WindowManager::mouse_callback(GLFWwindow *window, double xpos, double ypos)
 {
     if (!isMouseCaptured)
         return;
+    if (cameras[cameraIndex].type != CAMERATYPE::ENGINE) return;
 
     static bool firstFrame = true;
     static float smoothedYaw = 0.0f;
@@ -369,6 +376,9 @@ void WindowManager::mouse_callback(GLFWwindow *window, double xpos, double ypos)
 
 void WindowManager::scroll_callback(GLFWwindow *window, double xoffset, double yoffset)
 {
+    if (cameras[cameraIndex].type != CAMERATYPE::ENGINE) return;
+    if (!isInteractive)
+        return;
     cameras[0].fov -= (float)yoffset;
     if (cameras[0].fov < 1.0f)
         cameras[0].fov = 1.0f;

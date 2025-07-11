@@ -6,12 +6,12 @@
 #include <utils/camera/camera.hpp>
 #include <GLFW/glfw3.h>
 #include <core/renderer/entity/objectEntity.hpp>
+#include <core/saveData/savedData.hpp>
 
 namespace QuavleEngine{
     bool play = false;
     int cameraIndex = 0;
 };
-
 
 using namespace QuavleEngine;
 Renderer rendeeers;
@@ -19,7 +19,7 @@ const GLFWvidmode *mode;
 ObjectEntity objectsEntity;
 bool interface::isCodeEditor = false;
 
-
+saveData save;
 
 void interface::init(GLFWwindow *window, WindowManager* windowManager)
 {
@@ -38,7 +38,7 @@ void interface::init(GLFWwindow *window, WindowManager* windowManager)
     icons_config.MergeMode = true;
     icons_config.PixelSnapH = true;
     static const ImWchar icons_ranges[] = { ICON_MIN_CI, ICON_MAX_CI, 0 };
-    io.Fonts->AddFontFromFileTTF("D:/QuavleEngine/utils/font/" FONT_ICON_FILE_NAME_CI, 15.0f * io.DisplayFramebufferScale.x, &icons_config, icons_ranges);
+    io.Fonts->AddFontFromFileTTF("E:/QuavleEngine/utils/font/" FONT_ICON_FILE_NAME_CI, 15.0f * io.DisplayFramebufferScale.x, &icons_config, icons_ranges);
     
 
     ImGui_ImplGlfw_InitForOpenGL(window, true);
@@ -174,7 +174,7 @@ void interface::interfaceRender()
     ImGui::SetNextWindowViewport(viewport->ID);
     ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 0.0f);
     ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize, 0.0f);
-    window_flags |= ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove;
+    window_flags |= ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoCollapse;
     window_flags |= ImGuiWindowFlags_NoBringToFrontOnFocus | ImGuiWindowFlags_NoNavFocus;
 
     ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0.0f, 0.0f));
@@ -192,9 +192,8 @@ void interface::interfaceRender()
     if (ImGui::BeginMenuBar())
     {
         if (ImGui::BeginMenu("File")) {
-            if (ImGui::MenuItem("Open", "Ctrl+O")) { /* handle open */ }
-            if (ImGui::MenuItem("Save", "Ctrl+S")) { /* handle save */ }
-            if (ImGui::MenuItem("Exit", "Alt+F4")) { /* handle exit */ }
+            if (ImGui::MenuItem("Save", "Ctrl+S")) { save.save(); }
+            if (ImGui::MenuItem("Exit", "Alt+F4")) { save.save(); exit(0); }
             ImGui::EndMenu();
         }
         if (ImGui::BeginMenu("Edit")) {
@@ -222,7 +221,7 @@ void interface::interfaceRender()
 
     ImGui::ShowDemoWindow();
 
-    ImGui::Begin("My Scene", nullptr, ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove);
+    ImGui::Begin("My Scene", nullptr, ImGuiWindowFlags_NoTitleBar);
 
     if(ImGui::IsWindowHovered()){
         WindowManager::isInteractive = true;
@@ -274,6 +273,13 @@ void interface::interfaceRender()
             if (cameras[InspectorIndexUtility].isSelected && guizmoTarget == GUIZMOTARGET::CAMERA)
             {
                 guizmoSetting(cameras[InspectorIndexUtility].model, cameras[0].view, rendeeers.projection, pos, m_viewportSize, guizmoTarget);
+            }
+        }
+        if (InspectorIndexUtility >= 0 && InspectorIndexUtility < objectsEntity.billboards.size())
+        {
+            if (objectsEntity.billboards[InspectorIndexUtility].isSelected && guizmoTarget == GUIZMOTARGET::BILLBOARD)
+            {
+                guizmoSetting(objectsEntity.billboards[InspectorIndexUtility].model, cameras[0].view, rendeeers.projection, pos, m_viewportSize, guizmoTarget);
             }
         }
     }

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/QuavleEngine.dir/application/application.cpp.obj"
   "CMakeFiles/QuavleEngine.dir/application/application.cpp.obj.d"
+  "CMakeFiles/QuavleEngine.dir/core/components/components.cpp.obj"
+  "CMakeFiles/QuavleEngine.dir/core/components/components.cpp.obj.d"
   "CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj"
   "CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj.d"
   "CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj"
@@ -29,6 +31,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj.d"
   "CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj"
   "CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj.d"
+  "CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.obj"
+  "CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.obj.d"
   "CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj"
   "CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj.d"
   "CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.obj"

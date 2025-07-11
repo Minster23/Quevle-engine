@@ -75,6 +75,6 @@
         "valarray": "cpp",
         "future": "cpp"
     },
-    "C_Cpp.default.compilerPath": "F:/Devtool/mysys2/ucrt64/bin/gcc.exe",
+    "C_Cpp.default.compilerPath": "F:/Devtool/mysys2/ucrt64/bin/g++.exe",
     "workbench.editor.showTabs": "multiple",
 }

@@ -1,8 +1,8 @@
 {
 	"InstallScripts" : 
 	[
-		"D:/QuavleEngine/build/cmake_install.cmake",
-		"D:/QuavleEngine/build/_deps/json-build/cmake_install.cmake"
+		"E:/QuavleEngine/build/cmake_install.cmake",
+		"E:/QuavleEngine/build/_deps/json-build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

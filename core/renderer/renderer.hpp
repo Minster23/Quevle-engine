@@ -27,13 +27,15 @@ namespace QuavleEngine
             OPACITY,
             DISPLACEMENT,
             CUBEMAP,
-            BILLBOARD
+            BILLBOARD,
+            CAMERA
         };
 
         enum class RenderType{
             OBJECT,
             SKYBOX,
-            BILLBOARD
+            BILLBOARD,
+            CAMERA
         };
 
         void init();
@@ -41,6 +43,7 @@ namespace QuavleEngine
         void shaderLoaderLight();
         void LightShaderLink();
         void loadBillboard();
+        void loadAnotherCam();
         void shaderLink(int Index, Renderer::RenderType expression);
         void drawCallback();
         void drawCleanup();
@@ -51,7 +54,7 @@ namespace QuavleEngine
         void SetUpImageBillboard(int index, const std::string &image_path);
         glm::mat4 getBillboardModel(const glm::vec3& pos, const glm::mat4& view);
 
-        void loadModelFirst(std::string path);
+        bool loadModelFirst(std::string path);
         void LoadAnotherLight();
 
         static bool Diffuse;

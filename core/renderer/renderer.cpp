@@ -26,20 +26,20 @@
 // --- Constants ---
 namespace
 {
-    constexpr char VERT_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/vertex.glsl";
-    constexpr char FRAG_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/fragment.glsl";
+    constexpr char VERT_SHADER_PATH[] = "E:/QuavleEngine/utils/shader/vertex.glsl";
+    constexpr char FRAG_SHADER_PATH[] = "E:/QuavleEngine/utils/shader/fragment.glsl";
 
-    constexpr char LIGHT_VERT_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/lightVert.glsl";
-    constexpr char LIGHT_FRAG_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/lightFrag.glsl";
+    constexpr char LIGHT_VERT_SHADER_PATH[] = "E:/QuavleEngine/utils/shader/lightVert.glsl";
+    constexpr char LIGHT_FRAG_SHADER_PATH[] = "E:/QuavleEngine/utils/shader/lightFrag.glsl";
 
-    constexpr char SKYBOX_VERT_PATH[] = "D:/QuavleEngine/utils/shader/skyVert.glsl";
-    constexpr char SKYBOX_FRAG_PATH[] = "D:/QuavleEngine/utils/shader/skyFrag.glsl";
+    constexpr char SKYBOX_VERT_PATH[] = "E:/QuavleEngine/utils/shader/skyVert.glsl";
+    constexpr char SKYBOX_FRAG_PATH[] = "E:/QuavleEngine/utils/shader/skyFrag.glsl";
 
-    constexpr char GRID_VERT_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/gridVert.glsl";
-    constexpr char GRID_FRAG_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/gridFrag.glsl";
+    constexpr char GRID_VERT_SHADER_PATH[] = "E:/QuavleEngine/utils/shader/gridVert.glsl";
+    constexpr char GRID_FRAG_SHADER_PATH[] = "E:/QuavleEngine/utils/shader/gridFrag.glsl";
 
-    constexpr char BILLBOARD_VERT_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/billboardVert.glsl";
-    constexpr char BILLBOARD_FRAG_SHADER_PATH[] = "D:/QuavleEngine/utils/shader/billboardFrag.glsl";
+    constexpr char BILLBOARD_VERT_SHADER_PATH[] = "E:/QuavleEngine/utils/shader/billboardVert.glsl";
+    constexpr char BILLBOARD_FRAG_SHADER_PATH[] = "E:/QuavleEngine/utils/shader/billboardFrag.glsl";
 
 }
 
@@ -54,48 +54,14 @@ std::vector<std::string> faces{
 
 // --- Cube and Light Data ---
 float verticesLight[] = {
-    // positions          // normals           // texture coords
-    -0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f,
-    0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 1.0f, 0.0f,
-    0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 1.0f, 1.0f,
-    0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 1.0f, 1.0f,
-    -0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 0.0f, 1.0f,
-    -0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f,
+    // pos         // uv
+    -0.5f, -0.5f, 0.0f, 0.0f, 0.0f,
+    0.5f, -0.5f, 0.0f, 1.0f, 0.0f,
+    0.5f, 0.5f, 0.0f, 1.0f, 1.0f,
 
-    -0.5f, -0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f,
-    0.5f, -0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f,
-    0.5f, 0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f,
-    0.5f, 0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f,
-    -0.5f, 0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f,
-    -0.5f, -0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f,
-
-    -0.5f, 0.5f, 0.5f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
-    -0.5f, 0.5f, -0.5f, -1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
-    -0.5f, -0.5f, -0.5f, -1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
-    -0.5f, -0.5f, -0.5f, -1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
-    -0.5f, -0.5f, 0.5f, -1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
-    -0.5f, 0.5f, 0.5f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
-
-    0.5f, 0.5f, 0.5f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
-    0.5f, 0.5f, -0.5f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
-    0.5f, -0.5f, -0.5f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
-    0.5f, -0.5f, -0.5f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
-    0.5f, -0.5f, 0.5f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
-    0.5f, 0.5f, 0.5f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
-
-    -0.5f, -0.5f, -0.5f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f,
-    0.5f, -0.5f, -0.5f, 0.0f, -1.0f, 0.0f, 1.0f, 1.0f,
-    0.5f, -0.5f, 0.5f, 0.0f, -1.0f, 0.0f, 1.0f, 0.0f,
-    0.5f, -0.5f, 0.5f, 0.0f, -1.0f, 0.0f, 1.0f, 0.0f,
-    -0.5f, -0.5f, 0.5f, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f,
-    -0.5f, -0.5f, -0.5f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f,
-
-    -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f,
-    0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 1.0f, 1.0f,
-    0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f,
-    0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f,
-    -0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f,
-    -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f};
+    0.5f, 0.5f, 0.0f, 1.0f, 1.0f,
+    -0.5f, 0.5f, 0.0f, 0.0f, 1.0f,
+    -0.5f, -0.5f, 0.0f, 0.0f, 0.0f};
 
 float skyboxVertices[] = {
     // positions
@@ -165,7 +131,6 @@ glm::mat4 Renderer::modelLight;
 glm::vec3 Renderer::gridColor = glm::vec3(1.0f);
 float Renderer::gridSpacing = 2.0f;
 
-
 namespace QuavleEngine
 { // Explicitly define within the namespace
     WindowManager windowManager;
@@ -177,13 +142,12 @@ namespace QuavleEngine
 void Renderer::init()
 {
     glEnable(GL_MULTISAMPLE);
-    //* initialize the object entity
     intfc.inputDebug("Info", "Engine loading any assets");
 
     //* Lights
     shaderLoaderLight();
     LightShaderLink();
-
+    
     objectEntity.firstCubemap();
 
     //* CUBEMAP
@@ -196,9 +160,10 @@ void Renderer::init()
     setupGridQuad();
 }
 
-void Renderer::loadModelFirst(std::string path)
+//* ====================== FUNCTION ==========================
+bool Renderer::loadModelFirst(std::string path)
 {
-    
+
     Model mode(path, true);
     for (size_t i = 0; i < objectEntity.objects.size(); ++i)
     {
@@ -206,6 +171,7 @@ void Renderer::loadModelFirst(std::string path)
         shaderLoader(i, RenderType::OBJECT);
         shaderLink(i, RenderType::OBJECT);
     }
+    return true;
 }
 
 void Renderer::LoadAnotherLight()
@@ -213,18 +179,37 @@ void Renderer::LoadAnotherLight()
     intfc.inputDebug("Info", "loading Light");
 
     objectEntity.firstLightObject();
+    LightShaderLink();
 }
 
-void Renderer::loadBillboard(){
+void Renderer::loadBillboard()
+{
     intfc.inputDebug("Info", "loading Billboard");
     objectEntity.firstBillboard();
     for (size_t i = 0; i < objectEntity.billboards.size(); ++i)
     {
-        intfc.inputDebug("Info", "loading Billboard");
-        shaderLoader(i, RenderType::BILLBOARD);
-        loadTexture("F:/Devlopment/LLL/EmguCVApp/tex.png", i, TextureType::BILLBOARD);
-        shaderLink(i, RenderType::BILLBOARD);
+        if (objectEntity.billboards[i].texLocation.empty())
+        {
+            intfc.inputDebug("Info", "loading Billboard");
+            shaderLoader(i, RenderType::BILLBOARD);
+            loadTexture("F:/Devlopment/LLL/EmguCVApp/tex.png", i, TextureType::BILLBOARD);
+            shaderLink(i, RenderType::BILLBOARD);
+        }
+        else
+        {
+            intfc.inputDebug("Info", "loading Billboard");
+            shaderLoader(i, RenderType::BILLBOARD);
+            loadTexture(objectEntity.billboards[i].texLocation, i, TextureType::BILLBOARD);
+            shaderLink(i, RenderType::BILLBOARD);
+        }
     }
+}
+
+void Renderer::loadAnotherCam(){
+    addCamera();
+    shaderLoader(1, RenderType::CAMERA);
+    loadTexture("E:/QuavleEngine/core/asstEngine/icons8-camera-100.png", 1, TextureType::CAMERA);
+    shaderLink(1, RenderType::CAMERA);
 }
 
 //* ====================== GRID SHADER ==========================
@@ -303,16 +288,20 @@ void Renderer::setupGridQuad()
     glBindVertexArray(0);
 }
 
+//* ====================== LOADER SHADER ==========================
 void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
 {
     if (expression == RenderType::OBJECT)
     { // Declare vertSource here
         intfc.inputDebug("Info", "Renderer::shaderLoader() called for OBJECT");
         std::string fragSource;
-        
-        if (!objectEntity.objects[Index].hasOwnTexture) {
+
+        if (!objectEntity.objects[Index].hasOwnTexture)
+        {
             fragSource = readFile(FRAG_SHADER_PATH);
-        }else{
+        }
+        else
+        {
             fragSource = readFile(objectEntity.objects[Index].shaderLocation);
         }
 
@@ -454,6 +443,54 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         glDeleteShader(objectEntity.billboards[Index].vertexShader);
         glDeleteShader(objectEntity.billboards[Index].fragmentShader);
     }
+
+    if (expression == RenderType::CAMERA)
+    {
+        //* Load and compile vertex and fragment shaders for the cubemap
+        intfc.inputDebug("Info", "Renderer::shaderLoader() called for BILLBOARD");
+        std::string vertSource = readFile(LIGHT_VERT_SHADER_PATH);
+        std::string fragSource = readFile(LIGHT_FRAG_SHADER_PATH);
+        const char *vertexShaderSource = vertSource.c_str();
+        const char *fragmentShaderSource = fragSource.c_str();
+
+        // Vertex Shader
+        cameras[Index].vertexShader = glCreateShader(GL_VERTEX_SHADER);
+        glShaderSource(cameras[Index].vertexShader, 1, &vertexShaderSource, NULL);
+        glCompileShader(cameras[Index].vertexShader);
+        glGetShaderiv(cameras[Index].vertexShader, GL_COMPILE_STATUS, &success);
+        if (!success)
+        {
+            glGetShaderInfoLog(cameras[Index].vertexShader, 512, NULL, infoLog);
+            intfc.inputDebug("Warning", "ERROR::VERTEX::COMPILATION_FAILED\n" + std::string(infoLog));
+        }
+
+        // Fragment Shader
+        cameras[Index].fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+        glShaderSource(cameras[Index].fragmentShader, 1, &fragmentShaderSource, NULL);
+        glCompileShader(cameras[Index].fragmentShader);
+        glGetShaderiv(cameras[Index].fragmentShader, GL_COMPILE_STATUS, &success);
+        if (!success)
+        {
+            glGetShaderInfoLog(cameras[Index].fragmentShader, 512, NULL, infoLog);
+            intfc.inputDebug("Warning", "ERROR::FRAGMENT::COMPILATION_FAILED\n" + std::string(infoLog));
+        }
+
+        // Shader Program
+        cameras[Index].shaderProgram = glCreateProgram();
+        glAttachShader(cameras[Index].shaderProgram, cameras[Index].vertexShader);
+        glAttachShader(cameras[Index].shaderProgram, cameras[Index].fragmentShader);
+        glLinkProgram(cameras[Index].shaderProgram);
+        glGetProgramiv(cameras[Index].shaderProgram, GL_LINK_STATUS, &success);
+        if (!success)
+        {
+            glGetProgramInfoLog(cameras[Index].shaderProgram, 512, NULL, infoLog);
+            intfc.inputDebug("Warning", "ERROR::SHADER::LINKING_FAILED\n" + std::string(infoLog));
+        }
+
+        //* Clean up shaders after linking
+        glDeleteShader(cameras[Index].vertexShader);
+        glDeleteShader(cameras[Index].fragmentShader);
+    }
 }
 
 void Renderer::shaderLink(int Index, Renderer::RenderType expression)
@@ -507,40 +544,60 @@ void Renderer::shaderLink(int Index, Renderer::RenderType expression)
         glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
         glBindVertexArray(0); // Unbind VAO
     }
-if (expression == RenderType::BILLBOARD)
-{
-    intfc.inputDebug("Info", "Linking shader for BILLBOARD");
+    if (expression == RenderType::BILLBOARD)
+    {
+        glGenVertexArrays(1, &objectEntity.billboards[Index].VAO);
+        glGenBuffers(1, &objectEntity.billboards[Index].VBO);
 
-    glGenVertexArrays(1, &objectEntity.billboards[Index].VAO);
-    glGenBuffers(1, &objectEntity.billboards[Index].VBO);
+        glBindVertexArray(objectEntity.billboards[Index].VAO);
+        glBindBuffer(GL_ARRAY_BUFFER, objectEntity.billboards[Index].VBO);
 
-    glBindVertexArray(objectEntity.billboards[Index].VAO);
-    glBindBuffer(GL_ARRAY_BUFFER, objectEntity.billboards[Index].VBO);
-    
-    glBufferData(GL_ARRAY_BUFFER, 
-                sizeof(float) * objectEntity.billboards[Index].vertices.size(),
-                objectEntity.billboards[Index].vertices.data(), 
-                GL_STATIC_DRAW);
+        glBufferData(GL_ARRAY_BUFFER,
+                     sizeof(float) * objectEntity.billboards[Index].vertices.size(),
+                     objectEntity.billboards[Index].vertices.data(),
+                     GL_STATIC_DRAW);
 
-    // Position attribute: location = 0, 3 floats
-    glEnableVertexAttribArray(0);
-    glVertexAttribPointer(
-        0, 3, GL_FLOAT, GL_FALSE, 
-        5 * sizeof(float), (void*)0
-    );
+        // Position attribute: location = 0, 3 floats
+        glEnableVertexAttribArray(0);
+        glVertexAttribPointer(
+            0, 3, GL_FLOAT, GL_FALSE,
+            5 * sizeof(float), (void *)0);
 
-    // Texture coordinate attribute: location = 1, 2 floats
-    glEnableVertexAttribArray(1);
-    glVertexAttribPointer(
-        1, 2, GL_FLOAT, GL_FALSE, 
-        5 * sizeof(float), (void*)(3 * sizeof(float))
-    );
+        // Texture coordinate attribute: location = 1, 2 floats
+        glEnableVertexAttribArray(1);
+        glVertexAttribPointer(
+            1, 2, GL_FLOAT, GL_FALSE,
+            5 * sizeof(float), (void *)(3 * sizeof(float)));
 
-    glBindVertexArray(0);
+        glBindVertexArray(0);
+    }
+    if (expression == RenderType::CAMERA)
+    {
+        glGenVertexArrays(1, &cameras[Index].VAO);
+        glGenBuffers(1, &cameras[Index].VBO);
+
+        glBindVertexArray(cameras[Index].VAO);
+        glBindBuffer(GL_ARRAY_BUFFER, cameras[Index].VBO);
+
+        glBufferData(GL_ARRAY_BUFFER, sizeof(float) * sizeof(verticesLight), verticesLight, GL_STATIC_DRAW);
+
+        // Position attribute: location = 0, 3 floats
+        glEnableVertexAttribArray(0);
+        glVertexAttribPointer(
+            0, 3, GL_FLOAT, GL_FALSE,
+            5 * sizeof(float), (void *)0);
+
+        // Texture coordinate attribute: location = 1, 2 floats
+        glEnableVertexAttribArray(1);
+        glVertexAttribPointer(
+            1, 2, GL_FLOAT, GL_FALSE,
+            5 * sizeof(float), (void *)(3 * sizeof(float)));
+
+        glBindVertexArray(0);
+    }
 }
 
-}
-
+//* ====================== TEXTURE LOADER ==========================
 void Renderer::loadTexture(const std::string &texturePath, int Index, TextureType expression)
 {
     unsigned int *texID = nullptr;
@@ -578,6 +635,10 @@ void Renderer::loadTexture(const std::string &texturePath, int Index, TextureTyp
         break;
     case Renderer::TextureType::BILLBOARD:
         texID = &objectEntity.billboards[Index].textureID;
+        objectEntity.billboards[Index].texLocation = texturePath;
+        break;
+    case Renderer::TextureType::CAMERA:
+        texID = &cameras[Index].textureID;
         break;
     default:
         std::cerr << "Invalid texture type specified.\n";
@@ -666,7 +727,32 @@ void Renderer::loadTexture(const std::string &texturePath, int Index, TextureTyp
 
         glBindVertexArray(0);
     }
+    else if (expression == Renderer::TextureType::CAMERA)
+    {
+        auto &obj = cameras[Index];
 
+        // Generate VAO/VBO if not created
+        if (obj.VAO == 0)
+            glGenVertexArrays(1, &obj.VAO);
+        if (obj.VBO == 0)
+            glGenBuffers(1, &obj.VBO);
+
+        glBindVertexArray(obj.VAO);
+        glBindBuffer(GL_ARRAY_BUFFER, obj.VBO);
+
+        glBufferData(GL_ARRAY_BUFFER, sizeof(float) * sizeof(verticesLight), verticesLight, GL_STATIC_DRAW);
+
+        // Setup vertex attributes
+        // Location 0: position (vec3)
+        glEnableVertexAttribArray(0);
+        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *)0);
+
+        // Location 1: texcoords (vec2)
+        glEnableVertexAttribArray(1);
+        glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *)(3 * sizeof(float)));
+
+        glBindVertexArray(0);
+    }
     else
     {
         auto &obj = objectEntity.objects[Index];
@@ -686,7 +772,8 @@ void Renderer::loadTexture(const std::string &texturePath, int Index, TextureTyp
         glBufferData(GL_ARRAY_BUFFER, obj.vertexCount * 8 * sizeof(float), obj.vertices, GL_STATIC_DRAW);
 
         // Upload index data if available
-        if (obj.indices && obj.indicesCount > 0) {
+        if (obj.indices && obj.indicesCount > 0)
+        {
             glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, obj.EBO);
             glBufferData(GL_ELEMENT_ARRAY_BUFFER, obj.indicesCount * sizeof(unsigned int), obj.indices, GL_STATIC_DRAW);
         }
@@ -696,7 +783,6 @@ void Renderer::loadTexture(const std::string &texturePath, int Index, TextureTyp
     }
 }
 
-//* ====================== CubeMap Shader ======================
 void Renderer::loadCubemapTexture(const std::vector<std::string> &faces, int Index)
 {
     unsigned int *texID = &objectEntity.CubeMaps[Index].textureID;
@@ -749,6 +835,7 @@ void Renderer::loadCubemapTexture(const std::vector<std::string> &faces, int Ind
     glBindVertexArray(0);
 }
 
+//* ====================== LIGHT SHADER ==========================
 void Renderer::shaderLoaderLight()
 {
     std::string vertSourceLight = readFile(LIGHT_VERT_SHADER_PATH);
@@ -797,26 +884,91 @@ void Renderer::shaderLoaderLight()
 
 void Renderer::LightShaderLink()
 {
-    glGenVertexArrays(1, &lightVAO);
-    glGenBuffers(1, &lightVBO);
-
-    glBindBuffer(GL_ARRAY_BUFFER, lightVBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(verticesLight), verticesLight, GL_STATIC_DRAW);
+    // Generate VAO/VBO once outside the loop
+    if (lightVAO == 0)
+        glGenVertexArrays(1, &lightVAO);
+    if (lightVBO == 0)
+        glGenBuffers(1, &lightVBO);
 
     glBindVertexArray(lightVAO);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)0);
+    glBindBuffer(GL_ARRAY_BUFFER, lightVBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(float) * sizeof(verticesLight), verticesLight, GL_STATIC_DRAW);
+
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)(3 * sizeof(float)));
+    glVertexAttribPointer(
+        0, 3, GL_FLOAT, GL_FALSE,
+        5 * sizeof(float), (void *)0);
+
+    // Texture coordinate attribute: location = 1, 2 floats
     glEnableVertexAttribArray(1);
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)(6 * sizeof(float)));
-    glEnableVertexAttribArray(2);
+    glVertexAttribPointer(
+        1, 2, GL_FLOAT, GL_FALSE,
+        5 * sizeof(float), (void *)(3 * sizeof(float)));
+
+    glBindVertexArray(0);
+
+    for (int i = 0; i < objectEntity.lights.size(); ++i)
+    {
+        unsigned int *texID = &objectEntity.lights[i].textureID;
+        const std::string texturePath = "E:/QuavleEngine/core/asstEngine/icons8-light-64.png";
+
+        glGenTextures(1, texID);
+        glBindTexture(GL_TEXTURE_2D, *texID);
+
+        constexpr GLint wrapMode = GL_REPEAT;
+        constexpr GLint minFilter = GL_LINEAR_MIPMAP_LINEAR;
+        constexpr GLint magFilter = GL_LINEAR;
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, wrapMode);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, wrapMode);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, minFilter);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, magFilter);
+
+        int width, height, nrChannels;
+        stbi_set_flip_vertically_on_load(true);
+        unsigned char *data = stbi_load(texturePath.c_str(), &width, &height, &nrChannels, 0);
+
+        if (data)
+        {
+            GLenum format = GL_RGB;
+            switch (nrChannels)
+            {
+            case 1:
+                format = GL_RED;
+                break;
+            case 3:
+                format = GL_RGB;
+                break;
+            case 4:
+                format = GL_RGBA;
+                break;
+            default:
+                std::cerr << "Unsupported texture format: " << nrChannels << " channels\n";
+                stbi_image_free(data);
+                return;
+            }
+
+            glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
+            glGenerateMipmap(GL_TEXTURE_2D);
+        }
+        else
+        {
+            std::cerr << "Failed to load texture at path: " << texturePath << std::endl;
+            *texID = 0;
+        }
+
+        stbi_image_free(data);
+    }
 }
 
+//* ====================== RENDER ==========================
 void Renderer::drawCallback()
 {
     mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
     float aspectRatio = static_cast<float>(mode->width) / static_cast<float>(mode->height);
     projection = glm::perspective(glm::radians(cameras[cameraIndex].fov), aspectRatio, 0.1f, 1000.0f);
+    glEnable(GL_BLEND);
+    glEnable(GL_DEPTH_TEST); // just to be explicit
+    glDepthMask(GL_TRUE);    // ensure depth writing
 
     //* Update matriks
     cameras[cameraIndex].view = glm::lookAt(
@@ -830,24 +982,6 @@ void Renderer::drawCallback()
         glBindTexture(GL_TEXTURE_2D, texID);
         shader.setInt(name, unit);
     };
-
-    if (Grid)
-    {
-        glEnable(GL_DEPTH_TEST); // just to be explicit
-        glDepthMask(GL_TRUE);    // ensure depth writing
-        glUseProgram(gridShaderProgram);
-
-        ShaderHelper gridShader(gridShaderProgram);
-        gridShader.setMat4("view", cameras[cameraIndex].view);
-        gridShader.setMat4("projection", projection);
-        gridShader.setVec3("camPos", cameras[cameraIndex].cameraPos);
-        gridShader.setVec3("gridColor", gridColor);
-        gridShader.setFloat("gridSpacing", gridSpacing);
-
-        glBindVertexArray(gridVAO);
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-        glBindVertexArray(0);
-    }
 
     if (objectEntity.billboards.size() > 0)
     {
@@ -863,6 +997,15 @@ void Renderer::drawCallback()
             shader.setMat4("projection", projection);
             shader.setVec3("billboardPos", objectEntity.billboards[i].position);
             shader.setVec3("cameraPos", cameras[cameraIndex].cameraPos);
+            shader.setBool("LookAt", objectEntity.billboards[i].lookAt);
+
+            objectEntity.billboards[i].model = glm::mat4(1.0f);
+            objectEntity.billboards[i].model = glm::translate(objectEntity.billboards[i].model, objectEntity.billboards[i].position);
+            objectEntity.billboards[i].model = glm::rotate(objectEntity.billboards[i].model, glm::radians(objectEntity.billboards[i].rotation.x), glm::vec3(1, 0, 0));
+            objectEntity.billboards[i].model = glm::rotate(objectEntity.billboards[i].model, glm::radians(objectEntity.billboards[i].rotation.y), glm::vec3(0, 1, 0));
+            objectEntity.billboards[i].model = glm::rotate(objectEntity.billboards[i].model, glm::radians(objectEntity.billboards[i].rotation.z), glm::vec3(0, 0, 1));
+            objectEntity.billboards[i].model = glm::scale(objectEntity.billboards[i].model, objectEntity.billboards[i].scale);
+            shader.setMat4("model", objectEntity.billboards[i].model);
 
             bindTexture(objectEntity.billboards[i].textureID, 0, "texture1", shader);
 
@@ -870,12 +1013,54 @@ void Renderer::drawCallback()
             glDrawArrays(GL_TRIANGLES, 0, 6); // 6 vertices for two triangles
         }
     }
+    
+
+    if (!objectEntity.lights.empty() && cameraIndex == 0)
+    {
+        for (int i = 0; i < objectEntity.lights.size(); ++i)
+        {
+            glUseProgram(lightShaderProgram);
+            if (objectEntity.lights[i].isShow)
+            {
+                ShaderHelper shader(lightShaderProgram);
+                shader.setMat4("view", cameras[cameraIndex].view);
+                shader.setMat4("projection", projection);
+                shader.setVec3("billboardPos", objectEntity.lights[i].position);
+                shader.setVec3("cameraPos", cameras[cameraIndex].cameraPos);
+
+                bindTexture(objectEntity.lights[i].textureID, 0, "texture1", shader);
+
+                glBindVertexArray(lightVAO);
+                glDrawArrays(GL_TRIANGLES, 0, 6); // 6 vertices for two triangles
+            }
+        }
+    }
+
+    if (!cameras.empty() && cameraIndex == 0)
+    {
+        for (int i = 1; i < cameras.size(); ++i)
+        {
+            glUseProgram(cameras[i].shaderProgram);
+            if (cameras[i].isShow)
+            {
+                ShaderHelper shader(cameras[i].shaderProgram);
+                shader.setMat4("view", cameras[cameraIndex].view);
+                shader.setMat4("projection", projection);
+                shader.setVec3("billboardPos", cameras[i].cameraPos);
+                shader.setVec3("cameraPos", cameras[cameraIndex].cameraPos);
+
+                bindTexture(cameras[i].textureID, 0, "texture1", shader);
+
+                glBindVertexArray(cameras[i].VAO);
+                glDrawArrays(GL_TRIANGLES, 0, 6); // 6 vertices for two triangles
+            }
+        }
+    }
 
     if (objectEntity.objects.size() != 0)
     {
         int currentShader = -1;
         GLuint lastVAO = 0;
-
 
         for (size_t i = 0; i < objectEntity.objects.size(); ++i)
         {
@@ -931,7 +1116,8 @@ void Renderer::drawCallback()
                 if (!objectEntity.lights[light_idx].isShow)
                 {
                     shader.setFloat("lightIntensities[" + index + "]", 0.0f); // Set intensity to 0 if not shown
-                } else
+                }
+                else
                 {
                     shader.setVec3("lightPositions[" + index + "]", light.position);
                     shader.setVec3("lightColors[" + index + "]", light.lightColor);
@@ -958,7 +1144,7 @@ void Renderer::drawCallback()
 
             // Optional: selection highlight
             shader.setBool("selected", obj.isSelected);
-            shader.setVec3("colorSelected", glm::vec3(1,1,0));
+            shader.setVec3("colorSelected", glm::vec3(1, 1, 0));
 
             // VAO binding only if changed
             if (obj.VAO != lastVAO)
@@ -978,26 +1164,6 @@ void Renderer::drawCallback()
         }
     }
 
-    if (!objectEntity.lights.empty())
-    {
-        glUseProgram(lightShaderProgram);
-        ShaderHelper lightShader(lightShaderProgram);
-        lightShader.setMat4("view", cameras[cameraIndex].view);
-        lightShader.setMat4("projection", projection);
-        glBindVertexArray(lightVAO);
-        for (unsigned int i = 0; i < objectEntity.lights.size(); ++i)
-        {
-            if (objectEntity.lights[i].isShow)
-            {
-                modelLight = glm::mat4(1.0f);
-                modelLight = glm::translate(modelLight, objectEntity.lights[i].position);
-                lightShader.setMat4("model", modelLight);
-                lightShader.setVec3("objectColor", objectEntity.lights[i].lightColor);
-                glDrawArrays(GL_TRIANGLES, 0, 36);
-            }
-        }
-    }
-
     glDepthFunc(GL_LEQUAL);
     ShaderHelper skyboxShader(objectEntity.CubeMaps[0].shaderProgramCubemap);
     glUseProgram(objectEntity.CubeMaps[0].shaderProgramCubemap);
@@ -1011,8 +1177,23 @@ void Renderer::drawCallback()
     glBindVertexArray(0);
     glDepthFunc(GL_LESS);
 
-}
+    if (Grid)
+    {
 
+        glUseProgram(gridShaderProgram);
+
+        ShaderHelper gridShader(gridShaderProgram);
+        gridShader.setMat4("view", cameras[cameraIndex].view);
+        gridShader.setMat4("projection", projection);
+        gridShader.setVec3("camPos", cameras[cameraIndex].cameraPos);
+        gridShader.setVec3("gridColor", gridColor);
+        gridShader.setFloat("gridSpacing", gridSpacing);
+
+        glBindVertexArray(gridVAO);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        glBindVertexArray(0);
+    }
+}
 void Renderer::drawCleanup()
 {
     for (size_t i = 0; i < objectEntity.objects.size(); ++i)

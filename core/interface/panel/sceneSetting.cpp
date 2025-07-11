@@ -7,7 +7,7 @@ Renderer rendder;
 
 void interface::sceneConfig()
 {
-    ImGui::Begin("Scene", nullptr, ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize);
+    ImGui::Begin("Scene", nullptr, ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoTitleBar);
 
     ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(8, 4));
 
@@ -34,12 +34,27 @@ void interface::sceneConfig()
     ImGui::SameLine();
     ImGui::DragFloat("Grid Spacing", &rendder.gridSpacing, 0.1f, 0.1f, 10.0f);
 
-    if(play){
-        cameraIndex = 1;
-    }else{
-        cameraIndex = 0;
+    if (play) {
+        // Find the index of the MASTER camera when playing
+        for (size_t i = 0; i < cameras.size(); ++i) {
+            if (cameras[i].type == CAMERATYPE::MASTER && cameras[i].type != CAMERATYPE::NONE) {
+                cameraIndex = i;
+                break;
+            }
+        }
     }
-
+    else
+    {
+        for (size_t i = 0; i < cameras.size(); ++i)
+        {
+            if (cameras[i].type == CAMERATYPE::ENGINE && cameras[i].type != CAMERATYPE::NONE && cameras[i].type != CAMERATYPE::MASTER)
+            {
+                cameraIndex = i;
+                break;
+            }
+        }
+        play = false;
+    }
 
     ImGui::PopStyleVar();
     ImGui::End();

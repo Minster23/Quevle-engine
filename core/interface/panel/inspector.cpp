@@ -1,3 +1,4 @@
+#include <core/components/components.hpp>
 #include <core/interface/interface.hpp>
 #include <core/renderer/entity/objectEntity.hpp>
 #include <core/model/model.hpp>
@@ -10,57 +11,12 @@ using namespace QuavleEngine;
 
 ObjectEntity entity;
 Renderer renderForInspector;
-
-void shaderVariableViewer(const std::string &filename)
-{
-    std::ifstream in(filename);
-    if (!in.is_open())
-    {
-        return;
-    }
-
-    nlohmann::json j;
-    in >> j;
-
-    if (j.contains("nodes") && j["nodes"].is_array())
-    {
-        for (const auto &node : j["nodes"])
-        {
-            if (!node.contains("value") || !node["value"].contains("valueNode"))
-                continue;
-
-            const auto &valueNode = node["value"]["valueNode"];
-            std::string label = node.contains("title") ? node["title"].get<std::string>() : "Node";
-
-            if (valueNode.is_array() && valueNode.size() == 3)
-            {
-                // It's a vec3
-                glm::vec3 val(valueNode[0], valueNode[1], valueNode[2]);
-                ImGui::Text("%s Value (Vec3):", label.c_str());
-                ImGui::DragFloat3(("##" + label + "_vec3").c_str(), glm::value_ptr(val));
-            }
-            else if (valueNode.is_number())
-            {
-                // It's a float
-                float val = valueNode.get<float>();
-                ImGui::Text("%s Value (Float):", label.c_str());
-                ImGui::DragFloat(("##" + label + "_float").c_str(), &val);
-            }
-            else
-            {
-                ImGui::Text("%s Value: %s", label.c_str(), valueNode.dump().c_str());
-            }
-        }
-    }
-    else
-    {
-        ImGui::Text("Node Value: N/A (or not found)");
-    }
-}
+ComponentsManager compMan;
 
 void interface::inspector()
 {
     ImGui::Begin("Inspector");
+    compMan.load();
 
     if (selectedNames.empty())
     {
@@ -146,6 +102,12 @@ void interface::inspector()
                         ImGui::Text("%s", label);
                         ImGui::SameLine();
                         ImGui::Image((void *)(intptr_t)textureID, ImVec2(100, 100), ImVec2(0, 1), ImVec2(1, 0));
+                         if (ImGui::IsItemHovered(ImGuiHoveredFlags_AllowWhenDisabled))
+                        {
+                            ImGui::BeginTooltip();
+                            ImGui::Image((ImTextureID)(intptr_t)textureID, ImVec2(300, 300));
+                            ImGui::EndTooltip();
+                        }
                         ImGui::Separator();
                     };
 
@@ -161,25 +123,18 @@ void interface::inspector()
                     ShowTextureSlot("Displacement", obj.displacementTextureID);
                 }
             }
-
-            if (!entity.objects[InspectorIndex].hasOwnTexture)
-            {
-                ImGui::Separator();
-                if (ImGui::Button("Create new shader"))
-                {
-                }
-            }else{
-                if (ImGui::Button(("Open "+entity.objects[InspectorIndex].name+".shd").c_str()))
-                {
-
-                }
-            }
         }
         
         if (InspectorIndexUtility > -1)
         {
             if (interface::utilityType == interface::UTILITY_TYPE::light)
             {
+                if (ImGui::Button("copy UUID"))
+                {
+                    ImGui::SetClipboardText(entity.lights[InspectorIndex].UUID.c_str());
+                }
+
+                ImGui::Separator();
                 ImGui::Text("Name:");
                 ImGui::SameLine();
                 if (ImGui::Button("Delete"))
@@ -200,11 +155,59 @@ void interface::inspector()
                 ImGui::DragFloat("Intensity  ", &entity.lights[InspectorIndexUtility].intensity);
                 ImGui::Separator();
                 ImGui::ColorEdit3("Color", &entity.lights[InspectorIndexUtility].lightColor.x);
+
+                if (ImGui::Button("Add components"))
+                {
+                    ImGui::OpenPopup("Comp List");
+                }
+                if (ImGui::BeginPopup("Comp List")){
+                    ImGui::SeparatorText("Select Components");
+                    for(int i = 0 ; i < sizeof(compMan.components) / sizeof(compMan.components[0]); i++){
+                        ImGui::PushID(i + 2);
+                        if(ImGui::Button(compMan.components[i]->getName())){
+                            entity.lights[InspectorIndexUtility].components.push_back(i);
+                        }
+                        ImGui::PopID();
+                    }
+                    ImGui::Separator();
+                    ImGui::EndPopup();
+                }
+                // Iterate through the components attached to the light and call their begin method
+                for (int i = 0; i < entity.lights[InspectorIndexUtility].components.size(); i++)
+                {
+                    ImGui::PushID(i + 2 * 2);
+                    int componentIndex = entity.lights[InspectorIndexUtility].components[i];
+                    if (componentIndex >= 0 && componentIndex < sizeof(compMan.components) / sizeof(compMan.components[0]))
+                        compMan.components[componentIndex]->begin(entity, InspectorIndexUtility);
+                    ImGui::PopID();
+                }
             }
             else if (interface::utilityType == interface::UTILITY_TYPE::camera)
             {
+                // if (ImGui::Button("copy UUID"))
+                // {
+                //     ImGui::SetClipboardText(entity.lights[InspectorIndex].UUID.c_str());
+                // }
+                ImGui::Separator();
                 ImGui::Text("Name:");
                 ImGui::SameLine();
+                if (ImGui::Button("Delete"))
+                {
+                    cameras.erase(cameras.begin() + InspectorIndexUtility);
+                    InspectorIndexUtility = -1; // Deselect the light after deletion
+                    ImGui::End();
+                    return;
+                }
+                ImGui::SameLine();
+                ImGui::Text("Type:");
+                ImGui::Separator();
+                const char *cameraTypes[] = {"", "MASTER", "NONE"};
+                int currentTypeIndex = static_cast<int>(cameras[InspectorIndexUtility].type);
+                if (ImGui::Combo("##CameraType", &currentTypeIndex, cameraTypes, IM_ARRAYSIZE(cameraTypes)))
+                {
+                    cameras[InspectorIndexUtility].type = static_cast<CAMERATYPE>(currentTypeIndex);
+                }
+                ImGui::Separator();
                 ImGui::Text(cameras[InspectorIndexUtility].name.c_str());
                 ImGui::Separator();
                 ImGui::Separator();
@@ -213,16 +216,66 @@ void interface::inspector()
                 ImGui::DragFloat("Y ", &cameras[InspectorIndexUtility].cameraPos.y);
                 ImGui::DragFloat("Z  ", &cameras[InspectorIndexUtility].cameraPos.z);
                 ImGui::Separator();
-
+            }
+            else if (interface::utilityType == interface::UTILITY_TYPE::billboard)
+            {
+                if (ImGui::Button("copy UUID"))
+                {
+                    ImGui::SetClipboardText(entity.billboards[InspectorIndex].UUID.c_str());
+                }
+                ImGui::SameLine();
+                //ImGui::Text(entity.objects[InspectorIndex].UUID.c_str());
+                ImGui::Separator();
+                ImGui::Text("Name:");
+                ImGui::SameLine();
+                if (ImGui::Button("Delete"))
+                {
+                    entity.billboards.erase(entity.billboards.begin() + InspectorIndexUtility);
+                    InspectorIndexUtility = -1; // Deselect the light after deletion
+                    ImGui::End();
+                    return;
+                }
+                ImGui::Separator();
+                ImGui::Checkbox("Look at", &entity.billboards[InspectorIndexUtility].lookAt);
+                ImGui::Separator();
+                ImGui::Text(entity.billboards[InspectorIndexUtility].name.c_str());
+                ImGui::Separator();
+                ImGui::Separator();
+                ImGui::Text("Position:");
+                ImGui::DragFloat("X", &entity.billboards[InspectorIndexUtility].position.x);
+                ImGui::DragFloat("Y ", &entity.billboards[InspectorIndexUtility].position.y);
+                ImGui::DragFloat("Z  ", &entity.billboards[InspectorIndexUtility].position.z);
+                ImGui::Separator();
+                if (!entity.billboards[InspectorIndexUtility].lookAt)
+                {
+                    ImGui::Text("Rotation:");
+                    ImGui::DragFloat("X ", &entity.billboards[InspectorIndexUtility].rotation.x);
+                    ImGui::DragFloat("Y  ", &entity.billboards[InspectorIndexUtility].rotation.y);
+                    ImGui::DragFloat("Z   ", &entity.billboards[InspectorIndexUtility].rotation.z);
+                    ImGui::Separator();
+                }
+                ImGui::Separator();
+                ImGui::Text("Texture:");
+                if (ImGui::ImageButton("Texture", entity.billboards[InspectorIndexUtility].textureID, ImVec2(50, 50)))
+                {
+                }
+                if (ImGui::IsItemHovered(ImGuiHoveredFlags_AllowWhenDisabled))
+                {
+                    ImGui::BeginTooltip();
+                    ImGui::Image((ImTextureID)(intptr_t)entity.billboards[InspectorIndexUtility].textureID, ImVec2(100, 100));
+                    ImGui::Text(entity.billboards[InspectorIndexUtility].texLocation.c_str());
+                    ImGui::EndTooltip();
+                }
+                ImGui::Separator();
             }
             else
             {
-                ImGui::Text("Failed to fetch backend");
+                ImGui::Text("No item selected");
             }
         }
     }
 
-    if (!selectedNames.empty())
+    if (!selectedNames.empty() && interface::OBJECT_TYPE::multi)
     {
         if (ImGui::Button("Delate"))
         {

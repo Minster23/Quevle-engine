@@ -1,5 +1,5 @@
 CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
- D:\QuavleEngine\core\renderer\renderer.cpp \
+ E:\QuavleEngine\core\renderer\renderer.cpp \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/filesystem \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -179,9 +179,9 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fstream.tcc \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/iostream \
- D:/QuavleEngine/vendor/stb/stb_image.h \
- D:/QuavleEngine/vendor/glm/glm/glm.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/_fixes.hpp \
+ E:/QuavleEngine/vendor/stb/stb_image.h \
+ E:/QuavleEngine/vendor/glm/glm/glm.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/_fixes.hpp \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cmath \
  F:/Devtool/mysys2/ucrt64/include/math.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/specfun.h \
@@ -197,39 +197,39 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_hermite.tcc \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
- D:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cassert \
  F:/Devtool/mysys2/ucrt64/include/assert.h \
- D:/QuavleEngine/vendor/glm/glm/simd/platform.h \
+ E:/QuavleEngine/vendor/glm/glm/simd/platform.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/climits \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cfloat \
  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h \
  F:/Devtool/mysys2/ucrt64/include/float.h \
- D:/QuavleEngine/vendor/glm/glm/fwd.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/qualifier.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
- D:/QuavleEngine/vendor/glm/glm/vec2.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_vec2.inl \
- D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_relational.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_bool2_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_float2.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_float2_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_double2.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_double2_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_int2.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_int2_sized.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/scalar_int_sized.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_uint2_sized.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/scalar_uint_sized.hpp \
- D:/QuavleEngine/vendor/glm/glm/vec3.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_vec3.inl \
- D:/QuavleEngine/vendor/glm/glm/detail/compute_vector_decl.hpp \
+ E:/QuavleEngine/vendor/glm/glm/fwd.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/qualifier.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
+ E:/QuavleEngine/vendor/glm/glm/vec2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_bool2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_vec2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_vec2.inl \
+ E:/QuavleEngine/vendor/glm/glm/detail/compute_vector_relational.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_bool2_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_float2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_float2_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_double2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_double2_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_int2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_int2_sized.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/scalar_int_sized.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_uint2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_uint2_sized.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/scalar_uint_sized.hpp \
+ E:/QuavleEngine/vendor/glm/glm/vec3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_bool3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_vec3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_vec3.inl \
+ E:/QuavleEngine/vendor/glm/glm/detail/compute_vector_decl.hpp \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/functional \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_function.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_map \
@@ -246,195 +246,195 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/vector.tcc \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/array \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/compare \
- D:/QuavleEngine/vendor/glm/glm/detail/_vectorize.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_bool3_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_float3.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_float3_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_double3.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_double3_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_int3.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_int3_sized.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_uint3_sized.hpp \
- D:/QuavleEngine/vendor/glm/glm/vec4.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_vec4.inl \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_bool4_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_float4.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_float4_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_double4.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_double4_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_int4.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_int4_sized.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_uint4_sized.hpp \
- D:/QuavleEngine/vendor/glm/glm/mat2x2.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.inl \
- D:/QuavleEngine/vendor/glm/glm/matrix.hpp \
- D:/QuavleEngine/vendor/glm/glm/mat2x3.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.inl \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/mat2x4.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.inl \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/mat3x2.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.inl \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/mat3x3.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.inl \
- D:/QuavleEngine/vendor/glm/glm/common.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/func_common.inl \
- D:/QuavleEngine/vendor/glm/glm/vector_relational.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/func_vector_relational.inl \
- D:/QuavleEngine/vendor/glm/glm/detail/compute_common.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_vec1.inl \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/mat3x4.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.inl \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/mat4x2.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.inl \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/mat4x3.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.inl \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/mat4x4.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.inl \
- D:/QuavleEngine/vendor/glm/glm/geometric.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/func_geometric.inl \
- D:/QuavleEngine/vendor/glm/glm/exponential.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/func_exponential.inl \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/func_matrix.inl \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/trigonometric.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/func_trigonometric.inl \
- D:/QuavleEngine/vendor/glm/glm/packing.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/func_packing.inl \
- D:/QuavleEngine/vendor/glm/glm/detail/type_half.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_half.inl \
- D:/QuavleEngine/vendor/glm/glm/integer.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/func_integer.inl \
- D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.hpp \
- D:/QuavleEngine/vendor/glm/glm/gtc/constants.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.inl \
- D:/QuavleEngine/vendor/glm/glm/gtc/constants.inl \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.inl \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.inl \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.inl \
- D:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.inl \
- D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.hpp \
- D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_relational.inl \
- D:/QuavleEngine/vendor/glm/glm/detail/type_float.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.inl \
- D:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.inl \
- D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/type_quat.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.inl \
- D:/QuavleEngine/vendor/glm/glm/detail/type_quat.inl \
- D:/QuavleEngine/vendor/glm/glm/ext/quaternion_float_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/quaternion_double_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.inl \
- D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.inl \
- D:/QuavleEngine/vendor/glm/glm/gtc/quaternion.inl \
- D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.hpp \
- D:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
- D:/QuavleEngine/vendor/glm/glm/gtc/epsilon.inl \
- D:/QuavleEngine/vendor/glm/glm/gtc/vec1.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_bool1_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_float1.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_float1_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_double1.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_double1_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_int1.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_int1_sized.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1.hpp \
- D:/QuavleEngine/vendor/glm/glm/ext/vector_uint1_sized.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/_vectorize.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_bool3_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_float3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_float3_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_double3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_double3_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_int3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_int3_sized.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_uint3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_uint3_sized.hpp \
+ E:/QuavleEngine/vendor/glm/glm/vec4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_bool4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_vec4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_vec4.inl \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_bool4_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_float4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_float4_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_double4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_double4_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_int4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_int4_sized.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_uint4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_uint4_sized.hpp \
+ E:/QuavleEngine/vendor/glm/glm/mat2x2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat2x2.inl \
+ E:/QuavleEngine/vendor/glm/glm/matrix.hpp \
+ E:/QuavleEngine/vendor/glm/glm/mat2x3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat2x3.inl \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x3_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x3_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/mat2x4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat2x4.inl \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x4_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x4_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/mat3x2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat3x2.inl \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x2_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x2_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/mat3x3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat3x3.inl \
+ E:/QuavleEngine/vendor/glm/glm/common.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/func_common.inl \
+ E:/QuavleEngine/vendor/glm/glm/vector_relational.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/func_vector_relational.inl \
+ E:/QuavleEngine/vendor/glm/glm/detail/compute_common.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_vec1.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_vec1.inl \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x3_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x3_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/mat3x4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat3x4.inl \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double3x4_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float3x4_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/mat4x2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat4x2.inl \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x2_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x2_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/mat4x3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat4x3.inl \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x3_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x3_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/mat4x4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_mat4x4.inl \
+ E:/QuavleEngine/vendor/glm/glm/geometric.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/func_geometric.inl \
+ E:/QuavleEngine/vendor/glm/glm/exponential.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/func_exponential.inl \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double4x4_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float4x4_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/func_matrix.inl \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_double2x2_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_float2x2_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/trigonometric.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/func_trigonometric.inl \
+ E:/QuavleEngine/vendor/glm/glm/packing.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/func_packing.inl \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_half.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_half.inl \
+ E:/QuavleEngine/vendor/glm/glm/integer.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/func_integer.inl \
+ E:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.hpp \
+ E:/QuavleEngine/vendor/glm/glm/gtc/constants.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/scalar_constants.inl \
+ E:/QuavleEngine/vendor/glm/glm/gtc/constants.inl \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_projection.inl \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_clip_space.inl \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/matrix_transform.inl \
+ E:/QuavleEngine/vendor/glm/glm/gtc/matrix_transform.inl \
+ E:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.hpp \
+ E:/QuavleEngine/vendor/glm/glm/gtc/quaternion.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_relational.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_relational.inl \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_float.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/quaternion_geometric.inl \
+ E:/QuavleEngine/vendor/glm/glm/ext/quaternion_common.inl \
+ E:/QuavleEngine/vendor/glm/glm/ext/quaternion_float.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_quat.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/quaternion_relational.inl \
+ E:/QuavleEngine/vendor/glm/glm/detail/type_quat.inl \
+ E:/QuavleEngine/vendor/glm/glm/ext/quaternion_float_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/quaternion_double.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/quaternion_double_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/quaternion_trigonometric.inl \
+ E:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/quaternion_transform.inl \
+ E:/QuavleEngine/vendor/glm/glm/gtc/quaternion.inl \
+ E:/QuavleEngine/vendor/glm/glm/gtc/epsilon.hpp \
+ E:/QuavleEngine/vendor/glm/glm/detail/setup.hpp \
+ E:/QuavleEngine/vendor/glm/glm/gtc/epsilon.inl \
+ E:/QuavleEngine/vendor/glm/glm/gtc/vec1.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_bool1.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_bool1_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_float1.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_float1_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_double1.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_double1_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_int1.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_int1_sized.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_uint1.hpp \
+ E:/QuavleEngine/vendor/glm/glm/ext/vector_uint1_sized.hpp \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstring \
  F:/Devtool/mysys2/ucrt64/include/string.h \
  F:/Devtool/mysys2/ucrt64/include/sec_api/string_s.h \
- D:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
- D:/QuavleEngine/utils/camera/camera.hpp \
- D:/QuavleEngine/core/renderer/renderer.hpp \
- D:/QuavleEngine/core/window/window.hpp \
- D:/QuavleEngine/vendor/glad/include/glad/glad.h \
- D:/QuavleEngine/vendor/glad/include/KHR/khrplatform.h \
- D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/include/GLFW/glfw3.h \
+ E:/QuavleEngine/vendor/glm/glm/gtc/type_ptr.inl \
+ E:/QuavleEngine/utils/camera/camera.hpp \
+ E:/QuavleEngine/core/renderer/renderer.hpp \
+ E:/QuavleEngine/core/window/window.hpp \
+ E:/QuavleEngine/vendor/glad/include/glad/glad.h \
+ E:/QuavleEngine/vendor/glad/include/KHR/khrplatform.h \
+ E:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/include/GLFW/glfw3.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/map \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tree.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_map.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multimap.h \
- D:/QuavleEngine/core/interface/interface.hpp \
- D:/QuavleEngine/core/renderer/shader_h.h \
- D:/QuavleEngine/vendor/imgui/imgui.h \
- D:/QuavleEngine/vendor/imgui/imconfig.h \
+ E:/QuavleEngine/core/interface/interface.hpp \
+ E:/QuavleEngine/core/renderer/shader_h.h \
+ E:/QuavleEngine/vendor/imgui/imgui.h \
+ E:/QuavleEngine/vendor/imgui/imconfig.h \
  F:/Devtool/mysys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
  F:/Devtool/mysys2/ucrt64/include/stdarg.h \
  F:/Devtool/mysys2/ucrt64/include/_mingw_stdarg.h \
- D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
- D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h \
- D:/QuavleEngine/utils/font/IconsCodicons.h \
- D:/QuavleEngine/vendor/implot-master/implot.h \
- D:/QuavleEngine/vendor/glm/glm/gtx/string_cast.hpp \
- D:/QuavleEngine/vendor/glm/glm/gtc/type_precision.hpp \
- D:/QuavleEngine/vendor/glm/glm/gtc/type_precision.inl \
- D:/QuavleEngine/vendor/glm/glm/gtx/dual_quaternion.hpp \
- D:/QuavleEngine/vendor/glm/glm/gtx/dual_quaternion.inl \
- D:/QuavleEngine/vendor/glm/glm/gtx/string_cast.inl \
+ E:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.h \
+ E:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.h \
+ E:/QuavleEngine/utils/font/IconsCodicons.h \
+ E:/QuavleEngine/vendor/implot-master/implot.h \
+ E:/QuavleEngine/vendor/glm/glm/gtx/string_cast.hpp \
+ E:/QuavleEngine/vendor/glm/glm/gtc/type_precision.hpp \
+ E:/QuavleEngine/vendor/glm/glm/gtc/type_precision.inl \
+ E:/QuavleEngine/vendor/glm/glm/gtx/dual_quaternion.hpp \
+ E:/QuavleEngine/vendor/glm/glm/gtx/dual_quaternion.inl \
+ E:/QuavleEngine/vendor/glm/glm/gtx/string_cast.inl \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdarg \
- D:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
- D:/QuavleEngine/core/model/model.hpp \
+ E:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
+ E:/QuavleEngine/core/model/model.hpp \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/memory \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tempbuf.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
@@ -445,45 +445,45 @@ CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/backward/auto_ptr.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_memory_defs.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/execution_defs.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/scene.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/types.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/defs.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/config.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/vector2.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/vector3.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/color4.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/matrix3x3.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/matrix4x4.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/quaternion.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/vector2.inl \
- D:/QuavleEngine/vendor/assimp/include/assimp/vector3.inl \
- D:/QuavleEngine/vendor/assimp/include/assimp/color4.inl \
- D:/QuavleEngine/vendor/assimp/include/assimp/matrix3x3.inl \
+ E:/QuavleEngine/vendor/assimp/include/assimp/scene.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/types.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/defs.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/config.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/vector2.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/vector3.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/color4.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/matrix3x3.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/matrix4x4.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/quaternion.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/vector2.inl \
+ E:/QuavleEngine/vendor/assimp/include/assimp/vector3.inl \
+ E:/QuavleEngine/vendor/assimp/include/assimp/color4.inl \
+ E:/QuavleEngine/vendor/assimp/include/assimp/matrix3x3.inl \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/algorithm \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_algo.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/algorithmfwd.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_heap.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/uniform_int_dist.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/matrix4x4.inl \
- D:/QuavleEngine/vendor/assimp/include/assimp/MathFunctions.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/quaternion.inl \
- D:/QuavleEngine/vendor/assimp/include/assimp/texture.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/pushpack1.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/Compiler/poppack1.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/mesh.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/aabb.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/matrix4x4.inl \
+ E:/QuavleEngine/vendor/assimp/include/assimp/MathFunctions.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/quaternion.inl \
+ E:/QuavleEngine/vendor/assimp/include/assimp/texture.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/Compiler/pushpack1.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/Compiler/poppack1.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/mesh.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/aabb.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/unordered_set \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unordered_set.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/light.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/camera.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/material.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/material.inl \
- D:/QuavleEngine/vendor/assimp/include/assimp/anim.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/metadata.h \
- D:/QuavleEngine/vendor/assimp/include/assimp/Importer.hpp \
- D:/QuavleEngine/vendor/assimp/include/assimp/postprocess.h \
- D:/QuavleEngine/utils/fileReader.hpp D:/QuavleEngine/utils/Debug.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/light.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/camera.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/material.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/material.inl \
+ E:/QuavleEngine/vendor/assimp/include/assimp/anim.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/metadata.h \
+ E:/QuavleEngine/vendor/assimp/include/assimp/Importer.hpp \
+ E:/QuavleEngine/vendor/assimp/include/assimp/postprocess.h \
+ E:/QuavleEngine/utils/fileReader.hpp E:/QuavleEngine/utils/Debug.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/future \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/mutex \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_mutex.h \

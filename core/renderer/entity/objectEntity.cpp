@@ -1,8 +1,11 @@
 #include <core/renderer/entity/objectEntity.hpp>
+#include <core/model/UUID.hpp>
 
 using namespace QuavleEngine;
 
-std::vector<ObjectEntity::ObjectData> ObjectEntity::objects;
+UUID uids;
+
+std::vector<ObjectEntity::ObjectData> ObjectEntity::objects; // This line is not part of the diff, but it's in the original file
 std::vector<ObjectEntity::LightData> ObjectEntity::lights;
 std::vector<ObjectEntity::CubeMap> ObjectEntity::CubeMaps;
 std::vector<ObjectEntity::Billboard> ObjectEntity::billboards;
@@ -10,6 +13,7 @@ std::vector<ObjectEntity::Billboard> ObjectEntity::billboards;
 void ObjectEntity::firstLightObject()
 {
     LightData light;
+    light.UUID = uids.generate_uuid();
     light.position = glm::vec3(0.0f, 0.0f, 0.0f);
     light.rotation = glm::vec3(0.0f, 0.0f, 0.0f);
     light.scale = glm::vec3(1.0f, 1.0f, 1.0f);
@@ -35,6 +39,7 @@ void ObjectEntity::firstCubemap()
 void ObjectEntity::firstBillboard()
 {
     Billboard billboard;
+    billboard.UUID = UUID::generate_uuid();
     billboard.name = "Billboard object " + std::to_string(billboards.size());
     billboard.position = glm::vec3(0.0f, 0.0f, 0.0f);
 

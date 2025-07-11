@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\QuavleEngine
+CMAKE_SOURCE_DIR = E:\QuavleEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\QuavleEngine\build
+CMAKE_BINARY_DIR = E:\QuavleEngine\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/QuavleEngine.dir/depend.make
@@ -73,633 +73,663 @@ CMakeFiles/QuavleEngine.dir/codegen:
 
 CMakeFiles/QuavleEngine.dir/src/main.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/src/main.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/src/main.cpp.obj: D:/QuavleEngine/src/main.cpp
+CMakeFiles/QuavleEngine.dir/src/main.cpp.obj: E:/QuavleEngine/src/main.cpp
 CMakeFiles/QuavleEngine.dir/src/main.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/QuavleEngine.dir/src/main.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/src/main.cpp.obj -MF CMakeFiles\QuavleEngine.dir\src\main.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\src\main.cpp.obj -c D:\QuavleEngine\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/QuavleEngine.dir/src/main.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/src/main.cpp.obj -MF CMakeFiles\QuavleEngine.dir\src\main.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\src\main.cpp.obj -c E:\QuavleEngine\src\main.cpp
 
 CMakeFiles/QuavleEngine.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/src/main.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\src\main.cpp > CMakeFiles\QuavleEngine.dir\src\main.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\src\main.cpp > CMakeFiles\QuavleEngine.dir\src\main.cpp.i
 
 CMakeFiles/QuavleEngine.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/src/main.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\src\main.cpp -o CMakeFiles\QuavleEngine.dir\src\main.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\src\main.cpp -o CMakeFiles\QuavleEngine.dir\src\main.cpp.s
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.obj: D:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.cpp
+CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.obj: E:/QuavleEngine/vendor/imgui/backends/imgui_impl_glfw.cpp
 CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\imgui\backends\imgui_impl_glfw.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\imgui\backends\imgui_impl_glfw.cpp.obj -c D:\QuavleEngine\vendor\imgui\backends\imgui_impl_glfw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\imgui\backends\imgui_impl_glfw.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\imgui\backends\imgui_impl_glfw.cpp.obj -c E:\QuavleEngine\vendor\imgui\backends\imgui_impl_glfw.cpp
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\vendor\imgui\backends\imgui_impl_glfw.cpp > CMakeFiles\QuavleEngine.dir\vendor\imgui\backends\imgui_impl_glfw.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\vendor\imgui\backends\imgui_impl_glfw.cpp > CMakeFiles\QuavleEngine.dir\vendor\imgui\backends\imgui_impl_glfw.cpp.i
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_glfw.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\vendor\imgui\backends\imgui_impl_glfw.cpp -o CMakeFiles\QuavleEngine.dir\vendor\imgui\backends\imgui_impl_glfw.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\vendor\imgui\backends\imgui_impl_glfw.cpp -o CMakeFiles\QuavleEngine.dir\vendor\imgui\backends\imgui_impl_glfw.cpp.s
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.obj: D:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.cpp
+CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.obj: E:/QuavleEngine/vendor/imgui/backends/imgui_impl_opengl3.cpp
 CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\imgui\backends\imgui_impl_opengl3.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\imgui\backends\imgui_impl_opengl3.cpp.obj -c D:\QuavleEngine\vendor\imgui\backends\imgui_impl_opengl3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\imgui\backends\imgui_impl_opengl3.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\imgui\backends\imgui_impl_opengl3.cpp.obj -c E:\QuavleEngine\vendor\imgui\backends\imgui_impl_opengl3.cpp
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\vendor\imgui\backends\imgui_impl_opengl3.cpp > CMakeFiles\QuavleEngine.dir\vendor\imgui\backends\imgui_impl_opengl3.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\vendor\imgui\backends\imgui_impl_opengl3.cpp > CMakeFiles\QuavleEngine.dir\vendor\imgui\backends\imgui_impl_opengl3.cpp.i
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/vendor/imgui/backends/imgui_impl_opengl3.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\vendor\imgui\backends\imgui_impl_opengl3.cpp -o CMakeFiles\QuavleEngine.dir\vendor\imgui\backends\imgui_impl_opengl3.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\vendor\imgui\backends\imgui_impl_opengl3.cpp -o CMakeFiles\QuavleEngine.dir\vendor\imgui\backends\imgui_impl_opengl3.cpp.s
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj: D:/QuavleEngine/vendor/imgui/imgui.cpp
+CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj: E:/QuavleEngine/vendor/imgui/imgui.cpp
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui.cpp.obj -c D:\QuavleEngine\vendor\imgui\imgui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui.cpp.obj -c E:\QuavleEngine\vendor\imgui\imgui.cpp
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\vendor\imgui\imgui.cpp > CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\vendor\imgui\imgui.cpp > CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui.cpp.i
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\vendor\imgui\imgui.cpp -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\vendor\imgui\imgui.cpp -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui.cpp.s
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.obj: D:/QuavleEngine/vendor/imgui/imgui_demo.cpp
+CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.obj: E:/QuavleEngine/vendor/imgui/imgui_demo.cpp
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_demo.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_demo.cpp.obj -c D:\QuavleEngine\vendor\imgui\imgui_demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_demo.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_demo.cpp.obj -c E:\QuavleEngine\vendor\imgui\imgui_demo.cpp
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\vendor\imgui\imgui_demo.cpp > CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_demo.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\vendor\imgui\imgui_demo.cpp > CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_demo.cpp.i
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_demo.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\vendor\imgui\imgui_demo.cpp -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_demo.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\vendor\imgui\imgui_demo.cpp -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_demo.cpp.s
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.obj: D:/QuavleEngine/vendor/imgui/imgui_draw.cpp
+CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.obj: E:/QuavleEngine/vendor/imgui/imgui_draw.cpp
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_draw.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_draw.cpp.obj -c D:\QuavleEngine\vendor\imgui\imgui_draw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_draw.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_draw.cpp.obj -c E:\QuavleEngine\vendor\imgui\imgui_draw.cpp
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\vendor\imgui\imgui_draw.cpp > CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_draw.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\vendor\imgui\imgui_draw.cpp > CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_draw.cpp.i
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\vendor\imgui\imgui_draw.cpp -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_draw.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\vendor\imgui\imgui_draw.cpp -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_draw.cpp.s
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_tables.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_tables.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_tables.cpp.obj: D:/QuavleEngine/vendor/imgui/imgui_tables.cpp
+CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_tables.cpp.obj: E:/QuavleEngine/vendor/imgui/imgui_tables.cpp
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_tables.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_tables.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_tables.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_tables.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_tables.cpp.obj -c D:\QuavleEngine\vendor\imgui\imgui_tables.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_tables.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_tables.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_tables.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_tables.cpp.obj -c E:\QuavleEngine\vendor\imgui\imgui_tables.cpp
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_tables.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_tables.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\vendor\imgui\imgui_tables.cpp > CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_tables.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\vendor\imgui\imgui_tables.cpp > CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_tables.cpp.i
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_tables.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_tables.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\vendor\imgui\imgui_tables.cpp -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_tables.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\vendor\imgui\imgui_tables.cpp -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_tables.cpp.s
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.obj: D:/QuavleEngine/vendor/imgui/imgui_widgets.cpp
+CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.obj: E:/QuavleEngine/vendor/imgui/imgui_widgets.cpp
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_widgets.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_widgets.cpp.obj -c D:\QuavleEngine\vendor\imgui\imgui_widgets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_widgets.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_widgets.cpp.obj -c E:\QuavleEngine\vendor\imgui\imgui_widgets.cpp
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\vendor\imgui\imgui_widgets.cpp > CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_widgets.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\vendor\imgui\imgui_widgets.cpp > CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_widgets.cpp.i
 
 CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\vendor\imgui\imgui_widgets.cpp -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_widgets.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\vendor\imgui\imgui_widgets.cpp -o CMakeFiles\QuavleEngine.dir\vendor\imgui\imgui_widgets.cpp.s
 
 CMakeFiles/QuavleEngine.dir/application/application.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/application/application.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/application/application.cpp.obj: D:/QuavleEngine/application/application.cpp
+CMakeFiles/QuavleEngine.dir/application/application.cpp.obj: E:/QuavleEngine/application/application.cpp
 CMakeFiles/QuavleEngine.dir/application/application.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/QuavleEngine.dir/application/application.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/application/application.cpp.obj -MF CMakeFiles\QuavleEngine.dir\application\application.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\application\application.cpp.obj -c D:\QuavleEngine\application\application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/QuavleEngine.dir/application/application.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/application/application.cpp.obj -MF CMakeFiles\QuavleEngine.dir\application\application.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\application\application.cpp.obj -c E:\QuavleEngine\application\application.cpp
 
 CMakeFiles/QuavleEngine.dir/application/application.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/application/application.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\application\application.cpp > CMakeFiles\QuavleEngine.dir\application\application.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\application\application.cpp > CMakeFiles\QuavleEngine.dir\application\application.cpp.i
 
 CMakeFiles/QuavleEngine.dir/application/application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/application/application.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\application\application.cpp -o CMakeFiles\QuavleEngine.dir\application\application.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\application\application.cpp -o CMakeFiles\QuavleEngine.dir\application\application.cpp.s
+
+CMakeFiles/QuavleEngine.dir/core/components/components.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
+CMakeFiles/QuavleEngine.dir/core/components/components.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
+CMakeFiles/QuavleEngine.dir/core/components/components.cpp.obj: E:/QuavleEngine/core/components/components.cpp
+CMakeFiles/QuavleEngine.dir/core/components/components.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/QuavleEngine.dir/core/components/components.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/components/components.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\components\components.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\components\components.cpp.obj -c E:\QuavleEngine\core\components\components.cpp
+
+CMakeFiles/QuavleEngine.dir/core/components/components.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/components/components.cpp.i"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\components\components.cpp > CMakeFiles\QuavleEngine.dir\core\components\components.cpp.i
+
+CMakeFiles/QuavleEngine.dir/core/components/components.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/components/components.cpp.s"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\components\components.cpp -o CMakeFiles\QuavleEngine.dir\core\components\components.cpp.s
 
 CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj: D:/QuavleEngine/core/interface/interface.cpp
+CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj: E:/QuavleEngine/core/interface/interface.cpp
 CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\interface.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\interface.cpp.obj -c D:\QuavleEngine\core\interface\interface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\interface.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\interface.cpp.obj -c E:\QuavleEngine\core\interface\interface.cpp
 
 CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\core\interface\interface.cpp > CMakeFiles\QuavleEngine.dir\core\interface\interface.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\interface\interface.cpp > CMakeFiles\QuavleEngine.dir\core\interface\interface.cpp.i
 
 CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\interface\interface.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\interface.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\interface\interface.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\interface.cpp.s
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj: D:/QuavleEngine/core/interface/panel/camerConfig.cpp
+CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj: E:/QuavleEngine/core/interface/panel/camerConfig.cpp
 CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\camerConfig.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\camerConfig.cpp.obj -c D:\QuavleEngine\core\interface\panel\camerConfig.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\camerConfig.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\camerConfig.cpp.obj -c E:\QuavleEngine\core\interface\panel\camerConfig.cpp
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\core\interface\panel\camerConfig.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\camerConfig.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\interface\panel\camerConfig.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\camerConfig.cpp.i
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\interface\panel\camerConfig.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\camerConfig.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\interface\panel\camerConfig.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\camerConfig.cpp.s
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: D:/QuavleEngine/core/interface/panel/console.cpp
+CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: E:/QuavleEngine/core/interface/panel/console.cpp
 CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\console.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\console.cpp.obj -c D:\QuavleEngine\core\interface\panel\console.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\console.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\console.cpp.obj -c E:\QuavleEngine\core\interface\panel\console.cpp
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\core\interface\panel\console.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\console.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\interface\panel\console.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\console.cpp.i
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\interface\panel\console.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\console.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\interface\panel\console.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\console.cpp.s
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/editor.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/core/interface/panel/editor.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/core/interface/panel/editor.cpp.obj: D:/QuavleEngine/core/interface/panel/editor.cpp
+CMakeFiles/QuavleEngine.dir/core/interface/panel/editor.cpp.obj: E:/QuavleEngine/core/interface/panel/editor.cpp
 CMakeFiles/QuavleEngine.dir/core/interface/panel/editor.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/editor.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/editor.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\editor.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\editor.cpp.obj -c D:\QuavleEngine\core\interface\panel\editor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/editor.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/editor.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\editor.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\editor.cpp.obj -c E:\QuavleEngine\core\interface\panel\editor.cpp
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/editor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/interface/panel/editor.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\core\interface\panel\editor.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\editor.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\interface\panel\editor.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\editor.cpp.i
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/editor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/interface/panel/editor.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\interface\panel\editor.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\editor.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\interface\panel\editor.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\editor.cpp.s
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/fileExplorer.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/core/interface/panel/fileExplorer.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/core/interface/panel/fileExplorer.cpp.obj: D:/QuavleEngine/core/interface/panel/fileExplorer.cpp
+CMakeFiles/QuavleEngine.dir/core/interface/panel/fileExplorer.cpp.obj: E:/QuavleEngine/core/interface/panel/fileExplorer.cpp
 CMakeFiles/QuavleEngine.dir/core/interface/panel/fileExplorer.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/fileExplorer.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/fileExplorer.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\fileExplorer.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\fileExplorer.cpp.obj -c D:\QuavleEngine\core\interface\panel\fileExplorer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/fileExplorer.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/fileExplorer.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\fileExplorer.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\fileExplorer.cpp.obj -c E:\QuavleEngine\core\interface\panel\fileExplorer.cpp
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/fileExplorer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/interface/panel/fileExplorer.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\core\interface\panel\fileExplorer.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\fileExplorer.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\interface\panel\fileExplorer.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\fileExplorer.cpp.i
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/fileExplorer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/interface/panel/fileExplorer.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\interface\panel\fileExplorer.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\fileExplorer.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\interface\panel\fileExplorer.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\fileExplorer.cpp.s
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/guizmo.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/core/interface/panel/guizmo.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/core/interface/panel/guizmo.cpp.obj: D:/QuavleEngine/core/interface/panel/guizmo.cpp
+CMakeFiles/QuavleEngine.dir/core/interface/panel/guizmo.cpp.obj: E:/QuavleEngine/core/interface/panel/guizmo.cpp
 CMakeFiles/QuavleEngine.dir/core/interface/panel/guizmo.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/guizmo.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/guizmo.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\guizmo.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\guizmo.cpp.obj -c D:\QuavleEngine\core\interface\panel\guizmo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/guizmo.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/guizmo.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\guizmo.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\guizmo.cpp.obj -c E:\QuavleEngine\core\interface\panel\guizmo.cpp
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/guizmo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/interface/panel/guizmo.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\core\interface\panel\guizmo.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\guizmo.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\interface\panel\guizmo.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\guizmo.cpp.i
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/guizmo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/interface/panel/guizmo.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\interface\panel\guizmo.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\guizmo.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\interface\panel\guizmo.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\guizmo.cpp.s
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: D:/QuavleEngine/core/interface/panel/inspector.cpp
+CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: E:/QuavleEngine/core/interface/panel/inspector.cpp
 CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\inspector.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\inspector.cpp.obj -c D:\QuavleEngine\core\interface\panel\inspector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\inspector.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\inspector.cpp.obj -c E:\QuavleEngine\core\interface\panel\inspector.cpp
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\core\interface\panel\inspector.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\inspector.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\interface\panel\inspector.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\inspector.cpp.i
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/interface/panel/inspector.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\interface\panel\inspector.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\inspector.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\interface\panel\inspector.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\inspector.cpp.s
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: D:/QuavleEngine/core/interface/panel/objectHirarcy.cpp
+CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: E:/QuavleEngine/core/interface/panel/objectHirarcy.cpp
 CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\objectHirarcy.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\objectHirarcy.cpp.obj -c D:\QuavleEngine\core\interface\panel\objectHirarcy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\objectHirarcy.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\objectHirarcy.cpp.obj -c E:\QuavleEngine\core\interface\panel\objectHirarcy.cpp
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\core\interface\panel\objectHirarcy.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\objectHirarcy.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\interface\panel\objectHirarcy.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\objectHirarcy.cpp.i
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\interface\panel\objectHirarcy.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\objectHirarcy.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\interface\panel\objectHirarcy.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\objectHirarcy.cpp.s
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/profiler.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/core/interface/panel/profiler.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/core/interface/panel/profiler.cpp.obj: D:/QuavleEngine/core/interface/panel/profiler.cpp
+CMakeFiles/QuavleEngine.dir/core/interface/panel/profiler.cpp.obj: E:/QuavleEngine/core/interface/panel/profiler.cpp
 CMakeFiles/QuavleEngine.dir/core/interface/panel/profiler.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/profiler.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/profiler.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\profiler.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\profiler.cpp.obj -c D:\QuavleEngine\core\interface\panel\profiler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/profiler.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/profiler.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\profiler.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\profiler.cpp.obj -c E:\QuavleEngine\core\interface\panel\profiler.cpp
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/profiler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/interface/panel/profiler.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\core\interface\panel\profiler.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\profiler.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\interface\panel\profiler.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\profiler.cpp.i
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/profiler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/interface/panel/profiler.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\interface\panel\profiler.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\profiler.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\interface\panel\profiler.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\profiler.cpp.s
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.obj: D:/QuavleEngine/core/interface/panel/sceneSetting.cpp
+CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.obj: E:/QuavleEngine/core/interface/panel/sceneSetting.cpp
 CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\sceneSetting.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\sceneSetting.cpp.obj -c D:\QuavleEngine\core\interface\panel\sceneSetting.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\interface\panel\sceneSetting.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\interface\panel\sceneSetting.cpp.obj -c E:\QuavleEngine\core\interface\panel\sceneSetting.cpp
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\core\interface\panel\sceneSetting.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\sceneSetting.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\interface\panel\sceneSetting.cpp > CMakeFiles\QuavleEngine.dir\core\interface\panel\sceneSetting.cpp.i
 
 CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\interface\panel\sceneSetting.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\sceneSetting.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\interface\panel\sceneSetting.cpp -o CMakeFiles\QuavleEngine.dir\core\interface\panel\sceneSetting.cpp.s
 
 CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: D:/QuavleEngine/core/model/model.cpp
+CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: E:/QuavleEngine/core/model/model.cpp
 CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\model\model.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\model\model.cpp.obj -c D:\QuavleEngine\core\model\model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\model\model.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\model\model.cpp.obj -c E:\QuavleEngine\core\model\model.cpp
 
 CMakeFiles/QuavleEngine.dir/core/model/model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/model/model.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\core\model\model.cpp > CMakeFiles\QuavleEngine.dir\core\model\model.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\model\model.cpp > CMakeFiles\QuavleEngine.dir\core\model\model.cpp.i
 
 CMakeFiles/QuavleEngine.dir/core/model/model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/model/model.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\model\model.cpp -o CMakeFiles\QuavleEngine.dir\core\model\model.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\model\model.cpp -o CMakeFiles\QuavleEngine.dir\core\model\model.cpp.s
 
 CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj: D:/QuavleEngine/core/renderer/entity/objectEntity.cpp
+CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj: E:/QuavleEngine/core/renderer/entity/objectEntity.cpp
 CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\renderer\entity\objectEntity.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\renderer\entity\objectEntity.cpp.obj -c D:\QuavleEngine\core\renderer\entity\objectEntity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\renderer\entity\objectEntity.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\renderer\entity\objectEntity.cpp.obj -c E:\QuavleEngine\core\renderer\entity\objectEntity.cpp
 
 CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\core\renderer\entity\objectEntity.cpp > CMakeFiles\QuavleEngine.dir\core\renderer\entity\objectEntity.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\renderer\entity\objectEntity.cpp > CMakeFiles\QuavleEngine.dir\core\renderer\entity\objectEntity.cpp.i
 
 CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\renderer\entity\objectEntity.cpp -o CMakeFiles\QuavleEngine.dir\core\renderer\entity\objectEntity.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\renderer\entity\objectEntity.cpp -o CMakeFiles\QuavleEngine.dir\core\renderer\entity\objectEntity.cpp.s
 
 CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: D:/QuavleEngine/core/renderer/renderer.cpp
+CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: E:/QuavleEngine/core/renderer/renderer.cpp
 CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\renderer\renderer.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\renderer\renderer.cpp.obj -c D:\QuavleEngine\core\renderer\renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\renderer\renderer.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\renderer\renderer.cpp.obj -c E:\QuavleEngine\core\renderer\renderer.cpp
 
 CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\core\renderer\renderer.cpp > CMakeFiles\QuavleEngine.dir\core\renderer\renderer.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\renderer\renderer.cpp > CMakeFiles\QuavleEngine.dir\core\renderer\renderer.cpp.i
 
 CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\renderer\renderer.cpp -o CMakeFiles\QuavleEngine.dir\core\renderer\renderer.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\renderer\renderer.cpp -o CMakeFiles\QuavleEngine.dir\core\renderer\renderer.cpp.s
 
 CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj: D:/QuavleEngine/core/renderer/stb_image_impl.cpp
+CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj: E:/QuavleEngine/core/renderer/stb_image_impl.cpp
 CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\renderer\stb_image_impl.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\renderer\stb_image_impl.cpp.obj -c D:\QuavleEngine\core\renderer\stb_image_impl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\renderer\stb_image_impl.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\renderer\stb_image_impl.cpp.obj -c E:\QuavleEngine\core\renderer\stb_image_impl.cpp
 
 CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\core\renderer\stb_image_impl.cpp > CMakeFiles\QuavleEngine.dir\core\renderer\stb_image_impl.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\renderer\stb_image_impl.cpp > CMakeFiles\QuavleEngine.dir\core\renderer\stb_image_impl.cpp.i
 
 CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\renderer\stb_image_impl.cpp -o CMakeFiles\QuavleEngine.dir\core\renderer\stb_image_impl.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\renderer\stb_image_impl.cpp -o CMakeFiles\QuavleEngine.dir\core\renderer\stb_image_impl.cpp.s
+
+CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
+CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
+CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.obj: E:/QuavleEngine/core/saveData/savedData.cpp
+CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\saveData\savedData.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\saveData\savedData.cpp.obj -c E:\QuavleEngine\core\saveData\savedData.cpp
+
+CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.i"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\saveData\savedData.cpp > CMakeFiles\QuavleEngine.dir\core\saveData\savedData.cpp.i
+
+CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.s"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\saveData\savedData.cpp -o CMakeFiles\QuavleEngine.dir\core\saveData\savedData.cpp.s
 
 CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj: D:/QuavleEngine/core/scripting/asyncCompile.cpp
+CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj: E:/QuavleEngine/core/scripting/asyncCompile.cpp
 CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\scripting\asyncCompile.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\scripting\asyncCompile.cpp.obj -c D:\QuavleEngine\core\scripting\asyncCompile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\scripting\asyncCompile.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\scripting\asyncCompile.cpp.obj -c E:\QuavleEngine\core\scripting\asyncCompile.cpp
 
 CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\core\scripting\asyncCompile.cpp > CMakeFiles\QuavleEngine.dir\core\scripting\asyncCompile.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\scripting\asyncCompile.cpp > CMakeFiles\QuavleEngine.dir\core\scripting\asyncCompile.cpp.i
 
 CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\scripting\asyncCompile.cpp -o CMakeFiles\QuavleEngine.dir\core\scripting\asyncCompile.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\scripting\asyncCompile.cpp -o CMakeFiles\QuavleEngine.dir\core\scripting\asyncCompile.cpp.s
 
 CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.obj: D:/QuavleEngine/core/scripting/scripting.cpp
+CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.obj: E:/QuavleEngine/core/scripting/scripting.cpp
 CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\scripting\scripting.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\scripting\scripting.cpp.obj -c D:\QuavleEngine\core\scripting\scripting.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\scripting\scripting.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\scripting\scripting.cpp.obj -c E:\QuavleEngine\core\scripting\scripting.cpp
 
 CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\core\scripting\scripting.cpp > CMakeFiles\QuavleEngine.dir\core\scripting\scripting.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\scripting\scripting.cpp > CMakeFiles\QuavleEngine.dir\core\scripting\scripting.cpp.i
 
 CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\scripting\scripting.cpp -o CMakeFiles\QuavleEngine.dir\core\scripting\scripting.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\scripting\scripting.cpp -o CMakeFiles\QuavleEngine.dir\core\scripting\scripting.cpp.s
 
 CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: D:/QuavleEngine/core/window/window.cpp
+CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: E:/QuavleEngine/core/window/window.cpp
 CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\window\window.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\window\window.cpp.obj -c D:\QuavleEngine\core\window\window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj -MF CMakeFiles\QuavleEngine.dir\core\window\window.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\core\window\window.cpp.obj -c E:\QuavleEngine\core\window\window.cpp
 
 CMakeFiles/QuavleEngine.dir/core/window/window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/core/window/window.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\core\window\window.cpp > CMakeFiles\QuavleEngine.dir\core\window\window.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\core\window\window.cpp > CMakeFiles\QuavleEngine.dir\core\window\window.cpp.i
 
 CMakeFiles/QuavleEngine.dir/core/window/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/core/window/window.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\core\window\window.cpp -o CMakeFiles\QuavleEngine.dir\core\window\window.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\core\window\window.cpp -o CMakeFiles\QuavleEngine.dir\core\window\window.cpp.s
 
 CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj: D:/QuavleEngine/utils/camera/camera.cpp
+CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj: E:/QuavleEngine/utils/camera/camera.cpp
 CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj -MF CMakeFiles\QuavleEngine.dir\utils\camera\camera.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\utils\camera\camera.cpp.obj -c D:\QuavleEngine\utils\camera\camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.obj -MF CMakeFiles\QuavleEngine.dir\utils\camera\camera.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\utils\camera\camera.cpp.obj -c E:\QuavleEngine\utils\camera\camera.cpp
 
 CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\utils\camera\camera.cpp > CMakeFiles\QuavleEngine.dir\utils\camera\camera.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\utils\camera\camera.cpp > CMakeFiles\QuavleEngine.dir\utils\camera\camera.cpp.i
 
 CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/utils/camera/camera.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\utils\camera\camera.cpp -o CMakeFiles\QuavleEngine.dir\utils\camera\camera.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\utils\camera\camera.cpp -o CMakeFiles\QuavleEngine.dir\utils\camera\camera.cpp.s
 
 CMakeFiles/QuavleEngine.dir/utils/config.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/utils/config.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/utils/config.cpp.obj: D:/QuavleEngine/utils/config.cpp
+CMakeFiles/QuavleEngine.dir/utils/config.cpp.obj: E:/QuavleEngine/utils/config.cpp
 CMakeFiles/QuavleEngine.dir/utils/config.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/QuavleEngine.dir/utils/config.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/utils/config.cpp.obj -MF CMakeFiles\QuavleEngine.dir\utils\config.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\utils\config.cpp.obj -c D:\QuavleEngine\utils\config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/QuavleEngine.dir/utils/config.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/utils/config.cpp.obj -MF CMakeFiles\QuavleEngine.dir\utils\config.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\utils\config.cpp.obj -c E:\QuavleEngine\utils\config.cpp
 
 CMakeFiles/QuavleEngine.dir/utils/config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/utils/config.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\utils\config.cpp > CMakeFiles\QuavleEngine.dir\utils\config.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\utils\config.cpp > CMakeFiles\QuavleEngine.dir\utils\config.cpp.i
 
 CMakeFiles/QuavleEngine.dir/utils/config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/utils/config.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\utils\config.cpp -o CMakeFiles\QuavleEngine.dir\utils\config.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\utils\config.cpp -o CMakeFiles\QuavleEngine.dir\utils\config.cpp.s
 
 CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.obj: D:/QuavleEngine/utils/filereader.cpp
+CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.obj: E:/QuavleEngine/utils/filereader.cpp
 CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.obj -MF CMakeFiles\QuavleEngine.dir\utils\filereader.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\utils\filereader.cpp.obj -c D:\QuavleEngine\utils\filereader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.obj -MF CMakeFiles\QuavleEngine.dir\utils\filereader.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\utils\filereader.cpp.obj -c E:\QuavleEngine\utils\filereader.cpp
 
 CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\utils\filereader.cpp > CMakeFiles\QuavleEngine.dir\utils\filereader.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\utils\filereader.cpp > CMakeFiles\QuavleEngine.dir\utils\filereader.cpp.i
 
 CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/utils/filereader.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\utils\filereader.cpp -o CMakeFiles\QuavleEngine.dir\utils\filereader.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\utils\filereader.cpp -o CMakeFiles\QuavleEngine.dir\utils\filereader.cpp.s
 
 CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj: D:/QuavleEngine/utils/lightning/lightning.cpp
+CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj: E:/QuavleEngine/utils/lightning/lightning.cpp
 CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj -MF CMakeFiles\QuavleEngine.dir\utils\lightning\lightning.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\utils\lightning\lightning.cpp.obj -c D:\QuavleEngine\utils\lightning\lightning.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.obj -MF CMakeFiles\QuavleEngine.dir\utils\lightning\lightning.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\utils\lightning\lightning.cpp.obj -c E:\QuavleEngine\utils\lightning\lightning.cpp
 
 CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\utils\lightning\lightning.cpp > CMakeFiles\QuavleEngine.dir\utils\lightning\lightning.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\utils\lightning\lightning.cpp > CMakeFiles\QuavleEngine.dir\utils\lightning\lightning.cpp.i
 
 CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/utils/lightning/lightning.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\utils\lightning\lightning.cpp -o CMakeFiles\QuavleEngine.dir\utils\lightning\lightning.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\utils\lightning\lightning.cpp -o CMakeFiles\QuavleEngine.dir\utils\lightning\lightning.cpp.s
 
 CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.obj: D:/QuavleEngine/utils/msgWnd.cpp
+CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.obj: E:/QuavleEngine/utils/msgWnd.cpp
 CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.obj -MF CMakeFiles\QuavleEngine.dir\utils\msgWnd.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\utils\msgWnd.cpp.obj -c D:\QuavleEngine\utils\msgWnd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.obj -MF CMakeFiles\QuavleEngine.dir\utils\msgWnd.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\utils\msgWnd.cpp.obj -c E:\QuavleEngine\utils\msgWnd.cpp
 
 CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\utils\msgWnd.cpp > CMakeFiles\QuavleEngine.dir\utils\msgWnd.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\utils\msgWnd.cpp > CMakeFiles\QuavleEngine.dir\utils\msgWnd.cpp.i
 
 CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/utils/msgWnd.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\utils\msgWnd.cpp -o CMakeFiles\QuavleEngine.dir\utils\msgWnd.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\utils\msgWnd.cpp -o CMakeFiles\QuavleEngine.dir\utils\msgWnd.cpp.s
 
 CMakeFiles/QuavleEngine.dir/utils/uiTextureloader/utiTexLoader.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/utils/uiTextureloader/utiTexLoader.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/utils/uiTextureloader/utiTexLoader.cpp.obj: D:/QuavleEngine/utils/uiTextureloader/utiTexLoader.cpp
+CMakeFiles/QuavleEngine.dir/utils/uiTextureloader/utiTexLoader.cpp.obj: E:/QuavleEngine/utils/uiTextureloader/utiTexLoader.cpp
 CMakeFiles/QuavleEngine.dir/utils/uiTextureloader/utiTexLoader.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/QuavleEngine.dir/utils/uiTextureloader/utiTexLoader.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/utils/uiTextureloader/utiTexLoader.cpp.obj -MF CMakeFiles\QuavleEngine.dir\utils\uiTextureloader\utiTexLoader.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\utils\uiTextureloader\utiTexLoader.cpp.obj -c D:\QuavleEngine\utils\uiTextureloader\utiTexLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/QuavleEngine.dir/utils/uiTextureloader/utiTexLoader.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/utils/uiTextureloader/utiTexLoader.cpp.obj -MF CMakeFiles\QuavleEngine.dir\utils\uiTextureloader\utiTexLoader.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\utils\uiTextureloader\utiTexLoader.cpp.obj -c E:\QuavleEngine\utils\uiTextureloader\utiTexLoader.cpp
 
 CMakeFiles/QuavleEngine.dir/utils/uiTextureloader/utiTexLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/utils/uiTextureloader/utiTexLoader.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\utils\uiTextureloader\utiTexLoader.cpp > CMakeFiles\QuavleEngine.dir\utils\uiTextureloader\utiTexLoader.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\utils\uiTextureloader\utiTexLoader.cpp > CMakeFiles\QuavleEngine.dir\utils\uiTextureloader\utiTexLoader.cpp.i
 
 CMakeFiles/QuavleEngine.dir/utils/uiTextureloader/utiTexLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/utils/uiTextureloader/utiTexLoader.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\utils\uiTextureloader\utiTexLoader.cpp -o CMakeFiles\QuavleEngine.dir\utils\uiTextureloader\utiTexLoader.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\utils\uiTextureloader\utiTexLoader.cpp -o CMakeFiles\QuavleEngine.dir\utils\uiTextureloader\utiTexLoader.cpp.s
 
 CMakeFiles/QuavleEngine.dir/vendor/glad/src/glad.c.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/glad/src/glad.c.obj: CMakeFiles/QuavleEngine.dir/includes_C.rsp
-CMakeFiles/QuavleEngine.dir/vendor/glad/src/glad.c.obj: D:/QuavleEngine/vendor/glad/src/glad.c
+CMakeFiles/QuavleEngine.dir/vendor/glad/src/glad.c.obj: E:/QuavleEngine/vendor/glad/src/glad.c
 CMakeFiles/QuavleEngine.dir/vendor/glad/src/glad.c.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/QuavleEngine.dir/vendor/glad/src/glad.c.obj"
-	F:\Devtool\mysys2\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/glad/src/glad.c.obj -MF CMakeFiles\QuavleEngine.dir\vendor\glad\src\glad.c.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\glad\src\glad.c.obj -c D:\QuavleEngine\vendor\glad\src\glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/QuavleEngine.dir/vendor/glad/src/glad.c.obj"
+	F:\Devtool\mysys2\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/glad/src/glad.c.obj -MF CMakeFiles\QuavleEngine.dir\vendor\glad\src\glad.c.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\glad\src\glad.c.obj -c E:\QuavleEngine\vendor\glad\src\glad.c
 
 CMakeFiles/QuavleEngine.dir/vendor/glad/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/QuavleEngine.dir/vendor/glad/src/glad.c.i"
-	F:\Devtool\mysys2\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\QuavleEngine\vendor\glad\src\glad.c > CMakeFiles\QuavleEngine.dir\vendor\glad\src\glad.c.i
+	F:\Devtool\mysys2\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\QuavleEngine\vendor\glad\src\glad.c > CMakeFiles\QuavleEngine.dir\vendor\glad\src\glad.c.i
 
 CMakeFiles/QuavleEngine.dir/vendor/glad/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/QuavleEngine.dir/vendor/glad/src/glad.c.s"
-	F:\Devtool\mysys2\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\QuavleEngine\vendor\glad\src\glad.c -o CMakeFiles\QuavleEngine.dir\vendor\glad\src\glad.c.s
+	F:\Devtool\mysys2\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\QuavleEngine\vendor\glad\src\glad.c -o CMakeFiles\QuavleEngine.dir\vendor\glad\src\glad.c.s
 
 CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot.cpp.obj: D:/QuavleEngine/vendor/implot-master/implot.cpp
+CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot.cpp.obj: E:/QuavleEngine/vendor/implot-master/implot.cpp
 CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot.cpp.obj -c D:\QuavleEngine\vendor\implot-master\implot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot.cpp.obj -c E:\QuavleEngine\vendor\implot-master\implot.cpp
 
 CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\vendor\implot-master\implot.cpp > CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\vendor\implot-master\implot.cpp > CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot.cpp.i
 
 CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\vendor\implot-master\implot.cpp -o CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\vendor\implot-master\implot.cpp -o CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot.cpp.s
 
 CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_demo.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_demo.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_demo.cpp.obj: D:/QuavleEngine/vendor/implot-master/implot_demo.cpp
+CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_demo.cpp.obj: E:/QuavleEngine/vendor/implot-master/implot_demo.cpp
 CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_demo.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_demo.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_demo.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot_demo.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot_demo.cpp.obj -c D:\QuavleEngine\vendor\implot-master\implot_demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_demo.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_demo.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot_demo.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot_demo.cpp.obj -c E:\QuavleEngine\vendor\implot-master\implot_demo.cpp
 
 CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_demo.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\vendor\implot-master\implot_demo.cpp > CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot_demo.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\vendor\implot-master\implot_demo.cpp > CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot_demo.cpp.i
 
 CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_demo.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\vendor\implot-master\implot_demo.cpp -o CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot_demo.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\vendor\implot-master\implot_demo.cpp -o CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot_demo.cpp.s
 
 CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_items.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_items.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_items.cpp.obj: D:/QuavleEngine/vendor/implot-master/implot_items.cpp
+CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_items.cpp.obj: E:/QuavleEngine/vendor/implot-master/implot_items.cpp
 CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_items.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_items.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_items.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot_items.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot_items.cpp.obj -c D:\QuavleEngine\vendor\implot-master\implot_items.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_items.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_items.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot_items.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot_items.cpp.obj -c E:\QuavleEngine\vendor\implot-master\implot_items.cpp
 
 CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_items.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_items.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\vendor\implot-master\implot_items.cpp > CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot_items.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\vendor\implot-master\implot_items.cpp > CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot_items.cpp.i
 
 CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_items.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/vendor/implot-master/implot_items.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\vendor\implot-master\implot_items.cpp -o CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot_items.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\vendor\implot-master\implot_items.cpp -o CMakeFiles\QuavleEngine.dir\vendor\implot-master\implot_items.cpp.s
 
 CMakeFiles/QuavleEngine.dir/vendor/editor/TextEditor.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/editor/TextEditor.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/vendor/editor/TextEditor.cpp.obj: D:/QuavleEngine/vendor/editor/TextEditor.cpp
+CMakeFiles/QuavleEngine.dir/vendor/editor/TextEditor.cpp.obj: E:/QuavleEngine/vendor/editor/TextEditor.cpp
 CMakeFiles/QuavleEngine.dir/vendor/editor/TextEditor.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/editor/TextEditor.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/editor/TextEditor.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\editor\TextEditor.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\editor\TextEditor.cpp.obj -c D:\QuavleEngine\vendor\editor\TextEditor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/editor/TextEditor.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/editor/TextEditor.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\editor\TextEditor.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\editor\TextEditor.cpp.obj -c E:\QuavleEngine\vendor\editor\TextEditor.cpp
 
 CMakeFiles/QuavleEngine.dir/vendor/editor/TextEditor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/vendor/editor/TextEditor.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\vendor\editor\TextEditor.cpp > CMakeFiles\QuavleEngine.dir\vendor\editor\TextEditor.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\vendor\editor\TextEditor.cpp > CMakeFiles\QuavleEngine.dir\vendor\editor\TextEditor.cpp.i
 
 CMakeFiles/QuavleEngine.dir/vendor/editor/TextEditor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/vendor/editor/TextEditor.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\vendor\editor\TextEditor.cpp -o CMakeFiles\QuavleEngine.dir\vendor\editor\TextEditor.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\vendor\editor\TextEditor.cpp -o CMakeFiles\QuavleEngine.dir\vendor\editor\TextEditor.cpp.s
 
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/GraphEditor.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/GraphEditor.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/GraphEditor.cpp.obj: D:/QuavleEngine/vendor/ImGuizmo/GraphEditor.cpp
+CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/GraphEditor.cpp.obj: E:/QuavleEngine/vendor/ImGuizmo/GraphEditor.cpp
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/GraphEditor.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/GraphEditor.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/GraphEditor.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\GraphEditor.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\GraphEditor.cpp.obj -c D:\QuavleEngine\vendor\ImGuizmo\GraphEditor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/GraphEditor.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/GraphEditor.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\GraphEditor.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\GraphEditor.cpp.obj -c E:\QuavleEngine\vendor\ImGuizmo\GraphEditor.cpp
 
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/GraphEditor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/GraphEditor.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\vendor\ImGuizmo\GraphEditor.cpp > CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\GraphEditor.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\vendor\ImGuizmo\GraphEditor.cpp > CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\GraphEditor.cpp.i
 
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/GraphEditor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/GraphEditor.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\vendor\ImGuizmo\GraphEditor.cpp -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\GraphEditor.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\vendor\ImGuizmo\GraphEditor.cpp -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\GraphEditor.cpp.s
 
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImCurveEdit.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImCurveEdit.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImCurveEdit.cpp.obj: D:/QuavleEngine/vendor/ImGuizmo/ImCurveEdit.cpp
+CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImCurveEdit.cpp.obj: E:/QuavleEngine/vendor/ImGuizmo/ImCurveEdit.cpp
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImCurveEdit.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImCurveEdit.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImCurveEdit.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImCurveEdit.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImCurveEdit.cpp.obj -c D:\QuavleEngine\vendor\ImGuizmo\ImCurveEdit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImCurveEdit.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImCurveEdit.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImCurveEdit.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImCurveEdit.cpp.obj -c E:\QuavleEngine\vendor\ImGuizmo\ImCurveEdit.cpp
 
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImCurveEdit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImCurveEdit.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\vendor\ImGuizmo\ImCurveEdit.cpp > CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImCurveEdit.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\vendor\ImGuizmo\ImCurveEdit.cpp > CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImCurveEdit.cpp.i
 
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImCurveEdit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImCurveEdit.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\vendor\ImGuizmo\ImCurveEdit.cpp -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImCurveEdit.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\vendor\ImGuizmo\ImCurveEdit.cpp -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImCurveEdit.cpp.s
 
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGradient.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGradient.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGradient.cpp.obj: D:/QuavleEngine/vendor/ImGuizmo/ImGradient.cpp
+CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGradient.cpp.obj: E:/QuavleEngine/vendor/ImGuizmo/ImGradient.cpp
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGradient.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGradient.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGradient.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImGradient.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImGradient.cpp.obj -c D:\QuavleEngine\vendor\ImGuizmo\ImGradient.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGradient.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGradient.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImGradient.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImGradient.cpp.obj -c E:\QuavleEngine\vendor\ImGuizmo\ImGradient.cpp
 
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGradient.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGradient.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\vendor\ImGuizmo\ImGradient.cpp > CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImGradient.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\vendor\ImGuizmo\ImGradient.cpp > CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImGradient.cpp.i
 
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGradient.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGradient.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\vendor\ImGuizmo\ImGradient.cpp -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImGradient.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\vendor\ImGuizmo\ImGradient.cpp -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImGradient.cpp.s
 
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGuizmo.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGuizmo.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGuizmo.cpp.obj: D:/QuavleEngine/vendor/ImGuizmo/ImGuizmo.cpp
+CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGuizmo.cpp.obj: E:/QuavleEngine/vendor/ImGuizmo/ImGuizmo.cpp
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGuizmo.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGuizmo.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGuizmo.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImGuizmo.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImGuizmo.cpp.obj -c D:\QuavleEngine\vendor\ImGuizmo\ImGuizmo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGuizmo.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGuizmo.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImGuizmo.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImGuizmo.cpp.obj -c E:\QuavleEngine\vendor\ImGuizmo\ImGuizmo.cpp
 
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGuizmo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGuizmo.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\vendor\ImGuizmo\ImGuizmo.cpp > CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImGuizmo.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\vendor\ImGuizmo\ImGuizmo.cpp > CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImGuizmo.cpp.i
 
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGuizmo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGuizmo.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\vendor\ImGuizmo\ImGuizmo.cpp -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImGuizmo.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\vendor\ImGuizmo\ImGuizmo.cpp -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImGuizmo.cpp.s
 
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImSequencer.cpp.obj: CMakeFiles/QuavleEngine.dir/flags.make
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImSequencer.cpp.obj: CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
-CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImSequencer.cpp.obj: D:/QuavleEngine/vendor/ImGuizmo/ImSequencer.cpp
+CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImSequencer.cpp.obj: E:/QuavleEngine/vendor/ImGuizmo/ImSequencer.cpp
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImSequencer.cpp.obj: CMakeFiles/QuavleEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImSequencer.cpp.obj"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImSequencer.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImSequencer.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImSequencer.cpp.obj -c D:\QuavleEngine\vendor\ImGuizmo\ImSequencer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImSequencer.cpp.obj"
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImSequencer.cpp.obj -MF CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImSequencer.cpp.obj.d -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImSequencer.cpp.obj -c E:\QuavleEngine\vendor\ImGuizmo\ImSequencer.cpp
 
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImSequencer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImSequencer.cpp.i"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\QuavleEngine\vendor\ImGuizmo\ImSequencer.cpp > CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImSequencer.cpp.i
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\QuavleEngine\vendor\ImGuizmo\ImSequencer.cpp > CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImSequencer.cpp.i
 
 CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImSequencer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImSequencer.cpp.s"
-	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\QuavleEngine\vendor\ImGuizmo\ImSequencer.cpp -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImSequencer.cpp.s
+	F:\Devtool\mysys2\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\QuavleEngine\vendor\ImGuizmo\ImSequencer.cpp -o CMakeFiles\QuavleEngine.dir\vendor\ImGuizmo\ImSequencer.cpp.s
 
 # Object files for target QuavleEngine
 QuavleEngine_OBJECTS = \
@@ -712,6 +742,7 @@ QuavleEngine_OBJECTS = \
 "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_tables.cpp.obj" \
 "CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.obj" \
 "CMakeFiles/QuavleEngine.dir/application/application.cpp.obj" \
+"CMakeFiles/QuavleEngine.dir/core/components/components.cpp.obj" \
 "CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj" \
 "CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj" \
 "CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj" \
@@ -726,6 +757,7 @@ QuavleEngine_OBJECTS = \
 "CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj" \
 "CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj" \
 "CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj" \
+"CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.obj" \
 "CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj" \
 "CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.obj" \
 "CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj" \
@@ -758,6 +790,7 @@ QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_draw.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_tables.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/vendor/imgui/imgui_widgets.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/application/application.cpp.obj
+QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/core/components/components.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/core/interface/interface.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/core/interface/panel/camerConfig.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/core/interface/panel/console.cpp.obj
@@ -772,6 +805,7 @@ QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj
+QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj
@@ -793,11 +827,11 @@ QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImGuizmo.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/vendor/ImGuizmo/ImSequencer.cpp.obj
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/build.make
 QuavleEngine.exe: F:/Devtool/mysys2/ucrt64/lib/liblua.dll.a
-QuavleEngine.exe: D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/lib-mingw-w64/libglfw3.a
+QuavleEngine.exe: E:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/lib-mingw-w64/libglfw3.a
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/linkLibs.rsp
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/objects1.rsp
 QuavleEngine.exe: CMakeFiles/QuavleEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Linking CXX executable QuavleEngine.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\QuavleEngine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Linking CXX executable QuavleEngine.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\QuavleEngine.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -809,6 +843,6 @@ CMakeFiles/QuavleEngine.dir/clean:
 .PHONY : CMakeFiles/QuavleEngine.dir/clean
 
 CMakeFiles/QuavleEngine.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\QuavleEngine D:\QuavleEngine D:\QuavleEngine\build D:\QuavleEngine\build D:\QuavleEngine\build\CMakeFiles\QuavleEngine.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\QuavleEngine E:\QuavleEngine E:\QuavleEngine\build E:\QuavleEngine\build E:\QuavleEngine\build\CMakeFiles\QuavleEngine.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/QuavleEngine.dir/depend
 

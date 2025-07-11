@@ -1,1 +1,1 @@
- F:/Devtool/mysys2/ucrt64/lib/liblua.dll.a "D:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/lib-mingw-w64/libglfw3.a" -lassimp -lopengl32 -lcomctl32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+ F:/Devtool/mysys2/ucrt64/lib/liblua.dll.a "E:/QuavleEngine/vendor/glfw-3.4.bin.WIN64/lib-mingw-w64/libglfw3.a" -lassimp -lopengl32 -lcomctl32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

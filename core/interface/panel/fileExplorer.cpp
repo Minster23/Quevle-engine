@@ -11,13 +11,13 @@ std::unordered_map<std::string, unsigned int> imageCache;
 
 void interface::fileExplorer()
 {
-    ImGui::Begin("Files", nullptr, ImGuiWindowFlags_MenuBar | ImGuiWindowFlags_NoMove);
+    ImGui::Begin("Files", nullptr, ImGuiWindowFlags_MenuBar);
     ImGuiID dockspace_id = ImGui::GetID("FILES_Dockspace");
     ImVec2 size = ImGui::GetContentRegionAvail();
     ImGui::DockSpace(dockspace_id, size, ImGuiDockNodeFlags_None);
     ImGui::End();
 
-    ImGui::Begin("Folder", nullptr, ImGuiWindowFlags_NoMove);
+    ImGui::Begin("Folder", nullptr);
     if (std::filesystem::path(currentDirectory).has_parent_path())
     {
         if (ImGui::Button(ICON_CI_ARROW_UP " .."))
@@ -46,7 +46,7 @@ void interface::fileExplorer()
     }
     ImGui::End();
 
-    ImGui::Begin("File Explorer", nullptr, ImGuiWindowFlags_NoMove);
+    ImGui::Begin("File Explorer", nullptr);
 
     float itemWidth = 120.0f;  // increased width
     float itemHeight = 140.0f; // increased height to allow more vertical padding
@@ -159,6 +159,7 @@ void interface::fileExplorer()
                             }
                             else if (extension == ".lua")
                             {
+                                interface::isCodeEditor = true;
                                 loadCode(pathStr);
                             }
                             else

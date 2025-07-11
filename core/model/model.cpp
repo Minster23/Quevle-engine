@@ -43,6 +43,7 @@ void Model::setModelData(const aiScene *scene, const std::string &path)
         aiMesh *mesh = scene->mMeshes[i];
         ObjectEntity::ObjectData objectData;
 
+        objectData.locationMode = path;
         objectData.UUID = uid.generate_uuid();
         objectData.name = mesh->mName.C_Str();
         objectData.vertexCount = mesh->mNumVertices;

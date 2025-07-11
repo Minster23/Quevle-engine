@@ -94,6 +94,26 @@ vec2 parallaxMapping(vec2 texCoords, vec3 viewDir) {
     return currentTexCoords;
 }
 
+vec3 getNormalFromMap()
+{
+    vec3 tangentNormal = texture(normalMap, TexCoords).rgb;
+    tangentNormal = normalize(tangentNormal * 2.0 - 1.0);
+
+    // Assume tangent, bitangent, and normal are passed in as varying inputs
+    vec3 Q1 = dFdx(FragPos);
+    vec3 Q2 = dFdy(FragPos);
+    vec2 st1 = dFdx(TexCoords);
+    vec2 st2 = dFdy(TexCoords);
+
+    vec3 T = normalize(Q1 * st2.t - Q2 * st1.t);
+    vec3 B = normalize(-cross(Normal, T));
+    vec3 N = normalize(Normal);
+
+    mat3 TBN = mat3(T, B, N);
+    return normalize(TBN * tangentNormal);
+}
+
+
 float computeFakeSSAO(vec3 normal, vec3 fragPos, vec3 viewDir) {
     float facing = clamp(dot(normal, viewDir), 0.0, 1.0);
     float depth = clamp(length(viewDir) / 10.0, 0.0, 1.0);
@@ -146,7 +166,7 @@ vec3 getAmbient(vec2 uv, vec3 albedo) {
 }
 
 float getAO(vec3 normal, vec3 fragPos, vec3 viewDir) {
-    return clamp(computeFakeSSAO(normal, fragPos, viewDir), 0.0, 1.0);
+    return clamp(computeFakeSSAO(getNormalFromMap(), fragPos, viewDir), 0.0, 1.0);
 }
 
 vec3 calculateNormal(vec2 uv) {

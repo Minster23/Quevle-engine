@@ -24,6 +24,7 @@ namespace QuavleEngine
 
         struct ObjectData
         {
+            std::string locationMode;
             std::string UUID;
             unsigned int VAO;
             unsigned int VBO;
@@ -60,14 +61,17 @@ namespace QuavleEngine
 
         struct LightData
         {
+            std::string UUID;
             glm::vec3 position;
             glm::vec3 rotation;
             glm::vec3 scale;
             glm::vec3 lightColor;
+            unsigned int textureID;
             std::string name;
             float intensity;
             bool isShow = true;
             bool isSelected = false;
+            std::vector<int> components;
         };
 
         struct CubeMap
@@ -80,11 +84,15 @@ namespace QuavleEngine
 
         struct Billboard
         {
+            std::string UUID;
             std::string name;
             std::vector<float> vertices;
             std::vector<unsigned int> indices;
             size_t indicesCount = 0;
-
+            bool lookAt = true;
+            bool isSelected;
+            std::string texLocation;
+            glm::mat4 model = glm::mat4(1.0f);
             unsigned int vertexShader = 0;
             unsigned int fragmentShader = 0;
             unsigned int shaderProgram = 0;
@@ -93,6 +101,10 @@ namespace QuavleEngine
             unsigned int textureID;
 
             glm::vec3 position = glm::vec3(0.0f);
+            //* DUMMY 
+            glm::vec3 rotation = glm::vec3(0.0f);
+            glm::vec3 scale = glm::vec3(0.0f);
+
             glm::mat4 view = glm::mat4(1.0f);
             glm::mat4 projection = glm::mat4(1.0f);
             glm::vec4 color = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);

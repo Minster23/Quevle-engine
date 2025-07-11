@@ -10,8 +10,6 @@
 #include <vector>
 #include <unordered_set>
 #include <unordered_map>
-#include <thread>
-#include <future>
 #include <chrono>
 
 using namespace QuavleEngine;
@@ -49,15 +47,12 @@ namespace {
 
     // Model cache to avoid reloading
     static std::unordered_map<std::string, bool> modelCache;
-    static std::mutex modelCacheMutex;
 
     bool isModelLoaded(const std::string& path) {
-        std::lock_guard<std::mutex> lock(modelCacheMutex);
         return modelCache.find(path) != modelCache.end();
     }
 
     void markModelLoaded(const std::string& path) {
-        std::lock_guard<std::mutex> lock(modelCacheMutex);
         modelCache[path] = true;
     }
 }
@@ -293,12 +288,12 @@ void saveData::load() {
         cameras.reserve(data["cameras"].size());
     }
 
-    // Load objects with batched model loading
+    // Load objects with improved model loading
     if (data.contains("object") && data["object"].is_array()) {
         std::unordered_set<std::string> loadedPaths;
         loadedPaths.reserve(data["object"].size());
 
-        // First pass: collect unique model paths
+        // First pass: load unique models sequentially (safer than async)
         std::vector<std::string> uniqueModelPaths;
         for (const auto &jObj : data["object"]) {
             if (!jObj.contains("modelPath") || jObj["modelPath"].empty()) {
@@ -312,37 +307,20 @@ void saveData::load() {
             }
         }
 
-        // Second pass: load models in batches (async if possible)
-        std::vector<std::future<bool>> loadFutures;
-        const size_t batchSize = 4; // Adjust based on your system
-        
-        for (size_t i = 0; i < uniqueModelPaths.size(); i += batchSize) {
-            size_t end = std::min(i + batchSize, uniqueModelPaths.size());
-            
-            auto loadBatch = [&](size_t start, size_t end) {
-                bool success = true;
-                for (size_t j = start; j < end; ++j) {
-                    if (!isModelLoaded(uniqueModelPaths[j])) {
-                        if (renderer.loadModelFirst(uniqueModelPaths[j])) {
-                            markModelLoaded(uniqueModelPaths[j]);
-                        } else {
-                            std::cerr << "Failed to load model: " << uniqueModelPaths[j] << std::endl;
-                            success = false;
-                        }
-                    }
+        // Load models one by one to avoid threading issues
+        for (const auto& modelPath : uniqueModelPaths) {
+            if (!isModelLoaded(modelPath)) {
+                std::cout << "Loading model: " << modelPath << std::endl;
+                if (renderer.loadModelFirst(modelPath)) {
+                    markModelLoaded(modelPath);
+                    std::cout << "Successfully loaded: " << modelPath << std::endl;
+                } else {
+                    std::cerr << "Failed to load model: " << modelPath << std::endl;
                 }
-                return success;
-            };
-
-            loadFutures.push_back(std::async(std::launch::async, loadBatch, i, end));
+            }
         }
 
-        // Wait for all batches to complete
-        for (auto& future : loadFutures) {
-            future.wait();
-        }
-
-        // Third pass: create object data
+        // Second pass: create object data
         loadedPaths.clear();
         for (const auto &jObj : data["object"]) {
             try {
@@ -355,33 +333,59 @@ void saveData::load() {
                     continue;
                 }
 
+                // Only create object if model was loaded successfully
+                if (!isModelLoaded(modelPath)) {
+                    std::cerr << "Skipping object with failed model: " << modelPath << std::endl;
+                    continue;
+                }
+
                 ObjectEntity::ObjectData obj;
                 obj.locationMode = modelPath;
 
-                // Optimized property loading with direct assignment
-                if (jObj.contains("position") && jObj["position"].is_array()) {
+                // Safe property loading with null checks
+                if (jObj.contains("position") && jObj["position"].is_array() && jObj["position"].size() >= 3) {
                     obj.position = toVec3(jObj["position"]);
                 }
-                if (jObj.contains("rotation") && jObj["rotation"].is_array()) {
+                if (jObj.contains("rotation") && jObj["rotation"].is_array() && jObj["rotation"].size() >= 3) {
                     obj.rotation = toVec3(jObj["rotation"]);
                 }
-                if (jObj.contains("scale") && jObj["scale"].is_array()) {
+                if (jObj.contains("scale") && jObj["scale"].is_array() && jObj["scale"].size() >= 3) {
                     obj.scale = toVec3(jObj["scale"]);
                 }
-                if (jObj.contains("isShow")) obj.isShow = jObj["isShow"].get<bool>();
-                if (jObj.contains("isSelected")) obj.isSelected = jObj["isSelected"].get<bool>();
-                if (jObj.contains("name")) obj.name = jObj["name"].get<std::string>();
+                if (jObj.contains("isShow") && jObj["isShow"].is_boolean()) {
+                    obj.isShow = jObj["isShow"].get<bool>();
+                }
+                if (jObj.contains("isSelected") && jObj["isSelected"].is_boolean()) {
+                    obj.isSelected = jObj["isSelected"].get<bool>();
+                }
+                if (jObj.contains("name") && jObj["name"].is_string()) {
+                    obj.name = jObj["name"].get<std::string>();
+                }
 
-                // Optimized material loading
+                // Safe material loading
                 if (jObj.contains("material") && jObj["material"].is_object()) {
                     const auto &jMat = jObj["material"];
-                    if (jMat.contains("ambient")) obj.material.ambient = toVec3(jMat["ambient"]);
-                    if (jMat.contains("diffuse")) obj.material.diffuse = toVec3(jMat["diffuse"]);
-                    if (jMat.contains("specular")) obj.material.specular = toVec3(jMat["specular"]);
-                    if (jMat.contains("emissive")) obj.material.emissive = toVec3(jMat["emissive"]);
-                    if (jMat.contains("shininess")) obj.material.shininess = jMat["shininess"].get<float>();
-                    if (jMat.contains("opacity")) obj.material.opacity = jMat["opacity"].get<float>();
-                    if (jMat.contains("shininessStrength")) obj.material.shininessStrength = jMat["shininessStrength"].get<float>();
+                    if (jMat.contains("ambient") && jMat["ambient"].is_array()) {
+                        obj.material.ambient = toVec3(jMat["ambient"]);
+                    }
+                    if (jMat.contains("diffuse") && jMat["diffuse"].is_array()) {
+                        obj.material.diffuse = toVec3(jMat["diffuse"]);
+                    }
+                    if (jMat.contains("specular") && jMat["specular"].is_array()) {
+                        obj.material.specular = toVec3(jMat["specular"]);
+                    }
+                    if (jMat.contains("emissive") && jMat["emissive"].is_array()) {
+                        obj.material.emissive = toVec3(jMat["emissive"]);
+                    }
+                    if (jMat.contains("shininess") && jMat["shininess"].is_number()) {
+                        obj.material.shininess = jMat["shininess"].get<float>();
+                    }
+                    if (jMat.contains("opacity") && jMat["opacity"].is_number()) {
+                        obj.material.opacity = jMat["opacity"].get<float>();
+                    }
+                    if (jMat.contains("shininessStrength") && jMat["shininessStrength"].is_number()) {
+                        obj.material.shininessStrength = jMat["shininessStrength"].get<float>();
+                    }
                 }
 
                 objectEntity.objects.push_back(std::move(obj));
@@ -392,26 +396,50 @@ void saveData::load() {
         }
     }
 
-    // Load billboards (optimized)
+    // Load billboards with safety checks
     if (data.contains("billboards") && data["billboards"].is_array()) {
         for (const auto &jbb : data["billboards"]) {
             try {
                 ObjectEntity::Billboard bb;
 
-                if (jbb.contains("name")) bb.name = jbb["name"].get<std::string>();
-                if (jbb.contains("texLocation")) bb.texLocation = jbb["texLocation"].get<std::string>();
-                if (jbb.contains("vertices")) bb.vertices = jbb["vertices"].get<std::vector<float>>();
-                if (jbb.contains("indices")) bb.indices = jbb["indices"].get<std::vector<unsigned int>>();
-                if (jbb.contains("indicesCount")) bb.indicesCount = jbb["indicesCount"].get<int>();
-                if (jbb.contains("lookAt")) bb.lookAt = jbb["lookAt"].get<bool>();
-                if (jbb.contains("isSelected")) bb.isSelected = jbb["isSelected"].get<bool>();
-                if (jbb.contains("position")) bb.position = toVec3(jbb["position"]);
-                if (jbb.contains("rotation")) bb.rotation = toVec3(jbb["rotation"]);
-                if (jbb.contains("scale")) bb.scale = toVec3(jbb["scale"]);
-                if (jbb.contains("color")) bb.color = toVec4(jbb["color"]);
-                if (jbb.contains("isShow")) bb.isShow = jbb["isShow"].get<bool>();
+                if (jbb.contains("name") && jbb["name"].is_string()) {
+                    bb.name = jbb["name"].get<std::string>();
+                }
+                if (jbb.contains("texLocation") && jbb["texLocation"].is_string()) {
+                    bb.texLocation = jbb["texLocation"].get<std::string>();
+                }
+                if (jbb.contains("vertices") && jbb["vertices"].is_array()) {
+                    bb.vertices = jbb["vertices"].get<std::vector<float>>();
+                }
+                if (jbb.contains("indices") && jbb["indices"].is_array()) {
+                    bb.indices = jbb["indices"].get<std::vector<unsigned int>>();
+                }
+                if (jbb.contains("indicesCount") && jbb["indicesCount"].is_number()) {
+                    bb.indicesCount = jbb["indicesCount"].get<int>();
+                }
+                if (jbb.contains("lookAt") && jbb["lookAt"].is_boolean()) {
+                    bb.lookAt = jbb["lookAt"].get<bool>();
+                }
+                if (jbb.contains("isSelected") && jbb["isSelected"].is_boolean()) {
+                    bb.isSelected = jbb["isSelected"].get<bool>();
+                }
+                if (jbb.contains("position") && jbb["position"].is_array()) {
+                    bb.position = toVec3(jbb["position"]);
+                }
+                if (jbb.contains("rotation") && jbb["rotation"].is_array()) {
+                    bb.rotation = toVec3(jbb["rotation"]);
+                }
+                if (jbb.contains("scale") && jbb["scale"].is_array()) {
+                    bb.scale = toVec3(jbb["scale"]);
+                }
+                if (jbb.contains("color") && jbb["color"].is_array()) {
+                    bb.color = toVec4(jbb["color"]);
+                }
+                if (jbb.contains("isShow") && jbb["isShow"].is_boolean()) {
+                    bb.isShow = jbb["isShow"].get<bool>();
+                }
 
-                // Optimized matrix loading
+                // Safe matrix loading
                 if (jbb.contains("model") && jbb["model"].is_array()) {
                     bb.model = toMat4(jbb["model"]);
                 }
@@ -424,43 +452,69 @@ void saveData::load() {
 
                 objectEntity.billboards.push_back(std::move(bb));
                 
-                // Load billboard resources
-                size_t index = objectEntity.billboards.size() - 1;
-                renderer.shaderLoader(index, Renderer::RenderType::BILLBOARD);
-                if (!bb.texLocation.empty()) {
-                    renderer.loadTexture(bb.texLocation, index, Renderer::TextureType::BILLBOARD);
+                // Load billboard resources safely
+                try {
+                    size_t index = objectEntity.billboards.size() - 1;
+                    renderer.shaderLoader(index, Renderer::RenderType::BILLBOARD);
+                    if (!bb.texLocation.empty()) {
+                        renderer.loadTexture(bb.texLocation, index, Renderer::TextureType::BILLBOARD);
+                    }
+                    renderer.shaderLink(index, Renderer::RenderType::BILLBOARD);
+                } catch (const std::exception &e) {
+                    std::cerr << "Error loading billboard resources: " << e.what() << std::endl;
                 }
-                renderer.shaderLink(index, Renderer::RenderType::BILLBOARD);
             } catch (const std::exception &e) {
                 std::cerr << "Error loading billboard: " << e.what() << std::endl;
             }
         }
     }
 
-    // Load lights (optimized)
+    // Load lights with safety checks
     if (data.contains("lights") && data["lights"].is_array()) {
         for (const auto &jlight : data["lights"]) {
             try {
                 ObjectEntity::LightData light;
 
-                if (jlight.contains("position")) light.position = toVec3(jlight["position"]);
-                if (jlight.contains("rotation")) light.rotation = toVec3(jlight["rotation"]);
-                if (jlight.contains("scale")) light.scale = toVec3(jlight["scale"]);
-                if (jlight.contains("lightColor")) light.lightColor = toVec3(jlight["lightColor"]);
-                if (jlight.contains("name")) light.name = jlight["name"].get<std::string>();
-                if (jlight.contains("intensity")) light.intensity = jlight["intensity"].get<float>();
-                if (jlight.contains("isShow")) light.isShow = jlight["isShow"].get<bool>();
-                if (jlight.contains("isSelected")) light.isSelected = jlight["isSelected"].get<bool>();
-                if (jlight.contains("textureID")) light.textureID = jlight["textureID"].get<unsigned int>();
+                if (jlight.contains("position") && jlight["position"].is_array()) {
+                    light.position = toVec3(jlight["position"]);
+                }
+                if (jlight.contains("rotation") && jlight["rotation"].is_array()) {
+                    light.rotation = toVec3(jlight["rotation"]);
+                }
+                if (jlight.contains("scale") && jlight["scale"].is_array()) {
+                    light.scale = toVec3(jlight["scale"]);
+                }
+                if (jlight.contains("lightColor") && jlight["lightColor"].is_array()) {
+                    light.lightColor = toVec3(jlight["lightColor"]);
+                }
+                if (jlight.contains("name") && jlight["name"].is_string()) {
+                    light.name = jlight["name"].get<std::string>();
+                }
+                if (jlight.contains("intensity") && jlight["intensity"].is_number()) {
+                    light.intensity = jlight["intensity"].get<float>();
+                }
+                if (jlight.contains("isShow") && jlight["isShow"].is_boolean()) {
+                    light.isShow = jlight["isShow"].get<bool>();
+                }
+                if (jlight.contains("isSelected") && jlight["isSelected"].is_boolean()) {
+                    light.isSelected = jlight["isSelected"].get<bool>();
+                }
+                if (jlight.contains("textureID") && jlight["textureID"].is_number()) {
+                    light.textureID = jlight["textureID"].get<unsigned int>();
+                }
                 if (jlight.contains("components") && jlight["components"].is_array()) {
                     light.components = jlight["components"].get<std::vector<int>>();
                 }
 
                 objectEntity.lights.push_back(std::move(light));
                 
-                // Load light resources
-                if (light.textureID != 0) {
-                    renderer.LightShaderLink();
+                // Load light resources safely
+                try {
+                    if (light.textureID != 0) {
+                        renderer.LightShaderLink();
+                    }
+                } catch (const std::exception &e) {
+                    std::cerr << "Error loading light resources: " << e.what() << std::endl;
                 }
             } catch (const std::exception &e) {
                 std::cerr << "Error loading light: " << e.what() << std::endl;

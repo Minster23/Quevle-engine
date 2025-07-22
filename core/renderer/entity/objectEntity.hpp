@@ -10,7 +10,10 @@ namespace QuavleEngine
     class ObjectEntity
     {
     public:
-    
+
+    //! Unused, but kept for future reference
+        static const std::vector<float> verticesLight;
+
         struct materialData
         {
             glm::vec3 ambient = glm::vec3(1.0f);
@@ -51,12 +54,20 @@ namespace QuavleEngine
             unsigned int emissiveTextureID;     // Emissive map
             unsigned int opacityTextureID;      // Opacity / transparency map
             unsigned int displacementTextureID; // Displacement map
+            std::vector<std::string> scriptLocation;
+            std::vector<int> components;
             size_t vertexCount;                 // Added for vertex count
             glm::vec3 position;
             glm::vec3 rotation;
             glm::vec3 scale;
             bool isShow = true;
             bool isSelected = false;
+        };
+
+        enum LightType
+        {
+            Point,
+            Directional
         };
 
         struct LightData
@@ -72,6 +83,8 @@ namespace QuavleEngine
             bool isShow = true;
             bool isSelected = false;
             std::vector<int> components;
+            LightType type = Point;
+            float range = 1.0f; // For point lights
         };
 
         struct CubeMap
@@ -113,6 +126,7 @@ namespace QuavleEngine
             
         };
 
+        static std::vector<materialData> material;
         static std::vector<LightData> lights;
         static std::vector<ObjectData> objects;
         static std::vector<CubeMap> CubeMaps;

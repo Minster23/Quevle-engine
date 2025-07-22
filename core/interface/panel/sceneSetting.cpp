@@ -10,7 +10,8 @@ void interface::sceneConfig()
     ImGui::Begin("Scene", nullptr, ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoTitleBar);
 
     ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(8, 4));
-
+    ImGui::DragFloat("Camera Speed", &cameraSpeed, 0.1f, 0.1f, 100.0f);
+    ImGui::SameLine();
     float buttonWidth = 32.0f; // Approximate width (depends on font size)
     float availWidth = ImGui::GetContentRegionAvail().x;
     float offsetX = (availWidth - buttonWidth) * 0.5f;

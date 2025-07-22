@@ -9,4 +9,5 @@
 class uiTexLoader{
     public:
     unsigned int loadTex(const std::string& texLocation);
+    void unloadTex(unsigned int texID);
 };

@@ -429,6 +429,12 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/cstdarg \
  E:/QuavleEngine/utils/camera/camera.hpp \
  E:/QuavleEngine/core/renderer/entity/objectEntity.hpp \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/optional \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/set \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_set.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multiset.h \
+ E:/QuavleEngine/core/scripting/scripting.h \
+ E:/QuavleEngine/core/saveData/savedData.hpp \
  E:/QuavleEngine/core/model/model.hpp \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/memory \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_tempbuf.h \
@@ -484,9 +490,14 @@ CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj: \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
  F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/fstream.tcc \
  E:/QuavleEngine/utils/Debug.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/optional \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/set \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_set.h \
- F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/stl_multiset.h \
- E:/QuavleEngine/core/scripting/scripting.h \
- E:/QuavleEngine/core/saveData/savedData.hpp
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/future \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/mutex \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_mutex.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/unique_lock.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/condition_variable \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/atomic_futex.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/atomic \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/std_thread.h \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/chrono \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/thread \
+ F:/Devtool/mysys2/ucrt64/include/c++/14.2.0/bits/this_thread_sleep.h

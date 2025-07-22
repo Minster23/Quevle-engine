@@ -27,7 +27,7 @@ void interface::consolePanel()
     ImGui::Separator();
 
     // Log area
-    ImGui::BeginChild("ConsoleLogArea", ImVec2(0, 400), true, ImGuiWindowFlags_HorizontalScrollbar);
+    ImGui::BeginChild("ConsoleLogArea", ImVec2(0, 240), true, ImGuiWindowFlags_HorizontalScrollbar);
     if (ImGui::BeginTable("ConsoleTable", 3, ImGuiTableFlags_RowBg | ImGuiTableFlags_BordersInnerH | ImGuiTableFlags_BordersOuter | ImGuiTableFlags_Resizable))
     {
         ImGui::TableSetupColumn("No", ImGuiTableColumnFlags_WidthFixed, 40.0f);

@@ -13,7 +13,10 @@ set(MAIN_SOURCES
 # include FETCHCONTENT
 include(FetchContent)
 
-# Fetch untuk JSON
+# Find threading support
+find_package(Threads REQUIRED)
+
+# Fetch pentru JSON
 FetchContent_Declare(json
     URL https://github.com/nlohmann/json/releases/download/v3.12.0/json.tar.xz
 )
@@ -43,7 +46,6 @@ file(GLOB_RECURSE ENGINE_SOURCES
     core/renderer/*.cpp core/renderer/*.hpp
     core/model/*.cpp core/model/*.hpp
 )
-
 
 file(GLOB_RECURSE IMPLOT
     vendor/implot-master/*.h
@@ -77,7 +79,21 @@ add_executable(QuavleEngine
     ${GUIZMO_SOURCES}
     # ${VK_BOOTSTRAP_SOURCES}
 )
+
+# Compiler options
 target_compile_options(QuavleEngine PRIVATE -fpermissive)
+
+# Enable threading support and async features
+target_compile_definitions(QuavleEngine PRIVATE
+    -DTHREAD_SUPPORT_ENABLED
+    -DASYNC_SUPPORT_ENABLED
+)
+
+# For MinGW/GCC on Windows, enable pthread support
+if(WIN32 AND CMAKE_COMPILER_IS_GNUCXX)
+    target_compile_options(QuavleEngine PRIVATE -pthread)
+    target_link_options(QuavleEngine PRIVATE -pthread)
+endif()
 
 # Lua
 set(LUA_INCLUDE_DIR "F:/Devtool/mysys2/ucrt64/include")
@@ -113,7 +129,7 @@ set_target_properties(glfw PROPERTIES
 # OpenGL
 find_package(OpenGL REQUIRED)
 
-# Link all libraries
+# Link all libraries including threading support
 target_link_libraries(QuavleEngine
     ${LUA_LIBRARY}
     glfw
@@ -121,7 +137,20 @@ target_link_libraries(QuavleEngine
     ${OPENGL_gl_LIBRARY}
     comctl32
     nlohmann_json::nlohmann_json
+    Threads::Threads
 )
+
+# Platform-specific threading libraries
+if(WIN32)
+    # Windows-specific threading support
+    if(CMAKE_COMPILER_IS_GNUCXX)
+        # MinGW requires explicit pthread linking
+        target_link_libraries(QuavleEngine pthread)
+    endif()
+elseif(UNIX)
+    # Linux/Unix pthread support
+    target_link_libraries(QuavleEngine pthread)
+endif()
 
 # Optional: show sources in IDE with folders
 source_group(TREE ${CMAKE_SOURCE_DIR} FILES ${MAIN_SOURCES} ${IMGUI_SOURCES} ${ENGINE_SOURCES})

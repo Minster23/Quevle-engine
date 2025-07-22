@@ -9,6 +9,16 @@ std::vector<ObjectEntity::ObjectData> ObjectEntity::objects; // This line is not
 std::vector<ObjectEntity::LightData> ObjectEntity::lights;
 std::vector<ObjectEntity::CubeMap> ObjectEntity::CubeMaps;
 std::vector<ObjectEntity::Billboard> ObjectEntity::billboards;
+std::vector<ObjectEntity::materialData> ObjectEntity::material;
+
+const std::vector<float> ObjectEntity::verticesLight = { // This is a quad for rendering light/camera icons
+    -0.5f, -0.5f, 0.0f, 0.0f, 0.0f,
+    0.5f, -0.5f, 0.0f, 1.0f, 0.0f,
+    0.5f, 0.5f, 0.0f, 1.0f, 1.0f,
+
+    0.5f, 0.5f, 0.0f, 1.0f, 1.0f,
+    -0.5f, 0.5f, 0.0f, 0.0f, 1.0f,
+    -0.5f, -0.5f, 0.0f, 0.0f, 0.0f};
 
 void ObjectEntity::firstLightObject()
 {

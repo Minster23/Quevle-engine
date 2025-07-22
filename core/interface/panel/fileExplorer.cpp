@@ -9,6 +9,9 @@ Renderer renderForFileExplorer;
 uiTexLoader texLoader;
 std::unordered_map<std::string, unsigned int> imageCache;
 
+static std::string currentPath;
+static std::string newName;
+
 void interface::fileExplorer()
 {
     ImGui::Begin("Files", nullptr, ImGuiWindowFlags_MenuBar);
@@ -133,6 +136,7 @@ void interface::fileExplorer()
                     {
                         ImGui::BeginTooltip();
                         ImGui::TextUnformatted(pathStr.c_str());
+                        currentPath = pathStr;
 
                         if (extension == ".png" || extension == ".jpg" || extension == ".jpeg")
                         {
@@ -160,7 +164,7 @@ void interface::fileExplorer()
                             else if (extension == ".lua")
                             {
                                 interface::isCodeEditor = true;
-                                loadCode(pathStr);
+                                loadCode(const_cast<std::string&>(pathStr));
                             }
                             else
                             {
@@ -169,10 +173,58 @@ void interface::fileExplorer()
                         }
 
                         ImGui::EndTooltip();
-                    }
 
+                        if (ImGui::IsMouseReleased(ImGuiMouseButton_Right))
+                        {
+                            ImGui::OpenPopup("FileContextMenu");
+                        }
+                    }
                     ImGui::EndGroup();
+                    
                 }
+            }
+
+            if (ImGui::BeginPopup("FileContextMenu"))
+            {
+                if (ImGui::MenuItem("Rename"))
+                {
+                    ImGui::OpenPopup("RenameConfirm");
+                }
+                if (ImGui::MenuItem("Delete"))
+                {
+                    try
+                    {
+                        std::filesystem::remove(currentPath);
+                        inputDebug("Info", "Succseed to delete file: " + currentPath);
+                    }
+                    catch (const std::filesystem::filesystem_error &e)
+                    {
+                        inputDebug("Error", "Failed to delete file: " + std::string(e.what()));
+                    }
+                }
+                ImGui::EndPopup();
+            }
+            if (ImGui::BeginPopup("RenameConfirm"))
+            {
+                ImGui::InputText("New Name", &currentPath[0], currentPath.size() + 128); // Provide a buffer for editing
+                newName = currentPath;
+                if (ImGui::Button("Yes"))
+                {
+                    std::filesystem::path currentPath = std::filesystem::path(currentDirectory) / newName;
+                    if (std::filesystem::exists(currentPath))
+                    {
+                        inputDebug("Error", "File already exists: " + newName);
+                    }
+                    else
+                    {
+                        std::filesystem::rename(currentPath, std::filesystem::path(currentDirectory) / newName);
+                        inputDebug("Info", "Succseed to rename file to: " + newName);
+                    }
+                }
+                ImGui::SameLine();
+                if (ImGui::Button("No"))
+                    ImGui::CloseCurrentPopup();
+                ImGui::EndPopup();
             }
         }
         catch (const std::filesystem::filesystem_error &)

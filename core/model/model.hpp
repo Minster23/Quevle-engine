@@ -10,17 +10,23 @@
 #include <core/renderer/entity/objectEntity.hpp>
 #include <assimp/mesh.h>
 #include <utils/fileReader.hpp>
+#include <future>
+#include <chrono>
+#include <thread>
 
 namespace QuavleEngine
 {
-    class Model{
+    class Model
+    {
+    public:
+        void model(const std::string &path, bool gamma = false);
+        static std::future<void> result;
+        void flushTextureLoadQueue();
 
-        public:
-        
-        Model(std::string const &path, bool gamma);
-
-        private:
+    private:
         void setModelData(const aiScene *scene, const std::string &path);
+        void loadMaterialAsync(aiMaterial *material, size_t objectIndex);
         std::string locationData;
+        
     };
 }

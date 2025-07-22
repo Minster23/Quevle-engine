@@ -23,6 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/QuavleEngine.dir/core/interface/panel/profiler.cpp.obj.d"
   "CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.obj"
   "CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.obj.d"
+  "CMakeFiles/QuavleEngine.dir/core/interface/panel/statusMenu.cpp.obj"
+  "CMakeFiles/QuavleEngine.dir/core/interface/panel/statusMenu.cpp.obj.d"
   "CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj"
   "CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj.d"
   "CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj"

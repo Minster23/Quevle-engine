@@ -3,15 +3,15 @@
 
 # compile C with F:/Devtool/mysys2/ucrt64/bin/cc.exe
 # compile CXX with F:/Devtool/mysys2/ucrt64/bin/c++.exe
-C_DEFINES = 
+C_DEFINES = -DASYNC_SUPPORT_ENABLED -DTHREAD_SUPPORT_ENABLED
 
 C_INCLUDES = @CMakeFiles/QuavleEngine.dir/includes_C.rsp
 
-C_FLAGS = -fpermissive
+C_FLAGS = -fpermissive -pthread
 
-CXX_DEFINES = 
+CXX_DEFINES = -DASYNC_SUPPORT_ENABLED -DTHREAD_SUPPORT_ENABLED
 
 CXX_INCLUDES = @CMakeFiles/QuavleEngine.dir/includes_CXX.rsp
 
-CXX_FLAGS = -std=gnu++17 -fpermissive
+CXX_FLAGS = -std=gnu++17 -fpermissive -pthread
 

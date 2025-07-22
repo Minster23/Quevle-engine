@@ -416,6 +416,30 @@ core/interface/panel/sceneSetting.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.s
 .PHONY : core/interface/panel/sceneSetting.cpp.s
 
+core/interface/panel/statusMenu.obj: core/interface/panel/statusMenu.cpp.obj
+.PHONY : core/interface/panel/statusMenu.obj
+
+# target to build an object file
+core/interface/panel/statusMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/statusMenu.cpp.obj
+.PHONY : core/interface/panel/statusMenu.cpp.obj
+
+core/interface/panel/statusMenu.i: core/interface/panel/statusMenu.cpp.i
+.PHONY : core/interface/panel/statusMenu.i
+
+# target to preprocess a source file
+core/interface/panel/statusMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/statusMenu.cpp.i
+.PHONY : core/interface/panel/statusMenu.cpp.i
+
+core/interface/panel/statusMenu.s: core/interface/panel/statusMenu.cpp.s
+.PHONY : core/interface/panel/statusMenu.s
+
+# target to generate assembly for a file
+core/interface/panel/statusMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/interface/panel/statusMenu.cpp.s
+.PHONY : core/interface/panel/statusMenu.cpp.s
+
 core/model/model.obj: core/model/model.cpp.obj
 .PHONY : core/model/model.obj
 
@@ -1229,6 +1253,9 @@ help:
 	@echo ... core/interface/panel/sceneSetting.obj
 	@echo ... core/interface/panel/sceneSetting.i
 	@echo ... core/interface/panel/sceneSetting.s
+	@echo ... core/interface/panel/statusMenu.obj
+	@echo ... core/interface/panel/statusMenu.i
+	@echo ... core/interface/panel/statusMenu.s
 	@echo ... core/model/model.obj
 	@echo ... core/model/model.i
 	@echo ... core/model/model.s

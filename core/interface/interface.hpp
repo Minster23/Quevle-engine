@@ -49,6 +49,8 @@ namespace QuavleEngine
 
         static bool isCodeEditor;
 
+        void loadCode(std::string& path);
+
     private:
         WindowManager *m_windowManager = nullptr;
         ImVec2 m_viewportSize = {0.0f, 0.0f};
@@ -101,10 +103,12 @@ namespace QuavleEngine
 
         //* -=========Text Editor===========
         void codeEditor();
-        void loadCode(const std::string& path);
         std::string codePath;
 
         //* -=========Scene Config===========
         void sceneConfig();
+
+        //* -=========Status Menu===========
+        void statusMenu();
     };
 }

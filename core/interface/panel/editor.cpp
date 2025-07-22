@@ -3,6 +3,8 @@
 #include <fstream>
 #include <string>
 #include <utils/config.hpp>
+#include <utils/font/IconsCodicons.h>
+#include <imgui_internal.h>
 
 using namespace QuavleEngine;
 TextEditor editor;
@@ -35,12 +37,18 @@ void interface::codeEditor()
         }
     }
 
-    ImGui::Begin("Code Editor", nullptr, ImGuiWindowFlags_MenuBar | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoDocking);
+    if (play)
+    {
+        ImGui::PushItemFlag(ImGuiItemFlags_Disabled | ImGuiWindowFlags_NoInputs, true);
+        ImGui::PushStyleVar(ImGuiStyleVar_Alpha, ImGui::GetStyle().Alpha * 0.5f);
+    }
+
+    ImGui::Begin("Code Editor" ICON_CI_CODE, nullptr, ImGuiWindowFlags_MenuBar);
 
     // === Menu Bar ===
     if (ImGui::BeginMenuBar())
     {
-        if (ImGui::BeginMenu("File"))
+        if (ImGui::BeginMenu("File " ICON_CI_FILE_MEDIA))
         {
             if (ImGui::MenuItem("New", "Ctrl+N"))
             {
@@ -60,16 +68,6 @@ void interface::codeEditor()
                 }
             }
 
-            if (ImGui::MenuItem("Save", "Ctrl+S", false, editor.IsTextChanged()))
-            {
-                std::ofstream file(currentFile);
-                if (file)
-                {
-                    file << editor.GetText();
-                    lastWriteTime = std::filesystem::last_write_time(currentFile);
-                }
-            }
-
             if (ImGui::MenuItem("Quit", "Ctrl+O"))
             {
                 isCodeEditor = false;
@@ -78,14 +76,19 @@ void interface::codeEditor()
             ImGui::EndMenu();
         }
 
-        if (ImGui::BeginMenu("Edit"))
+        if (ImGui::BeginMenu("Edit " ICON_CI_EDIT))
         {
-            if (ImGui::MenuItem("Undo", "Ctrl+Z", false, editor.CanUndo())) editor.Undo();
-            if (ImGui::MenuItem("Redo", "Ctrl+Y", false, editor.CanRedo())) editor.Redo();
+            if (ImGui::MenuItem("Undo", "Ctrl+Z", false, editor.CanUndo()))
+                editor.Undo();
+            if (ImGui::MenuItem("Redo", "Ctrl+Y", false, editor.CanRedo()))
+                editor.Redo();
             ImGui::Separator();
-            if (ImGui::MenuItem("Cut", "Ctrl+X")) editor.Cut();
-            if (ImGui::MenuItem("Copy", "Ctrl+C")) editor.Copy();
-            if (ImGui::MenuItem("Paste", "Ctrl+V")) editor.Paste();
+            if (ImGui::MenuItem("Cut", "Ctrl+X"))
+                editor.Cut();
+            if (ImGui::MenuItem("Copy", "Ctrl+C"))
+                editor.Copy();
+            if (ImGui::MenuItem("Paste", "Ctrl+V"))
+                editor.Paste();
             ImGui::EndMenu();
         }
 
@@ -96,7 +99,7 @@ void interface::codeEditor()
     if (shouldReload)
     {
         ImGui::PushStyleColor(ImGuiCol_Text, IM_COL32(255, 255, 0, 255));
-        ImGui::Text("File modified externally. Press Ctrl+R to reload.");
+        ImGui::Text("File modified externally. Press Ctrl+R to reload. " ICON_CI_DEBUG_CONTINUE);
         ImGui::PopStyleColor();
 
         if (ImGui::IsKeyPressed(ImGuiKey_R) && ImGui::GetIO().KeyCtrl)
@@ -113,7 +116,8 @@ void interface::codeEditor()
     }
 
     // === Render editor ===
-    editor.Render(currentFile.c_str());
+    if (!play)
+        editor.Render(currentFile.c_str());
 
     // === Status bar ===
     ImGui::Separator();
@@ -125,6 +129,12 @@ void interface::codeEditor()
     ImGui::Text("%s", editor.IsTextChanged() ? "Modified" : "Saved");
 
     ImGui::End();
+
+    if (play)
+    {
+        ImGui::PopItemFlag();
+        ImGui::PopStyleVar();
+    }
 
     // === Keyboard shortcuts ===
     ImGuiIO &io = ImGui::GetIO();
@@ -153,8 +163,7 @@ void interface::codeEditor()
     }
 }
 
-
-void interface::loadCode(const std::string& path)
+void interface::loadCode(std::string &path)
 {
     codePath = path;
 
@@ -163,7 +172,5 @@ void interface::loadCode(const std::string& path)
     {
         std::string content((std::istreambuf_iterator<char>(file)), {});
         editor.SetText(content);
-        // Optional: set Lua again
-        editor.SetLanguageDefinition(TextEditor::LanguageDefinition::Lua());
     }
 }

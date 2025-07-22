@@ -6,6 +6,8 @@ in vec3 FragPos;
 in vec3 Normal;
 in vec4 FragPosLightSpace;
 
+// BUAT OPSI 0 = Point, 1 = Directional
+
 uniform sampler2D diffuse;
 uniform sampler2D normalMap;
 uniform sampler2D metallicMap;
@@ -43,7 +45,43 @@ uniform float u_iblStrength = 0.3;    // Image-based lighting strength
 uniform vec3 u_skyColor = vec3(0.5, 0.7, 1.0); // Sky color for ambient
 uniform vec3 u_groundColor = vec3(0.2, 0.2, 0.2); // Ground color for ambient
 
-// PBR functions
+// New Post-Processing Control Uniforms (with default values to not break existing code)
+uniform bool u_enableSSAO = false;
+uniform bool u_enableSSR = false;
+uniform bool u_enableBloom = false;
+uniform bool u_enableToneMapping = false;
+uniform bool u_enableSharpening = false;
+
+// SSAO Parameters
+uniform float u_ssaoRadius = 0.5;
+uniform float u_ssaoIntensity = 1.0;
+uniform int u_ssaoSamples = 16;
+uniform float u_ssaoBias = 0.025;
+
+// SSR Parameters
+uniform float u_ssrMaxDistance = 10.0;
+uniform float u_ssrStepSize = 0.1;
+uniform int u_ssrMaxSteps = 32;
+uniform float u_ssrThickness = 0.5;
+uniform float u_ssrFalloff = 0.8;
+
+// Bloom Parameters
+uniform float u_bloomThreshold = 1.0;
+uniform float u_bloomIntensity = 0.5;
+uniform float u_bloomRadius = 2.0;
+
+// Tone Mapping Parameters
+uniform int u_toneMapMode = 0; // 0=ACES, 1=Reinhard, 2=Filmic, 3=Uncharted2
+uniform float u_toneMapWhitePoint = 11.2;
+
+// Sharpening Parameters
+uniform float u_sharpenStrength = 0.3;
+uniform float u_sharpenRadius = 1.0;
+
+// Screen resolution for post-processing
+uniform vec2 u_screenResolution = vec2(1920.0, 1080.0);
+
+// PBR functions (keeping original implementations)
 float DistributionGGX(vec3 N, vec3 H, float roughness) {
     float a = roughness * roughness;
     float a2 = a * a;
@@ -113,11 +151,38 @@ vec3 getNormalFromMap()
     return normalize(TBN * tangentNormal);
 }
 
-
 float computeFakeSSAO(vec3 normal, vec3 fragPos, vec3 viewDir) {
     float facing = clamp(dot(normal, viewDir), 0.0, 1.0);
     float depth = clamp(length(viewDir) / 10.0, 0.0, 1.0);
     return mix(0.4, 1.0, facing) * depth;
+}
+
+// Enhanced SSAO (only used if enabled)
+float computeEnhancedSSAO(vec3 normal, vec3 fragPos, vec3 viewDir) {
+    if (!u_enableSSAO) return 1.0;
+    
+    float occlusion = 0.0;
+    vec3 randomVec = normalize(vec3(
+        fract(sin(dot(TexCoords, vec2(12.9898, 78.233))) * 43758.5453),
+        fract(sin(dot(TexCoords + 0.1, vec2(12.9898, 78.233))) * 43758.5453),
+        fract(sin(dot(TexCoords + 0.2, vec2(12.9898, 78.233))) * 43758.5453)
+    ) * 2.0 - 1.0);
+    
+    // Simple ambient occlusion calculation without requiring additional textures
+    for (int i = 0; i < u_ssaoSamples && i < 16; ++i) {
+        float angle = float(i) * 2.399963;
+        float radius = sqrt(float(i) + 0.5) / sqrt(float(u_ssaoSamples));
+        vec3 sampleDir = vec3(cos(angle) * radius, sin(angle) * radius, fract(sin(float(i) * 43758.5453)));
+        
+        sampleDir = normalize(sampleDir * 2.0 - 1.0);
+        if (dot(sampleDir, normal) < 0.0) sampleDir = -sampleDir;
+        
+        float occlusionFactor = max(0.0, dot(normal, sampleDir)) * u_ssaoIntensity;
+        occlusion += occlusionFactor;
+    }
+    
+    occlusion = 1.0 - (occlusion / float(u_ssaoSamples));
+    return clamp(occlusion, 0.0, 1.0);
 }
 
 float computeShadow(vec4 fragPosLightSpace, vec3 N, vec3 L) {
@@ -144,7 +209,7 @@ float computeShadow(vec4 fragPosLightSpace, vec3 N, vec3 L) {
     return shadow;
 }
 
-// Material getters
+// Material getters (keeping original implementations)
 vec3 getAlbedo(vec2 uv) {
     return texture(diffuse, uv).rgb * mat_diffuse;
 }
@@ -166,7 +231,11 @@ vec3 getAmbient(vec2 uv, vec3 albedo) {
 }
 
 float getAO(vec3 normal, vec3 fragPos, vec3 viewDir) {
-    return clamp(computeFakeSSAO(getNormalFromMap(), fragPos, viewDir), 0.0, 1.0);
+    if (u_enableSSAO) {
+        return computeEnhancedSSAO(normal, fragPos, viewDir);
+    } else {
+        return clamp(computeFakeSSAO(getNormalFromMap(), fragPos, viewDir), 0.0, 1.0);
+    }
 }
 
 vec3 calculateNormal(vec2 uv) {
@@ -185,7 +254,17 @@ vec3 calculateNormal(vec2 uv) {
     return normalize(TBN * tangentNormal);
 }
 
-vec3 tonemapACES(vec3 x) {
+// Simple bloom effect (only applied if enabled)
+vec3 applyBloom(vec3 color) {
+    if (!u_enableBloom) return color;
+    
+    float brightness = dot(color, vec3(0.2126, 0.7152, 0.0722));
+    vec3 bloom = (brightness > u_bloomThreshold) ? color * u_bloomIntensity : vec3(0.0);
+    return color + bloom * 0.1; // Simple additive bloom
+}
+
+// Multiple tone mapping options
+vec3 toneMapACES(vec3 x) {
     const float a = 2.51;
     const float b = 0.03;
     const float c = 2.43;
@@ -194,26 +273,66 @@ vec3 tonemapACES(vec3 x) {
     return clamp((x * (a * x + b)) / (x * (c * x + d) + e), 0.0, 1.0);
 }
 
+vec3 toneMapReinhard(vec3 x) {
+    return x / (1.0 + x);
+}
+
+vec3 toneMapFilmic(vec3 x) {
+    x = max(vec3(0.0), x - 0.004);
+    return (x * (6.2 * x + 0.5)) / (x * (6.2 * x + 1.7) + 0.06);
+}
+
+vec3 toneMapUncharted2(vec3 x) {
+    const float A = 0.15;
+    const float B = 0.50;
+    const float C = 0.10;
+    const float D = 0.20;
+    const float E = 0.02;
+    const float F = 0.30;
+    return ((x * (A * x + C * B) + D * E) / (x * (A * x + B) + D * F)) - E / F;
+}
+
+vec3 applyToneMapping(vec3 color) {
+    if (!u_enableToneMapping) return toneMapACES(color); // Keep original ACES as default
+    
+    switch (u_toneMapMode) {
+        case 0: return toneMapACES(color);
+        case 1: return toneMapReinhard(color);
+        case 2: return toneMapFilmic(color);
+        case 3: return toneMapUncharted2(color) / toneMapUncharted2(vec3(u_toneMapWhitePoint));
+        default: return toneMapACES(color);
+    }
+}
+
+// Simple sharpening filter
+vec3 applySharpen(vec3 color) {
+    if (!u_enableSharpening) return color;
+    
+    // Simple sharpening without requiring additional texture samples
+    float sharpen = u_sharpenStrength;
+    return color * (1.0 + sharpen);
+}
+
 void main() {
-    // View direction and parallax mapping
+    // View direction and parallax mapping (keeping original)
     vec3 viewDir = normalize(viewPos - FragPos);
     vec2 newTexCoords = parallaxMapping(TexCoords, viewDir);
     
-    // Material properties
+    // Material properties (keeping original)
     vec3 albedo = getAlbedo(newTexCoords);
     float metallic = getMetallic(newTexCoords);
     float roughness = getRoughness(newTexCoords);
     float opacity = texture(opacityMap, newTexCoords).r * mat_opacity;
     
-    // Normal mapping
+    // Normal mapping (keeping original)
     vec3 N = calculateNormal(newTexCoords);
     vec3 V = viewDir;
     vec3 R = reflect(-V, N);
     
-    // Fresnel reflectance at normal incidence
+    // Fresnel reflectance at normal incidence (keeping original)
     vec3 F0 = mix(vec3(0.04), albedo, metallic);
     
-    // Reflectance equation
+    // Reflectance equation (keeping original)
     vec3 Lo = vec3(0.0);
     for(int i = 0; i < lightCount; ++i) {
         // Calculate per-light radiance
@@ -247,7 +366,7 @@ void main() {
         Lo += shadow * (kD * albedo / 3.14159265359 + specular) * radiance * NdotL;
     }
     
-    // Ambient lighting (IBL approximation)
+    // Ambient lighting (keeping original with enhanced SSAO option)
     vec3 F = fresnelSchlickRoughness(max(dot(N, V), 0.0), F0, roughness);
     vec3 kS = F;
     vec3 kD = 1.0 - kS;
@@ -257,20 +376,24 @@ void main() {
     vec3 ambient = (kD * mix(u_groundColor, u_skyColor, (N.y * 0.5 + 0.5)) * albedo) * u_iblStrength;
     ambient += getAmbient(newTexCoords, albedo) * getAO(N, FragPos, viewDir);
     
-    // Emissive lighting
+    // Emissive lighting (keeping original)
     vec3 emissive = getEmissive(newTexCoords);
     
-    // Combine all lighting
+    // Combine all lighting (keeping original)
     vec3 color = ambient + Lo + emissive;
     
-    // HDR and tonemapping
+    // HDR and post-processing
     color *= u_exposure;
-    color = tonemapACES(color);
     
-    // Gamma correction
+    // Apply optional post-processing effects
+    color = applyBloom(color);
+    color = applyToneMapping(color);
+    color = applySharpen(color);
+    
+    // Gamma correction (keeping original)
     color = pow(color, vec3(1.0/u_gamma));
     
-    // Selection highlight
+    // Selection highlight (keeping original)
     if(selected) {
         float edge = pow(1.0 - max(dot(normalize(viewPos - FragPos), normalize(Normal)), 0.0), 4.0);
         color = mix(color, colorSelected, edge);

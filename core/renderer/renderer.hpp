@@ -5,7 +5,6 @@
 #include <string>
 #include <core/interface/interface.hpp>
 #include <core/renderer/entity/objectEntity.hpp>
-#include <core/model/model.hpp>
 
 namespace QuavleEngine
 {
@@ -37,6 +36,48 @@ namespace QuavleEngine
             BILLBOARD,
             CAMERA
         };
+
+        static float u_exposure;
+        static float u_gamma;
+        static float u_iblStrength;
+        static glm::vec3 u_iblColor;
+        static glm::vec3 u_groundColor;
+
+        // Post-Processing Control Variables
+        static bool u_enableSSAO;
+        static bool u_enableSSR;
+        static bool u_enableBloom;
+        static bool u_enableToneMapping;
+        static bool u_enableSharpening;
+
+        // SSAO (Screen Space Ambient Occlusion) Parameters
+        static float u_ssaoRadius;
+        static float u_ssaoIntensity;
+        static int u_ssaoSamples;
+        static float u_ssaoBias;
+
+        // SSR (Screen Space Reflection) Parameters
+        static float u_ssrMaxDistance;
+        static float u_ssrStepSize;
+        static int u_ssrMaxSteps;
+        static float u_ssrThickness;
+        static float u_ssrFalloff;
+
+        // Bloom Parameters
+        static float u_bloomThreshold;
+        static float u_bloomIntensity;
+        static float u_bloomRadius;
+
+        // Tone Mapping Parameters
+        static int u_toneMapMode; // 0=ACES, 1=Reinhard, 2=Filmic, 3=Uncharted2
+        static float u_toneMapWhitePoint;
+
+        // Sharpening Parameters
+        static float u_sharpenStrength;
+        static float u_sharpenRadius;
+
+        // Screen resolution for post-processing calculations
+        static float u_screenResolution[2];
 
         void init();
         void shaderLoader(int Index, Renderer::RenderType expression);

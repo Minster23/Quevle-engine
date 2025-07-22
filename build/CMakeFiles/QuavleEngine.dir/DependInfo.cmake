@@ -21,6 +21,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/QuavleEngine/core/interface/panel/objectHirarcy.cpp" "CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/interface/panel/objectHirarcy.cpp.obj.d"
   "E:/QuavleEngine/core/interface/panel/profiler.cpp" "CMakeFiles/QuavleEngine.dir/core/interface/panel/profiler.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/interface/panel/profiler.cpp.obj.d"
   "E:/QuavleEngine/core/interface/panel/sceneSetting.cpp" "CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/interface/panel/sceneSetting.cpp.obj.d"
+  "E:/QuavleEngine/core/interface/panel/statusMenu.cpp" "CMakeFiles/QuavleEngine.dir/core/interface/panel/statusMenu.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/interface/panel/statusMenu.cpp.obj.d"
   "E:/QuavleEngine/core/model/model.cpp" "CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/model/model.cpp.obj.d"
   "E:/QuavleEngine/core/renderer/entity/objectEntity.cpp" "CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/renderer/entity/objectEntity.cpp.obj.d"
   "E:/QuavleEngine/core/renderer/renderer.cpp" "CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj.d"

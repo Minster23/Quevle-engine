@@ -21,6 +21,7 @@ namespace QuavleEngine
         void bind_framebuffer();
         void unbind_framebuffer();
         void rescale_framebuffer(float width, float height);
+        GLFWwindow *getWindow() const;
         GLuint get_texture_id() const;
 
         // Window lifecycle
@@ -52,7 +53,7 @@ namespace QuavleEngine
         bool m_key_r_pressed;
 
         static void framebuffer_size_callback(GLFWwindow *window, int width, int height);
-        static void mouse_callback(GLFWwindow* window, double xpos, double ypos);
+        static void mouse_callback(GLFWwindow *window, double xpos, double ypos);
         static void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
         void refresh();
         void processInput(GLFWwindow *window);

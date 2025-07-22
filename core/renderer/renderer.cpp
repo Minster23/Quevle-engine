@@ -17,6 +17,7 @@
 #include <core/renderer/renderer.hpp>
 #include <core/interface/interface.hpp>
 #include <core/renderer/shader_h.h>
+#include <core/model/model.hpp>
 
 #include <future>
 #include <thread>
@@ -122,6 +123,48 @@ bool Renderer::Metallic = true;
 bool Renderer::Roughness = true;
 bool Renderer::Grid = true;
 
+float Renderer::u_exposure = 1.0f;
+float Renderer::u_gamma = 2.2f;
+float Renderer::u_iblStrength = 1.0f;
+glm::vec3 Renderer::u_iblColor = glm::vec3(1.0f, 1.0f, 1.0f);
+glm::vec3 Renderer::u_groundColor = glm::vec3(0.2f, 0.2f, 0.2f);
+
+// Post-Processing Control Variables
+bool Renderer::u_enableSSAO = true;
+bool Renderer::u_enableSSR = true;
+bool Renderer::u_enableBloom = true;
+bool Renderer::u_enableToneMapping = true;
+bool Renderer::u_enableSharpening = false;
+
+// SSAO Parameters
+float Renderer::u_ssaoRadius = 0.5f;
+float Renderer::u_ssaoIntensity = 1.0f;
+int Renderer::u_ssaoSamples = 16;
+float Renderer::u_ssaoBias = 0.025f;
+
+// SSR Parameters
+float Renderer::u_ssrMaxDistance = 10.0f;
+float Renderer::u_ssrStepSize = 0.1f;
+int Renderer::u_ssrMaxSteps = 32;
+float Renderer::u_ssrThickness = 0.5f;
+float Renderer::u_ssrFalloff = 0.8f;
+
+// Bloom Parameters
+float Renderer::u_bloomThreshold = 1.0f;
+float Renderer::u_bloomIntensity = 0.5f;
+float Renderer::u_bloomRadius = 2.0f;
+
+// Tone Mapping Parameters
+int Renderer::u_toneMapMode = 0; // Default to ACES
+float Renderer::u_toneMapWhitePoint = 11.2f;
+
+// Sharpening Parameters
+float Renderer::u_sharpenStrength = 0.3f;
+float Renderer::u_sharpenRadius = 1.0f;
+
+// Screen Resolution
+float Renderer::u_screenResolution[2] = {1920.0f, 1080.0f};
+
 glm::mat4 Renderer::projection;
 glm::mat4 Renderer::view;
 glm::mat4 Renderer::model;
@@ -130,6 +173,8 @@ glm::mat4 Renderer::modelLight;
 
 glm::vec3 Renderer::gridColor = glm::vec3(1.0f);
 float Renderer::gridSpacing = 2.0f;
+
+Model models;
 
 namespace QuavleEngine
 { // Explicitly define within the namespace
@@ -164,13 +209,13 @@ void Renderer::init()
 bool Renderer::loadModelFirst(std::string path)
 {
 
-    Model mode(path, true);
-    for (size_t i = 0; i < objectEntity.objects.size(); ++i)
-    {
-        intfc.inputDebug("Info", "loading model");
-        shaderLoader(i, RenderType::OBJECT);
-        shaderLink(i, RenderType::OBJECT);
-    }
+    models.model(path, true);
+    // for (size_t i = 0; i < objectEntity.objects.size(); ++i)
+    // {
+    //     intfc.inputDebug("Info", "loading model");
+    //     shaderLoader(i, RenderType::OBJECT);
+    //     shaderLink(i, RenderType::OBJECT);
+    // }
     return true;
 }
 
@@ -1107,21 +1152,81 @@ void Renderer::drawCallback()
             shader.setFloat("mat_opacity", obj.material.opacity);
             shader.setFloat("mat_shininessStrength", obj.material.shininessStrength);
 
+            shader.setFloat("u_exposure", Renderer::u_exposure);
+            shader.setFloat("u_gamma", Renderer::u_gamma);
+            shader.setFloat("u_iblStrength", Renderer::u_iblStrength);
+            shader.setVec3("u_iblColor", Renderer::u_iblColor);
+            shader.setVec3("u_groundColor", Renderer::u_groundColor);
+
+            // Post-processing control uniforms
+            shader.setBool("u_enableSSAO", Renderer::u_enableSSAO);
+            shader.setBool("u_enableSSR", Renderer::u_enableSSR);
+            shader.setBool("u_enableBloom", Renderer::u_enableBloom);
+            shader.setBool("u_enableToneMapping", Renderer::u_enableToneMapping);
+            shader.setBool("u_enableSharpening", Renderer::u_enableSharpening);
+
+            // SSAO uniforms
+            shader.setFloat("u_ssaoRadius", Renderer::u_ssaoRadius);
+            shader.setFloat("u_ssaoIntensity", Renderer::u_ssaoIntensity);
+            shader.setInt("u_ssaoSamples", Renderer::u_ssaoSamples);
+            shader.setFloat("u_ssaoBias", Renderer::u_ssaoBias);
+
+            // SSR uniforms
+            shader.setFloat("u_ssrMaxDistance", Renderer::u_ssrMaxDistance);
+            shader.setFloat("u_ssrStepSize", Renderer::u_ssrStepSize);
+            shader.setInt("u_ssrMaxSteps", Renderer::u_ssrMaxSteps);
+            shader.setFloat("u_ssrThickness", Renderer::u_ssrThickness);
+            shader.setFloat("u_ssrFalloff", Renderer::u_ssrFalloff);
+
+            // Bloom uniforms
+            shader.setFloat("u_bloomThreshold", Renderer::u_bloomThreshold);
+            shader.setFloat("u_bloomIntensity", Renderer::u_bloomIntensity);
+            shader.setFloat("u_bloomRadius", Renderer::u_bloomRadius);
+
+            // Tone mapping uniforms
+            shader.setInt("u_toneMapMode", Renderer::u_toneMapMode);
+            shader.setFloat("u_toneMapWhitePoint", Renderer::u_toneMapWhitePoint);
+
+            // Sharpening uniforms
+            shader.setFloat("u_sharpenStrength", Renderer::u_sharpenStrength);
+            shader.setFloat("u_sharpenRadius", Renderer::u_sharpenRadius);
+
+            // Screen resolution uniform
+            shader.setVec2("u_screenResolution", Renderer::u_screenResolution[0], Renderer::u_screenResolution[1]);
+
+            // SSAO uniforms
+            shader.setFloat("u_ssaoRadius", Renderer::u_ssaoRadius);
+
             // Lights
             shader.setInt("lightCount", objectEntity.lights.size());
             for (size_t light_idx = 0; light_idx < objectEntity.lights.size(); ++light_idx)
             {
                 const auto &light = objectEntity.lights[light_idx];
                 std::string index = std::to_string(light_idx);
-                if (!objectEntity.lights[light_idx].isShow)
+
+                if (!light.isShow)
                 {
-                    shader.setFloat("lightIntensities[" + index + "]", 0.0f); // Set intensity to 0 if not shown
+                    // Disable light by setting intensity to 0
+                    shader.setFloat("lightIntensities[" + index + "]", 0.0f);
+                    continue;
+                }
+
+                // Set common light properties
+                shader.setInt("lightTypes[" + index + "]", light.type); // 0 = point, 1 = directional
+                shader.setVec3("lightColors[" + index + "]", light.lightColor);
+                shader.setFloat("lightIntensities[" + index + "]", light.intensity);
+
+                // Set type-specific properties
+                if (light.type == 0)
+                { // Point light
+                    shader.setVec3("lightPositions[" + index + "]", light.position);
+                    shader.setFloat("lightRanges[" + index + "]", light.range);
                 }
                 else
-                {
-                    shader.setVec3("lightPositions[" + index + "]", light.position);
-                    shader.setVec3("lightColors[" + index + "]", light.lightColor);
-                    shader.setFloat("lightIntensities[" + index + "]", light.intensity);
+                { // Directional light (sun)
+                    //shader.setVec3("lightDirections[" + index + "]", light.direction);
+                    // For directional lights, we might want to set up shadow mapping here
+                    // shader.setMat4("lightSpaceMatrices[" + index + "]", light.lightSpaceMatrix);
                 }
             }
 
@@ -1192,6 +1297,11 @@ void Renderer::drawCallback()
         glBindVertexArray(gridVAO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         glBindVertexArray(0);
+    }
+
+    if(objectEntity.objects.size() > 0)
+    {
+        models.flushTextureLoadQueue();
     }
 }
 void Renderer::drawCleanup()

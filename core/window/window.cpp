@@ -9,12 +9,15 @@
 #include <core/scripting/scripting.h>
 #include <utils/camera/camera.hpp>
 #include <core/saveData/savedData.hpp>
+#include <core/model/model.hpp>
+#include "window.hpp"
 
 using namespace QuavleEngine;
 Scripting::script Scriptings;
 Renderer renderer;
 interface Interface;
 saveData data;
+Model modelss;
 
 bool isMouseCaptured = true;
 double lastPosX = 0.0, lastPosY = 0.0;
@@ -168,7 +171,7 @@ void WindowManager::mainLoop()
 
         if (play)
         {
-            Scriptings.scripting();
+            std::thread([&]() { Scriptings.scripting(); Scriptings.updateInput(); }).detach();
         }
 
         int rightMouseState = glfwGetMouseButton(m_window, GLFW_MOUSE_BUTTON_RIGHT);
@@ -225,7 +228,7 @@ void WindowManager::processInput(GLFWwindow *window)
     Camera &activeCam = cameras[cameraIndex];
     if (cameras[cameraIndex].type != CAMERATYPE::ENGINE) return;
 
-    float cameraSpeed = static_cast<float>(2.5 * activeCam.deltaTime);
+    float cameraSpeed = static_cast<float>(2.5 * activeCam.deltaTime) * interface::cameraSpeed;;
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
         activeCam.cameraPos += cameraSpeed * activeCam.cameraFront;
     if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
@@ -234,74 +237,6 @@ void WindowManager::processInput(GLFWwindow *window)
         activeCam.cameraPos -= glm::normalize(glm::cross(activeCam.cameraFront, activeCam.cameraUp)) * cameraSpeed;
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
         activeCam.cameraPos += glm::normalize(glm::cross(activeCam.cameraFront, activeCam.cameraUp)) * cameraSpeed;
-
-    // --- Texture Toggles ---
-    bool ctrl_pressed = glfwGetKey(window, GLFW_KEY_LEFT_CONTROL) == GLFW_PRESS || glfwGetKey(window, GLFW_KEY_RIGHT_CONTROL) == GLFW_PRESS;
-
-    // Toggle Diffuse (Ctrl+D)
-    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS && !m_key_d_pressed)
-    {
-        Renderer::Diffuse = !Renderer::Diffuse;
-        m_key_d_pressed = true;
-        Interface.inputDebug("Info", "Diffuse map toggled " + std::string(Renderer::Diffuse ? "ON" : "OFF"));
-        refresh();
-    }
-    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_RELEASE)
-    {
-        m_key_d_pressed = false;
-    }
-
-    // Toggle Specular (Ctrl+S)
-    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS && !m_key_s_pressed)
-    {
-        Renderer::Specular = !Renderer::Specular;
-        m_key_s_pressed = true;
-        Interface.inputDebug("Info", "Specular map toggled " + std::string(Renderer::Specular ? "ON" : "OFF"));
-        refresh();
-    }
-    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_RELEASE)
-    {
-        m_key_s_pressed = false;
-    }
-
-    // Toggle Normal (Ctrl+N)
-    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_N) == GLFW_PRESS && !m_key_n_pressed)
-    {
-        Renderer::Normal = !Renderer::Normal;
-        m_key_n_pressed = true;
-        Interface.inputDebug("Info", "Normal map toggled " + std::string(Renderer::Normal ? "ON" : "OFF"));
-        refresh();
-    }
-    if (glfwGetKey(window, GLFW_KEY_N) == GLFW_RELEASE)
-    {
-        m_key_n_pressed = false;
-    }
-
-    // Toggle Metallic (Ctrl+M)
-    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_M) == GLFW_PRESS && !m_key_m_pressed)
-    {
-        Renderer::Metallic = !Renderer::Metallic;
-        m_key_m_pressed = true;
-        Interface.inputDebug("Info", "Metallic map toggled " + std::string(Renderer::Metallic ? "ON" : "OFF"));
-        refresh();
-    }
-    if (glfwGetKey(window, GLFW_KEY_M) == GLFW_RELEASE)
-    {
-        m_key_m_pressed = false;
-    }
-
-    // Toggle Roughness (Ctrl+R)
-    if (ctrl_pressed && glfwGetKey(window, GLFW_KEY_R) == GLFW_PRESS && !m_key_r_pressed)
-    {
-        Renderer::Roughness = !Renderer::Roughness;
-        m_key_r_pressed = true;
-        Interface.inputDebug("Info", "Roughness map toggled " + std::string(Renderer::Roughness ? "ON" : "OFF"));
-        refresh();
-    }
-    if (glfwGetKey(window, GLFW_KEY_R) == GLFW_RELEASE)
-    {
-        m_key_r_pressed = false;
-    }
 
     activeCam.view = glm::lookAt(activeCam.cameraPos, activeCam.cameraPos + activeCam.cameraFront, activeCam.cameraUp);
     activeCam.projection = glm::perspective(glm::radians(activeCam.fov), 800.0f / 600.0f, 0.1f, 100.0f);
@@ -396,4 +331,9 @@ void WindowManager::framebuffer_size_callback(GLFWwindow *window, int width, int
     // make sure the viewport matches the new window dimensions; note that width and
     // height will be significantly larger than specified on retina displays.
     glViewport(0, 0, width, height);
+}
+
+GLFWwindow* WindowManager::getWindow() const
+{
+    return m_window;
 }

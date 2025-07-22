@@ -11,7 +11,7 @@
 
 ## ✨ Fitur Utama
 
-- 🔹 **Modular Renderer**: Dukungan OpenGL (dapat diperluas ke Vulkan/DirectX).
+- 🔹 **Modular Renderer**: Dukungan OpenGL .
 - 🔹 **Entity-Component System (ECS)** sederhana dan efisien.
 - 🔹 **Multi-threaded asset loading** (model, material, texture).
 - 🔹 **Support Model Format**: `.obj`, `.fbx` (dengan Assimp).
@@ -19,7 +19,7 @@
 - 🔹 **Post-processing & AO**: SSAO, HBAO, Bloom, Tone Mapping.
 - 🔹 **Shader System**: GLSL custom shaders.
 - 🔹 **Input & Window Handling**: GLFW + ImGui untuk debug UI.
-- 🔹 **Cross-platform (Windows & Linux)**.
+- 🔹 **Cross-platform (Windows)**.
 - 🔹 **MIT License**: Gratis digunakan untuk tujuan komersial dan pribadi.
 
 ---

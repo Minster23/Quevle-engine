@@ -1,9 +1,12 @@
 #include <core/renderer/entity/objectEntity.hpp>
 #include <core/model/UUID.hpp>
+#include <core/scene/scene.hpp>
 
 using namespace QuavleEngine;
+using namespace SCENEMANAGER;
 
 UUID uids;
+scene scenesForEntity;
 
 std::vector<ObjectEntity::ObjectData> ObjectEntity::objects; // This line is not part of the diff, but it's in the original file
 std::vector<ObjectEntity::LightData> ObjectEntity::lights;
@@ -32,6 +35,12 @@ void ObjectEntity::firstLightObject()
     light.name = "Light object " + std::to_string(lights.size());
     light.isShow = true;
     lights.push_back(light);
+
+    for(auto &scene : scene::scenes) {
+        if (scene.isLoaded) {
+            scene.lights.push_back(light);
+        }
+    }
 }
 
 void ObjectEntity::firstCubemap()
@@ -44,6 +53,14 @@ void ObjectEntity::firstCubemap()
     cubemap.textureID = 0;
     cubemap.vertex = 0;
     CubeMaps.push_back(cubemap);
+
+    for (auto &scene : scene::scenes)
+    {
+        if (scene.isLoaded)
+        {
+            scene.cubeMaps.push_back(cubemap);
+        }
+    }
 }
 
 void ObjectEntity::firstBillboard()
@@ -65,6 +82,14 @@ void ObjectEntity::firstBillboard()
         -0.5f, -0.5f, 0.0f, 0.0f, 0.0f};
 
     billboards.push_back(billboard);
+
+    for (auto &scene : scene::scenes)
+    {
+        if (scene.isLoaded)
+        {
+            scene.billboards.push_back(billboard);
+        }
+    }
 }
 
 void ObjectEntity::changeName(int index, std::string newName)

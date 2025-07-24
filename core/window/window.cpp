@@ -11,8 +11,11 @@
 #include <core/saveData/savedData.hpp>
 #include <core/model/model.hpp>
 #include "window.hpp"
+#include <core/scene/scene.hpp>
 
 using namespace QuavleEngine;
+using namespace SCENEMANAGER;
+
 Scripting::script Scriptings;
 Renderer renderer;
 interface Interface;
@@ -155,6 +158,8 @@ bool WindowManager::openGL()
 
 void WindowManager::mainLoop()
 {
+    scene scanes;
+    scanes.sceneInit();
     while (!glfwWindowShouldClose(m_window))
     {
         float currentFrame = glfwGetTime();

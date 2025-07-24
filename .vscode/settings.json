@@ -73,7 +73,8 @@
         "forward_list": "cpp",
         "ranges": "cpp",
         "valarray": "cpp",
-        "future": "cpp"
+        "future": "cpp",
+        "complex": "cpp"
     },
     "C_Cpp.default.compilerPath": "F:/Devtool/mysys2/ucrt64/bin/g++.exe",
     "workbench.editor.showTabs": "multiple",

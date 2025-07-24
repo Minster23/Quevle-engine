@@ -8,12 +8,15 @@
 #include <vector>
 #include <functional>
 #include <iostream>
+#include <core/scene/scene.hpp>
 
 using namespace QuavleEngine;
+using namespace SCENEMANAGER;
 
 Renderer renderForModel;
 interface intfcForModel;
 UUID uid;
+scene sceneForModel;
 
 // Queue to defer OpenGL texture calls
 std::mutex textureQueueMutex;
@@ -44,12 +47,13 @@ void Model::model(const std::string &path, bool gamma)
 
     if (!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode)
     {
-        intfc.inputDebug("Warning", "ERROR::ASSIMP:: " + std::string(importer.GetErrorString()));
+        intfcForModel.inputDebug("Warning", "ERROR::ASSIMP:: " + std::string(importer.GetErrorString()));
         return;
     }
 
     locationData = path.substr(0, path.find_last_of('/'));
     intfcForModel.inputDebug("Info", "Model Loaded from path:" + locationData);
+    sceneForModel.scenes[sceneForModel.getSceneIndexByUUID(SCENEMANAGER::scene::selectedSceneUUID)].objectLoctions.push_back(path);
     setModelData(scene, path);
 }
 

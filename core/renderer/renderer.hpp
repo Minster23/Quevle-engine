@@ -98,12 +98,6 @@ namespace QuavleEngine
         bool loadModelFirst(std::string path);
         void LoadAnotherLight();
 
-        static bool Diffuse;
-        static bool Specular;
-        static bool Normal;
-        static bool Metallic;
-        static bool Roughness;
-
         static bool Grid;
         static glm::vec3 gridColor;
         static float gridSpacing;
@@ -129,5 +123,8 @@ namespace QuavleEngine
         unsigned int lightShaderProgram;
         unsigned int lightVAO;
         unsigned int lightVBO;
+
+        GLuint lastVAO = 0;
+        int currentShader = -1;
     };
 }

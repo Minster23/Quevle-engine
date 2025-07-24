@@ -14,10 +14,9 @@ static std::string newName;
 
 void interface::fileExplorer()
 {
-    ImGui::Begin("Files", nullptr, ImGuiWindowFlags_MenuBar);
+    ImGui::Begin("Files", nullptr);
     ImGuiID dockspace_id = ImGui::GetID("FILES_Dockspace");
-    ImVec2 size = ImGui::GetContentRegionAvail();
-    ImGui::DockSpace(dockspace_id, size, ImGuiDockNodeFlags_None);
+    ImGui::DockSpace(dockspace_id, ImGui::GetContentRegionAvail(), ImGuiDockNodeFlags_None);
     ImGui::End();
 
     ImGui::Begin("Folder", nullptr);

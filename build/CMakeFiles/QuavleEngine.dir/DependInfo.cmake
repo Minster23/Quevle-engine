@@ -27,6 +27,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/QuavleEngine/core/renderer/renderer.cpp" "CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/renderer/renderer.cpp.obj.d"
   "E:/QuavleEngine/core/renderer/stb_image_impl.cpp" "CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj.d"
   "E:/QuavleEngine/core/saveData/savedData.cpp" "CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.obj.d"
+  "E:/QuavleEngine/core/scene/scene.cpp" "CMakeFiles/QuavleEngine.dir/core/scene/scene.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/scene/scene.cpp.obj.d"
   "E:/QuavleEngine/core/scripting/asyncCompile.cpp" "CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj.d"
   "E:/QuavleEngine/core/scripting/scripting.cpp" "CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.obj.d"
   "E:/QuavleEngine/core/window/window.cpp" "CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj" "gcc" "CMakeFiles/QuavleEngine.dir/core/window/window.cpp.obj.d"

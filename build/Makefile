@@ -560,6 +560,30 @@ core/saveData/savedData.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.s
 .PHONY : core/saveData/savedData.cpp.s
 
+core/scene/scene.obj: core/scene/scene.cpp.obj
+.PHONY : core/scene/scene.obj
+
+# target to build an object file
+core/scene/scene.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/scene/scene.cpp.obj
+.PHONY : core/scene/scene.cpp.obj
+
+core/scene/scene.i: core/scene/scene.cpp.i
+.PHONY : core/scene/scene.i
+
+# target to preprocess a source file
+core/scene/scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/scene/scene.cpp.i
+.PHONY : core/scene/scene.cpp.i
+
+core/scene/scene.s: core/scene/scene.cpp.s
+.PHONY : core/scene/scene.s
+
+# target to generate assembly for a file
+core/scene/scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuavleEngine.dir\build.make CMakeFiles/QuavleEngine.dir/core/scene/scene.cpp.s
+.PHONY : core/scene/scene.cpp.s
+
 core/scripting/asyncCompile.obj: core/scripting/asyncCompile.cpp.obj
 .PHONY : core/scripting/asyncCompile.obj
 
@@ -1271,6 +1295,9 @@ help:
 	@echo ... core/saveData/savedData.obj
 	@echo ... core/saveData/savedData.i
 	@echo ... core/saveData/savedData.s
+	@echo ... core/scene/scene.obj
+	@echo ... core/scene/scene.i
+	@echo ... core/scene/scene.s
 	@echo ... core/scripting/asyncCompile.obj
 	@echo ... core/scripting/asyncCompile.i
 	@echo ... core/scripting/asyncCompile.s

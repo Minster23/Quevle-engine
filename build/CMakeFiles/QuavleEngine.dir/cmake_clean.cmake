@@ -35,6 +35,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/QuavleEngine.dir/core/renderer/stb_image_impl.cpp.obj.d"
   "CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.obj"
   "CMakeFiles/QuavleEngine.dir/core/saveData/savedData.cpp.obj.d"
+  "CMakeFiles/QuavleEngine.dir/core/scene/scene.cpp.obj"
+  "CMakeFiles/QuavleEngine.dir/core/scene/scene.cpp.obj.d"
   "CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj"
   "CMakeFiles/QuavleEngine.dir/core/scripting/asyncCompile.cpp.obj.d"
   "CMakeFiles/QuavleEngine.dir/core/scripting/scripting.cpp.obj"

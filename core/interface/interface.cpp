@@ -7,13 +7,16 @@
 #include <GLFW/glfw3.h>
 #include <core/renderer/entity/objectEntity.hpp>
 #include <core/saveData/savedData.hpp>
+#include <core/scene/scene.hpp>
 
 namespace QuavleEngine{
     bool play = false;
     int cameraIndex = 0;
 };
 
+using namespace SCENEMANAGER;
 using namespace QuavleEngine;
+
 Renderer rendeeers;
 const GLFWvidmode *mode;
 ObjectEntity objectsEntity;
@@ -161,6 +164,76 @@ void interface::interfaceRender()
     fileExplorer();
     sceneConfig();
     statusMenu();
+
+    {
+        ImGui::Begin("Scene Manager", nullptr, ImGuiWindowFlags_NoCollapse);
+        ImGui::Text("Scenes");
+        ImGui::Separator();
+        for(int i = 0; i < SCENEMANAGER::scene::scenes.size(); i++){
+            if(SCENEMANAGER::scene::scenes[i].isLoaded){
+                ImGui::Text("%s", SCENEMANAGER::scene::scenes[i].name.c_str());
+
+                ImGui::Text("UUID: %c", SCENEMANAGER::scene::scenes[i].UUID);
+
+                ImGui::Text("Objects: %zu", SCENEMANAGER::scene::scenes[i].objectLoctions.size());
+                if (ImGui::IsItemHovered())
+                {
+                    ImGui::BeginTooltip();
+                    ImGui::Text("Object locations in this scene");
+                    for (const auto &obj : SCENEMANAGER::scene::scenes[i].objectLoctions)
+                    {
+                        ImGui::BulletText("%s", obj.c_str());
+                    }
+                    ImGui::EndTooltip();
+                }
+
+                ImGui::Text("Lights: %zu", SCENEMANAGER::scene::scenes[i].lights.size());
+                if (ImGui::IsItemHovered())
+                {
+                    ImGui::BeginTooltip();
+                    ImGui::Text("Lights in this scene");
+                    for (const auto &light : SCENEMANAGER::scene::scenes[i].lights)
+                    {
+                        ImGui::BulletText("Light ID: %d", light.name);
+                    }
+                    ImGui::EndTooltip();
+                }
+
+                ImGui::Text("Cubemaps: %zu", SCENEMANAGER::scene::scenes[i].cubeMaps.size());
+                if (ImGui::IsItemHovered())
+                {
+                    ImGui::BeginTooltip();
+                    ImGui::Text("Cubemaps in this scene");
+                    ImGui::EndTooltip();
+                }
+
+                ImGui::Text("Billboards: %zu", SCENEMANAGER::scene::scenes[i].billboards.size());
+                if (ImGui::IsItemHovered())
+                {
+                    ImGui::BeginTooltip();
+                    ImGui::Text("Billboards in this scene");
+                    for (const auto &billboard : SCENEMANAGER::scene::scenes[i].billboards)
+                    {
+                        ImGui::BulletText("Billboard ID: %d", billboard.name); 
+                    }
+                    ImGui::EndTooltip();
+                }
+
+                ImGui::Text("Cameras: %zu", SCENEMANAGER::scene::scenes[i].cameras.size());
+                if (ImGui::IsItemHovered())
+                {
+                    ImGui::BeginTooltip();
+                    ImGui::Text("Cameras in this scene");
+                    for (const auto &camera : SCENEMANAGER::scene::scenes[i].cameras)
+                    {
+                        ImGui::BulletText("Camera ID: %d", camera.name); 
+                    }
+                    ImGui::EndTooltip();
+                }
+            }
+        }
+        ImGui::End();
+    }
 
 
     if (isCodeEditor)

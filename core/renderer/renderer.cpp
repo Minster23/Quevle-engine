@@ -113,14 +113,11 @@ GLuint gridVAO;
 GLuint gridVBO;
 GLuint gridEBO;
 
-// Lights facing cubes, each 10 units away on the +X axis
 using namespace QuavleEngine;
+ObjectEntity objectEntity;
+interface interfaceforRenderer;
+Model models;
 
-bool Renderer::Diffuse = true;
-bool Renderer::Specular = true;
-bool Renderer::Normal = true;
-bool Renderer::Metallic = true;
-bool Renderer::Roughness = true;
 bool Renderer::Grid = true;
 
 float Renderer::u_exposure = 1.0f;
@@ -174,20 +171,11 @@ glm::mat4 Renderer::modelLight;
 glm::vec3 Renderer::gridColor = glm::vec3(1.0f);
 float Renderer::gridSpacing = 2.0f;
 
-Model models;
-
-namespace QuavleEngine
-{ // Explicitly define within the namespace
-    WindowManager windowManager;
-    interface intfc;
-    ObjectEntity objectEntity;
-}
-
 //* ====================== Renderer Implementation ======================
 void Renderer::init()
 {
     glEnable(GL_MULTISAMPLE);
-    intfc.inputDebug("Info", "Engine loading any assets");
+    interfaceforRenderer.inputDebug("Info", "Engine loading any assets");
 
     //* Lights
     shaderLoaderLight();
@@ -212,7 +200,7 @@ bool Renderer::loadModelFirst(std::string path)
     models.model(path, true);
     // for (size_t i = 0; i < objectEntity.objects.size(); ++i)
     // {
-    //     intfc.inputDebug("Info", "loading model");
+    //     interfaceforRenderer.inputDebug("Info", "loading model");
     //     shaderLoader(i, RenderType::OBJECT);
     //     shaderLink(i, RenderType::OBJECT);
     // }
@@ -221,7 +209,7 @@ bool Renderer::loadModelFirst(std::string path)
 
 void Renderer::LoadAnotherLight()
 {
-    intfc.inputDebug("Info", "loading Light");
+    interfaceforRenderer.inputDebug("Info", "loading Light");
 
     objectEntity.firstLightObject();
     LightShaderLink();
@@ -229,20 +217,20 @@ void Renderer::LoadAnotherLight()
 
 void Renderer::loadBillboard()
 {
-    intfc.inputDebug("Info", "loading Billboard");
+    interfaceforRenderer.inputDebug("Info", "loading Billboard");
     objectEntity.firstBillboard();
     for (size_t i = 0; i < objectEntity.billboards.size(); ++i)
     {
         if (objectEntity.billboards[i].texLocation.empty())
         {
-            intfc.inputDebug("Info", "loading Billboard");
+            interfaceforRenderer.inputDebug("Info", "loading Billboard");
             shaderLoader(i, RenderType::BILLBOARD);
             loadTexture("F:/Devlopment/LLL/EmguCVApp/tex.png", i, TextureType::BILLBOARD);
             shaderLink(i, RenderType::BILLBOARD);
         }
         else
         {
-            intfc.inputDebug("Info", "loading Billboard");
+            interfaceforRenderer.inputDebug("Info", "loading Billboard");
             shaderLoader(i, RenderType::BILLBOARD);
             loadTexture(objectEntity.billboards[i].texLocation, i, TextureType::BILLBOARD);
             shaderLink(i, RenderType::BILLBOARD);
@@ -338,7 +326,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
 {
     if (expression == RenderType::OBJECT)
     { // Declare vertSource here
-        intfc.inputDebug("Info", "Renderer::shaderLoader() called for OBJECT");
+        interfaceforRenderer.inputDebug("Info", "Renderer::shaderLoader() called for OBJECT");
         std::string fragSource;
 
         if (!objectEntity.objects[Index].hasOwnTexture)
@@ -362,7 +350,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetShaderInfoLog(objectEntity.objects[Index].vertexShader, 512, NULL, infoLog);
-            intfc.inputDebug("Warning", "ERROR::VERTEX::COMPILATION_FAILED\n" + std::string(infoLog));
+            interfaceforRenderer.inputDebug("Warning", "ERROR::VERTEX::COMPILATION_FAILED\n" + std::string(infoLog));
         }
 
         // Fragment Shader
@@ -373,7 +361,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetShaderInfoLog(objectEntity.objects[Index].fragmentShader, 512, NULL, infoLog);
-            intfc.inputDebug("Warning", "ERROR::FRAGMENT::COMPILATION_FAILED\n" + std::string(infoLog));
+            interfaceforRenderer.inputDebug("Warning", "ERROR::FRAGMENT::COMPILATION_FAILED\n" + std::string(infoLog));
         }
 
         // Shader Program
@@ -385,7 +373,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetProgramInfoLog(objectEntity.objects[Index].shaderProgram, 512, NULL, infoLog);
-            intfc.inputDebug("Warning", "ERROR::SHADER::LINKING_FAILED\n" + std::string(infoLog));
+            interfaceforRenderer.inputDebug("Warning", "ERROR::SHADER::LINKING_FAILED\n" + std::string(infoLog));
         }
 
         //* Clean up shaders after linking
@@ -396,7 +384,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
     if (expression == RenderType::SKYBOX)
     {
         //* Load and compile vertex and fragment shaders for the cubemap
-        intfc.inputDebug("Info", "Renderer::shaderLoader() called for SKYBOX");
+        interfaceforRenderer.inputDebug("Info", "Renderer::shaderLoader() called for SKYBOX");
         std::string vertSource = readFile(SKYBOX_VERT_PATH);
         std::string fragSource = readFile(SKYBOX_FRAG_PATH);
         const char *vertexShaderSource = vertSource.c_str();
@@ -410,7 +398,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetShaderInfoLog(objectEntity.CubeMaps[Index].vertex, 512, NULL, infoLog);
-            intfc.inputDebug("Warning", "ERROR::VERTEX::COMPILATION_FAILED\n" + std::string(infoLog));
+            interfaceforRenderer.inputDebug("Warning", "ERROR::VERTEX::COMPILATION_FAILED\n" + std::string(infoLog));
         }
 
         // Fragment Shader
@@ -421,7 +409,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetShaderInfoLog(objectEntity.CubeMaps[Index].fragment, 512, NULL, infoLog);
-            intfc.inputDebug("Warning", "ERROR::FRAGMENT::COMPILATION_FAILED\n" + std::string(infoLog));
+            interfaceforRenderer.inputDebug("Warning", "ERROR::FRAGMENT::COMPILATION_FAILED\n" + std::string(infoLog));
         }
 
         // Shader Program
@@ -433,7 +421,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetProgramInfoLog(objectEntity.CubeMaps[Index].shaderProgramCubemap, 512, NULL, infoLog);
-            intfc.inputDebug("Warning", "ERROR::SHADER::LINKING_FAILED\n" + std::string(infoLog));
+            interfaceforRenderer.inputDebug("Warning", "ERROR::SHADER::LINKING_FAILED\n" + std::string(infoLog));
         }
 
         //* Clean up shaders after linking
@@ -444,7 +432,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
     if (expression == RenderType::BILLBOARD)
     {
         //* Load and compile vertex and fragment shaders for the cubemap
-        intfc.inputDebug("Info", "Renderer::shaderLoader() called for BILLBOARD");
+        interfaceforRenderer.inputDebug("Info", "Renderer::shaderLoader() called for BILLBOARD");
         std::string vertSource = readFile(BILLBOARD_VERT_SHADER_PATH);
         std::string fragSource = readFile(BILLBOARD_FRAG_SHADER_PATH);
         const char *vertexShaderSource = vertSource.c_str();
@@ -458,7 +446,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetShaderInfoLog(objectEntity.billboards[Index].vertexShader, 512, NULL, infoLog);
-            intfc.inputDebug("Warning", "ERROR::VERTEX::COMPILATION_FAILED\n" + std::string(infoLog));
+            interfaceforRenderer.inputDebug("Warning", "ERROR::VERTEX::COMPILATION_FAILED\n" + std::string(infoLog));
         }
 
         // Fragment Shader
@@ -469,7 +457,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetShaderInfoLog(objectEntity.billboards[Index].fragmentShader, 512, NULL, infoLog);
-            intfc.inputDebug("Warning", "ERROR::FRAGMENT::COMPILATION_FAILED\n" + std::string(infoLog));
+            interfaceforRenderer.inputDebug("Warning", "ERROR::FRAGMENT::COMPILATION_FAILED\n" + std::string(infoLog));
         }
 
         // Shader Program
@@ -481,7 +469,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetProgramInfoLog(objectEntity.billboards[Index].shaderProgram, 512, NULL, infoLog);
-            intfc.inputDebug("Warning", "ERROR::SHADER::LINKING_FAILED\n" + std::string(infoLog));
+            interfaceforRenderer.inputDebug("Warning", "ERROR::SHADER::LINKING_FAILED\n" + std::string(infoLog));
         }
 
         //* Clean up shaders after linking
@@ -492,7 +480,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
     if (expression == RenderType::CAMERA)
     {
         //* Load and compile vertex and fragment shaders for the cubemap
-        intfc.inputDebug("Info", "Renderer::shaderLoader() called for BILLBOARD");
+        interfaceforRenderer.inputDebug("Info", "Renderer::shaderLoader() called for BILLBOARD");
         std::string vertSource = readFile(LIGHT_VERT_SHADER_PATH);
         std::string fragSource = readFile(LIGHT_FRAG_SHADER_PATH);
         const char *vertexShaderSource = vertSource.c_str();
@@ -506,7 +494,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetShaderInfoLog(cameras[Index].vertexShader, 512, NULL, infoLog);
-            intfc.inputDebug("Warning", "ERROR::VERTEX::COMPILATION_FAILED\n" + std::string(infoLog));
+            interfaceforRenderer.inputDebug("Warning", "ERROR::VERTEX::COMPILATION_FAILED\n" + std::string(infoLog));
         }
 
         // Fragment Shader
@@ -517,7 +505,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetShaderInfoLog(cameras[Index].fragmentShader, 512, NULL, infoLog);
-            intfc.inputDebug("Warning", "ERROR::FRAGMENT::COMPILATION_FAILED\n" + std::string(infoLog));
+            interfaceforRenderer.inputDebug("Warning", "ERROR::FRAGMENT::COMPILATION_FAILED\n" + std::string(infoLog));
         }
 
         // Shader Program
@@ -529,7 +517,7 @@ void Renderer::shaderLoader(int Index, Renderer::RenderType expression)
         if (!success)
         {
             glGetProgramInfoLog(cameras[Index].shaderProgram, 512, NULL, infoLog);
-            intfc.inputDebug("Warning", "ERROR::SHADER::LINKING_FAILED\n" + std::string(infoLog));
+            interfaceforRenderer.inputDebug("Warning", "ERROR::SHADER::LINKING_FAILED\n" + std::string(infoLog));
         }
 
         //* Clean up shaders after linking
@@ -542,7 +530,7 @@ void Renderer::shaderLink(int Index, Renderer::RenderType expression)
 {
     if (expression == RenderType::OBJECT)
     {
-        intfc.inputDebug("Info", "Linking shader for OBJECT");
+        interfaceforRenderer.inputDebug("Info", "Linking shader for OBJECT");
         // Generate and bind VAO, VBO, and EBO for the object
         glGenVertexArrays(1, &objectEntity.objects[Index].VAO);
         glGenBuffers(1, &objectEntity.objects[Index].VBO);
@@ -579,7 +567,7 @@ void Renderer::shaderLink(int Index, Renderer::RenderType expression)
     }
     if (expression == RenderType::SKYBOX)
     {
-        intfc.inputDebug("Info", "Linking shader for SKYBOX");
+        interfaceforRenderer.inputDebug("Info", "Linking shader for SKYBOX");
         glGenVertexArrays(1, &objectEntity.CubeMaps[Index].cubemapVAO);
         glGenBuffers(1, &objectEntity.CubeMaps[Index].cubemapVBO);
         glBindVertexArray(objectEntity.CubeMaps[Index].cubemapVAO);
@@ -771,6 +759,7 @@ void Renderer::loadTexture(const std::string &texturePath, int Index, TextureTyp
         glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *)(3 * sizeof(float)));
 
         glBindVertexArray(0);
+        return;
     }
     else if (expression == Renderer::TextureType::CAMERA)
     {
@@ -797,6 +786,7 @@ void Renderer::loadTexture(const std::string &texturePath, int Index, TextureTyp
         glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *)(3 * sizeof(float)));
 
         glBindVertexArray(0);
+        return;
     }
     else
     {
@@ -825,7 +815,9 @@ void Renderer::loadTexture(const std::string &texturePath, int Index, TextureTyp
 
         // Vertex attribute pointers are set in shaderLink for objects
         glBindVertexArray(0);
+        return;
     }
+    return;
 }
 
 void Renderer::loadCubemapTexture(const std::vector<std::string> &faces, int Index)
@@ -1005,6 +997,14 @@ void Renderer::LightShaderLink()
     }
 }
 
+//* ====================== Binding Texture ==========================
+auto bindTexture = [](GLuint texID, int unit, const std::string &name, ShaderHelper &shader)
+{
+    glActiveTexture(GL_TEXTURE0 + unit);
+    glBindTexture(GL_TEXTURE_2D, texID);
+    shader.setInt(name, unit);
+};
+
 //* ====================== RENDER ==========================
 void Renderer::drawCallback()
 {
@@ -1016,21 +1016,30 @@ void Renderer::drawCallback()
     glDepthMask(GL_TRUE);    // ensure depth writing
 
     //* Update matriks
-    cameras[cameraIndex].view = glm::lookAt(
-        cameras[cameraIndex].cameraPos,
-        cameras[cameraIndex].cameraPos + cameras[cameraIndex].cameraFront,
-        cameras[cameraIndex].cameraUp);
+    cameras[cameraIndex].view = glm::lookAt(cameras[cameraIndex].cameraPos, cameras[cameraIndex].cameraPos + cameras[cameraIndex].cameraFront, cameras[cameraIndex].cameraUp);
 
-    auto bindTexture = [](GLuint texID, int unit, const std::string &name, ShaderHelper &shader)
+    //* CUBEMAP RENDERING
+    if (!objectEntity.CubeMaps.empty())
     {
-        glActiveTexture(GL_TEXTURE0 + unit);
-        glBindTexture(GL_TEXTURE_2D, texID);
-        shader.setInt(name, unit);
-    };
+        unsigned int currentCubemap = objectEntity.CubeMaps[0].shaderProgramCubemap; // Assuming only one cubemap for now
+        if (currentCubemap)
+            glDepthFunc(GL_LEQUAL);
+        ShaderHelper skyboxShader(objectEntity.CubeMaps[0].shaderProgramCubemap);
+        glUseProgram(objectEntity.CubeMaps[0].shaderProgramCubemap);
+        view = glm::mat4(glm::mat3(cameras[cameraIndex].view));
+        skyboxShader.setMat4("view", view);
+        skyboxShader.setMat4("projection", projection);
+        glBindVertexArray(objectEntity.CubeMaps[0].cubemapVAO);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_CUBE_MAP, objectEntity.CubeMaps[0].textureID);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
+        glBindVertexArray(0);
+        glDepthFunc(GL_LESS);
+    }
 
     if (objectEntity.billboards.size() > 0)
     {
-        glUseProgram(objectEntity.billboards[0].shaderProgram); // Use the first billboard's shader
+        glUseProgram(objectEntity.billboards[0].shaderProgram);
 
         for (size_t i = 0; i < objectEntity.billboards.size(); ++i)
         {
@@ -1055,57 +1064,57 @@ void Renderer::drawCallback()
             bindTexture(objectEntity.billboards[i].textureID, 0, "texture1", shader);
 
             glBindVertexArray(objectEntity.billboards[i].VAO);
-            glDrawArrays(GL_TRIANGLES, 0, 6); // 6 vertices for two triangles
-        }
+            glDrawArrays(GL_TRIANGLES, 0, 6);
+    }
     }
     
 
     if (!objectEntity.lights.empty() && cameraIndex == 0)
     {
+        glUseProgram(lightShaderProgram);
         for (int i = 0; i < objectEntity.lights.size(); ++i)
         {
-            glUseProgram(lightShaderProgram);
-            if (objectEntity.lights[i].isShow)
-            {
-                ShaderHelper shader(lightShaderProgram);
-                shader.setMat4("view", cameras[cameraIndex].view);
-                shader.setMat4("projection", projection);
-                shader.setVec3("billboardPos", objectEntity.lights[i].position);
-                shader.setVec3("cameraPos", cameras[cameraIndex].cameraPos);
 
-                bindTexture(objectEntity.lights[i].textureID, 0, "texture1", shader);
+            if (!objectEntity.lights[i].isShow)
+                continue;
 
-                glBindVertexArray(lightVAO);
-                glDrawArrays(GL_TRIANGLES, 0, 6); // 6 vertices for two triangles
-            }
+            ShaderHelper shader(lightShaderProgram);
+            shader.setMat4("view", cameras[cameraIndex].view);
+            shader.setMat4("projection", projection);
+            shader.setVec3("billboardPos", objectEntity.lights[i].position);
+            shader.setVec3("cameraPos", cameras[cameraIndex].cameraPos);
+
+            bindTexture(objectEntity.lights[i].textureID, 0, "texture1", shader);
+
+            glBindVertexArray(lightVAO);
+            glDrawArrays(GL_TRIANGLES, 0, 6); // 6 vertices for two triangles
         }
     }
 
     if (!cameras.empty() && cameraIndex == 0)
     {
+        glUseProgram(cameras[0].shaderProgram);
         for (int i = 1; i < cameras.size(); ++i)
         {
-            glUseProgram(cameras[i].shaderProgram);
-            if (cameras[i].isShow)
-            {
-                ShaderHelper shader(cameras[i].shaderProgram);
-                shader.setMat4("view", cameras[cameraIndex].view);
-                shader.setMat4("projection", projection);
-                shader.setVec3("billboardPos", cameras[i].cameraPos);
-                shader.setVec3("cameraPos", cameras[cameraIndex].cameraPos);
+            if (!cameras[i].isShow)
+                continue;
 
-                bindTexture(cameras[i].textureID, 0, "texture1", shader);
+            ShaderHelper shader(cameras[i].shaderProgram);
+            shader.setMat4("view", cameras[cameraIndex].view);
+            shader.setMat4("projection", projection);
+            shader.setVec3("billboardPos", cameras[i].cameraPos);
+            shader.setVec3("cameraPos", cameras[cameraIndex].cameraPos);
 
-                glBindVertexArray(cameras[i].VAO);
-                glDrawArrays(GL_TRIANGLES, 0, 6); // 6 vertices for two triangles
-            }
+            bindTexture(cameras[i].textureID, 0, "texture1", shader);
+
+            glBindVertexArray(cameras[i].VAO);
+            glDrawArrays(GL_TRIANGLES, 0, 6); // 6 vertices for two triangles
         }
     }
 
-    if (objectEntity.objects.size() != 0)
+    if (objectEntity.objects.size() > 0)
     {
-        int currentShader = -1;
-        GLuint lastVAO = 0;
+        models.flushTextureLoadQueue();
 
         for (size_t i = 0; i < objectEntity.objects.size(); ++i)
         {
@@ -1126,16 +1135,11 @@ void Renderer::drawCallback()
             shader.setVec3("viewPos", cameras[cameraIndex].cameraPos);
 
             // Material textures
-            if (Diffuse)
-                bindTexture(obj.diffuseTextureID, 0, "diffuse", shader);
-            if (Specular)
-                bindTexture(obj.specularTextureID, 1, "specular", shader);
-            if (Normal)
-                bindTexture(obj.normalTextureID, 2, "normalMap", shader);
-            if (Metallic)
-                bindTexture(obj.metallicTextureID, 3, "metallicMap", shader);
-            if (Roughness)
-                bindTexture(obj.roughnessTextureID, 4, "roughnessMap", shader);
+            bindTexture(obj.diffuseTextureID, 0, "diffuse", shader);
+            bindTexture(obj.specularTextureID, 1, "specular", shader);
+            bindTexture(obj.normalTextureID, 2, "normalMap", shader);
+            bindTexture(obj.metallicTextureID, 3, "metallicMap", shader);
+            bindTexture(obj.roughnessTextureID, 4, "roughnessMap", shader);
 
             bindTexture(obj.HeightTextureID, 5, "heightMap", shader);
             bindTexture(obj.ambientTextureID, 6, "ambientMap", shader);
@@ -1269,22 +1273,8 @@ void Renderer::drawCallback()
         }
     }
 
-    glDepthFunc(GL_LEQUAL);
-    ShaderHelper skyboxShader(objectEntity.CubeMaps[0].shaderProgramCubemap);
-    glUseProgram(objectEntity.CubeMaps[0].shaderProgramCubemap);
-    view = glm::mat4(glm::mat3(cameras[cameraIndex].view));
-    skyboxShader.setMat4("view", view);
-    skyboxShader.setMat4("projection", projection);
-    glBindVertexArray(objectEntity.CubeMaps[0].cubemapVAO);
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_CUBE_MAP, objectEntity.CubeMaps[0].textureID);
-    glDrawArrays(GL_TRIANGLES, 0, 36);
-    glBindVertexArray(0);
-    glDepthFunc(GL_LESS);
-
-    if (Grid)
+    if (Grid && cameraIndex == 0)
     {
-
         glUseProgram(gridShaderProgram);
 
         ShaderHelper gridShader(gridShaderProgram);
@@ -1298,12 +1288,8 @@ void Renderer::drawCallback()
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         glBindVertexArray(0);
     }
-
-    if(objectEntity.objects.size() > 0)
-    {
-        models.flushTextureLoadQueue();
-    }
 }
+
 void Renderer::drawCleanup()
 {
     for (size_t i = 0; i < objectEntity.objects.size(); ++i)

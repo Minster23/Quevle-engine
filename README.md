@@ -32,6 +32,11 @@
 - Compiler C++17 (GCC/Clang/MSVC)
 - OpenGL 3.3+
 - Git
+- GLFW
+- GLEW
+- GLM
+- GLAD
+- ImGui
 
 ### Build (Windows/Linux)
 

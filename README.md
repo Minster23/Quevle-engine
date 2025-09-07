@@ -8,6 +8,9 @@
 **Quavle Engine** adalah sebuah *open-source 3D game engine* ringan dan modular, ditulis dalam C++ dengan fokus pada performa, fleksibilitas, dan kemudahan integrasi. Dirancang untuk pengembang indie dan pembelajar grafis komputer yang ingin memahami atau membangun mesin game dari bawah.
 
 ---
+## Preview
+<img width="1920" height="1002" alt="image" src="https://github.com/user-attachments/assets/d1893b62-82a8-41ac-9d02-fe8932e3f935" />
+---
 
 ## ✨ Fitur Utama
 

@@ -11,6 +11,7 @@
 ## Preview
 <img width="1920" height="1002" alt="image" src="https://github.com/user-attachments/assets/d1893b62-82a8-41ac-9d02-fe8932e3f935" />
 <img width="1197" height="668" alt="image" src="https://github.com/user-attachments/assets/d4a27dce-3089-41cc-824d-1a973da67397" />
+Credits: https://sketchfab.com/3d-models/single-fisherboat-free-asset-pbr-textured-4560552ba90348819310131b22b7e53b
 
 ---
 
